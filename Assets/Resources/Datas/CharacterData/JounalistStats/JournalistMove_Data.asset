@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f733307971a32904db4e4a8365b9242d, type: 3}
-  m_Name: StartUpProfile
+  m_Script: {fileID: 11500000, guid: 20511c714e051b0429b5b05f14d2967e, type: 3}
+  m_Name: JournalistMove_Data
   m_EditorClassIdentifier: 
-  masterScene: SampleScene
-  loadScene: SampleScene
-  logScene: SampleScene
-  startUpInstance: {fileID: 11400000, guid: f6a061fe48c2285409fd58bcb231e1d4, type: 2}
+  walkSpeed: 1
+  runSpeed: 2
+  jumpForce: 5
+  rotateSpeed: 20

@@ -10,6 +10,12 @@ public class Character2D : MonoBehaviour
     [BoxGroup("Requirements")]
     [Required]
     Rigidbody2D body = null;
+
+    [SerializeField]
+    [BoxGroup("Requirements")]
+    [Required]
+    MovementData moveData = null;
+
     [SerializeField]
     [BoxGroup("Requirements")]
     [Required]
@@ -20,6 +26,7 @@ public class Character2D : MonoBehaviour
     void Start()
     {
         movement.SetRigidBody(body);
+        movement.SetMovementData(moveData);
     }
 
     public GameObject GetHost()

@@ -37,6 +37,11 @@ public class IMovement : MonoBehaviour
         return 0;
     }
 
+    public virtual Vector3 GetVelocity()
+    {
+        return Vector3.zero;
+    }
+
     /** Signaled that the jump command had been called */
     public virtual void SignalJump()
     {

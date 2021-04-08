@@ -22,9 +22,18 @@ public class Movement2D : IMovement
      */
     float smoothAcceleration = 0.2f;
     /** The current speed of the host object */
+    [SerializeField]
+    [ReadOnly]
+
     float currentSpeed;
     /** represents whether the host object is moving or not */
+    [SerializeField]
+    [ReadOnly]
+
     bool inMotion = false;
+    [SerializeField]
+    [ReadOnly]
+    Vector2 characterVelocity;
     void Update()
     {
         UpdateCurrentSpeed();
@@ -58,9 +67,11 @@ public class Movement2D : IMovement
             currentSpeed = 0;
         }
         var vel = new Vector3();
-        vel.y = forward * currentSpeed * Time.deltaTime;
-        vel.x = side * currentSpeed * Time.deltaTime;
-        body2D.MovePosition(body2D.transform.position + vel);
+        vel.y = forward * currentSpeed;// * Time.deltaTime;
+        vel.x = side * currentSpeed;//* Time.deltaTime;
+        characterVelocity = vel;
+        body2D.velocity = characterVelocity;
+        //body2D.MovePosition(body2D.transform.position + vel);
     }
     /** this function signal the jump input of the player and the jump action should be handle in the next fixed update function  */
     public override void SignalJump()
@@ -68,6 +79,10 @@ public class Movement2D : IMovement
         return;
     }
 
+    public override Vector3 GetVelocity()
+    {
+        return characterVelocity;
+    }
 
 
     public override void SetRigidBody(Rigidbody2D body)

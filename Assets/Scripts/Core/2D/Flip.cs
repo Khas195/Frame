@@ -7,8 +7,18 @@ using UnityEngine;
 public class Flip : MonoBehaviour
 {
     [SerializeField]
+    bool useRigidBody = false;
+    [SerializeField]
     [Required]
+    [ShowIf("useRigidBody")]
     Rigidbody2D body = null;
+
+    [SerializeField]
+    bool useMovementScript = false;
+    [SerializeField]
+    [Required]
+    [ShowIf("useMovementScript")]
+    IMovement movementBehavior = null;
     bool isFacingRight = true;
     // Start is called before the first frame update
     void Start()
@@ -19,11 +29,20 @@ public class Flip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (body.velocity.x < 0 && isFacingRight)
+        Vector3 velToAsset = Vector3.zero;
+        if (useRigidBody)
+        {
+            velToAsset = body.velocity;
+        }
+        else if (useMovementScript)
+        {
+            velToAsset = movementBehavior.GetVelocity();
+        }
+        if (velToAsset.x < 0 && isFacingRight)
         {
             FlipModel();
         }
-        else if (body.velocity.x > 0 && isFacingRight == false)
+        else if (velToAsset.x > 0 && isFacingRight == false)
         {
             FlipModel();
         }

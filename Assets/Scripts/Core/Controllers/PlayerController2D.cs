@@ -9,8 +9,6 @@ public class PlayerController2D : MonoBehaviour
     [SerializeField]
     Character2D character = null;
     [SerializeField]
-    UnityEvent hackTrigger = new UnityEvent();
-    [SerializeField]
     UnityEvent interactTrigger = new UnityEvent();
     // Update is called once per frame
     void Update()
@@ -20,10 +18,6 @@ public class PlayerController2D : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             interactTrigger.Invoke();
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            hackTrigger.Invoke();
         }
         character.Move(side, forward);
     }

@@ -14,6 +14,11 @@ public class Character2D : MonoBehaviour
     [SerializeField]
     [BoxGroup("Requirements")]
     [Required]
+    Rigidbody2D cameraBody = null;
+
+    [SerializeField]
+    [BoxGroup("Requirements")]
+    [Required]
     MovementData moveData = null;
 
     [SerializeField]
@@ -48,5 +53,15 @@ public class Character2D : MonoBehaviour
     public string GetName()
     {
         return name;
+    }
+    public void SwitchToCameraBody()
+    {
+        movement.SetRigidBody(cameraBody);
+        body.simulated = false;
+    }
+    public void SwitchToCharacterBody()
+    {
+        movement.SetRigidBody(body);
+        body.simulated = true;
     }
 }

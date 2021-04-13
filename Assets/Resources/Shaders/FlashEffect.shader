@@ -1,8 +1,12 @@
-﻿Shader "Hidden/MyGreyScale"
+Shader "Unlit/FlashEffect"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _TransitionTex ("TransitionTexture", 2D) = "white" {}
+        _Cutoff ("Cut Off", float) = 0.5
+        _Fade ("Fade", Range(0,1)) = 0.5
+        _Color ("Color ", color) = (0,0,0,1) 
     }
     SubShader
     {
@@ -38,17 +42,23 @@
             }
 
             sampler2D _MainTex;
+            sampler2D _TransitionTex;
+            float _Cutoff;
+            float _Fade;
+            fixed4 _Color;
 
             fixed4 frag (v2f i) : SV_Target
             {
-                fixed4 c = tex2D(_MainTex, i.uv);
-                float lum = c.r*.2126 + c.g*.7152 + c.b*.0722;
-				float3 bw = float3( lum, lum, lum ); 
-				
-				float4 result = c;
-				result.rgb = lerp(c.rgb, bw, 1);
-				result.rgb = lerp(result.rgb, float3(1,1,0), .08);
-				return result;
+                fixed4  transit = tex2D(_TransitionTex, i.uv);
+                fixed4 col = tex2D(_MainTex, i.uv);
+                fixed4 finalColor;
+                if (transit.b  - _Cutoff >= -1) {
+                    finalColor  = lerp(col, _Color,  transit.b - _Cutoff);
+                } else {
+                    finalColor  = col;
+                }
+                finalColor = lerp(col, finalColor, _Fade);
+                return finalColor;
             }
             ENDCG
         }

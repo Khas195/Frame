@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class DragSelection : MonoBehaviour
+public class DragSelection : SingletonMonobehavior<DragSelection>
 {
     [SerializeField]
     Camera playerCamera = null;
@@ -12,53 +14,81 @@ public class DragSelection : MonoBehaviour
     [SerializeField]
     RectTransform cameraFrame;
     [SerializeField]
+    RectTransform photoFrame;
+    [SerializeField]
     Image photoImage = null;
+    [SerializeField]
+    UnityEvent OnEnterCameraMode = new UnityEvent();
+    [SerializeField]
+    UnityEvent OnExitCameraMode = new UnityEvent();
 
 
     Vector2 startPos = Vector2.zero;
     bool selectionMode = false;
+    bool inPhotoMode = false;
     private void Start()
     {
         cameraFrame.gameObject.SetActive(false);
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.V))
         {
-            selectionMode = true;
-            cameraFrame.gameObject.SetActive(true);
-        }
-        if (selectionMode)
-        {
-            if (Input.GetMouseButton(0))
+            if (selectionMode == false)
             {
-                cameraFrame.position = GetMousPosOnCanvas();
+                EnterCameraMode();
             }
-            else if (Input.GetMouseButtonUp(0))
+            else
             {
-                ExitSelectionMode();
+                ExitCameraMode();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (inPhotoMode)
+            {
+                ExitPhotoMode();
             }
         }
     }
 
-    public void ExitSelectionMode()
+    private void EnterCameraMode()
     {
+        OnEnterCameraMode.Invoke();
+        selectionMode = true;
+        cameraFrame.gameObject.SetActive(true);
+    }
+
+    public bool IsInSelectionMode()
+    {
+        return selectionMode;
+    }
+
+    public void ExitCameraMode()
+    {
+        OnExitCameraMode.Invoke();
         selectionMode = false;
         cameraFrame.gameObject.SetActive(false);
-        HideImage();
     }
-    public void HideImage()
+    public void ExitPhotoMode()
     {
         var color = photoImage.color;
         color.a = 0;
         photoImage.color = color;
-
+        photoFrame.gameObject.SetActive(false);
+        inPhotoMode = false;
     }
-    public void ViewImage()
+    public void EnterPhotoMode()
     {
+        inPhotoMode = true;
         var color = photoImage.color;
         color.a = 1;
         photoImage.color = color;
+        photoFrame.gameObject.SetActive(true);
+        if (selectionMode)
+        {
+            ExitCameraMode();
+        }
     }
     private Vector2 GetMousPosOnCanvas()
     {

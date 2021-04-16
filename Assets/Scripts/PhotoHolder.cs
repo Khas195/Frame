@@ -173,4 +173,5 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         NewsPaperPanel.GetInstance().OnPhotoDrop.Invoke();
         NewsPaperPanel.GetInstance().SetCurrentSelection(null);
     }
+
 }

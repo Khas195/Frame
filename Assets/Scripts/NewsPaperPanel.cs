@@ -18,6 +18,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
     public UnityEvent OnPhotoDrop = new UnityEvent();
     [SerializeField]
     Text totalPaperPoint;
+    [SerializeField]
+    PhotoListManager manager = null;
 
 
     public void SwitchPanelOn()
@@ -82,8 +84,24 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
     }
     public void Publish()
     {
+        PublicSwayMechanic.GetInstance().AddInfluence(this.GetTotalCommiePointFromSections(), ScenarioActor.ActorFaction.Communist);
+        PublicSwayMechanic.GetInstance().AddInfluence(this.GetTotalCapitalistPointFromSections(), ScenarioActor.ActorFaction.Capitalist);
+        PublicSwayMechanic.GetInstance().AssignActorsAccordingToSway(false);
 
+        var package = DataPool.GetInstance().RequestInstance();
+        var photosToDiscard = new List<PhotoInfo>();
+        for (int i = 0; i < sections.Count; i++)
+        {
+            photosToDiscard.Add(sections[i].GetPhotoInfo());
+        }
+        package.SetValue("PhotoInfos", photosToDiscard);
+        PostOffice.SendData(package, PhotoListManager.DISCARD_PHOTO_EVENT);
+        DataPool.GetInstance().ReturnInstance(package);
+
+
+        InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
     }
+
     public void Clear()
     {
         for (int i = 0; i < sections.Count; i++)

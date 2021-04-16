@@ -9,8 +9,6 @@ public class DataPack
 
     public bool SetValue(string valueName, object value)
     {
-        if (datas.ContainsKey(valueName) == false) return false;
-
         datas[valueName] = value;
         return true;
     }

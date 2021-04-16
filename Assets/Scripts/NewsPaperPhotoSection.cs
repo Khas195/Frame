@@ -96,4 +96,9 @@ public class NewsPaperPhotoSection : MonoBehaviour
         chosen = false;
         this.currentInfo = new PhotoInfo();
     }
+
+    public PhotoInfo GetPhotoInfo()
+    {
+        return this.currentInfo;
+    }
 }

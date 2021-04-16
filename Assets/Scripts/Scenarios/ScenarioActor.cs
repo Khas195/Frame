@@ -22,20 +22,46 @@ public class ScenarioActor : MonoBehaviour
     int communistInfluence = 0;
     [SerializeField]
     bool isOnCamera = false;
+    [SerializeField]
+    Color previousColor;
+    [SerializeField]
+    Color targetColor;
+    [SerializeField]
+    float transitionTime = 1.0f;
+    float curTime = 100;
 
 
     private void Update()
     {
         isOnCamera = sprite.isVisible;
+        if (curTime <= transitionTime)
+        {
+            this.sprite.color = Color.Lerp(previousColor, targetColor, curTime / transitionTime);
+            curTime += Time.deltaTime;
+        }
+        else
+        {
+            this.sprite.color = targetColor;
+        }
     }
     public void SetColorOfActor(Color color)
     {
         sprite.color = color;
     }
-    public void AssignFaction(ActorFaction newFaction)
+    public void AssignFaction(ActorFaction newFaction, bool instant = true)
     {
         this.curFaction = newFaction;
-        this.SetColorOfActor(PublicSwayMechanic.GetInstance().GetColorToFaction(newFaction));
+        previousColor = this.sprite.color;
+        targetColor = PublicSwayMechanic.GetInstance().GetColorToFaction(newFaction);
+        if (instant == false)
+        {
+            curTime = 0;
+        }
+        else
+        {
+            curTime = 100f;
+            this.SetColorOfActor(targetColor);
+        }
     }
     public ActorFaction GetFaction()
     {
@@ -44,13 +70,10 @@ public class ScenarioActor : MonoBehaviour
     [Button]
     public void ChangeColorToFaction()
     {
+
         this.SetColorOfActor(PublicSwayMechanic.GetInstance().GetColorToFaction(curFaction));
-    }
-    [Button]
-    public void AffectInfluence()
-    {
-        PublicSwayMechanic.GetInstance().AddInfluence(capitalInfluence, ActorFaction.Capitalist);
-        PublicSwayMechanic.GetInstance().AddInfluence(communistInfluence, ActorFaction.Communist);
+        previousColor = this.sprite.color;
+        targetColor = this.sprite.color;
     }
 
     public bool IsOnCamera()

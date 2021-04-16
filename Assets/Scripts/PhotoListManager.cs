@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class PhotoListManager : MonoBehaviour
+public class PhotoListManager : MonoBehaviour, IObserver
 {
+    public const string DISCARD_PHOTO_EVENT = "DISCARD_PHOTO_EVENT";
     [SerializeField]
     int contentPerPage;
     [SerializeField]
@@ -31,10 +33,13 @@ public class PhotoListManager : MonoBehaviour
     {
         photoListRoot.SetActive(true);
     }
-    // Start is called before the first frame update
     void Start()
     {
-
+        PostOffice.Subscribes(this, DISCARD_PHOTO_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, DISCARD_PHOTO_EVENT);
     }
 
 
@@ -91,6 +96,38 @@ public class PhotoListManager : MonoBehaviour
             var startPageIndex = currentPage * contentPerPage;
             var endPageIndex = startPageIndex + contentPerPage - 1;
             ShowPhotoFromRange(startPageIndex, endPageIndex);
+        }
+    }
+    private void Discard(PhotoHolder photo)
+    {
+        Destroy(photo.gameObject);
+    }
+    public void DiscardButton(PhotoHolder holder)
+    {
+        var package = DataPool.GetInstance().RequestInstance();
+        var photosToDiscard = new List<PhotoInfo>();
+        photosToDiscard.Add(holder.GetPhotoInfo());
+        package.SetValue("PhotoInfos", photosToDiscard);
+        PostOffice.SendData(package, PhotoListManager.DISCARD_PHOTO_EVENT);
+        DataPool.GetInstance().ReturnInstance(package);
+    }
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == DISCARD_PHOTO_EVENT)
+        {
+            var infos = pack.GetValue<List<PhotoInfo>>("PhotoInfos");
+            if (infos != null && infos.Count > 0)
+            {
+                for (int i = 0; i < infos.Count; i++)
+                {
+                    var holder = photos.Find(x => x.GetPhotoInfo() == infos[i]);
+                    if (holder)
+                    {
+                        Discard(holder);
+                    }
+                }
+
+            }
         }
     }
 }

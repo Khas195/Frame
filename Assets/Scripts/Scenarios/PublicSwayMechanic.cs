@@ -47,6 +47,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         cititzens.Clear();
         scenarioActors.Clear();
         GatherActors();
+        AssignActorsAccordingToSway(true);
     }
     public void AddInfluence(float value, ScenarioActor.ActorFaction targetFaction)
     {
@@ -78,7 +79,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         swayPercentage = new Vector2(Mathf.RoundToInt(swayPercentage.x), Mathf.RoundToInt(swayPercentage.y));
     }
     [Button]
-    private void AssignActorsAccordingToSway()
+    public void AssignActorsAccordingToSway(bool fastTransition = false)
     {
         int targetCommie = Mathf.RoundToInt((swayPercentage.x / 100.0f) * cititzens.Count);
         int targetCapitalist = Mathf.RoundToInt(((100 - swayPercentage.y) / 100.0f) * cititzens.Count);
@@ -92,7 +93,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
             {
                 if (cititzens[i].GetFaction() != ScenarioActor.ActorFaction.Communist)
                 {
-                    cititzens[i].AssignFaction(ScenarioActor.ActorFaction.Communist);
+                    cititzens[i].AssignFaction(ScenarioActor.ActorFaction.Communist, fastTransition);
                 }
                 curCommie += 1;
             }
@@ -100,7 +101,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
             {
                 if (cititzens[i].GetFaction() != ScenarioActor.ActorFaction.Capitalist)
                 {
-                    cititzens[i].AssignFaction(ScenarioActor.ActorFaction.Capitalist);
+                    cititzens[i].AssignFaction(ScenarioActor.ActorFaction.Capitalist, fastTransition);
                 }
                 curCapital += 1;
 

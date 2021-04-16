@@ -15,6 +15,10 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     Image photoImage = null;
     [SerializeField]
     Image PhotoFrame = null;
+
+    [SerializeField]
+    Text influenceText;
+
     [SerializeField]
     float hoverScale;
     [SerializeField]
@@ -31,6 +35,8 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     bool transitionIn = true;
     [SerializeField]
     Canvas mCanvas;
+
+
 
     private void Start()
     {
@@ -69,11 +75,37 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             }
         }
     }
+    public PhotoInfo GetPhotoInfo()
+    {
+        return info;
+    }
 
     public void SetPhotoInfo(PhotoInfo photoInfo)
     {
         this.info = photoInfo;
         SetImageSprite(photoInfo.sprite);
+        Color communistColor = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Communist);
+        Color capitalistColor = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Capitalist);
+
+        string commieInfluence = ConvertInfluenceToString(photoInfo.communistInfluence);
+        string capitalistInfluence = ConvertInfluenceToString(photoInfo.capitalistInfluence);
+
+        influenceText.text = commieInfluence.Colorize(communistColor) + " " + capitalistInfluence.Colorize(capitalistColor);
+    }
+
+    public static string ConvertInfluenceToString(float influenceValue)
+    {
+        string influence;
+        if (influenceValue >= 0)
+        {
+            influence = "+ " + influenceValue.ToString();
+        }
+        else
+        {
+            influence = "- " + (influenceValue * -1).ToString();
+        }
+
+        return influence;
     }
 
     public void SetImageSprite(Sprite newSprite)
@@ -125,8 +157,8 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         originPos = this.transform.position;
         this.OnMouseExit();
         NewsPaperPanel.GetInstance().SetCurrentSelection(this);
-        this.photoImage.raycastTarget = false;
         this.PhotoFrame.raycastTarget = false;
+        this.photoImage.raycastTarget = false;
     }
     public void OnDrag()
     {

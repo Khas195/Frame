@@ -13,8 +13,6 @@ public class ScenarioActor : MonoBehaviour
         Capitalist
     }
     [SerializeField]
-    int point;
-    [SerializeField]
     SpriteRenderer sprite;
     [SerializeField]
     ActorFaction curFaction = ActorFaction.Neutral;
@@ -22,9 +20,14 @@ public class ScenarioActor : MonoBehaviour
     int capitalInfluence = 0;
     [SerializeField]
     int communistInfluence = 0;
+    [SerializeField]
+    bool isOnCamera = false;
 
-    public int Point { get => point; }
 
+    private void Update()
+    {
+        isOnCamera = sprite.isVisible;
+    }
     public void SetColorOfActor(Color color)
     {
         sprite.color = color;
@@ -55,12 +58,12 @@ public class ScenarioActor : MonoBehaviour
         return this.sprite.isVisible;
     }
 
-    public float GetCapitalInfluence()
+    public int GetCapitalInfluence()
     {
         return capitalInfluence;
     }
 
-    public float GetCommunistInfluence()
+    public int GetCommunistInfluence()
     {
         return communistInfluence;
     }

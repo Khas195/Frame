@@ -10,18 +10,15 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
     [SerializeField]
     GameObject panelRoot = null;
     [SerializeField]
-    Image headline;
-    [SerializeField]
-    Image subHeadline1;
+    List<NewsPaperPhotoSection> sections = new List<NewsPaperPhotoSection>();
 
-
-
-    [SerializeField]
-    Image subHeadline2;
     [SerializeField]
     PhotoHolder currentDrag = null;
     [SerializeField]
     public UnityEvent OnPhotoDrop = new UnityEvent();
+    [SerializeField]
+    Text totalPaperPoint;
+
 
     public void SwitchPanelOn()
     {
@@ -30,6 +27,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
     public void SwitchPanelOff()
     {
         panelRoot.SetActive(false);
+        Clear();
+
     }
 
     public void SetCurrentSelection(PhotoHolder photoHolder)
@@ -37,15 +36,61 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
         this.currentDrag = photoHolder;
     }
 
-    public Image GetCurrentSelectionImage()
+    public PhotoHolder GetCurrentSelection()
     {
-        if (currentDrag)
+        return this.currentDrag;
+    }
+    private void Update()
+    {
+        if (panelRoot.activeSelf)
         {
-            return this.currentDrag.GetImage();
-        }
-        else
-        {
-            return null;
+            var totalCommiePoint = GetTotalCommiePointFromSections();
+            var totalCapitalistPoint = GetTotalCapitalistPointFromSections();
+            UpdatePointUI(totalCommiePoint, totalCapitalistPoint);
         }
     }
+
+    private int GetTotalCapitalistPointFromSections()
+    {
+
+        var totalPoint = 0;
+        for (int i = 0; i < sections.Count; i++)
+        {
+            totalPoint += sections[i].GetCapitalPoint();
+        }
+        return totalPoint;
+    }
+
+    private int GetTotalCommiePointFromSections()
+    {
+        var totalPoint = 0;
+        for (int i = 0; i < sections.Count; i++)
+        {
+            totalPoint += sections[i].GetCommiePoint();
+        }
+        return totalPoint;
+    }
+    private void UpdatePointUI(int commiePoint, int capitalPoint)
+    {
+        Color communistColor = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Communist);
+        Color capitalistColor = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Capitalist);
+
+        string commieInfluence = PhotoHolder.ConvertInfluenceToString(commiePoint);
+        string capitalistInfluence = PhotoHolder.ConvertInfluenceToString(capitalPoint);
+
+        totalPaperPoint.text = commieInfluence.Colorize(communistColor) + " " + capitalistInfluence.Colorize(capitalistColor);
+    }
+    public void Publish()
+    {
+
+    }
+    public void Clear()
+    {
+        for (int i = 0; i < sections.Count; i++)
+        {
+            sections[i].Clear();
+        }
+        UpdatePointUI(0, 0);
+    }
+
 }

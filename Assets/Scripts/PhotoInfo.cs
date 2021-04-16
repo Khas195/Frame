@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PhotoInfo
 {
     public Sprite sprite;
-    public float capitalistInfluence;
-    public float communistInfluence;
+    public int capitalistInfluence;
+    public int communistInfluence;
 
 }

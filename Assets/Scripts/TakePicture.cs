@@ -12,7 +12,7 @@ public class TakePicture : MonoBehaviour
     public const string SCREEN_SHOT_EVENT = "ON_SCREENSHOT_EVENT";
     [SerializeField]
     [Required]
-    Image imageUI;
+    PhotoHolder photoModeHoder;
     Material mat;
     [SerializeField]
     [Required]
@@ -96,7 +96,7 @@ public class TakePicture : MonoBehaviour
 
         photoViewPanel.AddPhoto(newPhoto);
         newsPaperPanel.AddPhoto(newPhoto);
-        imageUI.sprite = imageSprite;
+        photoModeHoder.SetPhotoInfo(newPhoto);
         takeHiResShot = false;
 
         Destroy(rt);

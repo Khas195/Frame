@@ -5,41 +5,45 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PhotoListManager : SingletonMonobehavior<PhotoListManager>
+public class PhotoListManager : MonoBehaviour
 {
     [SerializeField]
     int contentPerPage;
     [SerializeField]
     int currentPage = 0;
     [SerializeField]
-    List<Image> photos;
+    List<PhotoHolder> photos;
     [SerializeField]
     Transform contentRoot;
+
+
+
     [SerializeField]
     GameObject photoExample;
     [SerializeField]
     GameObject photoListRoot = null;
+
+    public void Hide()
+    {
+        photoListRoot.SetActive(false);
+    }
+    public void Show()
+    {
+        photoListRoot.SetActive(true);
+    }
     // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            photoListRoot.SetActive(!photoListRoot.gameObject.activeSelf);
-        }
-    }
 
-    public void AddPhoto(Sprite imageSprite)
+    public void AddPhoto(PhotoInfo photoInfo)
     {
         var newGameObject = GameObject.Instantiate(photoExample, contentRoot);
         var photoHolder = newGameObject.GetComponent<PhotoHolder>();
-        photoHolder.SetImageSprte(imageSprite);
-        photos.Add(photoHolder.GetImage());
+        photoHolder.SetPhotoInfo(photoInfo);
+        photos.Add(photoHolder);
         float totalPage = photos.Count / (contentPerPage);
         if (currentPage == totalPage)
         {

@@ -21,7 +21,11 @@ public class CameraZoomInTransition : MonoBehaviour
     [Range(0, 1)]
     float zoomValue = 0.5f;
     [SerializeField]
+    [ReadOnly]
     float curTime = 100f;
+    [SerializeField]
+    [ReadOnly]
+    bool isInTransition = false;
 
     void Update()
     {
@@ -43,6 +47,12 @@ public class CameraZoomInTransition : MonoBehaviour
     {
         curTime = 0.0f;
         this.enabled = true;
+        SetStartState();
+    }
+    [SerializeField]
+    public void TransitionOut()
+    {
+        curTime = 100f;
         SetStartState();
     }
     [SerializeField]

@@ -1,31 +1,56 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class TakePicture : MonoBehaviour
 {
+
+    public const string SCREEN_SHOT_EVENT = "ON_SCREENSHOT_EVENT";
     [SerializeField]
+    [Required]
     Image imageUI;
     Material mat;
     [SerializeField]
+    [Required]
     Camera playerCamera = null;
     [SerializeField]
+    [Required]
     RectTransform selectionBox = null;
-    [SerializeField]
-    UnityEvent OnScreenshotTaken = new UnityEvent();
     [SerializeField]
     float cameraOgirinSize;
     [SerializeField]
     float cameraPhotoSize;
+    [SerializeField]
+    [Required]
+    PhotoListManager photoViewPanel;
+    [SerializeField]
+    [Required]
+    PhotoListManager newsPaperPanel;
+    [SerializeField]
+    [Required]
+    CameraZoomInTransition transition;
+    [SerializeField]
+    UnityEvent OnScreenshotTaken = new UnityEvent();
+
+    public bool IsCameraReady()
+    {
+        return !transition.enabled;
+    }
 
 
     // Start is called before the first frame update
     void Start()
     {
         mat = new Material(Shader.Find("Hidden/MyGreyScale"));
+    }
+
+    public void TakePhoto()
+    {
+        takeHiResShot = Input.GetKeyDown(KeyCode.E);
     }
 
     public void LerpBetweenSize(float zoomValue)
@@ -37,12 +62,7 @@ public class TakePicture : MonoBehaviour
 
     private void Update()
     {
-        if (DragSelection.GetInstance().IsInSelectionMode())
-        {
-            takeHiResShot = Input.GetKeyDown(KeyCode.E);
 
-
-        }
     }
     private void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
@@ -68,8 +88,14 @@ public class TakePicture : MonoBehaviour
         image.Apply();
         SaveImageToFile(image);
         var imageSprite = Sprite.Create(image, new Rect(0, 0, rt.width, rt.height), new Vector2(0.5f, 0.5f), 64);
+        PhotoInfo newPhoto = new PhotoInfo();
 
-        PhotoListManager.GetInstance().AddPhoto(imageSprite);
+        newPhoto.sprite = imageSprite;
+        PublicSwayMechanic.GetInstance().AssignPhotoInfluence(ref newPhoto);
+
+
+        photoViewPanel.AddPhoto(newPhoto);
+        newsPaperPanel.AddPhoto(newPhoto);
         imageUI.sprite = imageSprite;
         takeHiResShot = false;
 

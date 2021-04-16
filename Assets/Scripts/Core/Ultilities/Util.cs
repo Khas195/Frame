@@ -5,6 +5,12 @@ using UnityEngine;
 
 public static class Util
 {
+    public static Vector2 GetMousPosOnCanvas(Canvas targetCanvas)
+    {
+        Vector2 uiPos;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(targetCanvas.transform as RectTransform, Input.mousePosition, targetCanvas.worldCamera, out uiPos);
+        return targetCanvas.transform.TransformPoint(uiPos);
+    }
     // Outdated, use Mathf.Lerp instead 
     public static float CalculateAsymptoticAverage(float currentValue, float target, float percentage)
     {
@@ -106,5 +112,17 @@ public static class Util
     public static String Italician(this String text)
     {
         return "<i>" + text + "</i>";
+    }
+    public static List<T> Shuffle<T>(List<T> _list)
+    {
+        for (int i = 0; i < _list.Count; i++)
+        {
+            T temp = _list[i];
+            int randomIndex = UnityEngine.Random.Range(i, _list.Count);
+            _list[i] = _list[randomIndex];
+            _list[randomIndex] = temp;
+        }
+
+        return _list;
     }
 }

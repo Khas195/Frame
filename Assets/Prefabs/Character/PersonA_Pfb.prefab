@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9190858446792104341}
   - component: {fileID: 5991124470561458888}
+  - component: {fileID: 8509056053702070476}
   m_Layer: 0
   m_Name: PersonA_Pfb
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2427499913417694198, guid: f20a136c5bc5e454187794eee6032aed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b741eca3214d1540846bddf3035720e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,3 +83,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8509056053702070476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7614453392723437461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d337ed5bed71d84f85c56189237700c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: 1
+  sprite: {fileID: 5991124470561458888}
+  curFaction: 0

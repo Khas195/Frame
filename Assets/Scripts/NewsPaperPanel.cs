@@ -20,6 +20,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
     Text totalPaperPoint;
     [SerializeField]
     PhotoListManager manager = null;
+    [SerializeField]
+    PaperPublishedNotifier notifier;
 
 
     public void SwitchPanelOn()
@@ -97,7 +99,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
         package.SetValue("PhotoInfos", photosToDiscard);
         PostOffice.SendData(package, PhotoListManager.DISCARD_PHOTO_EVENT);
         DataPool.GetInstance().ReturnInstance(package);
-
+        notifier.Notify();
 
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
     }

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class NormalUiState : InGameUIState
 {
+    [SerializeField]
+    GameObject overlayUI;
     public override Enum GetEnum()
     {
         return InGameUIStateEnum.NormalState;
@@ -12,10 +14,12 @@ public class NormalUiState : InGameUIState
 
     public override void OnStateEnter()
     {
+        overlayUI.gameObject.SetActive(true);
     }
 
     public override void OnStateExit()
     {
+        overlayUI.gameObject.SetActive(false);
     }
 
     public override void UpdateState()

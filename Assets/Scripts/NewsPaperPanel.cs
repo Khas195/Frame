@@ -113,4 +113,5 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
         UpdatePointUI(0, 0);
     }
 
+
 }

@@ -14,10 +14,14 @@ public abstract class IFrontBackSorting : MonoBehaviour
     protected Transform host;
     [SerializeField]
     /** This option allowed this script to use the parent game object as host instead. */
-    protected bool useSelfAsHost;
+    protected bool useSelfAsHost = true;
     /** Get the host position */
     public virtual Vector3 HostPosition()
     {
+        if (host == null)
+        {
+            LogHelper.LogError(this.gameObject + " is missing its host for frontback sorting.");
+        }
         return host.position;
     }
     /** Set the host position

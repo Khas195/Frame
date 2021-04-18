@@ -8,6 +8,8 @@ using UnityEngine;
  */
 public class FrontBackSorting : IFrontBackSorting
 {
+    [SerializeField]
+    Transform pivot;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +23,21 @@ public class FrontBackSorting : IFrontBackSorting
      */
     public override bool IsAboveCharacter(Vector3 characterPos)
     {
-        return characterPos.y > host.position.y;
+        if (pivot == null)
+        {
+            LogHelper.LogError(this.gameObject + " is missing its pivot for sorting.");
+        }
+        return characterPos.y > pivot.position.y;
     }
     /**
     * This function return whether the host's sprite should be below the character's sprite
     */
     public override bool IsBelowCharacter(Vector3 characterPos)
     {
-        return characterPos.y < host.position.y;
+        if (pivot == null)
+        {
+            LogHelper.LogError(this.gameObject + " is missing its pivot for sorting.");
+        }
+        return characterPos.y < pivot.position.y;
     }
 }

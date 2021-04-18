@@ -16,20 +16,20 @@ public class InGameText : SingletonMonobehavior<InGameText>
     [Button("Load Language")]
     public void LoadTextData()
     {
-        foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
-        {
-            if (EditorUtility.IsPersistent(obj))
-            {
-                string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
-                if (pathToAsset.StartsWith("Assets/Resources/Datas/Localization"))
-                {
-                    if (obj.name.Equals(language))
-                    {
-                        data = obj as InGameTextData;
-                    }
-                }
-            }
-        }
+        // foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
+        // {
+        //     if (EditorUtility.IsPersistent(obj))
+        //     {
+        //         string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
+        //         if (pathToAsset.StartsWith("Assets/Resources/Datas/Localization"))
+        //         {
+        //             if (obj.name.Equals(language))
+        //             {
+        //                 data = obj as InGameTextData;
+        //             }
+        //         }
+        //     }
+        // }
     }
     [Button("Load Text for all Localization Text")]
     public void LoadAllLocalizationText()
@@ -44,17 +44,17 @@ public class InGameText : SingletonMonobehavior<InGameText>
     public DropdownList<string> GetLanguage()
     {
         var result = new DropdownList<string>();
-        foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
-        {
-            if (EditorUtility.IsPersistent(obj))
-            {
-                string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
-                if (pathToAsset.StartsWith("Assets/Resources/Datas/Localization"))
-                {
-                    result.Add(obj.name, obj.name);
-                }
-            }
-        }
+        // foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
+        // {
+        //     if (EditorUtility.IsPersistent(obj))
+        //     {
+        //         string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
+        //         if (pathToAsset.StartsWith("Assets/Resources/Datas/Localization"))
+        //         {
+        //             result.Add(obj.name, obj.name);
+        //         }
+        //     }
+        // }
         return result;
     }
 

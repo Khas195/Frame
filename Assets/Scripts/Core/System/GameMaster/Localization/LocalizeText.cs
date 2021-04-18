@@ -67,7 +67,7 @@ public class LocalizeText : MonoBehaviour
             if (textData != null)
             {
                 textName = textData.name;
-                EditorUtility.SetDirty(this.gameObject);
+                // EditorUtility.SetDirty(this.gameObject);
             }
         }
     }
@@ -80,7 +80,7 @@ public class LocalizeText : MonoBehaviour
             if (textData != null)
             {
                 id = textData.id;
-                EditorUtility.SetDirty(this.gameObject);
+                // EditorUtility.SetDirty(this.gameObject);
             }
         }
     }
@@ -104,6 +104,6 @@ public class LocalizeText : MonoBehaviour
     {
         LogHelper.Log("Loading new Text for " + this);
         this.text.text = InGameText.GetInstance().GetTextData(id).content;
-        EditorUtility.SetDirty(this.gameObject);
+        //EditorUtility.SetDirty(this.gameObject);
     }
 }

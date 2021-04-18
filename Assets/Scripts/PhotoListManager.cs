@@ -10,6 +10,8 @@ public class PhotoListManager : MonoBehaviour, IObserver
 {
     public const string DISCARD_PHOTO_EVENT = "DISCARD_PHOTO_EVENT";
     [SerializeField]
+    AudioSource discardSource;
+    [SerializeField]
     int contentPerPage;
     [SerializeField]
     int currentPage = 0;
@@ -100,6 +102,7 @@ public class PhotoListManager : MonoBehaviour, IObserver
     }
     private void Discard(PhotoHolder photo)
     {
+        photos.Remove(photo);
         Destroy(photo.gameObject);
     }
     public void DiscardButton(PhotoHolder holder)
@@ -115,6 +118,7 @@ public class PhotoListManager : MonoBehaviour, IObserver
     {
         if (eventName == DISCARD_PHOTO_EVENT)
         {
+            bool discardedStuff = false;
             var infos = pack.GetValue<List<PhotoInfo>>("PhotoInfos");
             if (infos != null && infos.Count > 0)
             {
@@ -124,9 +128,14 @@ public class PhotoListManager : MonoBehaviour, IObserver
                     if (holder)
                     {
                         Discard(holder);
+                        discardedStuff = true;
                     }
                 }
 
+            }
+            if (discardedStuff && discardSource)
+            {
+                discardSource.Play();
             }
         }
     }

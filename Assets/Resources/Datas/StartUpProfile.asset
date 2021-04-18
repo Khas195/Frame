@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f733307971a32904db4e4a8365b9242d, type: 3}
   m_Name: StartUpProfile
   m_EditorClassIdentifier: 
-  masterScene: SampleScene
-  loadScene: SampleScene
-  logScene: SampleScene
+  masterScene: MasterScene
+  loadScene: LoadScene
+  logScene: LogScene
   startUpInstance: {fileID: 11400000, guid: f6a061fe48c2285409fd58bcb231e1d4, type: 2}

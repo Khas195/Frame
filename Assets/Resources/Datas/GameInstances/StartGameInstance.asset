@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instanceName: NewGame
   sceneList:
-  - Startup
+  - CityOfBoxes_Env
   desiredGameState: 1

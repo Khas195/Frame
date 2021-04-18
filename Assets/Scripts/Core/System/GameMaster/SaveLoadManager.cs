@@ -7,35 +7,33 @@ using UnityEngine;
 
 public static class SaveLoadManager
 {
-    [MenuItem("SaveLoad/SaveAll")]
     public static void SaveAllData()
     {
-        foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
-        {
-            if (EditorUtility.IsPersistent(obj))
-            {
-                string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
-                if (pathToAsset.StartsWith("Assets/Resources/Datas"))
-                {
-                    SaveLoadManager.Save<object>(obj, obj.name);
-                }
-            }
-        }
+        // foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
+        // {
+        //     if (EditorUtility.IsPersistent(obj))
+        //     {
+        //         string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
+        //         if (pathToAsset.StartsWith("Assets/Resources/Datas"))
+        //         {
+        //             SaveLoadManager.Save<object>(obj, obj.name);
+        //         }
+        //     }
+        // }
     }
-    [MenuItem("SaveLoad/LoadAll")]
     public static void LoadAllData()
     {
-        foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
-        {
-            if (EditorUtility.IsPersistent(obj))
-            {
-                string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
-                if (pathToAsset.StartsWith("Assets/Resources/Datas"))
-                {
-                    SaveLoadManager.Load<object>(obj, obj.name);
-                }
-            }
-        }
+        // foreach (var obj in Resources.FindObjectsOfTypeAll(typeof(ScriptableObject)) as ScriptableObject[])
+        // {
+        //     if (EditorUtility.IsPersistent(obj))
+        //     {
+        //         string pathToAsset = UnityEditor.AssetDatabase.GetAssetPath(obj);
+        //         if (pathToAsset.StartsWith("Assets/Resources/Datas"))
+        //         {
+        //             SaveLoadManager.Load<object>(obj, obj.name);
+        //         }
+        //     }
+        // }
     }
 
     public static void Save<T>(T savedObject, string fileName)

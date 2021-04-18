@@ -10,7 +10,9 @@ public class FrontBackSortingManager : MonoBehaviour
     [SerializeField]
     List<IFrontBackSorting> sortingObjects = new List<IFrontBackSorting>();
     [SerializeField]
-    Transform character = null;
+    Transform characterPivot = null;
+    [SerializeField]
+    Transform characterEntity = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,17 +30,17 @@ public class FrontBackSortingManager : MonoBehaviour
         {
             var pos = target.HostPosition();
 
-            if (target.IsAboveCharacter(character.position))
+            if (target.IsAboveCharacter(characterPivot.position))
             {
-                pos.z = character.position.z - 1;
+                pos.z = characterEntity.position.z - 1;
             }
-            else if (target.IsBelowCharacter(character.position))
+            else if (target.IsBelowCharacter(characterPivot.position))
             {
-                pos.z = character.position.z + 1;
+                pos.z = characterEntity.position.z + 1;
             }
             else
             {
-                pos.z = character.position.z;
+                pos.z = characterEntity.position.z;
             }
             target.SetHostPosition(pos);
         }

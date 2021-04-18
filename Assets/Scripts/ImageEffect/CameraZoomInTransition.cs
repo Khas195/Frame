@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.UI;
+
 [ExecuteInEditMode]
 public class CameraZoomInTransition : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource source;
+    [SerializeField]
+    Text cameraState;
+    [SerializeField]
+    Text cameraInstruction;
     [SerializeField]
     Material blurMaterial;
     [SerializeField]
@@ -36,10 +44,15 @@ public class CameraZoomInTransition : MonoBehaviour
             zoomValue = zoomCurve.Evaluate(curTime);
             blurValue = blurCurve.Evaluate(curTime);
             curTime += Time.deltaTime;
+            cameraState.text = "Focusing...";
+            var tempColor = cameraInstruction.color;
+            tempColor.a = Mathf.Lerp(1.0f, 0.0f, zoomValue);
+            cameraInstruction.color = tempColor;
         }
         else
         {
             this.enabled = false;
+            cameraState.text = "Ready ";
         }
     }
     [Button]
@@ -48,6 +61,7 @@ public class CameraZoomInTransition : MonoBehaviour
         curTime = 0.0f;
         this.enabled = true;
         SetStartState();
+        source.Play();
     }
     [SerializeField]
     public void TransitionOut()
@@ -61,5 +75,6 @@ public class CameraZoomInTransition : MonoBehaviour
     {
         blurValue = 0;
         zoomValue = 1;
+
     }
 }

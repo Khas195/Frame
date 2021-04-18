@@ -22,13 +22,5 @@ public class LoadState : GameState
 
     public override void UpdateState()
     {
-        if (SceneLoadingManager.GetInstance().GetLoadingProgress() > 0.9f)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                LogHelper.Log("Scene finished loading!!");
-                SceneLoadingManager.GetInstance().FinishedLoading();
-            }
-        }
     }
 }

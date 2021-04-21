@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
+public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
 {
     [SerializeField]
     GameObject panelRoot = null;
@@ -23,6 +23,20 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
     [SerializeField]
     PaperPublishedNotifier notifier;
 
+
+    protected override void Awake()
+    {
+        base.Awake();
+        PostOffice.Subscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+    }
+    private void Start()
+    {
+        totalPaperPoint.gameObject.SetActive(SwitchGameStats.STATS_ON);
+    }
 
     public void SwitchPanelOn()
     {
@@ -113,5 +127,11 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>
         UpdatePointUI(0, 0);
     }
 
-
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == SwitchGameStats.SWITCH_GAME_STATS_EVENT)
+        {
+            this.totalPaperPoint.gameObject.SetActive(SwitchGameStats.STATS_ON);
+        }
+    }
 }

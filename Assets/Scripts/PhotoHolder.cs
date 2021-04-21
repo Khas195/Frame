@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IObserver
 {
 
     [SerializeField]
@@ -37,10 +37,18 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     Canvas mCanvas;
 
 
-
+    private void Awake()
+    {
+        PostOffice.Subscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+    }
     private void Start()
     {
+        this.influenceText.gameObject.SetActive(SwitchGameStats.STATS_ON);
         curTime = transitionTime;
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
     }
     private void Update()
     {
@@ -174,4 +182,11 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         NewsPaperPanel.GetInstance().SetCurrentSelection(null);
     }
 
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == SwitchGameStats.SWITCH_GAME_STATS_EVENT)
+        {
+            this.influenceText.gameObject.SetActive(SwitchGameStats.STATS_ON);
+        }
+    }
 }

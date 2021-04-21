@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewsPaperPhotoSection : MonoBehaviour
+public class NewsPaperPhotoSection : MonoBehaviour, IObserver
 {
     [SerializeField]
     Image sectionImage;
@@ -20,9 +20,19 @@ public class NewsPaperPhotoSection : MonoBehaviour
     private int capitalPoint = 0;
     private int commiePoint = 0;
 
+    private void Awake()
+    {
+        PostOffice.Subscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+    }
     private void Start()
     {
         modiferText.text = "X " + modifer.ToString();
+        modiferText.gameObject.SetActive(SwitchGameStats.STATS_ON);
+    }
+    private void OnDestroy()
+    {
+
+        PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
     }
     public void OnPhotoSectionEnter()
     {
@@ -100,5 +110,13 @@ public class NewsPaperPhotoSection : MonoBehaviour
     public PhotoInfo GetPhotoInfo()
     {
         return this.currentInfo;
+    }
+
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == SwitchGameStats.SWITCH_GAME_STATS_EVENT)
+        {
+            modiferText.gameObject.SetActive(!modiferText.gameObject.activeSelf);
+        }
     }
 }

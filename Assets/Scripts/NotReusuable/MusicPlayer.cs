@@ -8,7 +8,7 @@ public class DramaticZone
 {
     public float size;
     public Transform center;
-    public AudioSource ambience;
+    public List<AudioSource> ambiences;
     public AudioClip dramaticMusic;
 }
 public class MusicPlayer : MonoBehaviour
@@ -45,14 +45,19 @@ public class MusicPlayer : MonoBehaviour
                     source.clip = zone.dramaticMusic;
                     source.volume = dramaticVolumn;
                     source.Play();
-                    zone.ambience.Play();
+                    for (int i = 0; i < zone.ambiences.Count; i++)
+                    {
+                        zone.ambiences[i].Play();
+                    }
                 }
                 inDramaticZone = true;
             }
             else
             {
-
-                zone.ambience.Stop();
+                for (int i = 0; i < zone.ambiences.Count; i++)
+                {
+                    zone.ambiences[i].Stop();
+                }
             }
         }
         if (inDramaticZone == false)

@@ -8,16 +8,15 @@ using UnityEngine;
  * Whether the character's sprite is aoove or below the sprite is determined by the character's y position in comparison to the host's sprite
  */
 [ExecuteInEditMode]
-[RequireComponent(typeof(SpriteRenderer))]
 public class FrontBackSorting : IFrontBackSorting
 {
     [SerializeField]
     Transform pivot;
     [SerializeField]
-    [HideIf("autoFindRenderer")]
+    [HideIf("autoFindRendererInSelf")]
     SpriteRenderer targetRender = null;
     [SerializeField]
-    bool autoFindRenderer = true;
+    bool autoFindRendererInSelf = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +24,7 @@ public class FrontBackSorting : IFrontBackSorting
         {
             host = this.transform;
         }
-        if (autoFindRenderer)
+        if (autoFindRendererInSelf)
         {
             FindRenderer();
         }

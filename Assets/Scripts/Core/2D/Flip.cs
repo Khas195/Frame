@@ -10,7 +10,6 @@ public class Flip : MonoBehaviour
     bool useRigidBody = false;
     [SerializeField]
     [Required]
-    [ShowIf("useRigidBody")]
     Rigidbody2D body = null;
 
     [SerializeField]

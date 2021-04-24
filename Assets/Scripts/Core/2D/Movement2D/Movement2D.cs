@@ -31,9 +31,6 @@ public class Movement2D : IMovement
     [ReadOnly]
 
     bool inMotion = false;
-    [SerializeField]
-    [ReadOnly]
-    Vector2 characterVelocity;
     void Update()
     {
         UpdateCurrentSpeed();
@@ -67,11 +64,8 @@ public class Movement2D : IMovement
             currentSpeed = 0;
         }
         var vel = new Vector3();
-        vel.y = forward * currentSpeed;// * Time.deltaTime;
-        vel.x = side * currentSpeed;//* Time.deltaTime;
-        characterVelocity = vel;
-        body2D.velocity = characterVelocity;
-        //body2D.MovePosition(body2D.transform.position + vel);
+        vel = new Vector2(side, forward) * currentSpeed;
+        body2D.velocity = vel;
     }
     /** this function signal the jump input of the player and the jump action should be handle in the next fixed update function  */
     public override void SignalJump()
@@ -81,7 +75,7 @@ public class Movement2D : IMovement
 
     public override Vector3 GetVelocity()
     {
-        return characterVelocity;
+        return body2D.velocity;
     }
 
 

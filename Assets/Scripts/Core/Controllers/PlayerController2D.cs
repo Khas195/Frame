@@ -14,6 +14,10 @@ public class PlayerController2D : MonoBehaviour, IObserver
     [SerializeField]
     [Required]
     GameObject playerEntity = null;
+    [SerializeField]
+    Rigidbody2D cameraBody;
+    [SerializeField]
+    Rigidbody2D playerBody;
 
     private void Awake()
     {
@@ -46,5 +50,13 @@ public class PlayerController2D : MonoBehaviour, IObserver
         {
             pack.SetValue(GameEvent.PlayerEntityEvent.FetchPlayerEntityEventData.PLAYER_GAME_OBJECT, this.playerEntity);
         }
+    }
+    public void MoveWithCamera()
+    {
+        character.SetMovementTarget(cameraBody);
+    }
+    public void MoveWithCharacter()
+    {
+        character.SetMovementTarget(playerBody);
     }
 }

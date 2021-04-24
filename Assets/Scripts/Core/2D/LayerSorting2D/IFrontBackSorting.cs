@@ -1,4 +1,5 @@
 using System;
+using NaughtyAttributes;
 using UnityEngine;
 
 /**
@@ -10,6 +11,7 @@ using UnityEngine;
 public abstract class IFrontBackSorting : MonoBehaviour
 {
     [SerializeField]
+    [HideIf("useSelfAsHost")]
     /** The host game object of which this script will act upon */
     protected Transform host;
     [SerializeField]

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 [Serializable]
@@ -11,7 +12,7 @@ public class DramaticZone
     public List<AudioSource> ambiences;
     public AudioClip dramaticMusic;
 }
-public class MusicPlayer : MonoBehaviour
+public class MusicPlayer : MonoBehaviour, IObserver
 {
     [SerializeField]
     AudioSource source;
@@ -26,12 +27,21 @@ public class MusicPlayer : MonoBehaviour
     [SerializeField]
     List<DramaticZone> zones;
     [SerializeField]
+    [ReadOnly]
     Transform character;
-
     private void Start()
     {
         source.clip = chillMusic;
         source.Play();
+
+        var data = DataPool.GetInstance().RequestInstance();
+        PostOffice.SendData(data, GameEvent.PlayerEntityEvent.FETCH_PLAYER_ENTITY_EVENT);
+        var playerObject = data.GetValue<GameObject>(GameEvent.PlayerEntityEvent.FetchPlayerEntityEventData.PLAYER_GAME_OBJECT);
+        character = playerObject.transform;
+        DataPool.GetInstance().ReturnInstance(data);
+        LogHelper.Log("Player Awake", true);
+
+
     }
     private void Update()
     {
@@ -77,6 +87,10 @@ public class MusicPlayer : MonoBehaviour
         {
             Gizmos.DrawWireSphere(zones[i].center.position, zones[i].size);
         }
+    }
+
+    public void ReceiveData(DataPack pack, string eventName)
+    {
     }
 }
 

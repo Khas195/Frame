@@ -14,11 +14,6 @@ public class Character2D : MonoBehaviour
     [SerializeField]
     [BoxGroup("Requirements")]
     [Required]
-    Rigidbody2D cameraBody = null;
-
-    [SerializeField]
-    [BoxGroup("Requirements")]
-    [Required]
     MovementData moveData = null;
 
     [SerializeField]
@@ -54,14 +49,19 @@ public class Character2D : MonoBehaviour
     {
         return name;
     }
-    public void SwitchToCameraBody()
+
+
+    public void SetMovementTarget(Rigidbody2D newBody)
     {
-        movement.SetRigidBody(cameraBody);
-        body.simulated = false;
+        movement.SetRigidBody(newBody);
+        if (newBody != body)
+        {
+            body.simulated = false;
+        }
+        else
+        {
+            body.simulated = true;
+        }
     }
-    public void SwitchToCharacterBody()
-    {
-        movement.SetRigidBody(body);
-        body.simulated = true;
-    }
+
 }

@@ -10,6 +10,8 @@ using UnityEngine;
 public class Movement2D : IMovement
 {
     [SerializeField]
+    bool forAI = true;
+    [SerializeField]
     /** The Rigid body of the host object
      * body2D is needed to be assigned for this class to work
      */
@@ -31,9 +33,6 @@ public class Movement2D : IMovement
     [ReadOnly]
 
     bool inMotion = false;
-    [SerializeField]
-    [ReadOnly]
-    Vector2 characterVelocity;
     void Update()
     {
         UpdateCurrentSpeed();
@@ -66,12 +65,8 @@ public class Movement2D : IMovement
             inMotion = false;
             currentSpeed = 0;
         }
-        var vel = new Vector3();
-        vel.y = forward * currentSpeed;// * Time.deltaTime;
-        vel.x = side * currentSpeed;//* Time.deltaTime;
-        characterVelocity = vel;
-        body2D.velocity = characterVelocity;
-        //body2D.MovePosition(body2D.transform.position + vel);
+        var vel = new Vector2(side, forward).normalized * currentSpeed;
+        body2D.velocity = vel;
     }
     /** this function signal the jump input of the player and the jump action should be handle in the next fixed update function  */
     public override void SignalJump()
@@ -81,7 +76,7 @@ public class Movement2D : IMovement
 
     public override Vector3 GetVelocity()
     {
-        return characterVelocity;
+        return body2D.velocity;
     }
 
 

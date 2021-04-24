@@ -10,4 +10,15 @@ public class GameInstance : ScriptableObject
     [Scene]
     public List<string> sceneList = new List<string>();
     public GameState.GameStateEnum desiredGameState;
+#if UNITY_EDITOR
+    [Button]
+    public void AddScenesToHierarchy()
+    {
+        for (int i = 0; i < sceneList.Count; i++)
+        {
+            UnityEditor.SceneManagement.EditorSceneManager.OpenScene("Assets/Scenes/GameScenes/" + sceneList[i] + ".unity", UnityEditor.SceneManagement.OpenSceneMode.Additive);
+        }
+    }
+#else
+#endif
 }

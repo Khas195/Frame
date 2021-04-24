@@ -150,3 +150,5 @@ MonoBehaviour:
   host: {fileID: 9190858446792104341}
   useSelfAsHost: 1
   pivot: {fileID: 1965312243815815601}
+  targetRender: {fileID: 5991124470561458888}
+  autoFindRenderer: 1

@@ -9,8 +9,14 @@ public class Waypoint : MonoBehaviour
     Waypoint previousWaypoint;
     [SerializeField]
     Waypoint nextWaypoint;
+    [SerializeField]
+    List<Waypoint> branches = new List<Waypoint>();
+    [SerializeField]
     [Range(0, 5)]
-    public float width = 1.0f;
+    float width = 1.0f;
+    [SerializeField]
+    [Range(0f, 1.0f)]
+    float branchRatio = 0.5f;
 
     public Vector3 GetPosition()
     {
@@ -40,6 +46,11 @@ public class Waypoint : MonoBehaviour
         return transform.position - transform.right * width / 2f;
     }
 
+    public float GetBranchRatio()
+    {
+        return branchRatio;
+    }
+
     public Waypoint GetNextWaypoint()
     {
         return nextWaypoint;
@@ -48,5 +59,15 @@ public class Waypoint : MonoBehaviour
     public void SetNextWaypoint(Waypoint waypoint)
     {
         nextWaypoint = waypoint;
+    }
+
+    public List<Waypoint> GetBranches()
+    {
+        return branches;
+    }
+
+    public void AddBranch(Waypoint waypoint)
+    {
+        this.branches.Add(waypoint);
     }
 }

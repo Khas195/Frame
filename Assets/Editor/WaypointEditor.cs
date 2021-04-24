@@ -33,5 +33,10 @@ public class WaypointEditor
             Vector3 to = waypoint.GetNextWaypoint().GetWalkableLeftPoint();
             Gizmos.DrawLine(from, to);
         }
+        foreach (var branch in waypoint.GetBranches())
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(waypoint.transform.position, branch.transform.position);
+        }
     }
 }

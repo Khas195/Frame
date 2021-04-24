@@ -96,7 +96,6 @@ MonoBehaviour:
   smoothAcceleration: 0.2
   currentSpeed: 0
   inMotion: 0
-  characterVelocity: {x: 0, y: 0}
 --- !u!1 &2305418633161353597
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,10 +186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWaypoint: {fileID: 0}
-  goForward: 1
+  isGoingForward: 1
   character: {fileID: 2634079652254454366}
   aiEntity: {fileID: 7614453392723437461}
-  stoppingDistance: 0.1
+  stoppingDistance: 0.5
   targetPosition: {x: 0, y: 0, z: 0}
   currentDirection: {x: 0, y: 0}
 --- !u!1 &5813286221872833228
@@ -384,7 +383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7614453392723437461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8924825, y: 1.7560107, z: 0}
+  m_LocalPosition: {x: -2.8924825, y: 1.7560107, z: 1.4860107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1965312243815815601}

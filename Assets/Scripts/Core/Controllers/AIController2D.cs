@@ -26,15 +26,20 @@ public class AIController2D : MonoBehaviour
     Vector2 currentDirection;
     private void Start()
     {
-        targetPosition = currentWaypoint.GetPosition();
-        currentDirection = (targetPosition - aiEntity.transform.position).normalized;
         isGoingForward = Random.Range(0.0f, 1.0f) >= 0.5f;
+    }
+
+    public void SetWaypoint(Waypoint waypoint)
+    {
+        currentWaypoint = waypoint;
+        targetPosition = currentWaypoint.GetPosition();
     }
 
     void Update()
     {
         if (HasReachedDestination() == false)
         {
+            currentDirection = (targetPosition - aiEntity.transform.position).normalized;
             character.Move(currentDirection.x, currentDirection.y);
         }
         else

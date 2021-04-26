@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WaypointsManager : MonoBehaviour
+public class WaypointsManager : SingletonMonobehavior<WaypointsManager>
 {
     [SerializeField]
     List<Waypoint> waypoints = new List<Waypoint>();
     // Start is called before the first frame update
-    void Awake()
+    protected override void Awake()
     {
         waypoints.AddRange(this.GetComponentsInChildren<Waypoint>());
     }

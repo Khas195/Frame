@@ -16,4 +16,5 @@ MonoBehaviour:
   sceneList:
   - BuildACity-Player
   - BuildACity-EnvironmentLayer
+  - BuildACity-WaypointSystem
   desiredGameState: 1

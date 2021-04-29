@@ -12,7 +12,6 @@ public class PedestrianSpawner : MonoBehaviour
     int spawnAmount = 5;
     void Start()
     {
-        manager = WaypointsManager.GetInstance();
         for (int i = 0; i < spawnAmount; i++)
         {
             var newCitizen = GameObject.Instantiate(citizenPrefab, this.transform);

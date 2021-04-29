@@ -36,7 +36,7 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     bool transitionIn = true;
     [SerializeField]
     Canvas mCanvas;
-
+    Vector3 originPos = Vector3.zero;
 
     private void Awake()
     {
@@ -166,7 +166,6 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         this.OnMouseOver();
     }
 
-    Vector3 originPos = Vector3.zero;
 
     public void OnBeginDrag()
     {

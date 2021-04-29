@@ -9,7 +9,11 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     [SerializeField]
     Image sectionImage;
     [SerializeField]
+    PhotoHolder tempHolder = null;
+    [SerializeField]
     PhotoInfo currentInfo = null;
+    [SerializeField]
+    PhotoHolder currentHolder = null;
 
     [SerializeField]
     bool chosen = false;
@@ -40,6 +44,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         var photoHolder = NewsPaperPanel.GetInstance().GetCurrentSelection();
         if (photoHolder != null)
         {
+            tempHolder = photoHolder;
             this.sectionImage.sprite = photoHolder.GetImage().sprite;
             commiePoint = photoHolder.GetPhotoInfo().CommunistInfluence * modifer;
             capitalPoint = photoHolder.GetPhotoInfo().CapitalistInfluence * modifer;
@@ -58,6 +63,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             commiePoint = 0;
             capitalPoint = 0;
             modiferText.enabled = true;
+            tempHolder = null;
         }
         else
         {
@@ -74,6 +80,12 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     {
         if (sectionImage.sprite != null)
         {
+            if (currentHolder != null && currentHolder != tempHolder)
+            {
+                currentHolder.gameObject.SetActive(true);
+            }
+            currentHolder = tempHolder;
+            currentHolder.gameObject.SetActive(false);
             chosen = true;
             modiferText.enabled = false;
             if (this.currentInfo.sprite != sectionImage.sprite)
@@ -104,6 +116,12 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         capitalPoint = 0;
         sectionImage.sprite = null;
         chosen = false;
+        tempHolder = null;
+        if (currentHolder)
+        {
+            currentHolder.gameObject.SetActive(true);
+        }
+        currentHolder = null;
         this.currentInfo = new PhotoInfo();
     }
 

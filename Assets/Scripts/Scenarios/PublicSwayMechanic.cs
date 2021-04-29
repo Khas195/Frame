@@ -123,8 +123,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         {
             if (scenarioActors[i].IsOnCamera())
             {
-                newPhoto.capitalistInfluence += scenarioActors[i].GetCapitalInfluence();
-                newPhoto.communistInfluence += scenarioActors[i].GetCommunistInfluence();
+                newPhoto.participants.Add(scenarioActors[i]);
             }
         }
     }

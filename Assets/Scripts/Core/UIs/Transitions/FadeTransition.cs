@@ -4,7 +4,7 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DayTextUIFadeTransition : MonoBehaviour
+public class FadeTransition : MonoBehaviour
 {
     [SerializeField]
     float fadeTime = 3.0f;

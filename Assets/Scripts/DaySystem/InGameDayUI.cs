@@ -10,11 +10,11 @@ public class InGameDayUI : MonoBehaviour, IObserver
     [SerializeField]
     Text dayTextUI01 = null;
     [SerializeField]
-    DayTextUIFadeTransition transition01 = null;
+    FadeTransition transition01 = null;
     [SerializeField]
     Text dayTextUI02 = null;
     [SerializeField]
-    DayTextUIFadeTransition transition02 = null;
+    FadeTransition transition02 = null;
     [SerializeField]
     [ReadOnly]
     Text currentDayUI = null;

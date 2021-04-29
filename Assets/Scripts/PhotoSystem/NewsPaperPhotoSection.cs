@@ -41,8 +41,8 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         if (photoHolder != null)
         {
             this.sectionImage.sprite = photoHolder.GetImage().sprite;
-            commiePoint = photoHolder.GetPhotoInfo().communistInfluence * modifer;
-            capitalPoint = photoHolder.GetPhotoInfo().capitalistInfluence * modifer;
+            commiePoint = photoHolder.GetPhotoInfo().CommunistInfluence * modifer;
+            capitalPoint = photoHolder.GetPhotoInfo().CapitalistInfluence * modifer;
             modiferText.enabled = false;
         }
 
@@ -64,8 +64,8 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             if (currentInfo.sprite != null)
             {
                 this.sectionImage.sprite = currentInfo.sprite;
-                this.commiePoint = currentInfo.communistInfluence * modifer;
-                this.capitalPoint = currentInfo.capitalistInfluence * modifer;
+                this.commiePoint = currentInfo.CommunistInfluence * modifer;
+                this.capitalPoint = currentInfo.CapitalistInfluence * modifer;
             }
             modiferText.enabled = false;
         }

@@ -30,6 +30,10 @@ public class ScenarioActor : MonoBehaviour
     float transitionTime = 1.0f;
     float curTime = 100;
 
+    private void Start()
+    {
+        ChangeColorToFaction();
+    }
 
     private void Update()
     {
@@ -89,5 +93,11 @@ public class ScenarioActor : MonoBehaviour
     public int GetCommunistInfluence()
     {
         return communistInfluence;
+    }
+
+    public void ResetInfluences()
+    {
+        this.capitalInfluence = 0;
+        this.communistInfluence = 0;
     }
 }

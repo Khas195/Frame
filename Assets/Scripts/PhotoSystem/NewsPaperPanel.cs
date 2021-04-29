@@ -106,21 +106,39 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
 
         publicSwaySystem.AssignActorsAccordingToSway(fastTransition: false);
 
-        TriggerDiscardPublishedPhotoEvent();
+        var publishedPhotos = new List<PhotoInfo>();
+        for (int i = 0; i < sections.Count; i++)
+        {
+            publishedPhotos.Add(sections[i].GetPhotoInfo());
+        }
+
+        TriggerPhotoPublishedEvent(publishedPhotos);
+        TriggerDiscardPublishedPhotoEvent(publishedPhotos);
+
         DaySystem.GetInstance().NextDay();
 
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
     }
 
-    private void TriggerDiscardPublishedPhotoEvent()
+    private void TriggerPhotoPublishedEvent(List<PhotoInfo> publishedPhoto)
+    {
+        List<ScenarioActor> participatedActors = new List<ScenarioActor>();
+        for (int i = 0; i < publishedPhoto.Count; i++)
+        {
+            participatedActors.AddRange(publishedPhoto[i].participants.ToArray());
+        }
+
+        for (int i = 0; i < participatedActors.Count; i++)
+        {
+            participatedActors[i].ResetInfluences();
+        }
+        PostOffice.SendData(null, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
+
+    private void TriggerDiscardPublishedPhotoEvent(List<PhotoInfo> photoToDiscard)
     {
         var package = DataPool.GetInstance().RequestInstance();
-        var photosToDiscard = new List<PhotoInfo>();
-        for (int i = 0; i < sections.Count; i++)
-        {
-            photosToDiscard.Add(sections[i].GetPhotoInfo());
-        }
-        package.SetValue(GameEvent.PhotoEvent.DiscardPhotoEventData.PHOTO_INFOS, photosToDiscard);
+        package.SetValue(GameEvent.PhotoEvent.DiscardPhotoEventData.PHOTO_INFOS, photoToDiscard);
         PostOffice.SendData(package, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
         DataPool.GetInstance().ReturnInstance(package);
         notifier.Notify();

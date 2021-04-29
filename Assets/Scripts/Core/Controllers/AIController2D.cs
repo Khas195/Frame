@@ -37,6 +37,14 @@ public class AIController2D : MonoBehaviour
 
     void Update()
     {
+        if (currentWaypoint != null)
+        {
+            MoveWithWaypoint();
+        }
+    }
+
+    private void MoveWithWaypoint()
+    {
         if (HasReachedDestination() == false)
         {
             currentDirection = (targetPosition - aiEntity.transform.position).normalized;
@@ -99,7 +107,7 @@ public class AIController2D : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (Application.isPlaying)
+        if (Application.isPlaying && currentWaypoint != null)
         {
             Gizmos.color = Color.cyan;
             Gizmos.DrawLine(aiEntity.transform.position, targetPosition);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwitchGameStats : ConsoleCommand
 {
     public static string SWITCH_GAME_STATS_EVENT = "SWITCH_GAME_STATS";
-    public static bool STATS_ON = false;
+    public static bool STATS_ON = true;
 
     public override void Execute(InGameLogUI inGameLog = null, string commandLine = "")
     {

@@ -11,6 +11,7 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     [SerializeField]
     private PhotoInfo info;
+
     [SerializeField]
     Image photoImage = null;
     [SerializeField]
@@ -43,11 +44,16 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
     private void Start()
     {
+
         this.influenceText.gameObject.SetActive(SwitchGameStats.STATS_ON);
         curTime = transitionTime;
     }
     private void OnDestroy()
     {
+        if (info != null)
+        {
+            info.ClearInfo();
+        }
         PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
     }
     private void Update()
@@ -91,13 +97,16 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void SetPhotoInfo(PhotoInfo photoInfo)
     {
         this.info = photoInfo;
-        SetImageSprite(photoInfo.sprite);
+        SetImageSprite(this.info.sprite);
+        UpdatePhotoInfoInfluence();
+    }
+
+    public void UpdatePhotoInfoInfluence()
+    {
         Color communistColor = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Communist);
         Color capitalistColor = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Capitalist);
-
-        string commieInfluence = ConvertInfluenceToString(photoInfo.communistInfluence);
-        string capitalistInfluence = ConvertInfluenceToString(photoInfo.capitalistInfluence);
-
+        string commieInfluence = ConvertInfluenceToString(this.info.CommunistInfluence);
+        string capitalistInfluence = ConvertInfluenceToString(this.info.CapitalistInfluence);
         influenceText.text = commieInfluence.Colorize(communistColor) + " " + capitalistInfluence.Colorize(capitalistColor);
     }
 
@@ -189,4 +198,5 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             this.influenceText.gameObject.SetActive(SwitchGameStats.STATS_ON);
         }
     }
+
 }

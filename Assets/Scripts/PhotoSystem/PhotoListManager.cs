@@ -26,6 +26,17 @@ public class PhotoListManager : MonoBehaviour, IObserver
     [SerializeField]
     GameObject photoListRoot = null;
 
+
+    void Awake()
+    {
+        PostOffice.Subscribes(this, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
+        PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
+        PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
     public void Hide()
     {
         photoListRoot.SetActive(false);
@@ -34,15 +45,6 @@ public class PhotoListManager : MonoBehaviour, IObserver
     {
         photoListRoot.SetActive(true);
     }
-    void Start()
-    {
-        PostOffice.Subscribes(this, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
-    }
-    private void OnDestroy()
-    {
-        PostOffice.Unsubscribes(this, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
-    }
-
 
     public void AddPhoto(PhotoInfo photoInfo)
     {
@@ -118,6 +120,13 @@ public class PhotoListManager : MonoBehaviour, IObserver
         if (eventName == GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT)
         {
             HandlePhotosDiscardEvent(pack);
+        }
+        else if (eventName == GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT)
+        {
+            for (int i = 0; i < this.photos.Count; i++)
+            {
+                this.photos[i].UpdatePhotoInfoInfluence();
+            }
         }
     }
 

@@ -28,5 +28,8 @@ public static class GameEvent
             public static string PHOTO_INFOS = "PHOTO_INFOS";
         }
     }
-
+    public static class NewspaperEvent
+    {
+        public static string NEWSPAPER_PUBLISHED_EVENT = "NEWSPAPER_PUBLISHED_EVENT";
+    }
 }

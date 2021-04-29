@@ -2180,8 +2180,7 @@ MonoBehaviour:
   sectionImage: {fileID: 623531010}
   currentInfo:
     sprite: {fileID: 0}
-    capitalistInfluence: 0
-    communistInfluence: 0
+    participants: []
   chosen: 0
   modiferText: {fileID: 2052996668}
   modifer: 4
@@ -2659,6 +2658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 815639997}
   - component: {fileID: 815639998}
+  - component: {fileID: 815639999}
   m_Layer: 5
   m_Name: PhotoHolder
   m_TagString: Untagged
@@ -2703,8 +2703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     sprite: {fileID: 0}
-    capitalistInfluence: 0
-    communistInfluence: 0
+    participants: []
   photoImage: {fileID: 177200534}
   PhotoFrame: {fileID: 1479383021}
   influenceText: {fileID: 1650721148}
@@ -2739,6 +2738,23 @@ MonoBehaviour:
   IsInTransition: 0
   transitionIn: 1
   mCanvas: {fileID: 0}
+--- !u!114 &815639999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815639996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ec62289cf38b64f8fc6d07f721c3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentText: {fileID: 0}
+  text01: {fileID: 1650721148}
+  text02: {fileID: 0}
+  fade01: {fileID: 0}
+  fade02: {fileID: 0}
 --- !u!1 &830710422
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,6 +2841,7 @@ GameObject:
   - component: {fileID: 831481234}
   - component: {fileID: 831481235}
   - component: {fileID: 831481236}
+  - component: {fileID: 831481237}
   m_Layer: 5
   m_Name: PhotoHolder
   m_TagString: Untagged
@@ -2868,8 +2885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     sprite: {fileID: 0}
-    capitalistInfluence: 0
-    communistInfluence: 0
+    participants: []
   photoImage: {fileID: 1648980292}
   PhotoFrame: {fileID: 969236034}
   influenceText: {fileID: 373232776}
@@ -2965,6 +2981,23 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &831481237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831481233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ec62289cf38b64f8fc6d07f721c3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentText: {fileID: 0}
+  text01: {fileID: 373232776}
+  text02: {fileID: 0}
+  fade01: {fileID: 0}
+  fade02: {fileID: 0}
 --- !u!1 &875661070
 GameObject:
   m_ObjectHideFlags: 0
@@ -4385,8 +4418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     sprite: {fileID: 0}
-    capitalistInfluence: 0
-    communistInfluence: 0
+    participants: []
   photoImage: {fileID: 1864974524}
   PhotoFrame: {fileID: 1334344246}
   influenceText: {fileID: 1332897986}
@@ -6792,8 +6824,7 @@ MonoBehaviour:
   sectionImage: {fileID: 1856558324}
   currentInfo:
     sprite: {fileID: 0}
-    capitalistInfluence: 0
-    communistInfluence: 0
+    participants: []
   chosen: 0
   modiferText: {fileID: 241854679}
   modifer: 1
@@ -7429,8 +7460,7 @@ MonoBehaviour:
   sectionImage: {fileID: 2091382444}
   currentInfo:
     sprite: {fileID: 0}
-    capitalistInfluence: 0
-    communistInfluence: 0
+    participants: []
   chosen: 0
   modiferText: {fileID: 741910659}
   modifer: 2
@@ -7643,15 +7673,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088190289435956491, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.46
+      value: -4.14
       objectReference: {fileID: 0}
     - target: {fileID: 8088190289435956491, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.1
+      value: 13.64
       objectReference: {fileID: 0}
     - target: {fileID: 8088190289435956491, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.833
+      value: 13.373
       objectReference: {fileID: 0}
     - target: {fileID: 8088190289435956491, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7924,7 +7954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734785929979704173, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.38
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 8734785929979704173, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: m_LocalPosition.y

@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class PhotoListManager : MonoBehaviour, IObserver
 {
-    public const string DISCARD_PHOTO_EVENT = "DISCARD_PHOTO_EVENT";
     [SerializeField]
     AudioSource discardSource;
     [SerializeField]
@@ -37,11 +36,11 @@ public class PhotoListManager : MonoBehaviour, IObserver
     }
     void Start()
     {
-        PostOffice.Subscribes(this, DISCARD_PHOTO_EVENT);
+        PostOffice.Subscribes(this, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
     }
     private void OnDestroy()
     {
-        PostOffice.Unsubscribes(this, DISCARD_PHOTO_EVENT);
+        PostOffice.Unsubscribes(this, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
     }
 
 
@@ -110,33 +109,38 @@ public class PhotoListManager : MonoBehaviour, IObserver
         var package = DataPool.GetInstance().RequestInstance();
         var photosToDiscard = new List<PhotoInfo>();
         photosToDiscard.Add(holder.GetPhotoInfo());
-        package.SetValue("PhotoInfos", photosToDiscard);
-        PostOffice.SendData(package, PhotoListManager.DISCARD_PHOTO_EVENT);
+        package.SetValue(GameEvent.PhotoEvent.DiscardPhotoEventData.PHOTO_INFOS, photosToDiscard);
+        PostOffice.SendData(package, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
         DataPool.GetInstance().ReturnInstance(package);
     }
     public void ReceiveData(DataPack pack, string eventName)
     {
-        if (eventName == DISCARD_PHOTO_EVENT)
+        if (eventName == GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT)
         {
-            bool discardedStuff = false;
-            var infos = pack.GetValue<List<PhotoInfo>>("PhotoInfos");
-            if (infos != null && infos.Count > 0)
-            {
-                for (int i = 0; i < infos.Count; i++)
-                {
-                    var holder = photos.Find(x => x.GetPhotoInfo() == infos[i]);
-                    if (holder)
-                    {
-                        Discard(holder);
-                        discardedStuff = true;
-                    }
-                }
+            HandlePhotosDiscardEvent(pack);
+        }
+    }
 
-            }
-            if (discardedStuff && discardSource)
+    private void HandlePhotosDiscardEvent(DataPack pack)
+    {
+        bool discardedStuff = false;
+        var infos = pack.GetValue<List<PhotoInfo>>(GameEvent.PhotoEvent.DiscardPhotoEventData.PHOTO_INFOS);
+        if (infos != null && infos.Count > 0)
+        {
+            for (int i = 0; i < infos.Count; i++)
             {
-                discardSource.Play();
+                var holder = photos.Find(x => x.GetPhotoInfo() == infos[i]);
+                if (holder)
+                {
+                    Discard(holder);
+                    discardedStuff = true;
+                }
             }
+
+        }
+        if (discardedStuff && discardSource)
+        {
+            discardSource.Play();
         }
     }
 }

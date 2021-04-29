@@ -23,7 +23,7 @@ public class Character2D : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         movement.SetRigidBody(body);
         movement.SetMovementData(moveData);

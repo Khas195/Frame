@@ -22,6 +22,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     PhotoListManager manager = null;
     [SerializeField]
     PaperPublishedNotifier notifier;
+    [SerializeField]
+    PaperPublishedNotifier missingImagesNotifier;
 
 
     protected override void Awake()
@@ -100,17 +102,28 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     }
     public void Publish()
     {
+        var publishedPhotos = new List<PhotoInfo>();
+        for (int i = 0; i < sections.Count; i++)
+        {
+            if (sections[i].HasPhoto())
+            {
+                publishedPhotos.Add(sections[i].GetPhotoInfo());
+            }
+            else
+            {
+                missingImagesNotifier.Notify();
+                return;
+            }
+        }
+
+
         var publicSwaySystem = PublicSwayMechanic.GetInstance();
         publicSwaySystem.AddInfluence(this.GetTotalCommiePointFromSections(), ScenarioActor.ActorFaction.Communist);
         publicSwaySystem.AddInfluence(this.GetTotalCapitalistPointFromSections(), ScenarioActor.ActorFaction.Capitalist);
 
         publicSwaySystem.AssignActorsAccordingToSway(fastTransition: false);
 
-        var publishedPhotos = new List<PhotoInfo>();
-        for (int i = 0; i < sections.Count; i++)
-        {
-            publishedPhotos.Add(sections[i].GetPhotoInfo());
-        }
+
 
         TriggerPhotoPublishedEvent(publishedPhotos);
         TriggerDiscardPublishedPhotoEvent(publishedPhotos);

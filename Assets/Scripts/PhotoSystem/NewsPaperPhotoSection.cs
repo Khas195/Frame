@@ -111,7 +111,14 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     {
         return this.currentInfo;
     }
-
+    public bool HasPhoto()
+    {
+        if (sectionImage.sprite != null)
+        {
+            return true;
+        }
+        return false;
+    }
     public void ReceiveData(DataPack pack, string eventName)
     {
         if (eventName == SwitchGameStats.SWITCH_GAME_STATS_EVENT)

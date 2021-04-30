@@ -126,8 +126,6 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         TriggerPhotoPublishedEvent(publishedPhotos);
         TriggerDiscardPublishedPhotoEvent(publishedPhotos);
 
-        DaySystem.GetInstance().NextDay();
-
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
     }
 

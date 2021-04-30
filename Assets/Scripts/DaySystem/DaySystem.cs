@@ -1,17 +1,54 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DaySystem : SingletonMonobehavior<DaySystem>
+public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 {
     [SerializeField]
     int currentDay = 0;
+    [SerializeField]
+    DaySystemData dayData;
+    [SerializeField]
+    GameObject nextDayButton = null;
+    [SerializeField]
+    Text nextDayText = null;
+    int amountOfPublishedPaperToday = 0;
+
+
+    protected override void Awake()
+    {
+        nextDayText.text = "Press ".Colorize(Color.yellow) + "Space ".Colorize(Color.red) + " To Proceed To Next Day".Colorize(Color.yellow);
+        nextDayButton.SetActive(false);
+        PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
+    private void Update()
+    {
+        if (nextDayButton.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                NextDay();
+                nextDayButton.gameObject.SetActive(false);
+            }
+        }
+    }
     public void NextDay()
     {
-        currentDay += 1;
-        TriggerOnDayChangedEvent();
-
+        if (IsPossibleToProceedToNextDay())
+        {
+            SetCurrentDay(currentDay + 1);
+        }
     }
+
+    private bool IsPossibleToProceedToNextDay()
+    {
+        return currentDay < dayData.amountOfPaperNeededPerDay.Count;
+    }
+
     public void SetCurrentDay(int newDay)
     {
         currentDay = newDay;
@@ -25,4 +62,17 @@ public class DaySystem : SingletonMonobehavior<DaySystem>
         PostOffice.SendData(data, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
         DataPool.GetInstance().ReturnInstance(data);
     }
+
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT)
+        {
+            amountOfPublishedPaperToday += 1;
+            if (amountOfPublishedPaperToday >= dayData.amountOfPaperNeededPerDay[currentDay] && IsPossibleToProceedToNextDay())
+            {
+                nextDayButton.SetActive(true);
+            }
+        }
+    }
+
 }

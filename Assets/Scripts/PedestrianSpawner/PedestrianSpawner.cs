@@ -23,7 +23,7 @@ public class PedestrianSpawner : MonoBehaviour
     }
     public GameObject ChooseCitizenRandomly()
     {
-        var randomIndex = Random.Range(0, possibleCitizenPrefab.Count - 1);
+        var randomIndex = Random.Range(0, possibleCitizenPrefab.Count);
         return possibleCitizenPrefab[randomIndex];
     }
 

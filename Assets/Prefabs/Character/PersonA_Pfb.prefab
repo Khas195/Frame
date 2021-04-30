@@ -424,8 +424,6 @@ MonoBehaviour:
   host: {fileID: 9190858446792104341}
   useSelfAsHost: 0
   pivot: {fileID: 1965312243815815601}
-  targetRender: {fileID: 0}
-  autoFindRendererInSelf: 0
 --- !u!1 &6799562144949994712
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6799562144949994712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.27, z: 0}
+  m_LocalPosition: {x: 0, y: 0.015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9190858446792104341}
@@ -517,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7614453392723437461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8924825, y: 1.7560107, z: 1.4860107}
+  m_LocalPosition: {x: -2.8924825, y: 1.7560107, z: 1.7710106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3001554202196599225}

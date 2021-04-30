@@ -1,5 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &150987882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150987883}
+  m_Layer: 0
+  m_Name: pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &150987883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150987882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.267, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4666283153791859957}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &174950616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 174950617}
+  - component: {fileID: 174950618}
+  m_Layer: 0
+  m_Name: Sorting
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &174950617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174950616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8088190291128618682}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &174950618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174950616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aafb3afc898f924fbcd9f8fb7f95da4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 8088190289435956491}
+  useSelfAsHost: 0
+  pivot: {fileID: 150987883}
 --- !u!1 &1404777875
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,11 +248,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCharacter: 0
   data: {fileID: 0}
+  forAI: 0
   body2D: {fileID: 0}
   smoothAcceleration: 0.2
   currentSpeed: 0
   inMotion: 0
-  characterVelocity: {x: 0, y: 0}
 --- !u!1 &8088190290008871508
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +377,9 @@ MonoBehaviour:
   interactTrigger:
     m_PersistentCalls:
       m_Calls: []
+  playerEntity: {fileID: 8088190289435956485}
+  cameraBody: {fileID: 0}
+  playerBody: {fileID: 8088190289435956490}
 --- !u!1 &8088190291128618677
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +411,7 @@ Transform:
   - {fileID: 8088190290491054617}
   - {fileID: 8088190291011468801}
   - {fileID: 1404777876}
+  - {fileID: 174950617}
   m_Father: {fileID: 8088190289435956491}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

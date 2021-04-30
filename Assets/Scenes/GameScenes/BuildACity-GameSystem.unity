@@ -170,6 +170,7 @@ MonoBehaviour:
   dayData: {fileID: 11400000, guid: 635edd2c161050147817c320b0278800, type: 2}
   nextDayButton: {fileID: 802985904}
   nextDayText: {fileID: 802985906}
+  textFadeTrans: {fileID: 802985908}
 --- !u!1 &802985904
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +182,7 @@ GameObject:
   - component: {fileID: 802985905}
   - component: {fileID: 802985907}
   - component: {fileID: 802985906}
+  - component: {fileID: 802985908}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -220,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.78039217, b: 0.5529412, a: 1}
+  m_Color: {r: 1, g: 0.78039217, b: 0.5529412, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -249,6 +251,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802985904}
   m_CullTransparentMesh: 1
+--- !u!114 &802985908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802985904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed2b4f2f6963f074eb14125608397218, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 3
+  textUI: {fileID: 802985906}
+  currentTime: 0
+  targetAlpha: 0
+  startAlpha: 1
+  isTransitioning: 0
 --- !u!1 &1603511368
 GameObject:
   m_ObjectHideFlags: 0

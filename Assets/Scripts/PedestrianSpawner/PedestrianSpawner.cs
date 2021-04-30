@@ -6,6 +6,7 @@ public class PedestrianSpawner : MonoBehaviour
 {
     [SerializeField]
     WaypointsManager manager;
+    [SerializeField]
     List<GameObject> possibleCitizenPrefab = new List<GameObject>();
     [SerializeField]
     int spawnAmount = 5;
@@ -22,7 +23,7 @@ public class PedestrianSpawner : MonoBehaviour
     }
     public GameObject ChooseCitizenRandomly()
     {
-        var randomIndex = Random.Range(0, possibleCitizenPrefab.Count);
+        var randomIndex = Random.Range(0, possibleCitizenPrefab.Count - 1);
         return possibleCitizenPrefab[randomIndex];
     }
 

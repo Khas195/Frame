@@ -838,6 +838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 1488111955}
+  possibleCitizenPrefab:
+  - {fileID: 7614453392723437461, guid: aac4508cbe7272c4786297d15c1d1378, type: 3}
   spawnAmount: 50
 --- !u!1 &1610744144
 GameObject:

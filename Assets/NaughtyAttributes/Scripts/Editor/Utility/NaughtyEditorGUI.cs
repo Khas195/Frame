@@ -11,54 +11,70 @@ namespace NaughtyAttributes.Editor
 {
 	public static class NaughtyEditorGUI
 	{
+		public const float IndentLength = 15.0f;
+		public const float HorizontalSpacing = 2.0f;
+
+		private static GUIStyle _buttonStyle = new GUIStyle(GUI.skin.button) { richText = true };
+
+		private delegate void PropertyFieldFunction(Rect rect, SerializedProperty property, GUIContent label, bool includeChildren);
+
+		public static void PropertyField(Rect rect, SerializedProperty property, bool includeChildren)
+		{
+			PropertyField_Implementation(rect, property, includeChildren, DrawPropertyField);
+		}
+
 		public static void PropertyField_Layout(SerializedProperty property, bool includeChildren)
+		{
+			Rect dummyRect = new Rect();
+			PropertyField_Implementation(dummyRect, property, includeChildren, DrawPropertyField_Layout);
+		}
+
+		private static void DrawPropertyField(Rect rect, SerializedProperty property, GUIContent label, bool includeChildren)
+		{
+			EditorGUI.PropertyField(rect, property, label, includeChildren);
+		}
+
+		private static void DrawPropertyField_Layout(Rect rect, SerializedProperty property, GUIContent label, bool includeChildren)
+		{
+			EditorGUILayout.PropertyField(property, label, includeChildren);
+		}
+
+		private static void PropertyField_Implementation(Rect rect, SerializedProperty property, bool includeChildren, PropertyFieldFunction propertyFieldFunction)
 		{
 			SpecialCaseDrawerAttribute specialCaseAttribute = PropertyUtility.GetAttribute<SpecialCaseDrawerAttribute>(property);
 			if (specialCaseAttribute != null)
 			{
-				specialCaseAttribute.GetDrawer().OnGUI(property);
+				specialCaseAttribute.GetDrawer().OnGUI(rect, property);
 			}
 			else
 			{
-				GUIContent label = new GUIContent(PropertyUtility.GetLabel(property));
-				bool anyDrawerAttribute = PropertyUtility.GetAttributes<DrawerAttribute>(property).Any();
-
-				if (!anyDrawerAttribute)
+				// Check if visible
+				bool visible = PropertyUtility.IsVisible(property);
+				if (!visible)
 				{
-					// Drawer attributes check for visibility, enableability and validator themselves,
-					// so if a property doesn't have a DrawerAttribute we need to check for these explicitly
-
-					// Check if visible
-					bool visible = PropertyUtility.IsVisible(property);
-					if (!visible)
-					{
-						return;
-					}
-
-					// Validate
-					ValidatorAttribute[] validatorAttributes = PropertyUtility.GetAttributes<ValidatorAttribute>(property);
-					foreach (var validatorAttribute in validatorAttributes)
-					{
-						validatorAttribute.GetValidator().ValidateProperty(property);
-					}
-
-					// Check if enabled and draw
-					EditorGUI.BeginChangeCheck();
-					bool enabled = PropertyUtility.IsEnabled(property);
-					GUI.enabled = enabled;
-					EditorGUILayout.PropertyField(property, label, includeChildren);
-					GUI.enabled = true;
-
-					// Call OnValueChanged callbacks
-					if (EditorGUI.EndChangeCheck())
-					{
-						PropertyUtility.CallOnValueChangedCallbacks(property);
-					}
+					return;
 				}
-				else
+
+				// Validate
+				ValidatorAttribute[] validatorAttributes = PropertyUtility.GetAttributes<ValidatorAttribute>(property);
+				foreach (var validatorAttribute in validatorAttributes)
 				{
-					// We don't need to check for enableIfAttribute
-					EditorGUILayout.PropertyField(property, label, includeChildren);
+					validatorAttribute.GetValidator().ValidateProperty(property);
+				}
+
+				// Check if enabled and draw
+				EditorGUI.BeginChangeCheck();
+				bool enabled = PropertyUtility.IsEnabled(property);
+
+				using (new EditorGUI.DisabledScope(disabled: !enabled))
+				{
+					propertyFieldFunction.Invoke(rect, property, PropertyUtility.GetLabel(property), includeChildren);
+				}
+
+				// Call OnValueChanged callbacks
+				if (EditorGUI.EndChangeCheck())
+				{
+					PropertyUtility.CallOnValueChangedCallbacks(property);
 				}
 			}
 		}
@@ -103,14 +119,15 @@ namespace NaughtyAttributes.Editor
 			EditorGUI.BeginChangeCheck();
 
 			int newIndex = EditorGUI.Popup(rect, label, selectedValueIndex, displayOptions);
+			object newValue = values[newIndex];
 
-			if (EditorGUI.EndChangeCheck())
+			if (!dropdownField.GetValue(target).Equals(newValue))
 			{
 				Undo.RecordObject(serializedObject.targetObject, "Dropdown");
 
 				// TODO: Problem with structs, because they are value type.
 				// The solution is to make boxing/unboxing but unfortunately I don't know the compile time type of the target object
-				dropdownField.SetValue(target, values[newIndex]);
+				dropdownField.SetValue(target, newValue);
 			}
 		}
 
@@ -143,7 +160,7 @@ namespace NaughtyAttributes.Editor
 
 				EditorGUI.BeginDisabledGroup(!buttonEnabled);
 
-				if (GUILayout.Button(buttonText))
+				if (GUILayout.Button(buttonText, _buttonStyle))
 				{
 					object[] defaultParams = methodInfo.GetParameters().Select(p => p.DefaultValue).ToArray();
 					IEnumerator methodResult = methodInfo.Invoke(target, defaultParams) as IEnumerator;
@@ -240,75 +257,106 @@ namespace NaughtyAttributes.Editor
 
 		public static bool Field_Layout(object value, string label)
 		{
-			GUI.enabled = false;
+			using (new EditorGUI.DisabledScope(disabled: true))
+			{
+				bool isDrawn = true;
+				Type valueType = value.GetType();
 
-			bool isDrawn = true;
-			Type valueType = value.GetType();
+				if (valueType == typeof(bool))
+				{
+					EditorGUILayout.Toggle(label, (bool)value);
+				}
+				else if (valueType == typeof(short))
+				{
+					EditorGUILayout.IntField(label, (short)value);
+				}
+				else if (valueType == typeof(ushort))
+				{
+					EditorGUILayout.IntField(label, (ushort)value);
+				}
+				else if (valueType == typeof(int))
+				{
+					EditorGUILayout.IntField(label, (int)value);
+				}
+				else if (valueType == typeof(uint))
+				{
+					EditorGUILayout.LongField(label, (uint)value);
+				}
+				else if (valueType == typeof(long))
+				{
+					EditorGUILayout.LongField(label, (long)value);
+				}
+				else if (valueType == typeof(ulong))
+				{
+					EditorGUILayout.TextField(label, ((ulong)value).ToString());
+				}
+				else if (valueType == typeof(float))
+				{
+					EditorGUILayout.FloatField(label, (float)value);
+				}
+				else if (valueType == typeof(double))
+				{
+					EditorGUILayout.DoubleField(label, (double)value);
+				}
+				else if (valueType == typeof(string))
+				{
+					EditorGUILayout.TextField(label, (string)value);
+				}
+				else if (valueType == typeof(Vector2))
+				{
+					EditorGUILayout.Vector2Field(label, (Vector2)value);
+				}
+				else if (valueType == typeof(Vector3))
+				{
+					EditorGUILayout.Vector3Field(label, (Vector3)value);
+				}
+				else if (valueType == typeof(Vector4))
+				{
+					EditorGUILayout.Vector4Field(label, (Vector4)value);
+				}
+				else if (valueType == typeof(Vector2Int))
+				{
+					EditorGUILayout.Vector2IntField(label, (Vector2Int)value);
+				}
+				else if (valueType == typeof(Vector3Int))
+				{
+					EditorGUILayout.Vector3IntField(label, (Vector3Int)value);
+				}
+				else if (valueType == typeof(Color))
+				{
+					EditorGUILayout.ColorField(label, (Color)value);
+				}
+				else if (valueType == typeof(Bounds))
+				{
+					EditorGUILayout.BoundsField(label, (Bounds)value);
+				}
+				else if (valueType == typeof(Rect))
+				{
+					EditorGUILayout.RectField(label, (Rect)value);
+				}
+				else if (valueType == typeof(RectInt))
+				{
+					EditorGUILayout.RectIntField(label, (RectInt)value);
+				}
+				else if (typeof(UnityEngine.Object).IsAssignableFrom(valueType))
+				{
+					EditorGUILayout.ObjectField(label, (UnityEngine.Object)value, valueType, true);
+				}
+				else if (valueType.BaseType == typeof(Enum))
+				{
+					EditorGUILayout.EnumPopup(label, (Enum)value);
+				}
+				else if (valueType.BaseType == typeof(System.Reflection.TypeInfo))
+				{
+					EditorGUILayout.TextField(label, value.ToString());
+				}
+				else
+				{
+					isDrawn = false;
+				}
 
-			if (valueType == typeof(bool))
-			{
-				EditorGUILayout.Toggle(label, (bool)value);
+				return isDrawn;
 			}
-			else if (valueType == typeof(int))
-			{
-				EditorGUILayout.IntField(label, (int)value);
-			}
-			else if (valueType == typeof(long))
-			{
-				EditorGUILayout.LongField(label, (long)value);
-			}
-			else if (valueType == typeof(float))
-			{
-				EditorGUILayout.FloatField(label, (float)value);
-			}
-			else if (valueType == typeof(double))
-			{
-				EditorGUILayout.DoubleField(label, (double)value);
-			}
-			else if (valueType == typeof(string))
-			{
-				EditorGUILayout.TextField(label, (string)value);
-			}
-			else if (valueType == typeof(Vector2))
-			{
-				EditorGUILayout.Vector2Field(label, (Vector2)value);
-			}
-			else if (valueType == typeof(Vector3))
-			{
-				EditorGUILayout.Vector3Field(label, (Vector3)value);
-			}
-			else if (valueType == typeof(Vector4))
-			{
-				EditorGUILayout.Vector4Field(label, (Vector4)value);
-			}
-			else if (valueType == typeof(Color))
-			{
-				EditorGUILayout.ColorField(label, (Color)value);
-			}
-			else if (valueType == typeof(Bounds))
-			{
-				EditorGUILayout.BoundsField(label, (Bounds)value);
-			}
-			else if (valueType == typeof(Rect))
-			{
-				EditorGUILayout.RectField(label, (Rect)value);
-			}
-			else if (typeof(UnityEngine.Object).IsAssignableFrom(valueType))
-			{
-				EditorGUILayout.ObjectField(label, (UnityEngine.Object)value, valueType, true);
-			}
-			else if (valueType.BaseType == typeof(Enum))
-			{
-				EditorGUILayout.EnumPopup(label, (Enum)value);
-			}
-			else
-			{
-				isDrawn = false;
-			}
-
-			GUI.enabled = true;
-
-			return isDrawn;
 		}
 
 		private static void DebugLogMessage(string message, MessageType type, UnityEngine.Object context)

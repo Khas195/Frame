@@ -86,7 +86,7 @@ public class TakePicture : MonoBehaviour
         image.ReadPixels(new Rect(0, 0, rt.width * 2, rt.height * 2), 0, 0);
         image.filterMode = FilterMode.Point;
         image.Apply();
-        SaveImageToFile(image);
+        //SaveImageToFile(image);
         var imageSprite = Sprite.Create(image, new Rect(0, 0, rt.width, rt.height), new Vector2(0.5f, 0.5f), 64);
         PhotoInfo newPhoto = new PhotoInfo();
 
@@ -112,8 +112,7 @@ public class TakePicture : MonoBehaviour
         {
             Directory.CreateDirectory(dirPath);
         }
-        Debug.Log(dirPath);
-        File.WriteAllBytes(dirPath + "CameraShot" + ".png", bytes);
+        File.WriteAllBytes(dirPath + "CameraShot-" + System.DateTime.Today + "-" + System.DateTime.Now + ".png", bytes);
     }
     public void SwitchOriginSize()
     {

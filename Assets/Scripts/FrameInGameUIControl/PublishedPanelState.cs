@@ -22,18 +22,5 @@ public class PublishedPanelState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.T))
-        {
-            this.controller.RequestState(InGameUIStateEnum.NormalState);
-        }
-        else if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            controller.RequestState(InGameUIStateEnum.PhotoInventoryState);
-        }
-
-        else if (Input.GetKeyDown(KeyCode.B))
-        {
-            controller.RequestState(InGameUIStateEnum.NewsPanelState);
-        }
     }
 }

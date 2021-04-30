@@ -46,7 +46,7 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
     {
         loadingManager.UnloadAllScenes(exception: requiredScenes.masterScene);
         loadingManager.LoadSceneAdditively(requiredScenes.logScene);
-        RequestInstance(requiredScenes.startUpInstance);
+        RequestInstance(startInstance);
     }
     void OnDestroy()
     {
@@ -74,8 +74,6 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
         PostOffice.SendData(data, GameMasterEvent.ON_GAMESTATE_CHANGED);
         DataPool.GetInstance().ReturnInstance(data);
     }
-
-
 
     void Update()
     {

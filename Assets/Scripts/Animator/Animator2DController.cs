@@ -11,6 +11,6 @@ public class Animator2DController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        characterAnim.SetFloat("Speed", characterBody.velocity.magnitude);
+        characterAnim.SetFloat("Speed", characterBody.simulated == true ? characterBody.velocity.magnitude : 0);
     }
 }

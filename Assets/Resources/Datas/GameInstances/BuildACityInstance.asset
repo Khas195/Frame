@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instanceName: BuildACity
   sceneList:
+  - BuildACity-GameSystem
   - BuildACity-Player
-  - BuildACity-EnvironmentLayer
   - BuildACity-ActorLayer
+  - BuildACity-EnvironmentLayer
   desiredGameState: 1

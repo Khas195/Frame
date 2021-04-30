@@ -22,6 +22,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     PaperPublishedNotifier notifier;
     [SerializeField]
     PaperPublishedNotifier missingImagesNotifier;
+    [SerializeField]
+    PublishedPapersData publishedPapersData;
 
 
     protected override void Awake()
@@ -150,6 +152,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         newspaperData.mainArticle = sections[0].GetPhoto();
         newspaperData.leftArticle = sections[1].GetPhoto();
         newspaperData.rightArticle = sections[2].GetPhoto();
+        publishedPapersData.paperDatas.Add(newspaperData);
         package.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.NEWSPAPER_DATA, newspaperData);
 
 

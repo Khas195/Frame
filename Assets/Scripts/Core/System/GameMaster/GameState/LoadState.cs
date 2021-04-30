@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class LoadState : GameState
 {
     public override Enum GetEnum()

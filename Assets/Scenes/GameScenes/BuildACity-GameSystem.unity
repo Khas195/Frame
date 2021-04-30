@@ -166,11 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb1f87e971e0bb48a4f329a60530be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDay: 0
   dayData: {fileID: 11400000, guid: 635edd2c161050147817c320b0278800, type: 2}
   nextDayButton: {fileID: 802985904}
   nextDayText: {fileID: 802985906}
   textFadeTrans: {fileID: 802985908}
+  reviewInstance: {fileID: 11400000, guid: 01835d6f05a007145af373444b421988, type: 2}
 --- !u!1 &802985904
 GameObject:
   m_ObjectHideFlags: 0

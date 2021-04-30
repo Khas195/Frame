@@ -13,6 +13,5 @@ public class BuildProfile : ScriptableObject
     [Scene]
     public string logScene = "";
 
-    public GameInstance startUpInstance = null;
 }
 

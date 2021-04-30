@@ -8010,6 +8010,7 @@ MonoBehaviour:
   yesterdayData: {fileID: 11400000, guid: 86028f6b8f02f4040be24cf25a60daee, type: 2}
   commieSlider: {fileID: 201138792}
   capitalistSlider: {fileID: 1417187512}
+  sliderBG: {fileID: 2045582226}
   transitionTime: 1
   currentTime: 0
   isTransitioning: 0

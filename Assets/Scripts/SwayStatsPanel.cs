@@ -15,6 +15,8 @@ public class SwayStatsPanel : MonoBehaviour
     [SerializeField]
     Image capitalistSlider;
     [SerializeField]
+    Image sliderBG;
+    [SerializeField]
     float transitionTime = 3.0f;
     [SerializeField]
     [ReadOnly]
@@ -25,6 +27,9 @@ public class SwayStatsPanel : MonoBehaviour
     private void Start()
     {
         yesterdayData.swayPercentage = new Vector2(0, 100);
+        commieSlider.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Capitalist);
+        sliderBG.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Neutral);
+        capitalistSlider.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Communist);
     }
     public void UpdateSlider()
     {

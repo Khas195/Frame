@@ -1,10 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-
 public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
 {
     [SerializeField]
@@ -135,6 +133,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
 
     private void TriggerPhotoPublishedEvent(List<PhotoInfo> publishedPhoto)
     {
+        notifier.Notify();
+
         List<ScenarioActor> participatedActors = new List<ScenarioActor>();
         for (int i = 0; i < publishedPhoto.Count; i++)
         {
@@ -145,7 +145,18 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         {
             participatedActors[i].ResetInfluences();
         }
-        PostOffice.SendData(null, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+
+
+        var package = DataPool.GetInstance().RequestInstance();
+        var newspaperData = new NewspaperData();
+        newspaperData.mainArticle = sections[0].GetPhoto();
+        newspaperData.leftArticle = sections[1].GetPhoto();
+        newspaperData.rightArticle = sections[2].GetPhoto();
+        package.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.NEWSPAPER_DATA, newspaperData);
+
+
+        PostOffice.SendData(package, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+        DataPool.GetInstance().ReturnInstance(package);
     }
 
     private void TriggerDiscardPublishedPhotoEvent(List<PhotoInfo> photoToDiscard)

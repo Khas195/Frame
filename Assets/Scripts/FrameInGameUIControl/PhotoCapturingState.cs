@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PhotoCapturingState : InGameUIState
 {
     [SerializeField]
@@ -46,6 +45,10 @@ public class PhotoCapturingState : InGameUIState
         else if (Input.GetKeyDown(KeyCode.B))
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
+        }
+        else if (Input.GetKeyDown(KeyCode.T))
+        {
+            controller.RequestState(InGameUIStateEnum.PublishedPaperPanel);
         }
     }
     public void GoToPhotoMode()

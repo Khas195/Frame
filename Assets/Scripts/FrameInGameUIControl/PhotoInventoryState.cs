@@ -36,5 +36,9 @@ public class PhotoInventoryState : InGameUIState
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
         }
+        else if (Input.GetKeyDown(KeyCode.T))
+        {
+            controller.RequestState(InGameUIStateEnum.PublishedPaperPanel);
+        }
     }
 }

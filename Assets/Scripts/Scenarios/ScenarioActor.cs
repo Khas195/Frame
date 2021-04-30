@@ -13,7 +13,7 @@ public class ScenarioActor : MonoBehaviour
         Capitalist
     }
     [SerializeField]
-    SpriteRenderer sprite;
+    SpriteRenderer highlightSprite;
     [SerializeField]
     ActorFaction curFaction = ActorFaction.Neutral;
     [SerializeField]
@@ -37,25 +37,25 @@ public class ScenarioActor : MonoBehaviour
 
     private void Update()
     {
-        isOnCamera = sprite.isVisible;
+        isOnCamera = highlightSprite.isVisible;
         if (curTime <= transitionTime)
         {
-            this.sprite.color = Color.Lerp(previousColor, targetColor, curTime / transitionTime);
+            this.highlightSprite.color = Color.Lerp(previousColor, targetColor, curTime / transitionTime);
             curTime += Time.deltaTime;
         }
         else
         {
-            this.sprite.color = targetColor;
+            this.highlightSprite.color = targetColor;
         }
     }
     public void SetColorOfActor(Color color)
     {
-        sprite.color = color;
+        highlightSprite.color = color;
     }
     public void AssignFaction(ActorFaction newFaction, bool instant = true)
     {
         this.curFaction = newFaction;
-        previousColor = this.sprite.color;
+        previousColor = this.highlightSprite.color;
         targetColor = PublicSwayMechanic.GetInstance().GetColorToFaction(newFaction);
         if (instant == false)
         {
@@ -76,13 +76,13 @@ public class ScenarioActor : MonoBehaviour
     {
 
         this.SetColorOfActor(PublicSwayMechanic.GetInstance().GetColorToFaction(curFaction));
-        previousColor = this.sprite.color;
-        targetColor = this.sprite.color;
+        previousColor = this.highlightSprite.color;
+        targetColor = this.highlightSprite.color;
     }
 
     public bool IsOnCamera()
     {
-        return this.sprite.isVisible;
+        return this.highlightSprite.isVisible;
     }
 
     public int GetCapitalInfluence()

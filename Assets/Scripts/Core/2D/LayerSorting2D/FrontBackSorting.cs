@@ -12,39 +12,23 @@ public class FrontBackSorting : IFrontBackSorting
 {
     [SerializeField]
     Transform pivot;
-    [SerializeField]
-    [HideIf("autoFindRendererInSelf")]
-    SpriteRenderer targetRender = null;
-    [SerializeField]
-    bool autoFindRendererInSelf = true;
-    // Start is called before the first frame update
     void Start()
     {
         if (useSelfAsHost)
         {
             host = this.transform;
         }
-        if (autoFindRendererInSelf)
-        {
-            FindRenderer();
-        }
     }
 
 
     private void Update()
     {
-        if (host && targetRender)
+        if (host)
         {
             var newPos = host.transform.position;
             newPos.z = pivot.position.y;
             host.transform.position = newPos;
         }
-    }
-    [Button]
-    public void FindRenderer()
-    {
-
-        targetRender = this.GetComponent<SpriteRenderer>();
     }
 
     /**

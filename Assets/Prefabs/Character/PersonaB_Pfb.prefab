@@ -185,7 +185,7 @@ Animator:
   m_GameObject: {fileID: 2861600786703080168}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 13a20c6f3b11844469059a03bba700a4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 16eb60971105de947836c7915c8eafe7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -234,7 +234,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5181668607722796671, guid: e2c5c52b83b4fb7418176e4a24304cfb, type: 3}
+  m_Sprite: {fileID: 179173025687594190, guid: 4d535241784ca9a4db06eb14eb166cd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 9190858446792104341}
   - component: {fileID: 580247733070267181}
   m_Layer: 0
-  m_Name: PersonA_Pfb
+  m_Name: PersonaB_Pfb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,7 +587,7 @@ Animator:
   m_GameObject: {fileID: 7969272873574141927}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8557d921f1a2ed24592236dbbd214efa, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7264e599cb29d6e4e9b7c069700347a4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -636,7 +636,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -922341747186552561, guid: 2cc9861c82964044eb29fdd91a983b3c, type: 3}
+  m_Sprite: {fileID: 4927619821869988141, guid: b3f5b7350e8154a45a4b1cd3c33dd54e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

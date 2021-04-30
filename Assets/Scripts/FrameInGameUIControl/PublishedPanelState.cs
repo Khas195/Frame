@@ -1,30 +1,28 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PhotoModeState : InGameUIState
+public class PublishedPanelState : InGameUIState
 {
     [SerializeField]
-    DragSelection selection;
+    PublishedPaperShowCasePanel panel;
     public override Enum GetEnum()
     {
-        return InGameUIStateEnum.PhotoMode;
+        return InGameUIState.InGameUIStateEnum.PublishedPaperPanel;
     }
 
     public override void OnStateEnter()
     {
-        selection.EnterPhotoMode();
+        panel.Show();
     }
 
     public override void OnStateExit()
     {
-        selection.ExitPhotoMode();
+        panel.Hide();
     }
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.T))
         {
             this.controller.RequestState(InGameUIStateEnum.NormalState);
         }
@@ -32,18 +30,10 @@ public class PhotoModeState : InGameUIState
         {
             controller.RequestState(InGameUIStateEnum.PhotoInventoryState);
         }
-        else if (Input.GetKeyDown(KeyCode.V))
-        {
-            controller.RequestState(InGameUIStateEnum.CapturingState);
-        }
+
         else if (Input.GetKeyDown(KeyCode.B))
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
-
-        }
-        else if (Input.GetKeyDown(KeyCode.T))
-        {
-            controller.RequestState(InGameUIStateEnum.PublishedPaperPanel);
         }
     }
 }

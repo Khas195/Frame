@@ -144,4 +144,9 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             modiferText.gameObject.SetActive(!modiferText.gameObject.activeSelf);
         }
     }
+
+    public Sprite GetPhoto()
+    {
+        return this.sectionImage.sprite;
+    }
 }

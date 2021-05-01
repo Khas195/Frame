@@ -38,6 +38,12 @@ TextureImporter:
   - first:
       213: 3845965432310099656
     second: Building002_v2_11
+  - first:
+      213: -2140483157890755753
+    second: Building002_v2_12
+  - first:
+      213: -7999195140686927107
+    second: Building002_v2_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -345,7 +351,7 @@ TextureImporter:
         width: 269
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -366,7 +372,7 @@ TextureImporter:
         width: 209
         height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -374,6 +380,48 @@ TextureImporter:
       bones: []
       spriteID: 8ce66431f2d9f5530800000000000000
       internalID: 3845965432310099656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building002_v2_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1
+        width: 17
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753173e98e97b42e0800000000000000
+      internalID: -2140483157890755753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Building002_v2_13
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 16
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa235ea6662df090800000000000000
+      internalID: -7999195140686927107
       vertices: []
       indices: 
       edges: []

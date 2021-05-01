@@ -1,12 +1,16 @@
 using System;
 using System.Collections;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 {
     [SerializeField]
+    [Expandable]
     DaySystemData dayData;
+    [SerializeField]
+    PublishedPapersData publishedPaperData;
     [SerializeField]
     GameObject nextDayButton = null;
     [SerializeField]
@@ -15,7 +19,6 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
     FadeTransition textFadeTrans = null;
     [SerializeField]
     GameInstance reviewInstance;
-    int amountOfPublishedPaperToday = 0;
 
 
     protected override void Awake()
@@ -36,7 +39,7 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
     private void Update()
     {
 
-        if (nextDayButton.activeSelf)
+        if (CanProceedToNextDay())
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -83,12 +86,15 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
     {
         if (eventName == GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT)
         {
-            amountOfPublishedPaperToday += 1;
-            if (IsPossibleToProceedToNextDay() && amountOfPublishedPaperToday >= dayData.amountOfPaperNeededPerDay[dayData.currentDay])
+            if (CanProceedToNextDay())
             {
                 textFadeTrans.FadeIn();
             }
         }
     }
 
+    private bool CanProceedToNextDay()
+    {
+        return IsPossibleToProceedToNextDay() && publishedPaperData.paperDatas.Count >= dayData.amountOfPaperNeededPerDay[dayData.currentDay];
+    }
 }

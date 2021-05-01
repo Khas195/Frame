@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayData: {fileID: 11400000, guid: 635edd2c161050147817c320b0278800, type: 2}
+  publishedPaperData: {fileID: 11400000, guid: b296e5099a2b0f541b275be6fe8efed2, type: 2}
   nextDayButton: {fileID: 802985904}
   nextDayText: {fileID: 802985906}
   textFadeTrans: {fileID: 802985908}

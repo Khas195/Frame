@@ -46,9 +46,12 @@ public class FadeManyTransition : MonoBehaviour
         {
             for (int i = 0; i < uis.Count; i++)
             {
-                var color = uis[i].color;
-                color.a = Mathf.Lerp(startAlpha, targetAlpha, currentTime / fadeTime);
-                uis[i].color = color;
+                if (uis[i] != null)
+                {
+                    var color = uis[i].color;
+                    color.a = Mathf.Lerp(startAlpha, targetAlpha, currentTime / fadeTime);
+                    uis[i].color = color;
+                }
             }
             if (currentTime >= fadeTime)
             {

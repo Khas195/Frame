@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,4 +6,9 @@ using UnityEngine;
 public class PublishedPapersData : ScriptableObject
 {
     public List<NewspaperData> paperDatas = new List<NewspaperData>();
+
+    public void Reset()
+    {
+        paperDatas.Clear();
+    }
 }

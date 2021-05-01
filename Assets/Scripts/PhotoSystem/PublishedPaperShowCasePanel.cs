@@ -15,6 +15,8 @@ public class PublishedPaperShowCasePanel : MonoBehaviour, IObserver
     FadeManyTransition fade;
     [SerializeField]
     SwayStatsPanel swayStatsPanel;
+    [SerializeField]
+    List<PublishedPaper> publishedPaperInReview = new List<PublishedPaper>();
 
 
     private void Awake()
@@ -27,6 +29,11 @@ public class PublishedPaperShowCasePanel : MonoBehaviour, IObserver
     }
     public void NextDay()
     {
+        for (int i = publishedPaperInReview.Count - 1; i >= 0; i--)
+        {
+            Destroy(publishedPaperInReview[i].gameObject);
+        }
+        publishedPaperInReview.Clear();
         DaySystem.GetInstance().NextDay();
     }
     public void Show()
@@ -34,7 +41,7 @@ public class PublishedPaperShowCasePanel : MonoBehaviour, IObserver
         this.panel.gameObject.SetActive(true);
         fade.FadeIn(() =>
         {
-            swayStatsPanel.UpdateSlider();
+            swayStatsPanel.TriggerSliderUpdate();
         });
     }
     public void Hide()
@@ -56,6 +63,7 @@ public class PublishedPaperShowCasePanel : MonoBehaviour, IObserver
 
                 newPublishedPaper.gameObject.SetActive(true);
                 newPublishedPaper.SetData(data);
+                publishedPaperInReview.Add(newPublishedPaper);
             }
         }
     }

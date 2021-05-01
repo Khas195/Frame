@@ -30,10 +30,13 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     {
         base.Awake();
         PostOffice.Subscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+        PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
+        publishedPapersData.Reset();
     }
     private void OnDestroy()
     {
         PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+        PostOffice.Unsubscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
     }
     private void Start()
     {
@@ -183,6 +186,10 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         if (eventName == SwitchGameStats.SWITCH_GAME_STATS_EVENT)
         {
             this.totalPaperPoint.gameObject.SetActive(SwitchGameStats.STATS_ON);
+        }
+        else if (eventName == GameEvent.DaySystemEvent.DAY_CHANGED_EVENT)
+        {
+            this.publishedPapersData.Reset();
         }
     }
 }

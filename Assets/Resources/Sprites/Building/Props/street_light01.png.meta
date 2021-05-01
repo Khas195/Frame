@@ -14,6 +14,15 @@ TextureImporter:
   - first:
       213: -7285829521341000013
     second: street_light01_3
+  - first:
+      213: -1080560635682742870
+    second: street_light01_4
+  - first:
+      213: -2704012109772490739
+    second: street_light01_5
+  - first:
+      213: -7014840887589929720
+    second: street_light01_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,12 +127,12 @@ TextureImporter:
       name: street_light01_0
       rect:
         serializedVersion: 2
-        x: 41
+        x: 65
         y: 16
-        width: 60
+        width: 12
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -139,12 +148,12 @@ TextureImporter:
       name: street_light01_1
       rect:
         serializedVersion: 2
-        x: 156
+        x: 164
         y: 16
-        width: 60
+        width: 28
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +169,12 @@ TextureImporter:
       name: street_light01_2
       rect:
         serializedVersion: 2
-        x: 246
+        x: 271
         y: 16
-        width: 60
+        width: 10
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,11 +191,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 375
-        y: 11
+        y: 16
         width: 77
-        height: 62
+        height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,6 +203,69 @@ TextureImporter:
       bones: []
       spriteID: 3b65a6ef6a883ea90800000000000000
       internalID: -7285829521341000013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street_light01_4
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 108
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad1cdfa3d31101f0800000000000000
+      internalID: -1080560635682742870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street_light01_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 133
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08f7a8005b697ad0800000000000000
+      internalID: -2704012109772490739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: street_light01_6
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 132
+        width: 70
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80df053016746ae90800000000000000
+      internalID: -7014840887589929720
       vertices: []
       indices: 
       edges: []

@@ -19,11 +19,18 @@ public class FrontBackSorting : IFrontBackSorting
             host = this.transform;
         }
     }
-
+    [Button]
+    public void AddPivot()
+    {
+        var pivot = new GameObject("Pivot");
+        pivot.transform.parent = this.host.transform;
+        pivot.transform.localPosition = Vector3.zero;
+        this.pivot = pivot.transform;
+    }
 
     private void Update()
     {
-        if (host)
+        if (host && pivot)
         {
             var newPos = host.transform.position;
             newPos.z = pivot.position.y;

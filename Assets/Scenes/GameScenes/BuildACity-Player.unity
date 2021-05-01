@@ -2797,12 +2797,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sectionImage: {fileID: 623531010}
-  tempHolder: {fileID: 0}
-  currentInfo:
-    sprite: {fileID: 0}
-    participants: []
-  currentHolder: {fileID: 0}
-  chosen: 0
   modiferText: {fileID: 2052996668}
   modifer: 4
 --- !u!114 &623531012
@@ -8359,12 +8353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sectionImage: {fileID: 1856558324}
-  tempHolder: {fileID: 0}
-  currentInfo:
-    sprite: {fileID: 0}
-    participants: []
-  currentHolder: {fileID: 0}
-  chosen: 0
   modiferText: {fileID: 241854679}
   modifer: 1
 --- !u!114 &1856573721 stripped
@@ -9187,12 +9175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sectionImage: {fileID: 2091382444}
-  tempHolder: {fileID: 0}
-  currentInfo:
-    sprite: {fileID: 0}
-    participants: []
-  currentHolder: {fileID: 0}
-  chosen: 0
   modiferText: {fileID: 741910659}
   modifer: 2
 --- !u!1 &2098344005

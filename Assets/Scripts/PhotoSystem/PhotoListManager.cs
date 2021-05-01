@@ -40,10 +40,12 @@ public class PhotoListManager : MonoBehaviour, IObserver
     public void Hide()
     {
         photoListRoot.SetActive(false);
+        currentPage = 0;
     }
     public void Show()
     {
         photoListRoot.SetActive(true);
+        ShowPhotoOnCurrentPage();
     }
 
     public void AddPhoto(PhotoInfo photoInfo)
@@ -52,23 +54,17 @@ public class PhotoListManager : MonoBehaviour, IObserver
         var photoHolder = newGameObject.GetComponent<PhotoHolder>();
         photoHolder.SetPhotoInfo(photoInfo);
         photos.Add(photoHolder);
-        float totalPage = photos.Count / (contentPerPage);
-        if (currentPage == totalPage)
-        {
-            newGameObject.SetActive(true);
-        }
     }
     [Button]
     public void NextPage()
     {
-        float totalPage = photos.Count / contentPerPage;
-        if (currentPage < totalPage)
+        int totalPage = Mathf.CeilToInt(photos.Count / contentPerPage);
+        currentPage += 1;
+        if (currentPage > totalPage)
         {
-            ++currentPage;
-            var startPageIndex = currentPage * contentPerPage;
-            var endPageIndex = startPageIndex + contentPerPage - 1;
-            ShowPhotoFromRange(startPageIndex, endPageIndex);
+            currentPage = totalPage;
         }
+        ShowPhotoOnCurrentPage();
 
 
     }
@@ -77,7 +73,7 @@ public class PhotoListManager : MonoBehaviour, IObserver
     {
         for (int i = 0; i < photos.Count; i++)
         {
-            if (i >= startPageIndex && i <= endPageIndex)
+            if (i >= startPageIndex && i < endPageIndex)
             {
                 photos[i].gameObject.SetActive(true);
             }
@@ -91,16 +87,21 @@ public class PhotoListManager : MonoBehaviour, IObserver
     [Button]
     public void PreviousPage()
     {
-        float totalPage = photos.Count / contentPerPage;
-        if (currentPage > 0)
+        currentPage -= 1;
+        if (currentPage < 0)
         {
-            --currentPage;
-
-            var startPageIndex = currentPage * contentPerPage;
-            var endPageIndex = startPageIndex + contentPerPage - 1;
-            ShowPhotoFromRange(startPageIndex, endPageIndex);
+            currentPage = 0;
         }
+        ShowPhotoOnCurrentPage();
     }
+
+    private void ShowPhotoOnCurrentPage()
+    {
+        var startPageIndex = currentPage * contentPerPage;
+        var endPageIndex = startPageIndex + contentPerPage;
+        ShowPhotoFromRange(startPageIndex, endPageIndex);
+    }
+
     private void Discard(PhotoHolder photo)
     {
         photos.Remove(photo);

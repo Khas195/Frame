@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 880819807}
         m_TargetAssemblyTypeName: PhotoListManager, Assembly-CSharp
         m_MethodName: NextPage
         m_Mode: 1
@@ -4017,6 +4017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelRoot: {fileID: 553330561}
+  photoListManager: {fileID: 880819807}
   sections:
   - {fileID: 623531011}
   - {fileID: 2091382446}
@@ -8535,7 +8536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 880819807}
         m_TargetAssemblyTypeName: PhotoListManager, Assembly-CSharp
         m_MethodName: PreviousPage
         m_Mode: 1

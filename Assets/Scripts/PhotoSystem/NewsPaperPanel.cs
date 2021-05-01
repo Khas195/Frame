@@ -8,6 +8,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     [SerializeField]
     GameObject panelRoot = null;
     [SerializeField]
+    PhotoListManager photoListManager = null;
+    [SerializeField]
     List<NewsPaperPhotoSection> sections = new List<NewsPaperPhotoSection>();
 
     [SerializeField]
@@ -46,9 +48,11 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     public void SwitchPanelOn()
     {
         panelRoot.SetActive(true);
+        photoListManager.Show();
     }
     public void SwitchPanelOff()
     {
+        photoListManager.Hide();
         panelRoot.SetActive(false);
         Clear();
 

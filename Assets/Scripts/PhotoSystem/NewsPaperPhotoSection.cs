@@ -4,25 +4,44 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public class SectionData
+{
+    public Sprite sectionSprite;
+    public PhotoHolder sectionPhotoHolder;
+    public PhotoInfo sectionPhotoInfo;
+    bool hasData;
+    public void SetData(PhotoHolder photoHolder)
+    {
+        sectionSprite = photoHolder.GetImage().sprite;
+        sectionPhotoInfo = photoHolder.GetPhotoInfo();
+        sectionPhotoHolder = photoHolder;
+        hasData = true;
+    }
+    public bool HasData()
+    {
+        return hasData;
+    }
+    public void Clear()
+    {
+        sectionSprite = null;
+        sectionPhotoHolder = null;
+        sectionPhotoInfo = null;
+        hasData = false;
+    }
+}
 public class NewsPaperPhotoSection : MonoBehaviour, IObserver
 {
     [SerializeField]
     Image sectionImage;
     [SerializeField]
-    PhotoHolder tempHolder = null;
+    SectionData hoverData = new SectionData();
     [SerializeField]
-    PhotoInfo currentInfo = null;
-    [SerializeField]
-    PhotoHolder currentHolder = null;
+    SectionData holdingData = new SectionData();
 
-    [SerializeField]
-    bool chosen = false;
     [SerializeField]
     Text modiferText = null;
     [SerializeField]
     int modifer = 1;
-    private int capitalPoint = 0;
-    private int commiePoint = 0;
 
     private void Awake()
     {
@@ -35,107 +54,92 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     }
     private void OnDestroy()
     {
-
         PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
     }
     public void OnPhotoSectionEnter()
     {
-        Debug.Log("Photo Enter");
         var photoHolder = NewsPaperPanel.GetInstance().GetCurrentSelection();
         if (photoHolder != null)
         {
-            tempHolder = photoHolder;
-            this.sectionImage.sprite = photoHolder.GetImage().sprite;
-            commiePoint = photoHolder.GetPhotoInfo().CommunistInfluence * modifer;
-            capitalPoint = photoHolder.GetPhotoInfo().CapitalistInfluence * modifer;
+            this.hoverData.SetData(photoHolder);
             modiferText.enabled = false;
+            sectionImage.sprite = hoverData.sectionSprite;
         }
 
     }
-
-
-
     public void OnPhotoSectionExit()
     {
-        if (chosen == false)
+        this.hoverData.Clear();
+        if (holdingData.HasData())
         {
-            this.sectionImage.sprite = null;
-            commiePoint = 0;
-            capitalPoint = 0;
-            modiferText.enabled = true;
-            tempHolder = null;
+            sectionImage.sprite = holdingData.sectionSprite;
         }
         else
         {
-            if (currentInfo.sprite != null)
-            {
-                this.sectionImage.sprite = currentInfo.sprite;
-                this.commiePoint = currentInfo.CommunistInfluence * modifer;
-                this.capitalPoint = currentInfo.CapitalistInfluence * modifer;
-            }
-            modiferText.enabled = false;
+            sectionImage.sprite = null;
         }
     }
     public void OnPhotoSectionUp()
     {
-        if (sectionImage.sprite != null)
+        var photoHolder = NewsPaperPanel.GetInstance().GetCurrentSelection();
+        if (photoHolder && photoHolder == hoverData.sectionPhotoHolder)
         {
-            if (currentHolder != null && currentHolder != tempHolder)
+            if (holdingData.HasData() && holdingData.sectionPhotoHolder != photoHolder)
             {
-                currentHolder.gameObject.SetActive(true);
+                holdingData.sectionPhotoHolder.gameObject.SetActive(true);
+                holdingData.Clear();
             }
-            currentHolder = tempHolder;
-            currentHolder.gameObject.SetActive(false);
-            chosen = true;
-            modiferText.enabled = false;
-            if (this.currentInfo.sprite != sectionImage.sprite)
-            {
-                this.currentInfo = NewsPaperPanel.GetInstance().GetCurrentSelection().GetPhotoInfo();
-            }
+
+            holdingData.SetData(photoHolder);
+            photoHolder.gameObject.SetActive(false);
+            sectionImage.sprite = holdingData.sectionSprite;
         }
-        else
-        {
-            modiferText.enabled = true;
-        }
+        hoverData.Clear();
     }
 
     public int GetCommiePoint()
     {
-        return commiePoint;
+        if (holdingData.sectionPhotoInfo != null)
+        {
+            return holdingData.sectionPhotoInfo.CommunistInfluence;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     public int GetCapitalPoint()
     {
-        return capitalPoint;
+        if (holdingData.sectionPhotoInfo != null)
+        {
+            return holdingData.sectionPhotoInfo.CapitalistInfluence;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     public void Clear()
     {
         modiferText.enabled = true;
-        commiePoint = 0;
-        capitalPoint = 0;
         sectionImage.sprite = null;
-        chosen = false;
-        tempHolder = null;
-        if (currentHolder)
+        if (holdingData.HasData())
         {
-            currentHolder.gameObject.SetActive(true);
+            holdingData.sectionPhotoHolder.gameObject.SetActive(true);
+            holdingData.Clear();
         }
-        currentHolder = null;
-        this.currentInfo = new PhotoInfo();
+        hoverData.Clear();
     }
 
     public PhotoInfo GetPhotoInfo()
     {
-        return this.currentInfo;
+        return holdingData.sectionPhotoInfo;
     }
     public bool HasPhoto()
     {
-        if (sectionImage.sprite != null)
-        {
-            return true;
-        }
-        return false;
+        return holdingData.HasData();
     }
     public void ReceiveData(DataPack pack, string eventName)
     {
@@ -147,6 +151,6 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
 
     public Sprite GetPhoto()
     {
-        return this.sectionImage.sprite;
+        return this.holdingData.sectionSprite;
     }
 }

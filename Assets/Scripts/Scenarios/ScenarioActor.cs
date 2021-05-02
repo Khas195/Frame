@@ -13,7 +13,12 @@ public class ScenarioActor : MonoBehaviour
         Capitalist
     }
     [SerializeField]
+    bool isFactionFixed = false;
+    [SerializeField]
+    [HideIf("isFactionFixed")]
     SpriteRenderer highlightSprite;
+    [SerializeField]
+    SpriteRenderer characterSprite;
     [SerializeField]
     ActorFaction curFaction = ActorFaction.Neutral;
     [SerializeField]
@@ -32,21 +37,28 @@ public class ScenarioActor : MonoBehaviour
 
     private void Start()
     {
-        ChangeColorToFaction();
+        if (isFactionFixed == false)
+        {
+            ChangeColorToFaction();
+        }
     }
 
     private void Update()
     {
-        isOnCamera = highlightSprite.isVisible;
-        if (curTime <= transitionTime)
+        isOnCamera = characterSprite.isVisible;
+        if (isFactionFixed == false)
         {
-            this.highlightSprite.color = Color.Lerp(previousColor, targetColor, curTime / transitionTime);
-            curTime += Time.deltaTime;
+            if (curTime <= transitionTime)
+            {
+                this.highlightSprite.color = Color.Lerp(previousColor, targetColor, curTime / transitionTime);
+                curTime += Time.deltaTime;
+            }
+            else
+            {
+                this.highlightSprite.color = targetColor;
+            }
         }
-        else
-        {
-            this.highlightSprite.color = targetColor;
-        }
+
     }
     public void SetColorOfActor(Color color)
     {
@@ -82,7 +94,7 @@ public class ScenarioActor : MonoBehaviour
 
     public bool IsOnCamera()
     {
-        return this.highlightSprite.isVisible;
+        return isOnCamera;
     }
 
     public int GetCapitalInfluence()

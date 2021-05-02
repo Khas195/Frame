@@ -27,7 +27,7 @@ public class PhotoInfo
             var influence = 0;
             for (int i = 0; i < participants.Count; i++)
             {
-                influence += participants[i].GetCapitalInfluence();
+                influence += participants[i].GetCommunistInfluence();
             }
             return influence;
         }

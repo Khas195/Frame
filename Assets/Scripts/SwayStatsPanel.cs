@@ -36,9 +36,9 @@ public class SwayStatsPanel : MonoBehaviour
     [Button]
     public void TriggerSliderUpdate()
     {
-        commieSlider.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Capitalist);
+        commieSlider.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Communist);
         sliderBG.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Neutral);
-        capitalistSlider.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Communist);
+        capitalistSlider.color = PublicSwayMechanic.GetInstance().GetColorToFaction(ScenarioActor.ActorFaction.Capitalist);
 
         startLeft = yesterdayData.swayPercentage.x / 100;
         startRight = (100 - yesterdayData.swayPercentage.y) / 100;

@@ -24,6 +24,6 @@ public class PaperNeededUI : MonoBehaviour
 
     private void UpdateTextUI()
     {
-        this.textUI.text = publishedData.paperDatas.Count + " / " + dayData.amountOfPaperNeededPerDay[dayData.currentDay];
+        this.textUI.text = publishedData.paperDatas.Count + "/" + dayData.amountOfPaperNeededPerDay[dayData.currentDay];
     }
 }

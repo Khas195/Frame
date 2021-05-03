@@ -338,7 +338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d337ed5bed71d84f85c56189237700c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFactionFixed: 0
   highlightSprite: {fileID: 7494425964070254667}
+  characterSprite: {fileID: 5461051716895017282}
   curFaction: 0
   capitalInfluence: 0
   communistInfluence: 0

@@ -71,11 +71,11 @@ public class InGameDayUI : MonoBehaviour, IObserver
     {
         if (currentDay < 10)
         {
-            textUI.text = "Day " + "0" + currentDay;
+            textUI.text = "0" + currentDay.ToString();
         }
         else
         {
-            textUI.text = "Day " + currentDay;
+            textUI.text = currentDay.ToString();
         }
     }
 }

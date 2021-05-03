@@ -1204,7 +1204,7 @@ RectTransform:
   m_LocalScale: {x: 0.9000001, y: 0.90000004, z: 1}
   m_Children: []
   m_Father: {fileID: 553330562}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1936,9 +1936,9 @@ RectTransform:
   m_Children:
   - {fileID: 297777677}
   - {fileID: 1528180118}
+  - {fileID: 2080148669}
   - {fileID: 770017242}
   - {fileID: 275627998}
-  - {fileID: 2080148669}
   - {fileID: 1248413362}
   - {fileID: 270163361}
   m_Father: {fileID: 880819806}
@@ -2278,7 +2278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.86666673, g: 0.86666673, b: 0.86666673, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2310,6 +2310,7 @@ MonoBehaviour:
   sectionImage: {fileID: 623531010}
   modiferText: {fileID: 2052996668}
   modifer: 4
+  manager: {fileID: 880819807}
 --- !u!114 &623531012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2594,7 +2595,7 @@ RectTransform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 553330562}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3072,7 +3073,6 @@ MonoBehaviour:
   curTime: -1
   IsInTransition: 0
   transitionIn: 1
-  mCanvas: {fileID: 1395825041}
 --- !u!114 &831481236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3203,8 +3203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   discardSource: {fileID: 0}
-  contentPerPage: 6
-  currentPage: 0
   photos: []
   contentRoot: {fileID: 595213087}
   photoPileZoneRadius: 150
@@ -3979,7 +3977,6 @@ MonoBehaviour:
   curTime: -1
   IsInTransition: 0
   transitionIn: 1
-  mCanvas: {fileID: 1395825041}
 --- !u!1 &1269608096
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,7 +6216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.86666673, g: 0.86666673, b: 0.86666673, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6304,6 +6301,7 @@ MonoBehaviour:
   sectionImage: {fileID: 1856558324}
   modiferText: {fileID: 241854679}
   modifer: 1
+  manager: {fileID: 880819807}
 --- !u!114 &1856573721 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8088190291011468806, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
@@ -6655,7 +6653,7 @@ RectTransform:
   - {fileID: 2091382442}
   - {fileID: 1856558323}
   m_Father: {fileID: 553330562}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6799,7 +6797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.86666673, g: 0.86666673, b: 0.86666673, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6839,6 +6837,7 @@ MonoBehaviour:
   sectionImage: {fileID: 2091382444}
   modiferText: {fileID: 741910659}
   modifer: 2
+  manager: {fileID: 880819807}
 --- !u!1 &2098344005
 GameObject:
   m_ObjectHideFlags: 0

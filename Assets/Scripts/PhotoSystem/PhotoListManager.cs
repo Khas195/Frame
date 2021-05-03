@@ -50,11 +50,16 @@ public class PhotoListManager : MonoBehaviour, IObserver
         var photoHolder = newGameObject.GetComponent<PhotoHolder>();
         photoHolder.SetPhotoInfo(photoInfo);
         photos.Add(photoHolder);
+        PlacePhotoInPile(photoHolder);
+        photoHolder.gameObject.SetActive(true);
+    }
+
+    private void PlacePhotoInPile(PhotoHolder photoHolder)
+    {
         var contentPos = contentRoot.GetComponent<RectTransform>().position;
         var randomPos = UnityEngine.Random.insideUnitSphere * photoPileZoneRadius + contentPos;
         photoHolder.GetComponent<RectTransform>().position = randomPos;
     }
-
 
     private void Discard(PhotoHolder photo)
     {
@@ -106,5 +111,10 @@ public class PhotoListManager : MonoBehaviour, IObserver
         {
             discardSource.Play();
         }
+    }
+
+    public void ReturnPhotoToPile(PhotoHolder sectionPhotoHolder)
+    {
+        PlacePhotoInPile(sectionPhotoHolder);
     }
 }

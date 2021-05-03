@@ -42,6 +42,8 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     Text modiferText = null;
     [SerializeField]
     int modifer = 1;
+    [SerializeField]
+    PhotoListManager manager;
 
     private void Awake()
     {
@@ -128,6 +130,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         if (holdingData.HasData())
         {
             holdingData.sectionPhotoHolder.gameObject.SetActive(true);
+            manager.ReturnPhotoToPile(holdingData.sectionPhotoHolder);
             holdingData.Clear();
         }
         hoverData.Clear();

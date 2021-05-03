@@ -127,6 +127,7 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         photoImage.sprite = newSprite;
     }
 
+
     public Image GetImage()
     {
         return photoImage;

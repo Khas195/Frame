@@ -34,9 +34,6 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     bool IsInTransition = false;
     [SerializeField]
     bool transitionIn = true;
-    [SerializeField]
-    Canvas mCanvas;
-    Vector3 originPos = Vector3.zero;
 
     private void Awake()
     {
@@ -170,7 +167,6 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnBeginDrag()
     {
         LogHelper.Log("Begin Drag Photo");
-        originPos = this.transform.position;
         this.OnMouseExit();
         NewsPaperPanel.GetInstance().SetCurrentSelection(this);
         this.PhotoFrame.raycastTarget = false;
@@ -185,7 +181,6 @@ public class PhotoHolder : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         this.photoImage.raycastTarget = true;
         this.PhotoFrame.raycastTarget = true;
         LogHelper.Log("Dropping Photo");
-        this.transform.position = originPos;
         NewsPaperPanel.GetInstance().OnPhotoDrop.Invoke();
         NewsPaperPanel.GetInstance().SetCurrentSelection(null);
     }

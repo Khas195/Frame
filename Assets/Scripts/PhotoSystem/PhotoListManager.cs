@@ -11,13 +11,11 @@ public class PhotoListManager : MonoBehaviour, IObserver
     [SerializeField]
     AudioSource discardSource;
     [SerializeField]
-    int contentPerPage;
-    [SerializeField]
-    int currentPage = 0;
-    [SerializeField]
     List<PhotoHolder> photos;
     [SerializeField]
     Transform contentRoot;
+    [SerializeField]
+    float photoPileZoneRadius = 1.0f;
 
 
 
@@ -40,12 +38,10 @@ public class PhotoListManager : MonoBehaviour, IObserver
     public void Hide()
     {
         photoListRoot.SetActive(false);
-        currentPage = 0;
     }
     public void Show()
     {
         photoListRoot.SetActive(true);
-        ShowPhotoOnCurrentPage();
     }
 
     public void AddPhoto(PhotoInfo photoInfo)
@@ -54,53 +50,11 @@ public class PhotoListManager : MonoBehaviour, IObserver
         var photoHolder = newGameObject.GetComponent<PhotoHolder>();
         photoHolder.SetPhotoInfo(photoInfo);
         photos.Add(photoHolder);
-    }
-    [Button]
-    public void NextPage()
-    {
-        int totalPage = Mathf.CeilToInt(photos.Count / contentPerPage);
-        currentPage += 1;
-        if (currentPage > totalPage)
-        {
-            currentPage = totalPage;
-        }
-        ShowPhotoOnCurrentPage();
-
-
+        var contentPos = contentRoot.GetComponent<RectTransform>().position;
+        var randomPos = UnityEngine.Random.insideUnitSphere * photoPileZoneRadius + contentPos;
+        photoHolder.GetComponent<RectTransform>().position = randomPos;
     }
 
-    private void ShowPhotoFromRange(int startPageIndex, int endPageIndex)
-    {
-        for (int i = 0; i < photos.Count; i++)
-        {
-            if (i >= startPageIndex && i < endPageIndex)
-            {
-                photos[i].gameObject.SetActive(true);
-            }
-            else
-            {
-                photos[i].gameObject.SetActive(false);
-            }
-        }
-    }
-
-    [Button]
-    public void PreviousPage()
-    {
-        currentPage -= 1;
-        if (currentPage < 0)
-        {
-            currentPage = 0;
-        }
-        ShowPhotoOnCurrentPage();
-    }
-
-    private void ShowPhotoOnCurrentPage()
-    {
-        var startPageIndex = currentPage * contentPerPage;
-        var endPageIndex = startPageIndex + contentPerPage;
-        ShowPhotoFromRange(startPageIndex, endPageIndex);
-    }
 
     private void Discard(PhotoHolder photo)
     {

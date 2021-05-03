@@ -26,9 +26,6 @@ public class TakePicture : MonoBehaviour
     float cameraPhotoSize;
     [SerializeField]
     [Required]
-    PhotoListManager photoViewPanel;
-    [SerializeField]
-    [Required]
     PhotoListManager newsPaperPanel;
     [SerializeField]
     [Required]
@@ -94,7 +91,6 @@ public class TakePicture : MonoBehaviour
         PublicSwayMechanic.GetInstance().AssignPhotoInfluence(ref newPhoto);
 
 
-        photoViewPanel.AddPhoto(newPhoto);
         newsPaperPanel.AddPhoto(newPhoto);
         photoModeHoder.SetPhotoInfo(newPhoto);
         takeHiResShot = false;

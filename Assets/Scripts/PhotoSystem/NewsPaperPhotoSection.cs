@@ -104,7 +104,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     {
         if (holdingData.sectionPhotoInfo != null)
         {
-            return holdingData.sectionPhotoInfo.CommunistInfluence;
+            return holdingData.sectionPhotoInfo.CommunistInfluence * this.modifer;
         }
         else
         {
@@ -116,7 +116,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     {
         if (holdingData.sectionPhotoInfo != null)
         {
-            return holdingData.sectionPhotoInfo.CapitalistInfluence;
+            return holdingData.sectionPhotoInfo.CapitalistInfluence * this.modifer;
         }
         else
         {

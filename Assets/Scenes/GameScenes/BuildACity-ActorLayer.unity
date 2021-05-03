@@ -1716,7 +1716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488111954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.786, y: 0, z: 0}
+  m_LocalPosition: {x: -20.96, y: -1.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2027497870}
@@ -2086,7 +2086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proCommunistColor: {r: 0.7176471, g: 0.27214965, b: 0.21176468, a: 1}
-  proCapitalistColor: {r: 0.65805495, g: 0.7176471, b: 0.21176468, a: 1}
+  proCapitalistColor: {r: 0.8500382, g: 0.8584906, b: 0.068841234, a: 1}
   neutralColor: {r: 0, g: 0, b: 0, a: 1}
   cititzens: []
   scenarioActors:
@@ -3095,6 +3095,14 @@ PrefabInstance:
     - target: {fileID: 1938676508057588592, guid: d29b7e57cb1957c4ba292eaf21d27859, type: 3}
       propertyPath: communistInfluence
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004209120469603135, guid: d29b7e57cb1957c4ba292eaf21d27859, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004209120658897929, guid: d29b7e57cb1957c4ba292eaf21d27859, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.346
       objectReference: {fileID: 0}
     - target: {fileID: 7512117386454236896, guid: d29b7e57cb1957c4ba292eaf21d27859, type: 3}
       propertyPath: m_RootOrder

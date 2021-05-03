@@ -78,6 +78,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         }
         else
         {
+            modiferText.enabled = true;
             sectionImage.sprite = null;
         }
     }

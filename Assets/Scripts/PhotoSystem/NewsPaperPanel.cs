@@ -48,11 +48,9 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     public void SwitchPanelOn()
     {
         panelRoot.SetActive(true);
-        photoListManager.Show();
     }
     public void SwitchPanelOff()
     {
-        photoListManager.Hide();
         panelRoot.SetActive(false);
         Clear();
 

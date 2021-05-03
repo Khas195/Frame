@@ -38,4 +38,8 @@ public class NewsPanelState : InGameUIState
         }
 
     }
+    public void ExitState()
+    {
+        this.controller.RequestState(InGameUIStateEnum.NormalState);
+    }
 }

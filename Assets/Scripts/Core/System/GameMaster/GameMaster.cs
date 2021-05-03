@@ -15,6 +15,9 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
     [SerializeField]
     [Required]
     GameInstance startInstance = null;
+    [SerializeField]
+    [Required]
+    GameInstance mainMenuInstance = null;
 
 
 
@@ -46,7 +49,7 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
     {
         loadingManager.UnloadAllScenes(exception: requiredScenes.masterScene);
         loadingManager.LoadSceneAdditively(requiredScenes.logScene);
-        RequestInstance(startInstance);
+        RequestInstance(mainMenuInstance);
     }
     void OnDestroy()
     {

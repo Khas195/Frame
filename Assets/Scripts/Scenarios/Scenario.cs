@@ -44,6 +44,7 @@ public class Scenario : MonoBehaviour, IObserver
                     {
                         this.LeaveScenario();
                         branches[i].EnterScenario();
+                        return;
                     }
                 }
             }

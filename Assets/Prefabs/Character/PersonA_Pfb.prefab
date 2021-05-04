@@ -292,7 +292,7 @@ MonoBehaviour:
   isGoingForward: 1
   character: {fileID: 2634079652254454366}
   aiEntity: {fileID: 7614453392723437461}
-  stoppingDistance: 0.5
+  stoppingDistance: 0.3
   targetPosition: {x: 0, y: 0, z: 0}
   currentDirection: {x: 0, y: 0}
 --- !u!1 &5813286221872833228

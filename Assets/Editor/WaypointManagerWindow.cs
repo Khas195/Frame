@@ -110,6 +110,7 @@ public class WaypointManagerWindow : EditorWindow
         }
         newWaypoint.SetNextWaypoint(selectedWaypoint);
         selectedWaypoint.SetPreviousWaypoint(newWaypoint);
+        newWaypoint.SetRadius(selectedWaypoint.GetWidth());
         newWaypoint.transform.SetSiblingIndex(selectedWaypoint.transform.GetSiblingIndex());
         Selection.activeGameObject = newWaypoint.gameObject;
     }
@@ -132,6 +133,7 @@ public class WaypointManagerWindow : EditorWindow
         }
         newWaypoint.SetPreviousWaypoint(selectedWaypoint);
         selectedWaypoint.SetNextWaypoint(newWaypoint);
+        newWaypoint.SetRadius(selectedWaypoint.GetWidth());
         newWaypoint.transform.SetSiblingIndex(selectedWaypoint.transform.GetSiblingIndex() + 1);
         Selection.activeGameObject = newWaypoint.gameObject;
 

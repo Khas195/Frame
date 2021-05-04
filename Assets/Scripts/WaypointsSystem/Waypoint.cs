@@ -17,6 +17,8 @@ public class Waypoint : MonoBehaviour
     [SerializeField]
     [Range(0f, 1.0f)]
     float branchRatio = 0.5f;
+    [SerializeField]
+    private bool goForwardWhenEnterBranch = true;
 
     public Vector3 GetPosition()
     {
@@ -69,5 +71,20 @@ public class Waypoint : MonoBehaviour
     public void AddBranch(Waypoint waypoint)
     {
         this.branches.Add(waypoint);
+    }
+
+    public bool ShouldGoForwardWhenEnteringBranch()
+    {
+        return goForwardWhenEnterBranch;
+    }
+
+    public float GetWidth()
+    {
+        return width;
+    }
+
+    public void SetRadius(float newWidth)
+    {
+        this.width = newWidth;
     }
 }

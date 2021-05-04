@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: StartUpProfile
   m_EditorClassIdentifier: 
   masterScene: MasterScene
-  loadScene: LoadScene
+  loadScene: LoadScene02
   logScene: LogScene
-  startUpInstance: {fileID: 11400000, guid: 00818778f21ed3948bb5a826a6c0bfae, type: 2}

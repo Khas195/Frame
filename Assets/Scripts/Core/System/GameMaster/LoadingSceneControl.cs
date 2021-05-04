@@ -32,7 +32,7 @@ public class LoadingSceneControl : SingletonMonobehavior<LoadingSceneControl>
         if (curTime < minLoadTime)
         {
             var unfillColor = loadingUnfillImage.color;
-            unfillColor.a = 1f - curTime / minLoadTime;
+            unfillColor.a = curTime / minLoadTime;
             loadingProgress.text = ((curTime / minLoadTime) * 100).ToString("F1") + "%";
             loadingUnfillImage.color = unfillColor;
             curTime += Time.deltaTime;

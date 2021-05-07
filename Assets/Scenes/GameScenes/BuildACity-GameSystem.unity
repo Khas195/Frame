@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &407093967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 407093969}
+  - component: {fileID: 407093968}
+  m_Layer: 0
+  m_Name: InkleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &407093968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407093967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa247605fe16d3848b53d9a99e57c1e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paperBoyDialogues: {fileID: 4900000, guid: eb1325860e11d3f42b3574362be30ff4, type: 3}
+--- !u!4 &407093969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407093967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502173519
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +210,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb1f87e971e0bb48a4f329a60530be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDayChangedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 407093968}
+        m_TargetAssemblyTypeName: InkleManager, Assembly-CSharp
+        m_MethodName: ClearPaperboyLines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   dayData: {fileID: 11400000, guid: 635edd2c161050147817c320b0278800, type: 2}
   publishedPaperData: {fileID: 11400000, guid: b296e5099a2b0f541b275be6fe8efed2, type: 2}
   nextDayButton: {fileID: 802985904}
@@ -363,7 +422,7 @@ RectTransform:
   m_Children:
   - {fileID: 802985905}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

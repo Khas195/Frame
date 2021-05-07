@@ -2,10 +2,13 @@ using System;
 using System.Collections;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 {
+    [SerializeField]
+    UnityEvent OnDayChangedEvent;
     [SerializeField]
     [Expandable]
     DaySystemData dayData;
@@ -58,6 +61,7 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
     {
         if (IsPossibleToProceedToNextDay())
         {
+            OnDayChangedEvent.Invoke();
             SetCurrentDay(dayData.currentDay + 1);
         }
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);

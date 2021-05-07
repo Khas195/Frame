@@ -61,6 +61,7 @@ public class AIController2D : MonoBehaviour
             if (shouldBranch)
             {
                 currentWaypoint = currentWaypoint.GetBranches()[Random.Range(0, currentWaypoint.GetBranches().Count - 1)];
+                isGoingForward = currentWaypoint.ShouldGoForwardWhenEnteringBranch();
             }
             else
             {

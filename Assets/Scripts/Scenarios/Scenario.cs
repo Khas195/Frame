@@ -3,8 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
+
 public class Scenario : MonoBehaviour, IObserver
 {
+    [SerializeField]
+    public static UnityEvent<Scenario> OnScenarioEnter = new UnityEvent<Scenario>();
+    [SerializeField]
+    public static UnityEvent<Scenario> OnScenarioLeave = new UnityEvent<Scenario>();
     [SerializeField]
     List<GameObject> scenarioProps = new List<GameObject>();
     [SerializeField]
@@ -18,6 +24,10 @@ public class Scenario : MonoBehaviour, IObserver
     {
         PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
         FindChildBranches();
+        if (isActiveAndEnabled)
+        {
+            OnScenarioEnter.Invoke(this);
+        }
     }
 
     [Button]
@@ -52,16 +62,17 @@ public class Scenario : MonoBehaviour, IObserver
 
     }
 
-    private void EnterScenario()
+    public void EnterScenario()
     {
         for (int i = 0; i < scenarioProps.Count; i++)
         {
             scenarioProps[i].SetActive(true);
         }
         this.isScenarioActive = true;
+        OnScenarioEnter.Invoke(this);
     }
 
-    private void LeaveScenario()
+    public void LeaveScenario()
     {
         for (int i = 0; i < scenarioProps.Count; i++)
         {

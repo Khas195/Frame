@@ -197,7 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 580247733070267181}
   moveData: {fileID: 11400000, guid: 912f48cd8e44c8b47879c653de6fab32, type: 2}
-  movement: {fileID: 4202726402566558456}
+  characterMovement: {fileID: 4202726402566558456}
+  cameraMovement: {fileID: 0}
 --- !u!1 &2861600786703080168
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,7 +560,7 @@ GameObject:
   - component: {fileID: 9190858446792104341}
   - component: {fileID: 580247733070267181}
   m_Layer: 0
-  m_Name: PersonA_Pfb
+  m_Name: Citizen_Female_01_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

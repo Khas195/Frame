@@ -53,7 +53,7 @@ public class PlayerController2D : MonoBehaviour, IObserver
     }
     public void MoveWithCamera()
     {
-        character.SetMovementTarget(cameraBody);
+        character.SetMovementTarget(cameraBody, true);
     }
     public void MoveWithCharacter()
     {

@@ -1313,6 +1313,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81dbcf7eb9f2fce40a9728afc1ef36ef, type: 2}
   - {fileID: 11400000, guid: 7d54215f68785be47aa4e2d421540c90, type: 2}
   isScenarioActive: 0
+--- !u!114 &1436084605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8103227121233283793, guid: 067f3d4fe9e029541a9a7d85f94e9dcd, type: 3}
+  m_PrefabInstance: {fileID: 7736603152711663076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0864ad7c47b1dd94a9f00d8f96e4a821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1440249407 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4178575831314475852, guid: e1c4999741fa1c24fb62723b4ff18f79, type: 3}
@@ -3120,6 +3131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paperboy_TestInkle01_Pfb
       objectReference: {fileID: 0}
+    - target: {fileID: 6505984242668739783, guid: 067f3d4fe9e029541a9a7d85f94e9dcd, type: 3}
+      propertyPath: characterMovement
+      value: 
+      objectReference: {fileID: 1436084605}
     - target: {fileID: 8797716917294951252, guid: 067f3d4fe9e029541a9a7d85f94e9dcd, type: 3}
       propertyPath: myCanvas
       value: 

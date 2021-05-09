@@ -16,17 +16,29 @@ public class Character2D : MonoBehaviour
     [Required]
     MovementData moveData = null;
 
+    IMovement currentMovementBehavior = null;
+
     [SerializeField]
     [BoxGroup("Requirements")]
     [Required]
-    IMovement movement = null;
+    IMovement characterMovement = null;
+    [SerializeField]
+    bool canUseCameraMovement = false;
+    [SerializeField]
+    [ShowIf("canUseCameraMovement")]
+    IMovement cameraMovement = null;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-        movement.SetRigidBody(body);
-        movement.SetMovementData(moveData);
+        characterMovement.SetRigidBody(body);
+        characterMovement.SetMovementData(moveData);
+        if (canUseCameraMovement)
+        {
+            cameraMovement.SetMovementData(moveData);
+        }
+        currentMovementBehavior = characterMovement;
     }
 
     public GameObject GetHost()
@@ -36,13 +48,13 @@ public class Character2D : MonoBehaviour
 
     public void Jump()
     {
-        movement.SignalJump();
+        characterMovement.SignalJump();
     }
 
 
     public void Move(float horizontal, float vertical)
     {
-        movement.Move(vertical, horizontal);
+        currentMovementBehavior.Move(vertical, horizontal);
     }
 
     public string GetName()
@@ -51,16 +63,18 @@ public class Character2D : MonoBehaviour
     }
 
 
-    public void SetMovementTarget(Rigidbody2D newBody)
+    public void SetMovementTarget(Rigidbody2D newBody, bool isCameraBody = false)
     {
-        movement.SetRigidBody(newBody);
-        if (newBody != body)
+        if (isCameraBody)
         {
             body.simulated = false;
+            this.cameraMovement.SetRigidBody(newBody);
+            currentMovementBehavior = cameraMovement;
         }
         else
         {
             body.simulated = true;
+            currentMovementBehavior = characterMovement;
         }
     }
 

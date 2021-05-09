@@ -26,5 +26,10 @@ public class InGameUIControl : SingletonMonobehavior<InGameUIControl>
     {
         manager.RequestState(newState);
     }
+
+    public InGameUIState.InGameUIStateEnum GetCurrentState()
+    {
+        return (InGameUIState.InGameUIStateEnum)manager.GetCurrentState<InGameUIState>().GetEnum();
+    }
 }
 

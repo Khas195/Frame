@@ -11,10 +11,14 @@ public class ParallaxObject
     [SerializeField]
     bool loop = false;
     [SerializeField]
-    List<Transform> loopingTiles;
+    List<Transform> loopingBackground;
     public Transform objectTransform;
     float startPos;
     public float parallaxFactor;
+    private GameObject midObject;
+    private GameObject leftObject;
+    private GameObject rightObject;
+
     public void Init()
     {
         startPos = objectTransform.transform.position.x;
@@ -33,6 +37,7 @@ public class ParallaxBackground : MonoBehaviour
     Camera mainCamera = null;
     [SerializeField]
     List<ParallaxObject> parallaxObjects;
+    InGameUIControl uiControl;
 
     void Start()
     {
@@ -40,6 +45,7 @@ public class ParallaxBackground : MonoBehaviour
         {
             parallaxObjects[i].Init();
         }
+        uiControl = InGameUIControl.GetInstance();
     }
 
     // Update is called once per frame
@@ -52,7 +58,9 @@ public class ParallaxBackground : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (mainCamera == null) return;
+        if (mainCamera == null || uiControl == null) return;
+        if (uiControl.GetCurrentState() == InGameUIState.InGameUIStateEnum.CapturingState) return;
+
         for (int i = 0; i < parallaxObjects.Count; i++)
         {
             parallaxObjects[i].UpdatePosition(mainCamera.transform.position);

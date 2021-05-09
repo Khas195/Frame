@@ -48,7 +48,7 @@ public class AIController2D : MonoBehaviour
         if (HasReachedDestination() == false)
         {
             currentDirection = (targetPosition - aiEntity.transform.position).normalized;
-            character.Move(currentDirection.x, currentDirection.y);
+            character.Move(currentDirection.x, 0);
         }
         else
         {
@@ -103,7 +103,7 @@ public class AIController2D : MonoBehaviour
 
     private bool HasReachedDestination()
     {
-        return Vector2.Distance(aiEntity.transform.position, targetPosition) <= stoppingDistance;
+        return Mathf.Abs(aiEntity.transform.position.x - targetPosition.x) <= stoppingDistance;
     }
 
     private void OnDrawGizmos()

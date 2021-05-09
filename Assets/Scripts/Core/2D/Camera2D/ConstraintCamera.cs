@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConstraintCamera : MonoBehaviour
+public class ConstraintCamera : SingletonMonobehavior<ConstraintCamera>
 {
     [SerializeField]
     Transform host = null;
@@ -10,6 +10,7 @@ public class ConstraintCamera : MonoBehaviour
     BoxCollider2D boundary = null;
     [SerializeField]
     Camera cam = null;
+    public bool isAtBound = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,17 +27,20 @@ public class ConstraintCamera : MonoBehaviour
         host.transform.position = hostPos;
 
     }
-   private Vector3 Constraint(Vector3 hostPos, float cameraSizeY, float cameraSizeX)
+    private Vector3 Constraint(Vector3 hostPos, float cameraSizeY, float cameraSizeX)
     {
+        isAtBound = false;
         var rightBound = boundary.transform.position.x + boundary.bounds.extents.x;
         var leftBound = boundary.transform.position.x - boundary.bounds.extents.x;
         if (hostPos.x + cameraSizeX / 2 >= rightBound)
         {
             hostPos.x = rightBound - cameraSizeX / 2;
+            isAtBound = true;
         }
         else if (hostPos.x - cameraSizeX / 2 <= leftBound)
         {
             hostPos.x = leftBound + cameraSizeX / 2;
+            isAtBound = true;
         }
 
         var upperBound = boundary.transform.position.y + boundary.bounds.extents.y;
@@ -44,10 +48,12 @@ public class ConstraintCamera : MonoBehaviour
         if (hostPos.y + cameraSizeY / 2 >= upperBound)
         {
             hostPos.y = upperBound - cameraSizeY / 2;
+            isAtBound = true;
         }
         else if (hostPos.y - cameraSizeY / 2 <= lowerBound)
         {
             hostPos.y = lowerBound + cameraSizeY / 2;
+            isAtBound = true;
         }
 
         return hostPos;

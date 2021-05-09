@@ -22,7 +22,6 @@ public class ParallaxObject
     public void UpdatePosition(Vector3 cameraPosition)
     {
         float dist = (cameraPosition.x * parallaxFactor);
-        float temp = (cameraPosition.x * (1 - parallaxFactor));
         this.objectTransform.position = new Vector3(startPos + dist, objectTransform.position.y, objectTransform.position.z);
     }
 }
@@ -55,7 +54,6 @@ public class ParallaxBackground : MonoBehaviour
     {
         if (mainCamera == null || uiControl == null) return;
         if (uiControl.GetCurrentState() == InGameUIState.InGameUIStateEnum.CapturingState) return;
-
         for (int i = 0; i < parallaxObjects.Count; i++)
         {
             parallaxObjects[i].UpdatePosition(mainCamera.transform.position);

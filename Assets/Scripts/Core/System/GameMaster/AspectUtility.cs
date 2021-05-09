@@ -7,7 +7,7 @@ public class AspectUtility : MonoBehaviour
 
     void Start()
     {
-        SetRatio(4, 3);
+        SetRatio(16, 9);
     }
     void SetRatio(float w, float h)
     {

@@ -10,8 +10,6 @@ using UnityEngine;
 public class Movement2D : IMovement
 {
     [SerializeField]
-    bool forAI = true;
-    [SerializeField]
     /** The Rigid body of the host object
      * body2D is needed to be assigned for this class to work
      */

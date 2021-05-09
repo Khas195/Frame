@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4722618087890406563
 Transform:
   m_ObjectHideFlags: 0
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -922341747186552561, guid: 2cc9861c82964044eb29fdd91a983b3c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac31858e94fcbed4191952e7d1b18987, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -312,6 +312,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f812647fb57174d9be7163f51dc2eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCanvas: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  todayLines: []
+  readTodayLines: []
+  genericLines: []
+  readGenericLines: []
+  showTime: 3
+  curShowTime: 0
+  genericLine: 1
 --- !u!1 &3447725463243944199
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +494,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5181668607722796671, guid: e2c5c52b83b4fb7418176e4a24304cfb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac31858e94fcbed4191952e7d1b18987, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -541,7 +550,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 8559851348933742004}
   moveData: {fileID: 11400000, guid: 912f48cd8e44c8b47879c653de6fab32, type: 2}
-  movement: {fileID: 8103227121233283793}
+  characterMovement: {fileID: 0}
+  canUseCameraMovement: 0
+  cameraMovement: {fileID: 0}
 --- !u!1 &8796611166668846693
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +598,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noCharacter: 0
   data: {fileID: 0}
-  forAI: 1
   body2D: {fileID: 0}
   smoothAcceleration: 0.2
   currentSpeed: 0

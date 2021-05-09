@@ -10,24 +10,19 @@ public class ParallaxObject
 {
     [SerializeField]
     bool loop = false;
-    [SerializeField]
-    List<Transform> loopingBackground;
     public Transform objectTransform;
     float startPos;
     public float parallaxFactor;
-    private GameObject midObject;
-    private GameObject leftObject;
-    private GameObject rightObject;
-
+    float length;
     public void Init()
     {
         startPos = objectTransform.transform.position.x;
-
     }
 
     public void UpdatePosition(Vector3 cameraPosition)
     {
         float dist = (cameraPosition.x * parallaxFactor);
+        float temp = (cameraPosition.x * (1 - parallaxFactor));
         this.objectTransform.position = new Vector3(startPos + dist, objectTransform.position.y, objectTransform.position.z);
     }
 }

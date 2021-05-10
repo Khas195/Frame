@@ -57,6 +57,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18039346, y: 0.10012269}
   m_EdgeRadius: 0
+--- !u!1 &908104775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908104776}
+  - component: {fileID: 908104777}
+  m_Layer: 0
+  m_Name: AnimatorController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908104776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908104775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3613919809456115095}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &908104777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908104775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96b0c617c0176c843b49e19f3cbc7c94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAnim: {fileID: 948680123382320897}
+  characterBody: {fileID: 580247733070267181}
 --- !u!1 &42507746068074321
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,6 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef793efd290da94aaa4f112b59f8c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFlipTarget: 0
+  flipTarget: {fileID: 0}
   useRigidBody: 1
   body: {fileID: 580247733070267181}
   useMovementScript: 0
@@ -291,7 +338,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b4ff01cffe7479743a89bd7fe03b8016, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4485a55e49d02354da67498bf559ad85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -395,6 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d337ed5bed71d84f85c56189237700c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCitizen: 1
   isFactionFixed: 0
   highlightSprite: {fileID: 7494425964070254667}
   characterSprite: {fileID: 5461051716895017282}
@@ -547,6 +595,7 @@ Transform:
   - {fileID: 4823693235435993438}
   - {fileID: 6158922208672535674}
   - {fileID: 703139126935809236}
+  - {fileID: 908104776}
   m_Father: {fileID: 9190858446792104341}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

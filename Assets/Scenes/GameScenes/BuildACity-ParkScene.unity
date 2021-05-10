@@ -1533,9 +1533,17 @@ PrefabInstance:
       propertyPath: currentWaypoint
       value: 
       objectReference: {fileID: 1443864434}
+    - target: {fileID: 948680123382320897, guid: a1faad9b19206bc4db9540d812998677, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 948680123382320897, guid: a1faad9b19206bc4db9540d812998677, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 917e8694221a0784f84ec39a39940059, type: 2}
     - target: {fileID: 7614453392723437461, guid: a1faad9b19206bc4db9540d812998677, type: 3}
       propertyPath: m_Name
-      value: Citizen_Male_01_Prefab
+      value: Citizen_Male_03_Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: a1faad9b19206bc4db9540d812998677, type: 3}
       propertyPath: m_RootOrder

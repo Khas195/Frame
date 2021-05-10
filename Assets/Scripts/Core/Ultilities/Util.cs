@@ -66,6 +66,10 @@ public static class Util
             animator.SetTrigger(paramName);
         }
     }
+    public static float GetAnimationCurveTotalTime(this AnimationCurve curve)
+    {
+        return curve.keys[curve.keys.Length - 1].time;
+    }
     public static String TextMod(this String text, Color color, bool bolden = false, bool italic = false)
     {
         var result = text;

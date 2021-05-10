@@ -13,6 +13,8 @@ public class ScenarioActor : MonoBehaviour
         Capitalist
     }
     [SerializeField]
+    bool isCitizen = true;
+    [SerializeField]
     bool isFactionFixed = false;
     [SerializeField]
     [HideIf("isFactionFixed")]
@@ -37,6 +39,14 @@ public class ScenarioActor : MonoBehaviour
 
     private void Start()
     {
+        if (isCitizen)
+        {
+            PublicSwayMechanic.GetInstance().RegisterCitizen(this);
+        }
+        else
+        {
+            PublicSwayMechanic.GetInstance().RegisterScenarioActors(this);
+        }
         if (isFactionFixed == false)
         {
             ChangeColorToFaction();

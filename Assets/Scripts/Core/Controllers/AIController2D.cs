@@ -27,6 +27,10 @@ public class AIController2D : MonoBehaviour
     private void Start()
     {
         isGoingForward = Random.Range(0.0f, 1.0f) >= 0.5f;
+        if (currentWaypoint)
+        {
+            this.SetWaypoint(currentWaypoint);
+        }
     }
 
     public void SetWaypoint(Waypoint waypoint)
@@ -48,7 +52,7 @@ public class AIController2D : MonoBehaviour
         if (HasReachedDestination() == false)
         {
             currentDirection = (targetPosition - aiEntity.transform.position).normalized;
-            character.Move(currentDirection.x, 0);
+            character.Move(currentDirection.x, currentDirection.y);
         }
         else
         {

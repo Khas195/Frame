@@ -18,16 +18,12 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
     [SerializeField]
     List<ScenarioActor> scenarioActors;
     [SerializeField]
-    GameObject citizenRoot = null;
-    [SerializeField]
     [Expandable]
     PublicSwayData currentSwayData;
     [SerializeField]
     [Expandable]
     PublicSwayData startGameSwayData;
 
-    [SerializeField]
-    GameObject scenarioRoot = null;
     [ShowNonSerializedField]
     int capitalist;
     [ShowNonSerializedField]
@@ -40,7 +36,6 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         currentSwayData.influence = startGameSwayData.influence;
         cititzens.Clear();
         scenarioActors.Clear();
-        GatherActors();
         AssignActorsAccordingToSway(true);
     }
     public void AddInfluence(float value, ScenarioActor.ActorFaction targetFaction)
@@ -122,11 +117,14 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         }
     }
 
-    [Button]
-    public void GatherActors()
+
+    public void RegisterCitizen(ScenarioActor newCitizen)
     {
-        cititzens.AddRange(citizenRoot.GetComponentsInChildren<ScenarioActor>());
-        scenarioActors.AddRange(scenarioRoot.GetComponentsInChildren<ScenarioActor>());
+        this.cititzens.Add(newCitizen);
+    }
+    public void RegisterScenarioActors(ScenarioActor newScenarioActor)
+    {
+        this.scenarioActors.Add(newScenarioActor);
     }
     private int GetAmoutOfActorOfFaction(ScenarioActor.ActorFaction factionToCheck)
     {

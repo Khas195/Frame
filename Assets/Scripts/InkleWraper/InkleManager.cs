@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Ink.Runtime;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class InkleManager : SingletonMonobehavior<InkleManager>
 {

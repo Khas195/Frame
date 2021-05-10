@@ -52,7 +52,17 @@ public class PaperboyActor : MonoBehaviour
     {
         todayLines.AddRange(InkleManager.GetInstance().RequestTodayLines());
     }
-
+    private void AskForTodayLines()
+    {
+        todayLines.AddRange(InkleManager.GetInstance().RequestTodayLines());
+    }
+    private void FixedUpdate()
+    {
+        if (todayLines.Count == 0)
+        {
+            AskForTodayLines();
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -77,6 +87,7 @@ public class PaperboyActor : MonoBehaviour
         }
         if (listToRead.Count > 0)
         {
+            this.myCanvas.gameObject.SetActive(true);
             var chosenLine = "";
             do
             {
@@ -87,6 +98,10 @@ public class PaperboyActor : MonoBehaviour
             listToIgnore.Add(chosenLine);
 
             currentLine = chosenLine;
+        }
+        else
+        {
+            this.myCanvas.gameObject.SetActive(false);
         }
 
         dialogueBox.text = currentLine;

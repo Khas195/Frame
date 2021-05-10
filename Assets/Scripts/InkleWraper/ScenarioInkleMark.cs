@@ -11,7 +11,9 @@ public class ScenarioInkleMark : MonoBehaviour
     private void Awake()
     {
         Scenario.OnScenarioEnter.AddListener(this.AddPaperboyLines);
+
     }
+
     public void AddPaperboyLines(Scenario newScenario)
     {
         if (newScenario == mScenario)

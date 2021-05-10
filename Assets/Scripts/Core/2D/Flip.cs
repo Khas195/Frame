@@ -7,6 +7,11 @@ using UnityEngine;
 public class Flip : MonoBehaviour
 {
     [SerializeField]
+    bool hasFlipTarget = false;
+    [SerializeField]
+    [ShowIf("hasFlipTarget")]
+    Transform flipTarget = null;
+    [SerializeField]
     bool useRigidBody = false;
     [SerializeField]
     [Required]
@@ -49,9 +54,14 @@ public class Flip : MonoBehaviour
 
     private void FlipModel()
     {
+        var flip = body.transform;
+        if (hasFlipTarget)
+        {
+            flip = flipTarget;
+        }
         isFacingRight = !isFacingRight;
-        var localScale = body.transform.localScale;
+        var localScale = flip.localScale;
         localScale.x *= -1;
-        body.transform.localScale = localScale;
+        flip.localScale = localScale;
     }
 }

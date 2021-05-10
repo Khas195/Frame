@@ -11,6 +11,9 @@ public class Scenario : MonoBehaviour, IObserver
     public static UnityEvent<Scenario> OnScenarioEnter = new UnityEvent<Scenario>();
     [SerializeField]
     public static UnityEvent<Scenario> OnScenarioLeave = new UnityEvent<Scenario>();
+
+
+
     [SerializeField]
     List<GameObject> scenarioProps = new List<GameObject>();
     [SerializeField]
@@ -25,12 +28,13 @@ public class Scenario : MonoBehaviour, IObserver
         PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
 
     }
+
     private void Start()
     {
         FindChildBranches();
         if (isActiveAndEnabled)
         {
-            OnScenarioEnter.Invoke(this);
+            EnterScenario();
         }
     }
 
@@ -95,5 +99,9 @@ public class Scenario : MonoBehaviour, IObserver
             }
         }
         return true;
+    }
+    public bool IsActiveScenario()
+    {
+        return isScenarioActive;
     }
 }

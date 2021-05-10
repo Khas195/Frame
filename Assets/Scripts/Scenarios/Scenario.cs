@@ -21,7 +21,7 @@ public class Scenario : MonoBehaviour, IObserver
     [SerializeField]
     List<ScenarioBranchCondition> conditionsToEnterThisScenario = new List<ScenarioBranchCondition>();
     [SerializeField]
-    private bool isScenarioActive;
+    private bool isScenarioActive = false;
 
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class Scenario : MonoBehaviour, IObserver
     private void Start()
     {
         FindChildBranches();
-        if (isActiveAndEnabled)
+        if (isScenarioActive)
         {
             EnterScenario();
         }
@@ -60,6 +60,7 @@ public class Scenario : MonoBehaviour, IObserver
                 {
                     if (branches[i].CanAdvanceToBranch())
                     {
+                        LogHelper.Log(("Advance to branch " + branches[i]).Bolden().Colorize(Color.green));
                         this.LeaveScenario();
                         branches[i].EnterScenario();
                         return;

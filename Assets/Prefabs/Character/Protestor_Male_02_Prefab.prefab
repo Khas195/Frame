@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef793efd290da94aaa4f112b59f8c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFlipTarget: 0
+  flipTarget: {fileID: 0}
   useRigidBody: 1
   body: {fileID: 580247733070267181}
   useMovementScript: 0
@@ -395,15 +397,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d337ed5bed71d84f85c56189237700c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFactionFixed: 0
+  isCitizen: 0
+  isFactionFixed: 1
   highlightSprite: {fileID: 7494425964070254667}
   characterSprite: {fileID: 5461051716895017282}
-  curFaction: 0
+  curFaction: 1
   capitalInfluence: 0
-  communistInfluence: 0
+  communistInfluence: 2
   isOnCamera: 0
-  previousColor: {r: 0, g: 0, b: 0, a: 0}
-  targetColor: {r: 0, g: 0, b: 0, a: 0}
+  previousColor: {r: 0.7176471, g: 0.27214965, b: 0.21176468, a: 1}
+  targetColor: {r: 0.7176471, g: 0.27214965, b: 0.21176468, a: 1}
   transitionTime: 3
 --- !u!1 &5845407629093928862
 GameObject:
@@ -697,7 +700,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -922341747186552561, guid: 2cc9861c82964044eb29fdd91a983b3c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7176471, g: 0.27214965, b: 0.21176468, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

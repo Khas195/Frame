@@ -30,12 +30,17 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
     int communist;
     [ShowNonSerializedField]
     int neutral;
+    protected override void Awake()
+    {
+        base.Awake();
+        cititzens.Clear();
+        scenarioActors.Clear();
+
+    }
     private void Start()
     {
         currentSwayData.swayPercentage = startGameSwayData.swayPercentage;
         currentSwayData.influence = startGameSwayData.influence;
-        cititzens.Clear();
-        scenarioActors.Clear();
         AssignActorsAccordingToSway(true);
     }
     public void AddInfluence(float value, ScenarioActor.ActorFaction targetFaction)

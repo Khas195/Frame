@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   influence:
     faction: 1
-    numberToCompare: 10
+    numberToCompare: 20
     compareMethod: 0
   data: {fileID: 11400000, guid: 06701f038dcda88419efd538407f903f, type: 2}

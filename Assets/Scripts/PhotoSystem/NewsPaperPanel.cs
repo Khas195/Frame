@@ -9,6 +9,9 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     GameObject panelRoot = null;
     [SerializeField]
     PhotoListManager photoListManager = null;
+
+
+
     [SerializeField]
     List<NewsPaperPhotoSection> sections = new List<NewsPaperPhotoSection>();
 
@@ -35,6 +38,19 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
         publishedPapersData.Reset();
     }
+
+    public bool HavePhotoInSections()
+    {
+        for (int i = 0; i < sections.Count; i++)
+        {
+            if (sections[i].HasPhoto() == true)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private void OnDestroy()
     {
         PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
@@ -75,7 +91,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         }
     }
 
-    private int GetTotalCapitalistPointFromSections()
+    public int GetTotalCapitalistPointFromSections()
     {
 
         var totalPoint = 0;
@@ -86,7 +102,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         return totalPoint;
     }
 
-    private int GetTotalCommiePointFromSections()
+    public int GetTotalCommiePointFromSections()
     {
         var totalPoint = 0;
         for (int i = 0; i < sections.Count; i++)
@@ -193,5 +209,9 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         {
             this.publishedPapersData.Reset();
         }
+    }
+    public bool HasPhoto()
+    {
+        return photoListManager.HasPhoto();
     }
 }

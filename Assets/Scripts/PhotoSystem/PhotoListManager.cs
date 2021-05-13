@@ -117,4 +117,8 @@ public class PhotoListManager : MonoBehaviour, IObserver
     {
         PlacePhotoInPile(sectionPhotoHolder);
     }
+    public bool HasPhoto()
+    {
+        return photos.Count > 0;
+    }
 }

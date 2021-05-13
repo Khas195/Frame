@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa247605fe16d3848b53d9a99e57c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paperBoyDialogues: {fileID: 4900000, guid: eb1325860e11d3f42b3574362be30ff4, type: 3}
+  gameStoryAsset: {fileID: 4900000, guid: eb1325860e11d3f42b3574362be30ff4, type: 3}
   paperboysLines: []
 --- !u!4 &407093969
 Transform:

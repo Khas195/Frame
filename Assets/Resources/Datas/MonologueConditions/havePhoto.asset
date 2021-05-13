@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5dd99d74691c4b41a50c8d92cd1d852, type: 3}
-  m_Name: BuildACityInstance
+  m_Script: {fileID: 11500000, guid: 1f608a2d844745b4b88deae1ce001f11, type: 3}
+  m_Name: havePhoto
   m_EditorClassIdentifier: 
-  instanceName: BuildACity
-  sceneList:
-  - BuildACity-GameSystem
-  - BuildACity-Player
-  - BuildACity-ParkScene
-  desiredGameState: 1
+  inverse: 0

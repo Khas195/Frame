@@ -65,6 +65,10 @@ public class FadeManyTransition : MonoBehaviour
             currentTime += Time.deltaTime;
         }
     }
+    public void SetFadeTime(float newFadeTime)
+    {
+        this.fadeTime = newFadeTime;
+    }
 
     private void SetAllUisAlpha(float newAlpha)
     {

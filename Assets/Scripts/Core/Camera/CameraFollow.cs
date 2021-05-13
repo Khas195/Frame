@@ -69,10 +69,6 @@ public class CameraFollow : MonoBehaviour
         Gizmos.DrawWireSphere(host.position, 0.5f);
     }
 
-    private void FixedUpdate()
-    {
-        Follow();
-    }
     public Camera GetCamera()
     {
         return this.host.GetComponentInChildren<Camera>();

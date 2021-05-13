@@ -10,14 +10,27 @@ public class ConstraintCamera : SingletonMonobehavior<ConstraintCamera>
     BoxCollider2D boundary = null;
     [SerializeField]
     Camera cam = null;
+
+    public void RegisterCameraBound(BoxCollider2D cameraBound)
+    {
+        this.boundary = cameraBound;
+    }
+
     public bool isAtBound = false;
     // Start is called before the first frame update
     void Start()
     {
 
     }
-    private void LateUpdate()
+
+    public void UpdateCamera()
     {
+        if (this.boundary == null)
+        {
+            LogHelper.LogError("Camera Bound is missing the Boundary Box!!.", true);
+            return;
+        }
+
         var hostPos = host.position;
 
         var cameraSizeY = 2 * cam.orthographicSize;
@@ -25,8 +38,8 @@ public class ConstraintCamera : SingletonMonobehavior<ConstraintCamera>
         hostPos = Constraint(hostPos, cameraSizeY, cameraSizeX);
 
         host.transform.position = hostPos;
-
     }
+
     private Vector3 Constraint(Vector3 hostPos, float cameraSizeY, float cameraSizeX)
     {
         isAtBound = false;

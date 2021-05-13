@@ -3867,7 +3867,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14, y: 7}
+  m_Size: {x: 14, y: 9}
   m_EdgeRadius: 0
 --- !u!1 &1248412523
 GameObject:
@@ -6884,6 +6884,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1249359300}
     - target: {fileID: 254506684, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: cameraPhotoSize
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 254506684, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: cameraOgirinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 254506684, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: OnScreenshotTaken.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1794875842}
@@ -6895,6 +6903,22 @@ PrefabInstance:
       propertyPath: cameraInstruction
       value: 
       objectReference: {fileID: 574074799}
+    - target: {fileID: 254506688, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: zoomCurve.m_Curve.Array.data[0].inSlope
+      value: 0.15506735
+      objectReference: {fileID: 0}
+    - target: {fileID: 254506688, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: zoomCurve.m_Curve.Array.data[0].outSlope
+      value: 0.15506735
+      objectReference: {fileID: 0}
+    - target: {fileID: 254506688, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: zoomCurve.m_Curve.Array.data[0].outWeight
+      value: 0.077386074
+      objectReference: {fileID: 0}
+    - target: {fileID: 254506688, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: zoomCurve.m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8734785929979704173, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: m_RootOrder
       value: 1

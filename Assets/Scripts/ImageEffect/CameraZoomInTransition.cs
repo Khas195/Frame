@@ -22,15 +22,14 @@ public class CameraZoomInTransition : MonoBehaviour
     [SerializeField]
     AnimationCurve zoomCurve;
     [SerializeField]
-    float effectTime = 1.0f;
-    [SerializeField]
     float blurValue = 0.5f;
     [SerializeField]
     [Range(0, 1)]
     float zoomValue = 0.5f;
     [SerializeField]
     [ReadOnly]
-    float curTime = 100f;
+    float curBlurTime = 100f;
+    float curZoomTime = 100f;
     [SerializeField]
     [ReadOnly]
     bool isInTransition = false;
@@ -39,26 +38,40 @@ public class CameraZoomInTransition : MonoBehaviour
     {
         blurMaterial.SetFloat("_Size", blurValue);
         playerCamera.LerpBetweenSize(zoomValue);
-        if (curTime <= effectTime)
+        bool isBluring = false;
+        bool isZooming = false;
+        if (curBlurTime <= blurCurve.GetAnimationCurveTotalTime())
         {
-            zoomValue = zoomCurve.Evaluate(curTime);
-            blurValue = blurCurve.Evaluate(curTime);
-            curTime += Time.deltaTime;
+            blurValue = blurCurve.Evaluate(curBlurTime);
+            curBlurTime += Time.deltaTime;
+            isBluring = true;
+        }
+        if (curZoomTime <= zoomCurve.GetAnimationCurveTotalTime())
+        {
+            zoomValue = zoomCurve.Evaluate(curZoomTime);
+            curZoomTime += Time.deltaTime;
+            isZooming = true;
+        }
+        if (isBluring && isZooming)
+        {
             cameraState.text = "Focusing...";
             var tempColor = cameraInstruction.color;
             tempColor.a = Mathf.Lerp(1.0f, 0.0f, zoomValue);
             cameraInstruction.color = tempColor;
+
         }
         else
         {
             this.enabled = false;
             cameraState.text = "Ready ";
+
         }
     }
     [Button]
     public void TransitionIn()
     {
-        curTime = 0.0f;
+        curBlurTime = 0.0f;
+        curZoomTime = 0.0f;
         this.enabled = true;
         SetStartState();
         source.Play();
@@ -66,7 +79,8 @@ public class CameraZoomInTransition : MonoBehaviour
     [SerializeField]
     public void TransitionOut()
     {
-        curTime = 100f;
+        curBlurTime = 100f;
+        curZoomTime = 100f;
         SetStartState();
     }
     [SerializeField]

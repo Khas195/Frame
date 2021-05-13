@@ -17,5 +17,5 @@ MonoBehaviour:
   - BuildACity-GameSystem
   - BuildACity-Player
   - BuildACity-ActorLayer
-  - BuildACity-EnvironmentLayer
+  - BuildACity-ParkScene
   desiredGameState: 1

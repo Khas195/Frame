@@ -21,25 +21,29 @@ public class PhotoModeState : InGameUIState
     {
         selection.ExitPhotoMode();
     }
+    bool entertingOtherUI = false;
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            this.controller.RequestState(InGameUIStateEnum.NormalState);
-        }
-        else if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.V))
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);
+            entertingOtherUI = true;
         }
         else if (Input.GetKeyDown(KeyCode.B))
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
-
+            entertingOtherUI = true;
         }
         else if (Input.GetKeyDown(KeyCode.T))
         {
             controller.RequestState(InGameUIStateEnum.PublishedPaperPanel);
+            entertingOtherUI = true;
+        }
+
+        if (Input.anyKeyDown && entertingOtherUI == false)
+        {
+            this.controller.RequestState(InGameUIStateEnum.NormalState);
         }
     }
 }

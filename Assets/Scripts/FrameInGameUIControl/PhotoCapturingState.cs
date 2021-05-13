@@ -37,11 +37,6 @@ public class PhotoCapturingState : InGameUIState
         {
             this.controller.RequestState(InGameUIStateEnum.NormalState);
         }
-        else if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            controller.RequestState(InGameUIStateEnum.PhotoInventoryState);
-        }
-
         else if (Input.GetKeyDown(KeyCode.B))
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);

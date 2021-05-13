@@ -17,7 +17,15 @@ public class CameraSyncronizer : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        follow.Follow();
-        constraint.UpdateCamera();
+        if (follow.enabled)
+        {
+            follow.Follow();
+        }
+        else
+        {
+
+            constraint.UpdateCameraCapturingBound();
+        }
+        constraint.UpdateCameraMapBound();
     }
 }

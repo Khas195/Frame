@@ -24,11 +24,7 @@ public class NormalUiState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            controller.RequestState(InGameUIStateEnum.PhotoInventoryState);
-        }
-        else if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.V))
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);
         }

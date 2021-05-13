@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,6 +45,9 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     int modifer = 1;
     [SerializeField]
     PhotoListManager manager;
+    [SerializeField]
+    [ReadOnly]
+    bool mouseIsOver = false;
 
     private void Awake()
     {
@@ -67,6 +71,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             modiferText.enabled = false;
             sectionImage.sprite = hoverData.sectionSprite;
         }
+        mouseIsOver = true;
 
     }
     public void OnPhotoSectionExit()
@@ -81,6 +86,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             modiferText.enabled = true;
             sectionImage.sprite = null;
         }
+        mouseIsOver = false;
     }
     public void OnPhotoSectionUp()
     {

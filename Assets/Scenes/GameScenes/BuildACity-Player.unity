@@ -222,7 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.5882353, b: 0.6745098, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2189,7 +2189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.5896226, b: 0.6730692, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2421,6 +2421,7 @@ MonoBehaviour:
   modiferText: {fileID: 2052996668}
   modifer: 4
   manager: {fileID: 880819807}
+  mouseIsOver: 0
 --- !u!114 &623531012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5613,7 +5614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.8834805, b: 0.3254717, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5862,7 +5863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.88235295, b: 0.3254902, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6066,6 +6067,7 @@ MonoBehaviour:
   modiferText: {fileID: 241854679}
   modifer: 1
   manager: {fileID: 880819807}
+  mouseIsOver: 0
 --- !u!114 &1856573721 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8088190291011468806, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
@@ -6647,6 +6649,7 @@ MonoBehaviour:
   modiferText: {fileID: 741910659}
   modifer: 2
   manager: {fileID: 880819807}
+  mouseIsOver: 0
 --- !u!1 &2098344005
 GameObject:
   m_ObjectHideFlags: 0

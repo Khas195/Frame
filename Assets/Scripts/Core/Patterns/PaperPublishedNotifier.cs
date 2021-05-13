@@ -32,6 +32,22 @@ public class PaperPublishedNotifier : MonoBehaviour
                 notifyTexts[i].color = color;
             }
             curTime += Time.deltaTime;
+
+            if (curTime > notifyDuration)
+            {
+                ResetAllNotifiersToTransparent();
+
+            }
+        }
+    }
+
+    private void ResetAllNotifiersToTransparent()
+    {
+        for (int i = 0; i < notifyTexts.Count; i++)
+        {
+            var color = notifyTexts[i].color;
+            color.a = 0.0f;
+            notifyTexts[i].color = color;
         }
     }
 }

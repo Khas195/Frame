@@ -58,6 +58,16 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         modiferText.text = "X " + modifer.ToString();
         modiferText.gameObject.SetActive(SwitchGameStats.STATS_ON);
     }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && mouseIsOver)
+        {
+            if (NewsPaperPanel.GetInstance().GetCurrentSelection() == null)
+            {
+                this.Clear();
+            }
+        }
+    }
     private void OnDestroy()
     {
         PostOffice.Unsubscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
@@ -72,7 +82,6 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             sectionImage.sprite = hoverData.sectionSprite;
         }
         mouseIsOver = true;
-
     }
     public void OnPhotoSectionExit()
     {

@@ -7,13 +7,8 @@ using UnityEngine.UI;
 public class CharacterPublishMonologue : MonoBehaviour
 {
     [SerializeField]
-    string genericLineStitch;
-    [SerializeField]
-    string proCommieStich;
-    [SerializeField]
-    string proCapitalStitch;
-    [SerializeField]
-    string neutralStitch;
+    List<string> stitchesInStory = new List<string>();
+
     [SerializeField]
     List<MonologueLine> monologueLines;
     [SerializeField]
@@ -93,13 +88,13 @@ public class CharacterPublishMonologue : MonoBehaviour
         isResting = true;
     }
     [SerializeField]
-    List<MonologueLine> testPossble;
+    List<MonologueLine> possibleLineToSpeak;
     private void Speak()
     {
         var possibleLines = new List<MonologueLine>();
         possibleLines.AddRange(this.monologueLines.FindAll((x) => x.IsAllConditionSatisfied() == true && x != lastSpokenLine));
         possibleLines = FindAllElementsWithHighestPiority(possibleLines);
-        testPossble = possibleLines;
+        possibleLineToSpeak = possibleLines;
         if (possibleLines.Count > 0)
         {
             currentLine = possibleLines[UnityEngine.Random.Range(0, possibleLines.Count)];
@@ -142,17 +137,12 @@ public class CharacterPublishMonologue : MonoBehaviour
     public void LoadLines()
     {
         InkleManager.GetInstance().CreateStory();
-        var commieLines = InkleManager.GetInstance().GetLinesFromSticth(proCommieStich);
-        this.AddMonologueLines(monologueLines, commieLines);
+        for (int i = 0; i < stitchesInStory.Count; i++)
+        {
+            var newLines = InkleManager.GetInstance().GetLinesFromSticth(stitchesInStory[i]);
+            this.AddMonologueLines(monologueLines, newLines);
 
-        var capitalLine = InkleManager.GetInstance().GetLinesFromSticth(proCapitalStitch);
-        this.AddMonologueLines(monologueLines, capitalLine);
-
-        var neutralLine = InkleManager.GetInstance().GetLinesFromSticth(neutralStitch);
-        this.AddMonologueLines(monologueLines, neutralLine);
-
-        var genericLines = InkleManager.GetInstance().GetLinesFromSticth(genericLineStitch);
-        this.AddMonologueLines(monologueLines, genericLines);
+        }
         SortPiority();
     }
     [Button]

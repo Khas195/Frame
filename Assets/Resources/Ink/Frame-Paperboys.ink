@@ -59,6 +59,51 @@ Day01: Scenario 01 Protestors breaking the King's statue.
     -> DONE
     * Why in the holy mackerel is the park always dark when I'm ther' !!.
     -> DONE
+=== CitizenLines ===
 
+= ParkScene
+    * Sup
+    -> DONE
+    * What a beautiful night
+    -> DONE
+    * Excercising by going back and forth
+    -> DONE
+    * It is funny how we're all saying the same thing.
+    -> DONE
+    * I feel sick. I think I've been afflicted by "Lazy dialogue writing"!.
+    -> DONE
+= ParkStatueScenarioProtestorMale02
 
+    * Pull man pull!
+    -> DONE
+    * Don't let your dream be dreams. JUST PULLLL!.
+    -> DONE
+    * PULLLLL!
+    -> DONE
+    
+= ParkStatueScenarioProtestorPullingStatue
+
+    * I am PULLLING!!
+    -> DONE
+    * Can't you help ?!!!.
+    -> DONE
+    * DUDE, this rope is long enough for both of us!!.
+    -> DONE
+    
+= ParkStatueScenarioProtestorHoldingBoard
+    * Holding a board, protesting.... man this is boring. Those other guys have more actions than us.
+    -> DONE
+    * Yawnnnnnn
+    -> DONE
+    * Man, they are fighting right next to us. If only we have the animations to help.
+    -> DONE
+= ParkStatueScenarioPoliceBeatingProtestors
+    * WHO'S YOUR DADDY!!
+    -> DONE
+    * Gosh!!, just wait until I have the animation to make this swing.
+    -> DONE
+    * My arm is getting tired!!.
+    -> DONE
+    * I wonder when Sagar will give me my swinging animation
+    -> DONE
 -> END

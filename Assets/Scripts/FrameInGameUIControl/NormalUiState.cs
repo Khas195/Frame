@@ -26,10 +26,6 @@ public class NormalUiState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            GameMaster.GetInstance().RequestInstance(testInstance);
-        }
         if (Input.GetKeyDown(KeyCode.V))
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);

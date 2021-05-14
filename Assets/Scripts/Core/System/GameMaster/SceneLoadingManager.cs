@@ -23,9 +23,9 @@ public class SceneLoadingManager : SingletonMonobehavior<SceneLoadingManager>, I
         {
             if (currentInstance != null)
             {
-                UnloadInstance(currentInstance);
+                UnloadInstance(currentInstance, removeDubplicate: false);
             }
-            LoadInstance(instanceToLoad);
+            LoadInstance(instanceToLoad, loadDuplicate: false);
         }
 
     }
@@ -65,22 +65,45 @@ public class SceneLoadingManager : SingletonMonobehavior<SceneLoadingManager>, I
         return totalProgress / this.scenesLoading.Count;
     }
 
-    public void LoadInstance(GameInstance requestedInstance)
+    public void LoadInstance(GameInstance requestedInstance, bool loadDuplicate = true)
     {
-        currentInstance = requestedInstance;
         for (int i = 0; i < requestedInstance.sceneList.Count; i++)
         {
-            LoadSceneAdditively(requestedInstance.sceneList[i]);
+            if (loadDuplicate == false && currentInstance != null)
+            {
+                if (currentInstance.sceneList.Contains(requestedInstance.sceneList[i]) == false)
+                {
+                    LoadSceneAdditively(requestedInstance.sceneList[i]);
+                }
+            }
+            else
+            {
+                LoadSceneAdditively(requestedInstance.sceneList[i]);
+            }
+
         }
+        currentInstance = requestedInstance;
+
     }
 
-    public void UnloadInstance(GameInstance instance)
+    public void UnloadInstance(GameInstance instance, bool removeDubplicate = true)
     {
         for (int i = 0; i < instance.sceneList.Count; i++)
         {
-            SceneManager.UnloadSceneAsync(instance.sceneList[i]);
+            if (removeDubplicate == false)
+            {
+                if (instanceToLoad.sceneList.Contains(instance.sceneList[i]) == false)
+                {
+                    SceneManager.UnloadSceneAsync(instance.sceneList[i]);
+                }
+            }
+            else
+            {
+                SceneManager.UnloadSceneAsync(instance.sceneList[i]);
+            }
         }
     }
+
     public void LoadSceneAdditively(string sceneName)
     {
         LogHelper.Log(" Loading Additively " + sceneName.Bolden() + "", true);

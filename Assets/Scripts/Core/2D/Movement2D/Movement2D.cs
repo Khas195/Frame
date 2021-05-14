@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
@@ -93,4 +93,5 @@ public class Movement2D : IMovement
     {
         base.RotateToward(direction, rotateY);
     }
+
 }

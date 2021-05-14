@@ -22,10 +22,12 @@ public class PlayerController2D : MonoBehaviour, IObserver
     private void Awake()
     {
         PostOffice.Subscribes(this, GameEvent.PlayerEntityEvent.FETCH_PLAYER_ENTITY_EVENT);
+        PostOffice.Subscribes(this, GameEvent.PlayerEntityEvent.NEW_STAGE_LOADED_EVENT);
     }
     private void OnDestroy()
     {
         PostOffice.Unsubscribes(this, GameEvent.PlayerEntityEvent.FETCH_PLAYER_ENTITY_EVENT);
+        PostOffice.Unsubscribes(this, GameEvent.PlayerEntityEvent.NEW_STAGE_LOADED_EVENT);
     }
     // Update is called once per frame
     void Update()
@@ -49,6 +51,12 @@ public class PlayerController2D : MonoBehaviour, IObserver
         if (eventName == GameEvent.PlayerEntityEvent.FETCH_PLAYER_ENTITY_EVENT)
         {
             pack.SetValue(GameEvent.PlayerEntityEvent.FetchPlayerEntityEventData.PLAYER_GAME_OBJECT, this.playerEntity);
+        }
+        else if (eventName == GameEvent.PlayerEntityEvent.NEW_STAGE_LOADED_EVENT)
+        {
+            var spawnPoint = pack.GetValue<Vector3>(GameEvent.PlayerEntityEvent.StageLoadedEventDAta.SPAWN_POINT);
+            playerEntity.transform.position = spawnPoint;
+
         }
     }
     public void MoveWithCamera()

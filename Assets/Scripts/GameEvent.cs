@@ -11,6 +11,11 @@ public static class GameEvent
         {
             public static string PLAYER_GAME_OBJECT = "PLAYER_GAME_OBJECT";
         }
+        public static string NEW_STAGE_LOADED_EVENT = "NEW_STAGE_LOADED_EVENT";
+        public static class StageLoadedEventDAta
+        {
+            public static string SPAWN_POINT = "SPAWN_POINT";
+        }
     }
     public static class DaySystemEvent
     {

@@ -26,7 +26,6 @@ public class Scenario : MonoBehaviour, IObserver
     private void Awake()
     {
         PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
-
     }
 
     private void Start()

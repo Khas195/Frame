@@ -9,10 +9,18 @@ using UnityEngine.Events;
 public class InkleManager : SingletonMonobehavior<InkleManager>
 {
     [SerializeField]
-    TextAsset gameStoryAsset;
+    TextAsset monologues;
+    [SerializeField]
+    TextAsset playerConversations;
     [SerializeField]
     [ReadOnly]
-    Story story;
+    Story monologueStory;
+
+
+
+    [SerializeField]
+    [ReadOnly]
+    Story playerConversationStory;
     [SerializeField]
     [ReadOnly]
     List<string> paperboysLines = new List<string>();
@@ -24,10 +32,13 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     [Button]
     public void CreateStory()
     {
-
-        story = new Story(gameStoryAsset.text);
+        monologueStory = new Story(monologues.text);
+        playerConversationStory = new Story(playerConversations.text);
     }
-
+    public Story GetPlayerConversation()
+    {
+        return playerConversationStory;
+    }
     public void AddPaperboyLines(string inkleStitch)
     {
         paperboysLines.AddRange(GetLinesFromSticth(inkleStitch));
@@ -35,11 +46,11 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     public List<string> GetLinesFromSticth(string stitch)
     {
         var result = new List<string>();
-        story.ChoosePathString(stitch);
-        story.Continue();
-        for (int i = 0; i < story.currentChoices.Count; i++)
+        monologueStory.ChoosePathString(stitch);
+        monologueStory.Continue();
+        for (int i = 0; i < monologueStory.currentChoices.Count; i++)
         {
-            result.Add(story.currentChoices[i].text);
+            result.Add(monologueStory.currentChoices[i].text);
         }
         return result;
     }

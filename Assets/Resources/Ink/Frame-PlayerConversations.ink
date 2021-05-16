@@ -24,8 +24,10 @@ Alright, what do you want to ask ?.
         * * * What are you talking about ?
         * * * Huh ?
         - - - Well, of course you won't get it. I'm not talking to you anyway... But congrats to us for being test subjects for the dialogue system!.
-                * * * * ..
-                -> TaxiDriverQuestions
+                * * * * hmm. Your text box is covering your face.
+                    - - - - - What Text Box ?.
+                    * * * * * ...
+                    - - - - - -> TaxiDriverQuestions
     * * So, how you doing ?
         Look Pal, me and you just met, we're not there yet, are you going somewhere or not ?.
         * * * What a Mackerel!

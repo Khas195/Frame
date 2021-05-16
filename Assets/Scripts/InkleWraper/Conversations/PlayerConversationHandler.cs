@@ -76,6 +76,7 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
             }
             else
             {
+                choices[i].gameObject.SetActive(true);
                 choices[i].SetText(currentChoices[i].text);
             }
         }

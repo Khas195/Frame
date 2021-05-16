@@ -34,6 +34,7 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     {
         monologueStory = new Story(monologues.text);
         playerConversationStory = new Story(playerConversations.text);
+
     }
     public Story GetPlayerConversation()
     {

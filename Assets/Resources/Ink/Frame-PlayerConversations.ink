@@ -6,6 +6,8 @@ EXTERNAL OpenTaxiMap()
 
 Hey, Ya want to do some wher' pal !?
     * "Yup, Let me see the map."
+    ~ OpenTaxiMap()
+    -> END
     * "No, just passing by."
     * "I don't know yet, I have some questions."
     I'm a just a normal taxi driver, not a infomation lady!.

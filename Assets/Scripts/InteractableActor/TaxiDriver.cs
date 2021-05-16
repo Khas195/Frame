@@ -23,6 +23,7 @@ public class TaxiDriver : MonoBehaviour, IParticipant
             InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.MapState);
         });
     }
+
     private void Update()
     {
         if (playerInRange)

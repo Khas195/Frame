@@ -31,10 +31,10 @@ TextureImporter:
     second: newspaper05_light
   - first:
       213: 451557630078629631
-    second: newspaper05_sheet_9
+    second: newspaper05_Lamp_Off
   - first:
       213: -7594428946449642419
-    second: newspaper05_sheet_10
+    second: newspaper05_Lamp_On
   - first:
       213: 1036527969363636483
     second: newspaper05_stamp
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newspaper05_sheet_9
+      name: newspaper05_Lamp_Off
       rect:
         serializedVersion: 2
         x: 898
@@ -349,7 +349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newspaper05_sheet_10
+      name: newspaper05_Lamp_On
       rect:
         serializedVersion: 2
         x: 897
@@ -462,7 +462,7 @@ TextureImporter:
         width: 21
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

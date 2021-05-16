@@ -38,6 +38,8 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     SectionData hoverData = new SectionData();
     [SerializeField]
     SectionData holdingData = new SectionData();
+    [SerializeField]
+    Image mouseOverPhotoFrame = null;
 
     [SerializeField]
     Text modiferText = null;
@@ -52,6 +54,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     private void Awake()
     {
         PostOffice.Subscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
+        mouseOverPhotoFrame.enabled = false;
     }
     private void Start()
     {
@@ -81,6 +84,10 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             modiferText.enabled = false;
             sectionImage.sprite = hoverData.sectionSprite;
         }
+        else
+        {
+            mouseOverPhotoFrame.enabled = true;
+        }
         mouseIsOver = true;
     }
     public void OnPhotoSectionExit()
@@ -95,6 +102,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             modiferText.enabled = true;
             sectionImage.sprite = null;
         }
+        mouseOverPhotoFrame.enabled = false;
         mouseIsOver = false;
     }
     public void OnPhotoSectionUp()

@@ -8,10 +8,6 @@ using UnityEngine.UI;
 public class PlayerConversationHandler : MonoBehaviour, IParticipant
 {
     [SerializeField]
-    FadeManyTransition textBoxControl;
-    [SerializeField]
-    Text textUI = null;
-    [SerializeField]
     FadeManyTransition choicesControl;
     [SerializeField]
     List<Text> choices = new List<Text>();
@@ -19,10 +15,8 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
     Action<Choice> onChoiceChosen = null;
     List<Choice> currentChoices;
     bool choosingChoices = false;
-    int currentChoiceIndex = 0;
     private void Start()
     {
-        textBoxControl.FadeOut();
         choicesControl.FadeOut();
     }
     // Update is called once per frame
@@ -30,49 +24,41 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
     {
         if (onChoiceChosen != null)
         {
-            bool chosen = false;
+            int chosenIndex = -1;
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                currentChoiceIndex = 1;
-                chosen = true;
+                chosenIndex = 0;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                currentChoiceIndex = 2;
-                chosen = true;
+                chosenIndex = 1;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                currentChoiceIndex = 3;
-                chosen = true;
+                chosenIndex = 2;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-                currentChoiceIndex = 4;
-                chosen = true;
+                chosenIndex = 3;
             }
             else if (Input.GetKeyDown(KeyCode.Alpha5))
             {
-                currentChoiceIndex = 5;
-                chosen = true;
+                chosenIndex = 4;
             }
-            if (chosen)
+            if (chosenIndex >= 0)
             {
-                textBoxControl.FadeIn();
-                textUI.text = choices[currentChoiceIndex - 1].text;
                 choicesControl.FadeOut();
-                Invoke("ChooseChoice", 3);
+                ChooseChoice(currentChoices[chosenIndex]);
 
             }
         }
     }
 
-    public void ChooseChoice()
+    public void ChooseChoice(Choice chosenChoice)
     {
-        onChoiceChosen(currentChoices[currentChoiceIndex - 1]);
+        onChoiceChosen(chosenChoice);
         onChoiceChosen = null;
         choosingChoices = false;
-        textBoxControl.FadeOut();
     }
 
     public void Show(string textToShow)
@@ -99,12 +85,14 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
 
     public void StopConversing()
     {
-        choicesControl.FadeOut();
-        textBoxControl.FadeOut();
-        for (int i = 0; i < choices.Count; i++)
+        LogHelper.Log("Conversation- Player stops conversing");
+        if (choicesControl.IsFadeOut() == false)
         {
-            choices[i].text = "";
+            choicesControl.FadeOut();
         }
-        textUI.text = "";
+    }
+
+    public void StartConvsering()
+    {
     }
 }

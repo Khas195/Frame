@@ -37,7 +37,6 @@ public class TaxiDriver : MonoBehaviour, IParticipant
     {
         if (other.gameObject.tag == "Player")
         {
-            textBoxControl.FadeIn();
             playerInRange = true;
             ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, other.gameObject.GetComponent<IParticipant>(), this);
         }
@@ -46,7 +45,6 @@ public class TaxiDriver : MonoBehaviour, IParticipant
     {
         if (other.gameObject.tag == "Player")
         {
-            textBoxControl.FadeOut();
             playerInRange = false;
             ConversationMananger.GetInstance().TerminateCurrentConversation();
         }
@@ -63,7 +61,19 @@ public class TaxiDriver : MonoBehaviour, IParticipant
 
     public void StopConversing()
     {
-        textBoxControl.FadeOut();
-        textUI.text = "";
+        LogHelper.Log("Conversation- Taxi Driver stops conversing");
+        if (textBoxControl.IsFadeOut() == false)
+        {
+            textBoxControl.FadeOut();
+        }
+    }
+
+    public void StartConvsering()
+    {
+        LogHelper.Log("Conversation- Taxi Driver starts conversing");
+        if (textBoxControl.IsFadeOut())
+        {
+            textBoxControl.FadeIn();
+        }
     }
 }

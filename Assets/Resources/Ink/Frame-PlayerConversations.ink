@@ -14,20 +14,21 @@ Hey, Ya want to do some wher' pal !?
         - - -> TaxiDriverQuestions
             
         * * 3. You know what, never mind, I'll be on my way.
-    - -> END
+    - See you around then.
+    -> DONE
 = TaxiDriverQuestions        
 Alright, what do you want to ask ?.
-    * * 1. The city has been under heavy restrictions at the moment. Where can you take me ?
+    * * 1. Where can you take me ?
         Right now, not a lot of places, the dev team is not done making them yet.
         * * * 1. What 'dev' team ?
         * * * 2. What are you talking about ?
         * * * 3. Huh ?
-        - - - Well, of course you won't get it. I'm not talking to you anyway. But congrats to us for being a test subjects for the dialogue system!.
+        - - - Well, of course you won't get it. I'm not talking to you anyway... But congrats to us for being test subjects for the dialogue system!.
                 * * * * 1. ..
                 -> TaxiDriverQuestions
     * * 2. So, how you doing ?
         Look Pal, me and you just met, we're not there yet, are you going somewhere or not ?.
-        * * * 1. What a mackerel!
+        * * * 1. What a Mackerel!
         * * * 2. Don't have to be so rude!.
         - - - 3. Whatever man!.
         -> TaxiDriverQuestions

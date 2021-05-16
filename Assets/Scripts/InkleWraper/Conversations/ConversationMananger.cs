@@ -9,6 +9,7 @@ public interface IParticipant
 {
     void Show(string textToShow);
     void ChooseFromChoices(List<Choice> currentChoices, Action<Choice> choiceCallBack);
+    void StartConvsering();
     void StopConversing();
 }
 public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
@@ -30,12 +31,15 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
     {
         if (conversationActive)
         {
+            LogHelper.Log("Conversation- can continue: " + playerConversationStory.canContinue);
             while (playerConversationStory.canContinue)
             {
                 var sentence = playerConversationStory.Continue();
+                LogHelper.Log("Conversation- Sentences: " + playerConversationStory.canContinue);
                 sentence.Trim();
                 other.Show(sentence);
             }
+            LogHelper.Log("Conversation- Current choices: " + playerConversationStory.currentChoices.Count);
             if (playerConversationStory.currentChoices.Count > 0)
             {
                 if (playerIsChoosing == false)
@@ -44,6 +48,7 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
                                     {
                                         playerConversationStory.ChooseChoiceIndex(chosenChoice.index);
                                         playerIsChoosing = false;
+                                        LogHelper.Log("Conversation- player chose: " + chosenChoice.text);
                                     });
                     playerIsChoosing = true;
                 }
@@ -51,6 +56,7 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
             else
             {
                 this.TerminateCurrentConversation();
+                LogHelper.Log("Conversation- Conversation terminated: ");
             }
 
         }
@@ -59,6 +65,7 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
     public void TerminateCurrentConversation()
     {
         conversationActive = false;
+        playerIsChoosing = false;
         player.StopConversing();
         other.StopConversing();
     }
@@ -67,7 +74,10 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
     {
         this.player = player;
         this.other = other;
+        this.playerConversationStory.ResetState();
         playerConversationStory.ChoosePathString(conversationStitch);
         conversationActive = true;
+        player.StartConvsering();
+        other.StartConvsering();
     }
 }

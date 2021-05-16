@@ -26,6 +26,9 @@ public class FadeManyTransition : MonoBehaviour
     [ReadOnly]
     bool isTransitioning = false;
     [SerializeField]
+    [ReadOnly]
+    bool isFadedOut = false;
+    [SerializeField]
     Action callback = null;
 
 
@@ -61,6 +64,14 @@ public class FadeManyTransition : MonoBehaviour
                     callback();
                     callback = null;
                 }
+                if (targetAlpha <= 0.1f)
+                {
+                    isFadedOut = true;
+                }
+                else
+                {
+                    isFadedOut = false;
+                }
             }
             currentTime += Time.deltaTime;
         }
@@ -78,6 +89,10 @@ public class FadeManyTransition : MonoBehaviour
             color.a = newAlpha;
             uis[i].color = color;
         }
+    }
+    public bool IsFadeOut()
+    {
+        return isFadedOut;
     }
 
     [Button]

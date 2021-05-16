@@ -153,7 +153,7 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 81
-        width: 4
+        width: 38
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -164,69 +164,6 @@ TextureImporter:
       bones: []
       spriteID: 2779842496bc696e0800000000000000
       internalID: -1831052545535469710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_conversation_1
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 81
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e75d690069f56f8e0800000000000000
-      internalID: -1660034314779830914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_conversation_2
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 81
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31abbb8c8029bd5c0800000000000000
-      internalID: -4189594461912974829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_conversation_3
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 78
-        width: 5
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 191c40b72e1c309c0800000000000000
-      internalID: -3962110068685225583
       vertices: []
       indices: 
       edges: []
@@ -300,7 +237,7 @@ TextureImporter:
         serializedVersion: 2
         x: 4
         y: 61
-        width: 4
+        width: 38
         height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -311,69 +248,6 @@ TextureImporter:
       bones: []
       spriteID: 025c8853327e952e0800000000000000
       internalID: -2136422409802562272
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_conversation_8
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 61
-        width: 4
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 618bd5b72c66bfd90800000000000000
-      internalID: -7062938605121062890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_conversation_9
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 61
-        width: 30
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85cc5dc78c8e00830800000000000000
-      internalID: 4035481213909453912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ui_conversation_10
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 58
-        width: 5
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91a5ef5d6b7b5ee80800000000000000
-      internalID: -8149905954754897383
       vertices: []
       indices: 
       edges: []
@@ -542,6 +416,48 @@ TextureImporter:
       bones: []
       spriteID: 0f426890bba3e8ad0800000000000000
       internalID: -2698154551755266832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_conversation_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 78
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75d690069f56f8e0800000000000000
+      internalID: -1660034314779830914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_conversation_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 58
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31abbb8c8029bd5c0800000000000000
+      internalID: -4189594461912974829
       vertices: []
       indices: 
       edges: []

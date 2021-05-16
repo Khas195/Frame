@@ -10,7 +10,7 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
     [SerializeField]
     FadeManyTransition choicesControl;
     [SerializeField]
-    List<Text> choices = new List<Text>();
+    List<ChoiceUI> choices = new List<ChoiceUI>();
     [SerializeField]
     Action<Choice> onChoiceChosen = null;
     List<Choice> currentChoices;
@@ -76,7 +76,7 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
             }
             else
             {
-                choices[i].text = currentChoices[i].text;
+                choices[i].SetText(currentChoices[i].text);
             }
         }
         this.currentChoices = currentChoices;

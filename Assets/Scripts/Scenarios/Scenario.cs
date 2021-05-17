@@ -33,7 +33,21 @@ public class Scenario : MonoBehaviour, IObserver
         FindChildBranches();
         if (isScenarioActive)
         {
-            EnterScenario();
+            bool canEnterChildScenario = false;
+            for (int i = 0; i < branches.Count; i++)
+            {
+                if (branches[i].CanAdvanceToBranch())
+                {
+                    LogHelper.Log(("Advance to branch " + branches[i]).Bolden().Colorize(Color.green));
+                    this.LeaveScenario();
+                    branches[i].EnterScenario();
+                    canEnterChildScenario = true;
+                }
+            }
+            if (canEnterChildScenario == false)
+            {
+                EnterScenario();
+            }
         }
     }
 

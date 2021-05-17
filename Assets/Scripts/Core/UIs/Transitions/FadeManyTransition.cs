@@ -5,6 +5,7 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
+[ExecuteInEditMode]
 public class FadeManyTransition : MonoBehaviour
 {
     [SerializeField]

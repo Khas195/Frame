@@ -36,7 +36,8 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
             {
                 var sentence = playerConversationStory.Continue();
                 LogHelper.Log("Conversation- Sentences: " + playerConversationStory.canContinue);
-                sentence.Trim();
+                char[] charsToTrim = { ' ', '\n' };
+                sentence = sentence.Trim(charsToTrim);
                 other.Show(sentence);
             }
             LogHelper.Log("Conversation- Current choices: " + playerConversationStory.currentChoices.Count);

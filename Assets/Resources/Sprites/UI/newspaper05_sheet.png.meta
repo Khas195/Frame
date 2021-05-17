@@ -53,6 +53,15 @@ TextureImporter:
   - first:
       213: 6643697281882029834
     second: newspaper05_photo_frame_corner
+  - first:
+      213: 6576289791208966195
+    second: newspaper05_sheet_17
+  - first:
+      213: -589343143886468407
+    second: newspaper05_tray_button
+  - first:
+      213: -7805169839276247415
+    second: newspaper05_paper_ball
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -229,8 +238,8 @@ TextureImporter:
       name: newspaper05_photo_frame_mid
       rect:
         serializedVersion: 2
-        x: 420
-        y: 32
+        x: 403
+        y: 31
         width: 41
         height: 57
       alignment: 0
@@ -250,8 +259,8 @@ TextureImporter:
       name: newspaper05_photo_frame_left
       rect:
         serializedVersion: 2
-        x: 393
-        y: 32
+        x: 376
+        y: 31
         width: 24
         height: 27
       alignment: 0
@@ -271,8 +280,8 @@ TextureImporter:
       name: newspaper05_photo_frame_right
       rect:
         serializedVersion: 2
-        x: 467
-        y: 47
+        x: 450
+        y: 46
         width: 19
         height: 22
       alignment: 0
@@ -292,10 +301,10 @@ TextureImporter:
       name: newspaper05_tray
       rect:
         serializedVersion: 2
-        x: 332
-        y: 108
-        width: 93
-        height: 77
+        x: 331
+        y: 107
+        width: 95
+        height: 79
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -460,8 +469,8 @@ TextureImporter:
       name: newspaper05_text_bin
       rect:
         serializedVersion: 2
-        x: 438
-        y: 115
+        x: 332
+        y: 94
         width: 21
         height: 7
       alignment: 0
@@ -481,12 +490,12 @@ TextureImporter:
       name: newspaper05_photo_frame_corner
       rect:
         serializedVersion: 2
-        x: 504
-        y: 32
-        width: 6
-        height: 5
+        x: 492
+        y: 52
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,6 +503,69 @@ TextureImporter:
       bones: []
       spriteID: a0f7ec16a77233c50800000000000000
       internalID: 6643697281882029834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338c901f8bca34b50800000000000000
+      internalID: 6576289791208966195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_tray_button
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 108
+        width: 94
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cac5d9788b32d7f0800000000000000
+      internalID: -589343143886468407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_paper_ball
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 106
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986b85e72677ea390800000000000000
+      internalID: -7805169839276247415
       vertices: []
       indices: 
       edges: []

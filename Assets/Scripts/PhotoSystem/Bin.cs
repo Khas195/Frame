@@ -1,36 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 public class Bin : MonoBehaviour
 {
     [SerializeField]
-    RectTransform photoArea;
-    [SerializeField]
-    List<PhotoHolder> discardList;
-    PhotoHolder currentHolder = null;
+    [ReadOnly]
+    PhotoHolder toDiscardPhoto = null;
     public void OnPhotoEnter()
     {
         var photoHolder = NewsPaperPanel.GetInstance().GetCurrentSelection();
         if (photoHolder != null)
         {
-            currentHolder = photoHolder;
+            toDiscardPhoto = photoHolder;
         }
     }
     public void OnPhotoExit()
     {
-        if (currentHolder != null)
-        {
-            discardList.Remove(currentHolder);
-        }
-        currentHolder = null;
+        toDiscardPhoto = null;
     }
     public void OnPhotoDrop()
     {
-        if (currentHolder != null)
+        if (toDiscardPhoto != null)
         {
-            discardList.Add(currentHolder);
-            currentHolder = null;
+            NewsPaperPanel.GetInstance().TriggerDiscardPublishedPhotoEvent(toDiscardPhoto.GetPhotoInfo());
+            toDiscardPhoto = null;
         }
     }
 }

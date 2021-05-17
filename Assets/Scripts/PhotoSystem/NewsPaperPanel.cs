@@ -24,7 +24,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     [SerializeField]
     PhotoListManager manager = null;
     [SerializeField]
-    PaperPublishedNotifier notifier;
+    PaperPublishedNotifier paperPublishedNotifer;
     [SerializeField]
     PaperPublishedNotifier missingImagesNotifier;
     [SerializeField]
@@ -154,7 +154,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
 
     private void TriggerPhotoPublishedEvent(List<PhotoInfo> publishedPhoto)
     {
-        notifier.Notify();
+        paperPublishedNotifer.Notify();
 
         List<ScenarioActor> participatedActors = new List<ScenarioActor>();
         for (int i = 0; i < publishedPhoto.Count; i++)
@@ -181,13 +181,18 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         DataPool.GetInstance().ReturnInstance(package);
     }
 
-    private void TriggerDiscardPublishedPhotoEvent(List<PhotoInfo> photoToDiscard)
+    public void TriggerDiscardPublishedPhotoEvent(List<PhotoInfo> photoToDiscard)
     {
         var package = DataPool.GetInstance().RequestInstance();
         package.SetValue(GameEvent.PhotoEvent.DiscardPhotoEventData.PHOTO_INFOS, photoToDiscard);
         PostOffice.SendData(package, GameEvent.PhotoEvent.DISCARD_PHOTO_EVENT);
         DataPool.GetInstance().ReturnInstance(package);
-        notifier.Notify();
+    }
+    public void TriggerDiscardPublishedPhotoEvent(PhotoInfo photoToDiscard)
+    {
+        var tempList = new List<PhotoInfo>();
+        tempList.Add(photoToDiscard);
+        this.TriggerDiscardPublishedPhotoEvent(tempList);
     }
 
     public void Clear()

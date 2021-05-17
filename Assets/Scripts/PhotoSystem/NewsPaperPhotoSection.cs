@@ -86,7 +86,10 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
         }
         else
         {
-            mouseOverPhotoFrame.enabled = true;
+            if (this.holdingData.HasData())
+            {
+                mouseOverPhotoFrame.enabled = true;
+            }
         }
         mouseIsOver = true;
     }

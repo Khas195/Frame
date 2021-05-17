@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: 0e207bc56af6a14419c97c778dc58918
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8112993962938545013
+    second: ScenePark_Drunk_02_Solo_0
+  - first:
+      213: -8194116930429548979
+    second: ScenePark_Drunk_02_Solo_1
+  - first:
+      213: 185670243397549482
+    second: ScenePark_Drunk_02_Solo_2
+  - first:
+      213: 3707447708786123238
+    second: ScenePark_Drunk_02_Solo_3
+  - first:
+      213: -3541554192299488756
+    second: ScenePark_Drunk_02_Solo_4
+  - first:
+      213: -2142952001639980290
+    second: ScenePark_Drunk_02_Solo_5
+  - first:
+      213: 9172836398958582212
+    second: ScenePark_Drunk_02_Solo_6
+  - first:
+      213: 6866187543518384264
+    second: ScenePark_Drunk_02_Solo_7
+  - first:
+      213: 1234922667666586573
+    second: ScenePark_Drunk_02_Solo_8
+  - first:
+      213: -1278825650055943887
+    second: ScenePark_Drunk_02_Solo_9
+  - first:
+      213: -2719290621163499726
+    second: ScenePark_Drunk_02_Solo_10
+  - first:
+      213: 6906654784144027033
+    second: ScenePark_Drunk_02_Solo_11
+  - first:
+      213: -67422500962739790
+    second: ScenePark_Drunk_02_Solo_12
+  - first:
+      213: 595842965795118745
+    second: ScenePark_Drunk_02_Solo_13
+  - first:
+      213: 6228734917800345402
+    second: ScenePark_Drunk_02_Solo_14
+  - first:
+      213: 240371488980383028
+    second: ScenePark_Drunk_02_Solo_15
+  - first:
+      213: 1041242688439473997
+    second: ScenePark_Drunk_02_Solo_16
+  - first:
+      213: -5351745888341423988
+    second: ScenePark_Drunk_02_Solo_17
+  - first:
+      213: -6498722984169586555
+    second: ScenePark_Drunk_02_Solo_18
+  - first:
+      213: -1556001149622256006
+    second: ScenePark_Drunk_02_Solo_19
+  - first:
+      213: -5366311994563058266
+    second: ScenePark_Drunk_02_Solo_20
+  - first:
+      213: -1157837147178572117
+    second: ScenePark_Drunk_02_Solo_21
+  - first:
+      213: -9123660331114901893
+    second: ScenePark_Drunk_02_Solo_22
+  - first:
+      213: 8962554046377215376
+    second: ScenePark_Drunk_02_Solo_23
+  - first:
+      213: -2707301266057163928
+    second: ScenePark_Drunk_02_Solo_24
+  - first:
+      213: -61407683637138114
+    second: ScenePark_Drunk_02_Solo_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 19
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57337d95605279070800000000000000
+      internalID: 8112993962938545013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 26
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d468bb9e016a84e80800000000000000
+      internalID: -8194116930429548979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 23
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad32174a12a39200800000000000000
+      internalID: 185670243397549482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_3
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 23
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e168895c00837330800000000000000
+      internalID: 3707447708786123238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 23
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a813fd93fd9dec0800000000000000
+      internalID: -3541554192299488756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_5
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 24
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef269832284b242e0800000000000000
+      internalID: -2142952001639980290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 23
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c913b6ea167c4f70800000000000000
+      internalID: 9172836398958582212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_7
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 23
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88010a43139994f50800000000000000
+      internalID: 6866187543518384264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb38539f93532110800000000000000
+      internalID: 1234922667666586573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_9
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139e1c6c8d2b04ee0800000000000000
+      internalID: -1278825650055943887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f8f746693234ad0800000000000000
+      internalID: -2719290621163499726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d2823eeed59df50800000000000000
+      internalID: 6906654784144027033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_12
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b95f34b797701ff0800000000000000
+      internalID: -67422500962739790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_13
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e122e350cd44800800000000000000
+      internalID: 595842965795118745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fbf8f0869e07650800000000000000
+      internalID: 6228734917800345402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_15
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435bece7898f55300800000000000000
+      internalID: 240371488980383028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_16
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47586955bc337e00800000000000000
+      internalID: 1041242688439473997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_17
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8880452877cab5b0800000000000000
+      internalID: -5351745888341423988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_18
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580c7eaa0e5efc5a0800000000000000
+      internalID: -6498722984169586555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_19
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e7aaec239f76ae0800000000000000
+      internalID: -1556001149622256006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_20
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5a6224ca70785b0800000000000000
+      internalID: -5366311994563058266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_21
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba66ba6cf398eefe0800000000000000
+      internalID: -1157837147178572117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_22
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ec290a44f326180800000000000000
+      internalID: -9123660331114901893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_23
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095cd866b63616c70800000000000000
+      internalID: 8962554046377215376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_24
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 27
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b82b8a7dbbd6ad0800000000000000
+      internalID: -2707301266057163928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScenePark_Drunk_02_Solo_25
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 36
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d245e7906d52ff0800000000000000
+      internalID: -61407683637138114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -50,6 +50,9 @@ TextureImporter:
   - first:
       213: 2969501332215302149
     second: newspaper05_text_bin
+  - first:
+      213: 6643697281882029834
+    second: newspaper05_photo_frame_corner
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -470,6 +473,27 @@ TextureImporter:
       bones: []
       spriteID: 5080eb28ab9c53920800000000000000
       internalID: 2969501332215302149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_photo_frame_corner
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 32
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f7ec16a77233c50800000000000000
+      internalID: 6643697281882029834
       vertices: []
       indices: 
       edges: []

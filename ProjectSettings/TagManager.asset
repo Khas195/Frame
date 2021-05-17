@@ -41,9 +41,21 @@ TagManager:
   - name: Background
     uniqueID: 3773535487
     locked: 0
+  - name: Environment
+    uniqueID: 3845658393
+    locked: 0
+  - name: Building
+    uniqueID: 1476606107
+    locked: 0
+  - name: BehindPeopleProbs
+    uniqueID: 2925830883
+    locked: 0
+  - name: People
+    uniqueID: 3326726701
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Environment
-    uniqueID: 3845658393
+  - name: InfrontOfPeoplProbs
+    uniqueID: 3356964525
     locked: 0

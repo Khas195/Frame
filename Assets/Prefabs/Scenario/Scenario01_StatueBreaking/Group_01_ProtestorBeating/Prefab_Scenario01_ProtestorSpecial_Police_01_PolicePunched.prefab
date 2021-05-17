@@ -88,8 +88,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -968240595
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -7097980563004665089, guid: 6ce612e908f6cf2448f156b95de7148f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -417,7 +417,7 @@ GameObject:
   - component: {fileID: 4629956712685757821}
   - component: {fileID: 4017738819213328325}
   m_Layer: 0
-  m_Name: Prefab_Scenario01_ProtestorSpecial_Police_01_PolicePunched 1
+  m_Name: Prefab_Scenario01_ProtestorSpecial_Police_01_PolicePunched
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

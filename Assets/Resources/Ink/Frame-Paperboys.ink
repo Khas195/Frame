@@ -105,6 +105,15 @@ Day01: Scenario 01 Protestors breaking the King's statue.
     -> DONE
     * I wonder when Sagar will give me my swinging animation
     -> DONE
+= PoliceHittingDudeWithBaton
+    * WHO'S YOUR DADDY!!
+    -> DONE
+    * Gosh!!, just wait until I have the animation to make this swing.
+    -> DONE
+    * My arm is getting tired!!.
+    -> DONE
+    * I wonder when Sagar will give me my swinging animation
+    -> DONE
 
 -> END
 

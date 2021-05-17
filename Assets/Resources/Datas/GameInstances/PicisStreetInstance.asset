@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5dd99d74691c4b41a50c8d92cd1d852, type: 3}
-  m_Name: ParkSceneInstanceTest02
+  m_Name: PicisStreetInstance
   m_EditorClassIdentifier: 
   instanceName: BuildACity
   sceneList:
   - BuildACity-GameSystem
   - BuildACity-Player
-  - BuildACity-ParkScene_Test2
+  - BuildACity-PicisStreetScene
   desiredGameState: 1

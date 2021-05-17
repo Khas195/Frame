@@ -13,10 +13,10 @@ TextureImporter:
     second: mainMenu01_sheet_2
   - first:
       213: -8021140729816996720
-    second: mainMenu01_sheet_3
+    second: mainMenu01_start_button
   - first:
       213: -1624403968879967614
-    second: mainMenu01_sheet_4
+    second: mainMenu01_start_button_background
   - first:
       213: 500215312157153441
     second: mainMenu01_sheet_5
@@ -32,6 +32,12 @@ TextureImporter:
   - first:
       213: -3114718812878325074
     second: mainMenu01_sheet_9
+  - first:
+      213: 8882784729798378280
+    second: mainMenu02_text_start
+  - first:
+      213: -1685005507249783793
+    second: mainMenu02_text_exit
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +82,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -184,13 +190,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu01_sheet_3
+      name: mainMenu01_start_button
       rect:
         serializedVersion: 2
-        x: 12
-        y: 2
-        width: 87
-        height: 212
+        x: 20
+        y: 104
+        width: 46
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,13 +211,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu01_sheet_4
+      name: mainMenu01_start_button_background
       rect:
         serializedVersion: 2
-        x: 110
-        y: 0
-        width: 91
-        height: 216
+        x: 113
+        y: 104
+        width: 46
+        height: 101
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +256,10 @@ TextureImporter:
       name: mainMenu01_sheet_6
       rect:
         serializedVersion: 2
-        x: 404
-        y: 0
-        width: 65
-        height: 228
+        x: 424
+        y: 55
+        width: 43
+        height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +277,10 @@ TextureImporter:
       name: mainMenu01_sheet_7
       rect:
         serializedVersion: 2
-        x: 510
-        y: 0
-        width: 69
-        height: 230
+        x: 498
+        y: 56
+        width: 43
+        height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +298,8 @@ TextureImporter:
       name: mainMenu01_sheet_8
       rect:
         serializedVersion: 2
-        x: 579
-        y: 0
+        x: 575
+        y: 46
         width: 343
         height: 382
       alignment: 0
@@ -313,12 +319,12 @@ TextureImporter:
       name: mainMenu01_sheet_9
       rect:
         serializedVersion: 2
-        x: 282
-        y: 176
+        x: 251
+        y: 172
         width: 16
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,6 +332,48 @@ TextureImporter:
       bones: []
       spriteID: eaa392ffdbb46c4d0800000000000000
       internalID: -3114718812878325074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainMenu02_text_start
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 19
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82385e316adf54b70800000000000000
+      internalID: 8882784729798378280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainMenu02_text_exit
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 214
+        width: 15
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cbccf2b68ad98e0800000000000000
+      internalID: -1685005507249783793
       vertices: []
       indices: 
       edges: []

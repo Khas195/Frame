@@ -236,7 +236,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.8, y: 0.8}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.28125, y: 0.71875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -327,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8088190289435956485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.34, y: 0.44, z: 0}
+  m_LocalPosition: {x: -5.34, y: 0.44, z: 0.447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8088190290008871509}
@@ -628,15 +628,7 @@ PrefabInstance:
     - target: {fileID: 8408767348756074402, guid: 5c32cde399c8e4046a66a3a5c974dd3b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -8823628465445999712, guid: 9b4cdb1272f93ef4f89efd50827ed906, type: 3}
-    - target: {fileID: 8408767348756074402, guid: 5c32cde399c8e4046a66a3a5c974dd3b, type: 3}
-      propertyPath: m_SortingLayer
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408767348756074402, guid: 5c32cde399c8e4046a66a3a5c974dd3b, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -968240595
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3917543726948896521, guid: 87391e25e7aba554cbe3fd331a8fd902, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c32cde399c8e4046a66a3a5c974dd3b, type: 3}
 --- !u!1 &1791527995249104408 stripped

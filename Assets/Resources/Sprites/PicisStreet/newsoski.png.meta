@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: c3d33c38ef49d43e58f6e7a5c987fe03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3561702112905008989
+    second: newsoski_block
+  - first:
+      213: -4828303161455888968
+    second: newsoski_tend
+  - first:
+      213: 7870672408506611238
+    second: newsoski_shop_window_background
+  - first:
+      213: -3492386277438369808
+    second: newsoski_shop_window
+  - first:
+      213: 8288783647385044783
+    second: newsoski_magazine_holder
+  - first:
+      213: -6208448112737514449
+    second: newsoski_news_background
+  - first:
+      213: -2028805257980699384
+    second: newsoski_shop_light
+  - first:
+      213: 6591184378843620136
+    second: newsoski_player_newspaper01
+  - first:
+      213: -8915392841854334577
+    second: newsoski_player_newspaper02
+  - first:
+      213: -2892827550150852745
+    second: newsoski_player_newspaper03
+  - first:
+      213: -2390931369674444050
+    second: newsoski_newspaper_clip01
+  - first:
+      213: -6210138176554491419
+    second: newsoski_newspaper_clip02
+  - first:
+      213: 7882569059971914112
+    second: newsoski_info_board_border
+  - first:
+      213: -8105432554974945481
+    second: newsoski_info_bar_background
+  - first:
+      213: 7087911545697737963
+    second: newsoski_info_yellow
+  - first:
+      213: -7817347815577091076
+    second: newsoski_info_red
+  - first:
+      213: 1264896138627691330
+    second: newsoski_info_text_day
+  - first:
+      213: 4826410437884505528
+    second: newsoski_shop_front_desk
+  - first:
+      213: 215379715594341493
+    second: newsoski_window_left
+  - first:
+      213: -1248879002466445930
+    second: newsoski_window_left_light
+  - first:
+      213: -6076035414514047779
+    second: newsoski_window_left_background
+  - first:
+      213: -9022024117183983482
+    second: newsoski_window_right
+  - first:
+      213: 703207094163146082
+    second: newsoski_window_right_light
+  - first:
+      213: 1411726406090808214
+    second: newsoski_window_right_background
+  - first:
+      213: 4147363294642737412
+    second: newsoski_shop_name
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: newsoski_block
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 306
+        height: 185
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8e98c8cca429ec0800000000000000
+      internalID: -3561702112905008989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_tend
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 149
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5b6892bdb6efcb0800000000000000
+      internalID: -4828303161455888968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_shop_window_background
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 57
+        width: 72
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626318cdade3a3d60800000000000000
+      internalID: 7870672408506611238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_shop_window
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 3
+        width: 74
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff46d22f2d888fc0800000000000000
+      internalID: -3492386277438369808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_magazine_holder
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 4
+        width: 47
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27c37abfcca70370800000000000000
+      internalID: 8288783647385044783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_news_background
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 78
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c06d1d55927d9a0800000000000000
+      internalID: -6208448112737514449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_shop_light
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 147
+        width: 93
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d9d9fed5c38d3e0800000000000000
+      internalID: -2028805257980699384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_player_newspaper01
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 156
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823e31e5547987b50800000000000000
+      internalID: 6591184378843620136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_player_newspaper02
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 156
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8946343279264480800000000000000
+      internalID: -8915392841854334577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_player_newspaper03
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 156
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f7bc48bac9ad7d0800000000000000
+      internalID: -2892827550150852745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_newspaper_clip01
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 173
+        width: 1
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee277344694b1ded0800000000000000
+      internalID: -2390931369674444050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_newspaper_clip02
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 171
+        width: 3
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1a06c2b3821d9a0800000000000000
+      internalID: -6210138176554491419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_info_board_border
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 99
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0895c11ebc2846d60800000000000000
+      internalID: 7882569059971914112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_info_bar_background
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 116
+        width: 21
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fd4d12908b38f80800000000000000
+      internalID: -8105432554974945481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_info_yellow
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 110
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec14b85ff15d5260800000000000000
+      internalID: 7087911545697737963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_info_red
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 110
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf30ade6493338390800000000000000
+      internalID: -7817347815577091076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_info_text_day
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 126
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243baac1650dd8110800000000000000
+      internalID: 1264896138627691330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_shop_front_desk
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 108
+        width: 108
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bde75ac8badaf240800000000000000
+      internalID: 4826410437884505528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_window_left
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 150
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c43dfc5be2df200800000000000000
+      internalID: 215379715594341493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_window_left_light
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 151
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6951b820a271baee0800000000000000
+      internalID: -1248879002466445930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_window_left_background
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 152
+        width: 38
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd462339bf59daba0800000000000000
+      internalID: -6076035414514047779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_window_right
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 147
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680dd3cbdd45bc280800000000000000
+      internalID: -9022024117183983482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_window_right_light
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 148
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265012b502b42c900800000000000000
+      internalID: 703207094163146082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_window_right_background
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 101
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69bd41bcfa5779310800000000000000
+      internalID: 1411726406090808214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newsoski_shop_name
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 88
+        width: 114
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4019cab51f46e8930800000000000000
+      internalID: 4147363294642737412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

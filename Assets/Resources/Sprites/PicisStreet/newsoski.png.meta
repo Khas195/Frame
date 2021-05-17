@@ -7,7 +7,7 @@ TextureImporter:
     second: newsoski_block
   - first:
       213: -4828303161455888968
-    second: newsoski_tend
+    second: newsoski_tent
   - first:
       213: 7870672408506611238
     second: newsoski_shop_window_background
@@ -187,7 +187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newsoski_tend
+      name: newsoski_tent
       rect:
         serializedVersion: 2
         x: 592

@@ -9,8 +9,6 @@ using UnityEngine.UI;
 public class PhotoListManager : MonoBehaviour, IObserver
 {
     [SerializeField]
-    AudioSource discardSource;
-    [SerializeField]
     List<PhotoHolder> photos;
     [SerializeField]
     Transform contentRoot;
@@ -92,7 +90,6 @@ public class PhotoListManager : MonoBehaviour, IObserver
 
     private void HandlePhotosDiscardEvent(DataPack pack)
     {
-        bool discardedStuff = false;
         var infos = pack.GetValue<List<PhotoInfo>>(GameEvent.PhotoEvent.DiscardPhotoEventData.PHOTO_INFOS);
         if (infos != null && infos.Count > 0)
         {
@@ -102,14 +99,9 @@ public class PhotoListManager : MonoBehaviour, IObserver
                 if (holder)
                 {
                     Discard(holder);
-                    discardedStuff = true;
                 }
             }
 
-        }
-        if (discardedStuff && discardSource)
-        {
-            discardSource.Play();
         }
     }
 

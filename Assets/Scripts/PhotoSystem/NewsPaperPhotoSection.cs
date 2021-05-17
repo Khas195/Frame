@@ -5,6 +5,7 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
 public class SectionData
 {
     public Sprite sectionSprite;
@@ -77,6 +78,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     }
     public void OnPhotoSectionEnter()
     {
+        LogHelper.Log("PhotoSection - Mouse Enter");
         var photoHolder = NewsPaperPanel.GetInstance().GetCurrentSelection();
         if (photoHolder != null)
         {
@@ -95,6 +97,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     }
     public void OnPhotoSectionExit()
     {
+        LogHelper.Log("PhotoSection - Mouse Exit");
         this.hoverData.Clear();
         if (holdingData.HasData())
         {
@@ -110,6 +113,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     }
     public void OnPhotoSectionUp()
     {
+        LogHelper.Log("PhotoSection - Mouse Up");
         var photoHolder = NewsPaperPanel.GetInstance().GetCurrentSelection();
         if (photoHolder && photoHolder == hoverData.sectionPhotoHolder)
         {
@@ -161,6 +165,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
             holdingData.Clear();
         }
         hoverData.Clear();
+        this.mouseOverPhotoFrame.enabled = false;
     }
 
     public PhotoInfo GetPhotoInfo()

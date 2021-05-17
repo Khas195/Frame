@@ -52,7 +52,7 @@ TextureImporter:
     second: newspaper05_text_bin
   - first:
       213: 6643697281882029834
-    second: newspaper05_photo_frame_corner
+    second: newspaper05_photo_frame_corner_medium
   - first:
       213: 6576289791208966195
     second: newspaper05_sheet_17
@@ -62,6 +62,12 @@ TextureImporter:
   - first:
       213: -7805169839276247415
     second: newspaper05_paper_ball
+  - first:
+      213: 148887664226636159
+    second: newspaper05_photo_frame_corner_large
+  - first:
+      213: -7064438770213092628
+    second: newspaper05_photo_frame_corner_small
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -487,13 +493,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: newspaper05_photo_frame_corner
+      name: newspaper05_photo_frame_corner_medium
       rect:
         serializedVersion: 2
-        x: 492
-        y: 52
-        width: 8
-        height: 8
+        x: 476
+        y: 33
+        width: 24
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -516,7 +522,7 @@ TextureImporter:
         width: 1
         height: 1
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -534,10 +540,10 @@ TextureImporter:
         serializedVersion: 2
         x: 435
         y: 108
-        width: 94
+        width: 95
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -558,7 +564,7 @@ TextureImporter:
         width: 14
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,6 +572,48 @@ TextureImporter:
       bones: []
       spriteID: 986b85e72677ea390800000000000000
       internalID: -7805169839276247415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_photo_frame_corner_large
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 33
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f719aa1ba84f01200800000000000000
+      internalID: 148887664226636159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_photo_frame_corner_small
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 48
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce283f31e5216fd90800000000000000
+      internalID: -7064438770213092628
       vertices: []
       indices: 
       edges: []

@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 142661846984513562}
   - component: {fileID: 8537662724301341346}
   m_Layer: 0
-  m_Name: 'Prefab_ProtestorSpecial_Male_04 '
+  m_Name: Prefab_Scenario01_ProtestorSpecial_Protestor_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

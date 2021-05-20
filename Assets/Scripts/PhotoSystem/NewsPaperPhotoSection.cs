@@ -11,24 +11,21 @@ public class SectionData
     public Sprite sectionSprite;
     public PhotoHolder sectionPhotoHolder;
     public PhotoInfo sectionPhotoInfo;
-    bool hasData;
     public void SetData(PhotoHolder photoHolder)
     {
         sectionSprite = photoHolder.GetImage().sprite;
         sectionPhotoInfo = photoHolder.GetPhotoInfo();
         sectionPhotoHolder = photoHolder;
-        hasData = true;
     }
     public bool HasData()
     {
-        return hasData;
+        return this.sectionPhotoHolder != null;
     }
     public void Clear()
     {
         sectionSprite = null;
         sectionPhotoHolder = null;
         sectionPhotoInfo = null;
-        hasData = false;
     }
 }
 public class NewsPaperPhotoSection : MonoBehaviour, IObserver

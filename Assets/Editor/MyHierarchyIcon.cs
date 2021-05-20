@@ -22,6 +22,7 @@ public class MyHierarchyIcon
 
     static void HierarchyItemCB(int instanceID, Rect selectionRect)
     {
+        return;
         var go = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
         if (go)
         {

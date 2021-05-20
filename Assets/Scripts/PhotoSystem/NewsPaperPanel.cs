@@ -29,6 +29,10 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     PaperPublishedNotifier missingImagesNotifier;
     [SerializeField]
     PublishedPapersData publishedPapersData;
+    [SerializeField]
+    NewspaperShowCaseAfterPrint newspaperAfterPrint;
+    [SerializeField]
+    Animator printingAnim = null;
 
 
     protected override void Awake()
@@ -68,6 +72,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     public void SwitchPanelOff()
     {
         panelRoot.SetActive(false);
+        this.printingAnim.SetBool("Printing", false);
         Clear();
 
     }
@@ -148,8 +153,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
 
         TriggerPhotoPublishedEvent(publishedPhotos);
         TriggerDiscardPublishedPhotoEvent(publishedPhotos);
-
-        InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
+        this.printingAnim.SetBool("Printing", true);
     }
 
     private void TriggerPhotoPublishedEvent(List<PhotoInfo> publishedPhoto)
@@ -173,6 +177,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         newspaperData.mainArticle = sections[0].GetPhoto();
         newspaperData.leftArticle = sections[1].GetPhoto();
         newspaperData.rightArticle = sections[2].GetPhoto();
+        newspaperAfterPrint.PrintPhotos(newspaperData.leftArticle, newspaperData.mainArticle, newspaperData.rightArticle);
+        newspaperAfterPrint.gameObject.SetActive(true);
         publishedPapersData.paperDatas.Add(newspaperData);
         package.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.NEWSPAPER_DATA, newspaperData);
 

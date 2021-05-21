@@ -1143,7 +1143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1386,7 +1386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.764151, g: 0.19103774, b: 0.19103774, a: 1}
+  m_Color: {r: 0.764151, g: 0.19103774, b: 0.19103774, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1502,9 +1502,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f6f2f99e93ef0449e9a8df6f88238f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useImages: 1
   midPhoto: {fileID: 1019265225}
   leftPhoto: {fileID: 785361659}
   rightPhoto: {fileID: 1593676672}
+  midSpritePhoto: {fileID: 0}
+  leftSpritePhoto: {fileID: 0}
+  rightSpritePhoto: {fileID: 0}
 --- !u!1 &217202753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,7 +2349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2905,7 +2909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4705,7 +4709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.88235295, b: 0.3254902, a: 1}
+  m_Color: {r: 1, g: 0.88235295, b: 0.3254902, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5098,6 +5102,7 @@ MonoBehaviour:
   publishedPapersData: {fileID: 11400000, guid: b296e5099a2b0f541b275be6fe8efed2, type: 2}
   newspaperAfterPrint: {fileID: 213319762}
   printingAnim: {fileID: 880819810}
+  publishedPaperdataArchive: {fileID: 0}
 --- !u!82 &880819809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5421,6 +5426,7 @@ MonoBehaviour:
   startAlpha: 1
   isTransitioning: 0
   isFadedOut: 1
+  startFadeOut: 1
 --- !u!114 &951906977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6922,7 +6928,8 @@ MonoBehaviour:
   targetAlpha: 0
   startAlpha: 1
   isTransitioning: 0
-  isFadedOut: 0
+  isFadedOut: 1
+  startFadeOut: 1
 --- !u!114 &1269608103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7766,7 +7773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7841,7 +7848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20602238, g: 0.5849056, b: 0.18485224, a: 1}
+  m_Color: {r: 0.20602238, g: 0.5849056, b: 0.18485224, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8137,6 +8144,7 @@ MonoBehaviour:
   startAlpha: 1
   isTransitioning: 0
   isFadedOut: 0
+  startFadeOut: 1
 --- !u!1 &1528180117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8546,7 +8554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
+  m_Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9273,7 +9281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9962,7 +9970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000038147, y: -65.1}
+  m_AnchoredPosition: {x: 0.0000095367, y: -56}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959798411
@@ -10041,7 +10049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10543,7 +10551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+  m_Color: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -74,30 +74,53 @@ Hey Jacki', yau got' anything new for me today ?.
         - - Fineeee, Listen yau Mackerel!, yau go and take photos then come back to me to publish them. 
         -> DauglasQuestions
             -> DONE
+    + Daugie', I want some advice.
+        - - Grrr, on what ?
+        -> DauglasAdvices
+
+                        
     -> END.
 = DauglasQuestions
-    * Can't I just do that right after I take them pictures ?
+    + Can't I just do that right after I take them pictures ?
         - - And how do yau intend to print the newspaper, out of yau ass ?!.
         -> DauglasQuestions
-    * I remember being able to publish without going back to you.
+    + I remember being able to publish without going back to you.
         - - Did yau hit yau head or something ?
         -> DauglasQuestions
-    * That seem like work, isn't ther' a faster way.
+    + That seem like work, isn't ther' a faster way.
         - - Maybe because, i dun know, it IS WORK !?. Yau know how "work" works ?!.
         -> DauglasQuestions
-    
-    + ->
-    * * Continue
-    - - Yau know, people say that there is no such thing as a dumb question.
-        + + + Please stop!.
-        + + + Shut it!.
-        + + + Whatever man!.
-        - - - But I guess, there is an exception to everything.
-            + + + + ....
-            -> END
-            + + + + Mackerel!.
-            -> END
+    + That's all.
+        - - Yau know, people say that there is no such thing as a dumb question.
+            + + + Please stop!.
+            + + + Shut it!.
+            + + + Whatever man!.
+            - - - But I guess, there is an exception to everything.
+                + + + + ....
+                -> END
+                + + + + Mackerel!.
+                -> END
     -> DONE
-
-
+= DauglasAdvices
+    + You know wher' things might get interesting ?
+        - - ... isn't that yau job to find out ? Yau know, the one I'm paying yau for.
+            + + + Well, any tips would help!.
+            + + + Just tell me.
+            + + + Why are you written like this ?
+            - - - ... how about yau go around and, I dun know, look?!
+                + + + + Continue
+                - - - - but besides from that, listen to gossips, knau what people are talking!.
+                    + + + + + Thanks Daughie'.
+                    + + + + + Good Daughie!.
+                    - - - - - ....
+                    -> DauglasAdvices
+    + What kind of photos are we looking for ?
+        - - Look around yau, we are abaut to start another civil war.
+        + + Continue
+        - - People around here wants news, Jackie.
+        + + Continue
+        - - They want to know which side to pick.
+        ->  DauglasAdvices
+        
+        
 -> END

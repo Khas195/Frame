@@ -33,6 +33,8 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     NewspaperShowCaseAfterPrint newspaperAfterPrint;
     [SerializeField]
     Animator printingAnim = null;
+    [SerializeField]
+    PublishedPapersData publishedPaperdataArchive;
 
 
     protected override void Awake()
@@ -41,6 +43,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         PostOffice.Subscribes(this, SwitchGameStats.SWITCH_GAME_STATS_EVENT);
         PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
         publishedPapersData.Reset();
+        publishedPaperdataArchive.Reset();
     }
 
     public bool HavePhotoInSections()
@@ -177,9 +180,12 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         newspaperData.mainArticle = sections[0].GetPhoto();
         newspaperData.leftArticle = sections[1].GetPhoto();
         newspaperData.rightArticle = sections[2].GetPhoto();
-        newspaperAfterPrint.PrintPhotos(newspaperData.leftArticle, newspaperData.mainArticle, newspaperData.rightArticle);
+
+        newspaperAfterPrint.PrintPhotos(newspaperData);
         newspaperAfterPrint.gameObject.SetActive(true);
+
         publishedPapersData.paperDatas.Add(newspaperData);
+        publishedPaperdataArchive.paperDatas.Add(newspaperData);
         package.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.NEWSPAPER_DATA, newspaperData);
 
 

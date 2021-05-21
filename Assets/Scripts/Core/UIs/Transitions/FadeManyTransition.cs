@@ -31,11 +31,23 @@ public class FadeManyTransition : MonoBehaviour
     bool isFadedOut = false;
     [SerializeField]
     Action callback = null;
+    [SerializeField]
+    bool startFadeOut = true;
 
 
     private void Start()
     {
         FindAllCurrentUis();
+        if (startFadeOut)
+        {
+            SetAllUisAlpha(0);
+            isFadedOut = true;
+        }
+        else
+        {
+            SetAllUisAlpha(1);
+            isFadedOut = false;
+        }
     }
 
     private void FindAllCurrentUis()

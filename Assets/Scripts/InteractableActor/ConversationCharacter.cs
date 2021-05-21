@@ -13,10 +13,11 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     Text textUI = null;
     [SerializeField]
     string conversationStitch;
+    [SerializeField]
+    bool isInConvesation = false;
     bool playerInRange = false;
     private void Start()
     {
-        textBoxControl.FadeOut();
     }
 
     private void Update()
@@ -35,6 +36,19 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
         {
             playerInRange = true;
             ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, other.gameObject.GetComponent<IParticipant>(), this);
+        }
+    }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (isInConvesation == false && other.gameObject.tag == "Player")
+        {
+            if (ConversationMananger.GetInstance(forceCreate: false))
+            {
+                if (ConversationMananger.GetInstance().HasStory())
+                {
+                    ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, other.gameObject.GetComponent<IParticipant>(), this);
+                }
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
@@ -62,6 +76,7 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
         {
             textBoxControl.FadeOut();
         }
+        isInConvesation = false;
     }
 
     public void StartConvsering()
@@ -71,5 +86,6 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
         {
             textBoxControl.FadeIn();
         }
+        isInConvesation = true;
     }
 }

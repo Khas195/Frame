@@ -49,7 +49,8 @@ Alright, what do you want to ask ?.
 -> DONE
 
 === ConversationDaughi
-= FirstConversation
+
+= LoopConversation
 Hey Jacki', yau got' anything new for me today ?.
     + Yeah, got some new shots her'. Will make a good piece.
      - - Then, head up to the office start writing.
@@ -86,14 +87,15 @@ Hey Jacki', yau got' anything new for me today ?.
         -> DauglasQuestions
     
     + ->
-    Yau know, people say that there is no such thing as a dumb question. 
-        + + Please stop!.
-        + + Shut it!.
-        + + Whatever man!.
-        - - But I guess, there is an exception to everything.
-            + + + ....
+    * * Continue
+    - - Yau know, people say that there is no such thing as a dumb question.
+        + + + Please stop!.
+        + + + Shut it!.
+        + + + Whatever man!.
+        - - - But I guess, there is an exception to everything.
+            + + + + ....
             -> END
-            + + + You Mackerel!.
+            + + + + Mackerel!.
             -> END
     -> DONE
 

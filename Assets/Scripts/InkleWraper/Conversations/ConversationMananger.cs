@@ -47,6 +47,10 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
                                         playerConversationStory.ChooseChoiceIndex(chosenChoice.index);
                                         playerIsChoosing = false;
                                         LogHelper.Log("Conversation- player chose: " + chosenChoice.text);
+                                        if (playerConversationStory.canContinue)
+                                        {
+                                            playerConversationStory.Continue();
+                                        }
                                     });
                     playerIsChoosing = true;
                 }
@@ -58,6 +62,11 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
             }
 
         }
+    }
+
+    public bool HasStory()
+    {
+        return playerConversationStory != null;
     }
 
     public void TerminateCurrentConversation()

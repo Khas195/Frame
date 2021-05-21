@@ -5,7 +5,7 @@ using Ink.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TaxiDriver : MonoBehaviour, IParticipant
+public class ConversationCharacter : MonoBehaviour, IParticipant
 {
     [SerializeField]
     FadeManyTransition textBoxControl = null;
@@ -17,11 +17,6 @@ public class TaxiDriver : MonoBehaviour, IParticipant
     private void Start()
     {
         textBoxControl.FadeOut();
-        var story = InkleManager.GetInstance().GetPlayerConversation();
-        story.BindExternalFunction("OpenTaxiMap", () =>
-        {
-            InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.MapState);
-        });
     }
 
     private void Update()
@@ -62,7 +57,7 @@ public class TaxiDriver : MonoBehaviour, IParticipant
 
     public void StopConversing()
     {
-        LogHelper.Log("Conversation- Taxi Driver stops conversing");
+        LogHelper.Log("Conversation-" + this.gameObject.name + "stops conversing");
         if (textBoxControl.IsFadeOut() == false)
         {
             textBoxControl.FadeOut();
@@ -71,7 +66,7 @@ public class TaxiDriver : MonoBehaviour, IParticipant
 
     public void StartConvsering()
     {
-        LogHelper.Log("Conversation- Taxi Driver starts conversing");
+        LogHelper.Log("Conversation-" + this.gameObject.name + "starts conversing");
         if (textBoxControl.IsFadeOut())
         {
             textBoxControl.FadeIn();

@@ -163,8 +163,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7578067230155686846}
-  - component: {fileID: 5112158408954383898}
   - component: {fileID: 3725070850955331269}
+  - component: {fileID: 3650592606566591093}
   m_Layer: 0
   m_Name: TaxiDriverActor
   m_TagString: Untagged
@@ -186,21 +186,6 @@ Transform:
   m_Father: {fileID: 3613919809456115095}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5112158408954383898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575811880747807625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a26803983bb2845983b48e5faf9afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBoxControl: {fileID: 7634388568741836470}
-  textUI: {fileID: 4604642401537617615}
-  conversationStitch: Conversations.TaxiDriver
 --- !u!58 &3725070850955331269
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -217,6 +202,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!114 &3650592606566591093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575811880747807625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b6a4d85e99ea949a0cdeca99f1cee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBoxControl: {fileID: 7634388568741836470}
+  textUI: {fileID: 4604642401537617615}
+  conversationStitch: Conversations.TaxiDriver
 --- !u!1 &2305418633161353597
 GameObject:
   m_ObjectHideFlags: 0

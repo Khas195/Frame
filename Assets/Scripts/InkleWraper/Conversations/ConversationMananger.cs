@@ -23,13 +23,10 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
     {
         base.Awake();
     }
-    private void Start()
-    {
-        playerConversationStory = InkleManager.GetInstance().GetPlayerConversation();
-    }
+
     private void Update()
     {
-        if (conversationActive)
+        if (conversationActive && playerConversationStory != null)
         {
             LogHelper.Log("Conversation- can continue: " + playerConversationStory.canContinue);
             while (playerConversationStory.canContinue)
@@ -75,7 +72,7 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
     {
         this.player = player;
         this.other = other;
-        this.playerConversationStory.ResetState();
+        playerConversationStory = InkleManager.GetInstance().GetPlayerConversation();
         playerConversationStory.ChoosePathString(conversationStitch);
         conversationActive = true;
         player.StartConvsering();

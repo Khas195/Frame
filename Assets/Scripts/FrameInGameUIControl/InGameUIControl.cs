@@ -12,6 +12,20 @@ public class InGameUIControl : SingletonMonobehavior<InGameUIControl>
     private void Start()
     {
         manager.RequestState(InGameUIState.InGameUIStateEnum.NormalState);
+        var story = InkleManager.GetInstance().GetPlayerConversation();
+        LogHelper.Log("Inkle Intergration: Bind Open Taxi Map");
+        story.BindExternalFunction("OpenTaxiMap", () =>
+        {
+            this.RequestState(InGameUIState.InGameUIStateEnum.MapState);
+        });
+        LogHelper.Log("Inkle Intergration: Bind Open Publish  Panel");
+        story.BindExternalFunction("OpenNewsPanel", () =>
+        {
+            this.RequestState(InGameUIState.InGameUIStateEnum.NewsPanelState);
+        });
+
+
+
     }
     private void Update()
     {

@@ -18,6 +18,22 @@ Day01: Scenario 01 Protestors breaking the King's statue.
     -> DONE
     * Coppers trading knuckl' sandwiches with a punch of Goons under King's Statchu'! 
     ->DONE
+= Scenario01_StatueBroken
+Day02: Scenario 02 Protestors broke the statue
+    * The King's Statue in Marestrom Park was broken by the T.M.F.P!!.
+    -> DONE
+    * The Speaker for the N.D.P.M called what happened in Marestorm Park an act of anarchy!!.
+    -> DONE
+    * Protestors are gathering in Marestrom Park Celebrating!!.
+    ->DONE
+= Scenario01_StatueStillThere
+Day02: Scenario 02 Protestors failed to break the statue.
+    * Coppers succeeded in protecting Maresland's legacy in Marestrom Park.
+    -> DONE
+    * All workers are banned from entering Marestrom Park from this day onward!!.
+    -> DONE
+    * The Elites holding a ceremony in Marestrom Park, today!.
+    ->DONE
 
 === MainCharacterLines ===
 

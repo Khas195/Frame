@@ -38,7 +38,13 @@ public class InGameUIControl : SingletonMonobehavior<InGameUIControl>
 
     public void RequestState(InGameUIState.InGameUIStateEnum newState)
     {
-        manager.RequestState(newState);
+        if (manager.RequestState(newState))
+        {
+            var data = DataPool.GetInstance().RequestInstance();
+            data.SetValue(GameEvent.InGameUiStateEvent.OnInGameUIsStateChangedData.NEW_STATE, newState);
+            PostOffice.SendData(data, GameEvent.InGameUiStateEvent.ON_IN_GAME_UIS_STATE_CHANGED);
+            DataPool.GetInstance().ReturnInstance(data);
+        }
     }
 
     public InGameUIState.InGameUIStateEnum GetCurrentState()

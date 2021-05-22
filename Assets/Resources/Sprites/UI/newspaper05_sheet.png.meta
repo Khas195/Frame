@@ -68,6 +68,9 @@ TextureImporter:
   - first:
       213: -7064438770213092628
     second: newspaper05_photo_frame_corner_small
+  - first:
+      213: -1906694713244682586
+    second: newspaper05_empty_newspaper
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -328,10 +331,10 @@ TextureImporter:
       name: newspaper05_light
       rect:
         serializedVersion: 2
-        x: 589
-        y: 3
-        width: 285
-        height: 286
+        x: 630
+        y: 7
+        width: 267
+        height: 277
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,8 +394,8 @@ TextureImporter:
       name: newspaper05_stamp
       rect:
         serializedVersion: 2
-        x: 333
-        y: 192
+        x: 325
+        y: 201
         width: 106
         height: 152
       alignment: 0
@@ -412,8 +415,8 @@ TextureImporter:
       name: newspaper05_newspaper
       rect:
         serializedVersion: 2
-        x: 449
-        y: 197
+        x: 433
+        y: 211
         width: 97
         height: 142
       alignment: 0
@@ -585,7 +588,7 @@ TextureImporter:
         width: 41
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,7 +609,7 @@ TextureImporter:
         width: 19
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,6 +617,27 @@ TextureImporter:
       bones: []
       spriteID: ce283f31e5216fd90800000000000000
       internalID: -7064438770213092628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: newspaper05_empty_newspaper
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 211
+        width: 98
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a67fe9a24f0a85e0800000000000000
+      internalID: -1906694713244682586
       vertices: []
       indices: 
       edges: []

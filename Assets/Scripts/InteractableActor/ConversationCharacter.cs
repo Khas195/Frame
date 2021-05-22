@@ -16,12 +16,14 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     [SerializeField]
     bool isInConvesation = false;
     bool playerInRange = false;
+    IParticipant playerChar = null;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
+            playerChar = other.gameObject.GetComponent<IParticipant>();
             playerInRange = true;
-            ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, other.gameObject.GetComponent<IParticipant>(), this);
+            ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, playerChar, this);
         }
     }
 
@@ -62,5 +64,18 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
             textBoxControl.FadeIn();
         }
         isInConvesation = true;
+    }
+
+    public bool IsInConversation()
+    {
+        return isInConvesation;
+    }
+
+    public void RequestStartConversation()
+    {
+        if (playerChar != null && playerInRange)
+        {
+            ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, playerChar, this);
+        }
     }
 }

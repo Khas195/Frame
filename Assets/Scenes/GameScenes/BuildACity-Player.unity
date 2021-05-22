@@ -5102,7 +5102,7 @@ MonoBehaviour:
   publishedPapersData: {fileID: 11400000, guid: b296e5099a2b0f541b275be6fe8efed2, type: 2}
   newspaperAfterPrint: {fileID: 213319762}
   printingAnim: {fileID: 880819810}
-  publishedPaperdataArchive: {fileID: 0}
+  publishedPaperdataArchive: {fileID: 11400000, guid: 56886d0a089205b4a959b10ad9edbfca, type: 2}
 --- !u!82 &880819809
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11180,6 +11180,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3917543726948896521, guid: 87391e25e7aba554cbe3fd331a8fd902, type: 3}
+    - target: {fileID: 8088190289166948532, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
+      propertyPath: noCharacter
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8088190289435956485, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
       propertyPath: m_Name
       value: PlayerEntity

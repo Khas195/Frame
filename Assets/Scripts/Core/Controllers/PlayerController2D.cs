@@ -38,6 +38,14 @@ public class PlayerController2D : MonoBehaviour, IObserver
         {
             interactTrigger.Invoke();
         }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            character.SwitchToRun();
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            character.SwitchToWalk();
+        }
         character.Move(side, forward);
     }
 

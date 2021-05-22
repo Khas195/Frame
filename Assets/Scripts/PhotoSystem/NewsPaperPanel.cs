@@ -127,7 +127,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         string commieInfluence = PhotoHolder.ConvertInfluenceToString(commiePoint);
         string capitalistInfluence = PhotoHolder.ConvertInfluenceToString(capitalPoint);
 
-        totalPaperPoint.text = commieInfluence.Colorize(communistColor) + " " + capitalistInfluence.Colorize(capitalistColor);
+        totalPaperPoint.text = capitalistInfluence.Colorize(capitalistColor) + commieInfluence.Colorize(communistColor);
     }
     public void Publish()
     {

@@ -16,20 +16,6 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     [SerializeField]
     bool isInConvesation = false;
     bool playerInRange = false;
-    private void Start()
-    {
-    }
-
-    private void Update()
-    {
-        if (playerInRange)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.MapState);
-            }
-        }
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -38,19 +24,7 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
             ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, other.gameObject.GetComponent<IParticipant>(), this);
         }
     }
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (isInConvesation == false && other.gameObject.tag == "Player")
-        {
-            if (ConversationMananger.GetInstance(forceCreate: false))
-            {
-                if (ConversationMananger.GetInstance().HasStory())
-                {
-                    ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, other.gameObject.GetComponent<IParticipant>(), this);
-                }
-            }
-        }
-    }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -63,6 +37,7 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     public void Show(string textToShow)
     {
         textUI.text = textToShow;
+
     }
 
     public void ChooseFromChoices(List<Ink.Runtime.Choice> currentChoices, Action<Choice> choiceCallBack)

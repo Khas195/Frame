@@ -17,7 +17,6 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
     bool choosingChoices = false;
     private void Start()
     {
-        choicesControl.FadeOut();
     }
     // Update is called once per frame
     void Update()
@@ -47,9 +46,11 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
             }
             if (chosenIndex >= 0)
             {
-                choicesControl.FadeOut();
-                ChooseChoice(currentChoices[chosenIndex]);
-
+                if (chosenIndex < currentChoices.Count)
+                {
+                    choicesControl.FadeOut();
+                    ChooseChoice(currentChoices[chosenIndex]);
+                }
             }
         }
     }
@@ -95,5 +96,10 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
 
     public void StartConvsering()
     {
+        LogHelper.Log("Conversation- Player starts conversing");
+        if (choicesControl.IsFadeOut() == true)
+        {
+            choicesControl.FadeIn();
+        }
     }
 }

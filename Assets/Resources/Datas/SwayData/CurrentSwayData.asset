@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f43ea631e6b76648b5049a732a2d147, type: 3}
   m_Name: CurrentSwayData
   m_EditorClassIdentifier: 
-  swayPercentage: {x: 10, y: 90}
+  swayPercentage: {x: 40, y: 70}
   influence: {x: 30, y: 170}

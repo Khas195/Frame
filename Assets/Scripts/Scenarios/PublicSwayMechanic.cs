@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
-public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
+public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IObserver
 {
     [SerializeField]
     Color proCommunistColor;
@@ -35,7 +35,11 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         base.Awake();
         cititzens.Clear();
         scenarioActors.Clear();
-
+        PostOffice.Subscribes(this, GameEvent.MapChangedEvent.MAP_CHANGED_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, GameEvent.MapChangedEvent.MAP_CHANGED_EVENT);
     }
     private void Start()
     {
@@ -158,6 +162,33 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>
         else
         {
             return this.neutralColor;
+        }
+    }
+
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == GameEvent.MapChangedEvent.MAP_CHANGED_EVENT)
+        {
+            this.CleanActorLists();
+        }
+    }
+
+    private void CleanActorLists()
+    {
+        for (int i = scenarioActors.Count - 1; i >= 0; i--)
+        {
+            if (scenarioActors[i] == null)
+            {
+                scenarioActors.Remove(scenarioActors[i]);
+            }
+        }
+
+        for (int i = cititzens.Count - 1; i >= 0; i--)
+        {
+            if (cititzens[i] == null)
+            {
+                cititzens.Remove(cititzens[i]);
+            }
         }
     }
 }

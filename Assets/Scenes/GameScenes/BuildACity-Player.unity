@@ -10280,6 +10280,10 @@ PrefabInstance:
       propertyPath: cameraBody
       value: 
       objectReference: {fileID: 1022188890}
+    - target: {fileID: 8088190291011468806, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
+      propertyPath: cameraFollowPivot
+      value: 
+      objectReference: {fileID: 8088190289166948531}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3473fb1681205c64e9ec388f32cc0820, type: 3}
 --- !u!4 &8088190289166948531 stripped

@@ -8,6 +8,10 @@ using UnityEngine.Events;
 public class PlayerController2D : MonoBehaviour, IObserver
 {
     [SerializeField]
+    float cameraLeadOffset = 2.5f;
+    [SerializeField]
+    Transform cameraFollowPivot = null;
+    [SerializeField]
     Character2D character = null;
     [SerializeField]
     UnityEvent interactTrigger = new UnityEvent();
@@ -41,10 +45,17 @@ public class PlayerController2D : MonoBehaviour, IObserver
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             character.SwitchToRun();
+            var localPos = cameraFollowPivot.transform.localPosition;
+            localPos.x = cameraLeadOffset;
+            cameraFollowPivot.transform.localPosition = localPos;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             character.SwitchToWalk();
+            var localPos = cameraFollowPivot.transform.localPosition;
+            localPos.x = 0.0f;
+            cameraFollowPivot.transform.localPosition = localPos;
+
         }
         character.Move(side, forward);
     }

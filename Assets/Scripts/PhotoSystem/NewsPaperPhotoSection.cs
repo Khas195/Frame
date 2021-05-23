@@ -94,6 +94,7 @@ public class NewsPaperPhotoSection : MonoBehaviour, IObserver
     }
     public void OnPhotoSectionExit()
     {
+
         LogHelper.Log("PhotoSection - Mouse Exit");
         this.hoverData.Clear();
         if (holdingData.HasData())

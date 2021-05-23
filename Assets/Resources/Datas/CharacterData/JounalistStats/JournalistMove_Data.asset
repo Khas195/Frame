@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20511c714e051b0429b5b05f14d2967e, type: 3}
   m_Name: JournalistMove_Data
   m_EditorClassIdentifier: 
-  walkSpeed: 1
-  runSpeed: 2
+  walkSpeed: 2
+  runSpeed: 3.5
   jumpForce: 5
   rotateSpeed: 20

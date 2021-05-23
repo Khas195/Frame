@@ -3,124 +3,128 @@ EXTERNAL OpenNewsPanel()
 
 -> Conversations.TaxiDriver
 === Conversations ===
-
+= TaxiDriverStartsConversation
+Hey!
+    + Hey!
+    -> TaxiDriver
 = TaxiDriver 
-
-Hey, Ya want to do some wher' pal !?
-    + "Yup, Let me see the map."
+Ya' want to go some where!?
+    + Yup, Let me sei' the map.
     ~ OpenTaxiMap()
     -> END
-    + "No, just passing by."
-    + "I don't know yet, I have some questions."
-    I'm a just a normal taxi driver, not a infomation lady!.
-        + + "Don't be a mackerel now!."
-            - - - -> TaxiDriverQuestions
-        + + "Just some common questions, no need to be so annoyed."
-            - - - -> TaxiDriverQuestions
+    + No, just passing by.
+    + I don't know yet, I have some questions.
+    And I ain't have no anwsers!
+        + + Don't be a makrele now!.
+            -> TaxiDriverQuestions
+        + + Just some questions her'.
+            -> TaxiDriverQuestions
             
-        + + "You know what, never mind, I'll be on my way."
-    - See you around then.
-    + End
+        + + You know what, never mind, I'll bei' on my way.
+    - See ya' around then.
+    + See you around!.
     -> DONE
 = TaxiDriverQuestions        
-Alright, what do you want to ask ?.
-    + + "Where can you take me ?"
-        Right now, not a lot of places, the dev team is not done making them yet.
-        + + + "What 'dev' team ?"
-        + + + "What are you talking about ?"
-        + + + "Huh ?"
-        - - - Well, of course you won't get it. I'm not talking to you anyway... 
-        + + + Continue
-        - - - But congrats to us for being test subjects for the dialogue system!.
-                + + + + "hmm. Why is there a text box above you ?"
-                    - - - - - What Text Box ?.
-                    + + + + ...
-                    - - - - - -> TaxiDriverQuestions
-    + + "So, how you doing ?"
-        Look Pal, me and you just met, we're not there yet, are you going somewhere or not ?.
-        + + + What a Mackerel!
-            - - - - Whatever man!.
-        + + + Don't have to be so rude!.
-            - - - - Whatever man!.
-        -> TaxiDriverQuestions
-    + + "Nothing really!."
-    - - ... ... What's wrong with you!.
-    + + End
+Hmm, sure, but ya' be quick with it!.
+-> TaxiDriverQuestionsHub
+= TaxiDriverQuestionsHub
+    +  Where can you take me ?
+        Because current emergency, I can only take ya' to The Park and Picis street and vice versa.
+        + +  What's emergency ?
+            Ya're not from here or something ?.
+            -> AboutTheEmergency
+    +  So, how you doing ?
+        Look Pal, me and ya' just met, we're not there yet, are ya' going somewhere or not ?.
+        + +  What a makrele!
+        + +  Don't hav' to be so rude!.
+        - - Whatever man!.
+            -> TaxiDriverQuestions
+    +  Nothing really!.
+    -  ... ... What's wrong with ya'!.
+    +  Bye!
 -> DONE
-
+= AboutTheEmergency
+    + Yeah, sure!
+    + I hav' not been out much.
+    - Well, them elites have placed a restriction order on the whole countries!. 
+        + +  What do you know about the emergency?.
+        + +  Can you tell me more?.
+        - - Man, ya don't read the news much huh? Wad Street and the Low Tide Dock are completele banned. No In and Out.
+            + + + I sei', You know why ?
+                Hell if I know, ya' go and ask them ya'self.
+                
+            + + + Did they say why?
+                No, they didn't care or they didn't want to tell, either way, nothing we can do about it!.
+            - - - -> TaxiDriverQuestionsHub
+        
+-> DONE
 === ConversationDaughi
-
+= StartConversation
+Jackie'!
+    + Hey Daugie'!
+    -> LoopConversation
 = LoopConversation
-Hey Jacki', yau got' anything new for me today ?.
-    + Yeah, got some new shots her'. Will make a good piece.
-     - - Then, head up to the office start writing.
-     + + Go To Office.
+Yau' got anything new for me today ?.
+    + Yeah, got some new shots her'. Will make a good piece!.
+     Then, head up to the office start writing.
+     + + Sure.
         ~ OpenNewsPanel()
     -> DONE
-    + Still looking  around, Daughi.
-        - - Well, yau better pick up yau ass and git' workin'.
-        + + Continue
-        - - If we dun have anything by the end of the day. Both me and yau be hungry, git' it !?. 
-        + + Ye ye yee, stop your yapping.
-        + + Sure, Sure.
-        - - Grrrr, git' going!.
-        + + End
+    + Still looking around, Daugie'.
+        Grrrr, git' going!.
+        + + See you around Daugie'!.
         -> DONE
     + So how does this publishing things work again ?, I kind of forgot!.
-        - - ..... How do yau "forget" yau job ?!.
+        ..... How do yau' "forgot" yau' job ?!.
         + + Can't you just awnser me ?.
-        + + Common my friend, Don't be a hardass.
+        + + Common my friend, Don't be a makrele!.
         + + Just entertain me.
-        - - Fineeee, Listen yau Mackerel!, yau go and take photos then come back to me to publish them. 
+        - - Fineeee, Listen yau' makrele!, yau go and take photos then come back to me to publish them. 
         -> DauglasQuestions
-            -> DONE
     + Daugie', I want some advice.
         - - Grrr, on what ?
         -> DauglasAdvices
 
-                        
     -> END.
 = DauglasQuestions
     + Can't I just do that right after I take them pictures ?
-        - - And how do yau intend to print the newspaper, out of yau ass ?!.
+        - - And how do yau' intend to print the newspaper, out of yau' ass ?!.
         -> DauglasQuestions
     + I remember being able to publish without going back to you.
-        - - Did yau hit yau head or something ?
+        - - Did yau' hit yau' head or something ?
         -> DauglasQuestions
-    + That seem like work, isn't ther' a faster way.
+    + That seem like work, isn't there a faster way.
         - - Maybe because, i dun know, it IS WORK !?. Yau know how "work" works ?!.
         -> DauglasQuestions
     + That's all.
         - - Yau know, people say that there is no such thing as a dumb question.
-            + + + Please stop!.
-            + + + Shut it!.
-            + + + Whatever man!.
-            - - - But I guess, there is an exception to everything.
-                + + + + ....
-                -> END
-                + + + + Mackerel!.
-                -> END
-    -> DONE
+            + + Please stop!.
+            + + Shut it!.
+            + + Whatever man!.
+            - - But I guess, there is an exception to everything.
+                + + + ....
+                + + + makrele!.
+                - - - -> DauglasQuestions
 = DauglasAdvices
-    + You know wher' things might get interesting ?
-        - - ... isn't that yau job to find out ? Yau know, the one I'm paying yau for.
+    + You know where things might get interesting ?
+        - - ... isn't that yau' job to find out ? Yau' know, the one I'm paying yau' for.
             + + + Well, any tips would help!.
             + + + Just tell me.
-            + + + Why are you written like this ?
-            - - - ... how about yau go around and, I dun know, look?!
-                + + + + Continue
-                - - - - but besides from that, listen to gossips, knau what people are talking!.
-                    + + + + + Thanks Daughie'.
-                    + + + + + Good Daughie!.
+            + + + Why were you written like this ?
+            - - - ... how about yau' go around and, I dun know, look?!
+                + + + + Makrele!
+                - - - - but besides from that, grrr, listen to gossips, know what people are talking!.
+                    + + + + + Thanks Daugie'.
+                    + + + + + Good Daugie'.
+                    + + + + + That's not so hard now, isn't it!?.
                     - - - - - ....
                     -> DauglasAdvices
     + What kind of photos are we looking for ?
-        - - Look around yau, we are abaut to start another civil war.
-        + + Continue
-        - - People around here wants news, Jackie.
-        + + Continue
-        - - They want to know which side to pick.
+        Look around yau', we are about' to start another civil war.
+        + + I can see that!.
+        + + It is that bad, huh ?!.
+        - - People around here wants news, Jackie'. They want to know which side to pick.
         ->  DauglasAdvices
+    + That's all, Dougie'
+    -> LoopConversation
         
-        
--> END

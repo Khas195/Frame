@@ -118,6 +118,7 @@ public class FadeManyTransition : MonoBehaviour
         currentTime = 0;
         isTransitioning = true;
         this.callback = callback;
+        isFadedOut = false;
     }
     [Button]
     public void FadeOut(Action callback = null)
@@ -129,6 +130,7 @@ public class FadeManyTransition : MonoBehaviour
         currentTime = 0;
         isTransitioning = true;
         this.callback = callback;
+        isFadedOut = true;
     }
 
 }

@@ -17,7 +17,6 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
     bool choosingChoices = false;
     private void Start()
     {
-        choicesControl.FadeOut();
     }
     // Update is called once per frame
     void Update()
@@ -47,9 +46,11 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
             }
             if (chosenIndex >= 0)
             {
-                choicesControl.FadeOut();
-                ChooseChoice(currentChoices[chosenIndex]);
-
+                if (chosenIndex < currentChoices.Count)
+                {
+                    choicesControl.FadeOut();
+                    ChooseChoice(currentChoices[chosenIndex]);
+                }
             }
         }
     }
@@ -83,7 +84,29 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
         this.currentChoices = currentChoices;
         choosingChoices = true;
     }
-
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.attachedRigidbody == null) return;
+        var conversationChar = other.attachedRigidbody.gameObject.GetComponentInChildren<ConversationCharacter>();
+        if (conversationChar)
+        {
+            if (conversationChar.IsInConversation() == false && onChoiceChosen == null)
+            {
+                var manager = ConversationMananger.GetInstance(forceCreate: false);
+                if (manager && manager.HasStory())
+                {
+                    var tempChoice = new Ink.Runtime.Choice();
+                    List<Ink.Runtime.Choice> fakeList = new List<Ink.Runtime.Choice>();
+                    fakeList.Add(tempChoice);
+                    tempChoice.text = "Hey.";
+                    this.ChooseFromChoices(fakeList, (Ink.Runtime.Choice choice) =>
+                    {
+                        conversationChar.RequestStartConversation();
+                    });
+                }
+            }
+        }
+    }
     public void StopConversing()
     {
         LogHelper.Log("Conversation- Player stops conversing");
@@ -95,5 +118,10 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
 
     public void StartConvsering()
     {
+        LogHelper.Log("Conversation- Player starts conversing");
+        if (choicesControl.IsFadeOut() == true)
+        {
+            choicesControl.FadeIn();
+        }
     }
 }

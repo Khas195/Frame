@@ -17,6 +17,18 @@ public static class GameEvent
             public static string SPAWN_POINT = "SPAWN_POINT";
         }
     }
+    public static class MapChangedEvent
+    {
+        public static string MAP_CHANGED_EVENT = "MAP_CHANGED_EVENT";
+    }
+    public static class InGameUiStateEvent
+    {
+        public static string ON_IN_GAME_UIS_STATE_CHANGED = "ON_IN_GAME_UIS_STATE_CHANGED";
+        public static class OnInGameUIsStateChangedData
+        {
+            public static string NEW_STATE = "NEW_STATE";
+        }
+    }
     public static class DaySystemEvent
     {
         public static string DAY_CHANGED_EVENT = "DAY_CHANGED_EVENT";

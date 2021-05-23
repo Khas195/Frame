@@ -216,7 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBoxControl: {fileID: 7634388568741836470}
   textUI: {fileID: 4604642401537617615}
-  conversationStitch: Conversations.TaxiDriver
+  conversationStitch: Conversations.TaxiDriverStartsConversation
+  isInConvesation: 0
 --- !u!1 &2305418633161353597
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -645,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1094,7 +1095,8 @@ MonoBehaviour:
   targetAlpha: 0
   startAlpha: 1
   isTransitioning: 0
-  isFadedOut: 0
+  isFadedOut: 1
+  startFadeOut: 1
 --- !u!1001 &7803576828682868233
 PrefabInstance:
   m_ObjectHideFlags: 0

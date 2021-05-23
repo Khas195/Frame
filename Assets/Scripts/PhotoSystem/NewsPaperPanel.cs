@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -35,7 +37,6 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     Animator printingAnim = null;
     [SerializeField]
     PublishedPapersData publishedPaperdataArchive;
-
 
     protected override void Awake()
     {
@@ -75,6 +76,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     public void SwitchPanelOff()
     {
         panelRoot.SetActive(false);
+        this.TriggerAfterPublishCallback();
         this.printingAnim.SetBool("Printing", false);
         Clear();
 
@@ -98,6 +100,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
             UpdatePointUI(totalCommiePoint, totalCapitalistPoint);
         }
     }
+
 
     public int GetTotalCapitalistPointFromSections()
     {
@@ -127,8 +130,9 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
         string commieInfluence = PhotoHolder.ConvertInfluenceToString(commiePoint);
         string capitalistInfluence = PhotoHolder.ConvertInfluenceToString(capitalPoint);
 
-        totalPaperPoint.text = commieInfluence.Colorize(communistColor) + " " + capitalistInfluence.Colorize(capitalistColor);
+        totalPaperPoint.text = capitalistInfluence.Colorize(capitalistColor) + commieInfluence.Colorize(communistColor);
     }
+    Action triggerPublishEventCallback = null;
     public void Publish()
     {
         var publishedPhotos = new List<PhotoInfo>();
@@ -144,19 +148,28 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
                 return;
             }
         }
+        triggerPublishEventCallback = () =>
+        {
+            TriggerDiscardPublishedPhotoEvent(publishedPhotos);
 
+        };
 
         var publicSwaySystem = PublicSwayMechanic.GetInstance();
         publicSwaySystem.AddInfluence(this.GetTotalCommiePointFromSections(), ScenarioActor.ActorFaction.Communist);
         publicSwaySystem.AddInfluence(this.GetTotalCapitalistPointFromSections(), ScenarioActor.ActorFaction.Capitalist);
 
         publicSwaySystem.AssignActorsAccordingToSway(fastTransition: false);
-
-
-
         TriggerPhotoPublishedEvent(publishedPhotos);
-        TriggerDiscardPublishedPhotoEvent(publishedPhotos);
+
         this.printingAnim.SetBool("Printing", true);
+    }
+    public void TriggerAfterPublishCallback()
+    {
+        if (triggerPublishEventCallback != null)
+        {
+            triggerPublishEventCallback.Invoke();
+            triggerPublishEventCallback = null;
+        }
     }
 
     private void TriggerPhotoPublishedEvent(List<PhotoInfo> publishedPhoto)

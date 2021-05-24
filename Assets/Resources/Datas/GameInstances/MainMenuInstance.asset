@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instanceName: MainMenu
   sceneList:
-  - MainMenu02
+  - MainMenu03
   desiredGameState: 0

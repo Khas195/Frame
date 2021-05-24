@@ -483,7 +483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -0.13708496}
+  m_AnchoredPosition: {x: 0.00024414062, y: -0.13708496}
   m_SizeDelta: {x: -0.000061035, y: 0.27405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &66273887
@@ -2374,7 +2374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.024658203, y: 0.002380371}
+  m_AnchoredPosition: {x: -0.024902344, y: 0.0024414062}
   m_SizeDelta: {x: -1312.8, y: -738.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390628399
@@ -3200,7 +3200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &553330562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3248,91 +3248,100 @@ MonoBehaviour:
   - MainCharacterLines.PublishLineProCapital
   - MainCharacterLines.PublishLineNeutral
   monologueLines:
-  - line: The workers down on the Low Tide dockyard will lov' this piece.
+  - line: Man, I need to take more pictures for Daugie'. Otherwise, he will be mad,
+      very mad..... I would lov' to sei' that. (giggles)
     showTime: 14
-    piority: 3
+    piority: 1
     conditions:
+    - {fileID: 11400000, guid: 864c7a1790a02df4cb6074f3ddb08b76, type: 2}
+  - line: The workers down on the Low Tide dockyard will lov' this piece.
+    showTime: 10
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
     - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
     - {fileID: 11400000, guid: 33df9b20e159b7a43bd64793e5a0bda9, type: 2}
-  - line: Those Glitteratis in Wad Street gonna be really mad.
-    showTime: 14
-    piority: 3
+  - line: Those Elites in Wad Street gonna be really mad.
+    showTime: 10
+    piority: 1
     conditions:
+    - {fileID: 11400000, guid: 33df9b20e159b7a43bd64793e5a0bda9, type: 2}
     - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
-    - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
   - line: I'm curious how Daugi' would feel about this.
     showTime: 10
-    piority: 3
+    piority: 1
     conditions:
     - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
     - {fileID: 11400000, guid: 33df9b20e159b7a43bd64793e5a0bda9, type: 2}
-  - line: I hope those Glitteratis send tips!
-    showTime: 9
-    piority: 3
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
+  - line: I hope those Elites send tips!
+    showTime: 10
+    piority: 1
     conditions:
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
+    - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
     - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
-    - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
   - line: Maybe they'll let me into Wad Street if I'm really good to them. I heard
-      the food upthere is THE Mackerel!.
-    showTime: 20
-    piority: 3
+      the food upthere is THE makrele!.
+    showTime: 14
+    piority: 1
     conditions:
-    - {fileID: 11400000, guid: e383b27e4f5cf6840a801662175caa6c, type: 2}
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
     - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
   - line: This will boost the law's approval  by a lot. Maybe Chief Slander will
       let me off the next time I'm in the lockup.
-    showTime: 20
-    piority: 3
+    showTime: 14
+    piority: 1
     conditions:
-    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
     - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
-  - line: Not picking a side may not be the best thing to do. A friend to some is
-      a friend to few or whatever mackerel Daugi' always say.
-    showTime: 20
-    piority: 0
-    conditions:
-    - {fileID: 11400000, guid: 70c379050b98811479a9176be19ea7ef, type: 2}
-    - {fileID: 11400000, guid: 665464f8d4026c34d8b44683a40d7c69, type: 2}
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
   - line: Ther', unbias and completely represent both side.
-    showTime: 11
-    piority: 0
+    showTime: 10
+    piority: 1
     conditions:
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
     - {fileID: 11400000, guid: 70c379050b98811479a9176be19ea7ef, type: 2}
     - {fileID: 11400000, guid: 665464f8d4026c34d8b44683a40d7c69, type: 2}
   - line: Hmm, I wonder when they will stop blocking the Dock. I heard something
       rough happened ther' and the owner got hurt really bad.
-    showTime: 25
+    showTime: 14
     piority: 0
     conditions: []
-  - line: The Coppers hav' been preventing anyone from entering Wad Street. Those
-      Glitteratis up ther' must hav' pulled some strings.
-    showTime: 23
-    piority: 0
-    conditions: []
-  - line: Man, I need to take more pictures for Daugi'. Otherwise, he will be mad,
-      very mad..... I would lov' to sei that. (giggles)
-    showTime: 20
+  - line: The Coppers hav' being preventing anyone from entering Wad Street. Those
+      Elites up ther' must hav' pulled some strings.
+    showTime: 14
     piority: 0
     conditions: []
   - line: Power to the people they say, well, the people took their power but nothing
-      sei'm to be better.
-    showTime: 20
+      seim to be better.
+    showTime: 14
     piority: 0
     conditions: []
   - line: grumble...grumble..grumble.. uh oh, running a bit' thin ther', is the pig
       blood guy's around in Central?. I should buy Daugi' some too.
-    showTime: 20
+    showTime: 14
     piority: 0
     conditions: []
-  - line: I need to get a new Big Daddy-O Camera, this piece of mackerel! doesn't
+  - line: I need to get a new Big Daddy-O Camera, this piece of makrele! doesn't
       eve' have a zoom function.
-    showTime: 20
+    showTime: 14
     piority: 0
     conditions: []
-  - line: Why in the holy mackerel is the park always dark when I'm ther' !!.
-    showTime: 15
+  - line: Why in the holy makrele is the park always dark when I'm ther' !!.
+    showTime: 10
     piority: 0
     conditions: []
+  - line: Not picking a side may not be the best thing to do. A friend to some is
+      a friend to few or whatever makrele Daugi' always say.
+    showTime: 14
+    piority: 0
+    conditions:
+    - {fileID: 11400000, guid: 70c379050b98811479a9176be19ea7ef, type: 2}
+    - {fileID: 11400000, guid: 665464f8d4026c34d8b44683a40d7c69, type: 2}
+    - {fileID: 11400000, guid: 30f84848dbe13154886608ab137a41ae, type: 2}
   lastSpokenLine:
     line: 
     showTime: 0
@@ -3349,6 +3358,8 @@ MonoBehaviour:
     showTime: 0
     piority: 0
     conditions: []
+  letterPause: 0.02
+  currentMessage: 
   possibleLineToSpeak: []
 --- !u!1 &574074797
 GameObject:
@@ -5517,7 +5528,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: -0.06604004}
+  m_AnchoredPosition: {x: 0.00024414062, y: -0.06604004}
   m_SizeDelta: {x: -0.0001, y: 0.41602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &880819807
@@ -6462,7 +6473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -507.4, y: -78.6}
+  m_AnchoredPosition: {x: -507, y: -50}
   m_SizeDelta: {x: 186, y: 154}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1025964053
@@ -8000,7 +8011,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00036621094, y: -0.00024414062}
+  m_AnchoredPosition: {x: -0.00024414062, y: -0.00024414062}
   m_SizeDelta: {x: 1066.8, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1334344244
@@ -8727,7 +8738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.16247559, y: 0}
+  m_AnchoredPosition: {x: 0.16235352, y: 0}
   m_SizeDelta: {x: 0.32507, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1497583438
@@ -10435,10 +10446,10 @@ RectTransform:
   m_Father: {fileID: 2124345506}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 81.5, y: -25.5}
-  m_SizeDelta: {x: 123, y: 31}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1931442710
 MonoBehaviour:
@@ -10454,7 +10465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10462,7 +10473,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9fdfc72764730c84e98017aa3c130471, type: 2}
-    m_FontSize: 16
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -11583,10 +11594,10 @@ RectTransform:
   m_Father: {fileID: 1497583437}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000095367, y: -264.8}
-  m_SizeDelta: {x: 163, y: 51}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 515.1328, y: 50}
+  m_SizeDelta: {x: 530.0985, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2124345507
 MonoBehaviour:
@@ -11638,7 +11649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
+  m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!114 &2124345510
 MonoBehaviour:

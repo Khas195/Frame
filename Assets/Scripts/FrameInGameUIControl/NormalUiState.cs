@@ -7,6 +7,8 @@ public class NormalUiState : InGameUIState
 {
     [SerializeField]
     GameObject overlayUI;
+    [SerializeField]
+    bool allowedDirectTransitionToNewspanel = true;
     public override Enum GetEnum()
     {
         return InGameUIStateEnum.NormalState;
@@ -30,13 +32,9 @@ public class NormalUiState : InGameUIState
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);
         }
-        else if (Input.GetKeyDown(KeyCode.B))
+        else if (Input.GetKeyDown(KeyCode.B) && allowedDirectTransitionToNewspanel)
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
-        }
-        else if (Input.GetKeyDown(KeyCode.T))
-        {
-            controller.RequestState(InGameUIStateEnum.PublishedPaperPanel);
         }
     }
 

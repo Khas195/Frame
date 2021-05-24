@@ -30,16 +30,6 @@ public class PhotoModeState : InGameUIState
             controller.RequestState(InGameUIStateEnum.CapturingState);
             entertingOtherUI = true;
         }
-        else if (Input.GetKeyDown(KeyCode.B))
-        {
-            controller.RequestState(InGameUIStateEnum.NewsPanelState);
-            entertingOtherUI = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.T))
-        {
-            controller.RequestState(InGameUIStateEnum.PublishedPaperPanel);
-            entertingOtherUI = true;
-        }
 
         if (Input.anyKeyDown && entertingOtherUI == false)
         {

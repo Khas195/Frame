@@ -6,6 +6,8 @@ using UnityEngine;
 public class BlinkingStreetLight : MonoBehaviour
 {
     [SerializeField]
+    AudioSource source = null;
+    [SerializeField]
     SpriteRenderer leftLight;
     [SerializeField]
     SpriteRenderer rightLight;
@@ -32,6 +34,18 @@ public class BlinkingStreetLight : MonoBehaviour
     [ReadOnly]
     float rightCurTime;
 
+
+    private void Start()
+    {
+        if (leftPattern != null || rightPattern != null)
+        {
+            source.Play();
+        }
+        else
+        {
+            source.Stop();
+        }
+    }
 
     private void Update()
     {

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: JournalistMove_Data
   m_EditorClassIdentifier: 
   walkSpeed: 2
-  runSpeed: 4
+  runSpeed: 20
   jumpForce: 5
   rotateSpeed: 20

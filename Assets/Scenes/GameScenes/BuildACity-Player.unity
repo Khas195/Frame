@@ -12012,6 +12012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraEntity
       objectReference: {fileID: 0}
+    - target: {fileID: 8734785929979704178, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8734785930736739236, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: characterBody
       value: 

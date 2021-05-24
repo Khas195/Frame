@@ -6,6 +6,10 @@ public class TaxiMapControl : MonoBehaviour
 {
     [SerializeField]
     GameObject mapPanel = null;
+    [SerializeField]
+    AudioSource carDoorOpen = null;
+    [SerializeField]
+    AudioSource carDoorClose = null;
     private void Start()
     {
         HideMap();
@@ -22,5 +26,7 @@ public class TaxiMapControl : MonoBehaviour
     {
         GameMaster.GetInstance().RequestInstance(instance);
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
+        carDoorOpen.Play();
+        carDoorClose.PlayDelayed(carDoorOpen.clip.length);
     }
 }

@@ -24,13 +24,9 @@ public class NewsPanelState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             this.controller.RequestState(InGameUIStateEnum.NormalState);
-        }
-        else if (Input.GetKeyDown(KeyCode.V))
-        {
-            controller.RequestState(InGameUIStateEnum.CapturingState);
         }
 
     }

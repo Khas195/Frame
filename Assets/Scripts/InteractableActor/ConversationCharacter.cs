@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Ink.Runtime;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +18,15 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     bool isInConvesation = false;
     bool playerInRange = false;
     IParticipant playerChar = null;
+
+    [SerializeField]
+    AudioSource textPrintSound = null;
+    [SerializeField]
+    float letterPause = 0.02f;
+    [SerializeField]
+    [ReadOnly]
+    string textToShow = "";
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -35,11 +45,27 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
             ConversationMananger.GetInstance().TerminateCurrentConversation();
         }
     }
+    IEnumerator TypeText()
+    {
+        textUI.text = "";
+        foreach (char letter in textToShow.ToCharArray())
+        {
+            textUI.text += letter;
+            if (textPrintSound != null)
+            {
+                textPrintSound.Play();
+                yield return 0;
+            }
+            yield return new WaitForSeconds(letterPause);
+        }
+    }
 
     public void Show(string textToShow)
     {
-        textUI.text = textToShow;
-
+        StopCoroutine("TypeText");
+        textUI.text = "";
+        this.textToShow = textToShow;
+        StartCoroutine("TypeText");
     }
 
     public void ChooseFromChoices(List<Ink.Runtime.Choice> currentChoices, Action<Choice> choiceCallBack)

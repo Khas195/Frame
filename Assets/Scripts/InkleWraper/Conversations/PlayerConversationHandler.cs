@@ -13,8 +13,11 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
     List<ChoiceUI> choices = new List<ChoiceUI>();
     [SerializeField]
     Action<Choice> onChoiceChosen = null;
+    [SerializeField]
+    AudioSource choiceMadeSound = null;
     List<Choice> currentChoices;
     bool choosingChoices = false;
+
     private void Start()
     {
     }
@@ -60,6 +63,7 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
         onChoiceChosen(chosenChoice);
         onChoiceChosen = null;
         choosingChoices = false;
+        choiceMadeSound.Play();
     }
 
     public void Show(string textToShow)

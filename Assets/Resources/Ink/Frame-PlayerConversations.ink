@@ -87,13 +87,13 @@ Yau' got anything new for me today ?.
 
     -> END.
 = DauglasQuestions
-    + Can't I just do that right after I take them pictures ?
+    * Can't I just do that right after I take them pictures ?
         - - And how do yau' intend to print the newspaper, out of yau' ass ?!.
         -> DauglasQuestions
-    + I remember being able to publish without going back to you.
+    * I remember being able to publish without going back to you.
         - - Did yau' hit yau' head or something ?
         -> DauglasQuestions
-    + That seem like work, isn't there a faster way.
+    * That seem like work, isn't there a faster way.
         - - Maybe because, i dun know, it IS WORK !?. Yau know how "work" works ?!.
         -> DauglasQuestions
     + That's all.
@@ -104,9 +104,9 @@ Yau' got anything new for me today ?.
             - - But I guess, there is an exception to everything.
                 + + + ....
                 + + + makrele!.
-                - - - -> DauglasQuestions
+                - - - -> END
 = DauglasAdvices
-    + You know where things might get interesting ?
+    * You know where things might get interesting ?
         - - ... isn't that yau' job to find out ? Yau' know, the one I'm paying yau' for.
             + + + Well, any tips would help!.
             + + + Just tell me.
@@ -119,12 +119,12 @@ Yau' got anything new for me today ?.
                     + + + + + That's not so hard now, isn't it!?.
                     - - - - - ....
                     -> DauglasAdvices
-    + What kind of photos are we looking for ?
+    * What kind of photos are we looking for ?
         Look around yau', we are about' to start another civil war.
         + + I can see that!.
         + + It is that bad, huh ?!.
         - - People around here wants news, Jackie'. They want to know which side to pick.
         ->  DauglasAdvices
     + That's all, Dougie'
-    -> LoopConversation
+    -> END
         

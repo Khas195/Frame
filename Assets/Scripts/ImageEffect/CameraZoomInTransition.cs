@@ -76,6 +76,10 @@ public class CameraZoomInTransition : MonoBehaviour
         SetStartState();
         source.Play();
     }
+    private void OnDisable()
+    {
+        source.Stop();
+    }
     [SerializeField]
     public void TransitionOut()
     {

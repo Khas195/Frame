@@ -5618,7 +5618,7 @@ MonoBehaviour:
   source: {fileID: 1630512123}
   playFromRandomClips: 0
   clips: []
-  lastPlayed: {fileID: 0}
+  lastPlayed: -1
 --- !u!95 &880819810
 Animator:
   serializedVersion: 3
@@ -11803,7 +11803,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9f96c8d3fef6ab440bdc9bd4ad3d08fe, type: 3}
   - {fileID: 8300000, guid: 846819fd62ca22b478d33e537cd61c8c, type: 3}
   - {fileID: 8300000, guid: afeb90013e6764449ae1616f47705ff7, type: 3}
-  lastPlayed: {fileID: 0}
+  lastPlayed: -1
 --- !u!82 &8088190289166948539
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12035,7 +12035,8 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.050980393
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8734785930757364861, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
 --- !u!4 &8734785930988971390 stripped
 Transform:

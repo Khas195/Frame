@@ -51,8 +51,13 @@ public class Movement2DPlatform : IMovement
     }
     private void ProcessMovement()
     {
+        float speed = data.walkSpeed;
+        if (this.moveMode == IMovement.MovementType.Run)
+        {
+            speed = data.runSpeed;
+        }
         var curVel = body2D.velocity;
-        curVel.x = (cachedSide * data.runSpeed);
+        curVel.x = (cachedSide * speed);
         body2D.velocity = curVel;
     }
 

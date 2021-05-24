@@ -57,6 +57,16 @@ public class Character2D : MonoBehaviour
         currentMovementBehavior.Move(vertical, horizontal);
     }
 
+    public void SwitchToRun()
+    {
+        this.characterMovement.SetMovementMode(IMovement.MovementType.Run);
+    }
+
+    public void SwitchToWalk()
+    {
+        this.characterMovement.SetMovementMode(IMovement.MovementType.Walk);
+    }
+
     public string GetName()
     {
         return name;

@@ -19,6 +19,7 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
     IParticipant other;
     Story playerConversationStory = null;
     bool playerIsChoosing = false;
+    bool skipFirstLine = false;
     protected override void Awake()
     {
         base.Awake();
@@ -35,7 +36,14 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
                 LogHelper.Log("Conversation- Sentences: " + playerConversationStory.canContinue);
                 char[] charsToTrim = { ' ', '\n' };
                 sentence = sentence.Trim(charsToTrim);
-                other.Show(sentence);
+                if (skipFirstLine == false)
+                {
+                    other.Show(sentence);
+                }
+                else
+                {
+                    skipFirstLine = false;
+                }
             }
             LogHelper.Log("Conversation- Current choices: " + playerConversationStory.currentChoices.Count);
             if (playerConversationStory.currentChoices.Count > 0)
@@ -77,7 +85,7 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
         other.StopConversing();
     }
 
-    public void RequestPlayerConversation(string conversationStitch, IParticipant player, IParticipant other)
+    public void RequestPlayerConversation(string conversationStitch, IParticipant player, IParticipant other, bool skipFirstLine = false)
     {
         this.player = player;
         this.other = other;
@@ -86,5 +94,6 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
         conversationActive = true;
         player.StartConvsering();
         other.StartConvsering();
+        this.skipFirstLine = skipFirstLine;
     }
 }

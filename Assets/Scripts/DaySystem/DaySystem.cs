@@ -26,12 +26,12 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 
     protected override void Awake()
     {
-        PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+        PostOffice.Subscribes(this, GameEvent.InGameUiStateEvent.ON_IN_GAME_UIS_STATE_CHANGED);
         dayData.ResetDay();
     }
     private void OnDestroy()
     {
-        PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+        PostOffice.Unsubscribes(this, GameEvent.InGameUiStateEvent.ON_IN_GAME_UIS_STATE_CHANGED);
     }
 
     public int GetCurrentDay()
@@ -39,35 +39,14 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
         return dayData.currentDay;
     }
 
-    private void Update()
-    {
-
-        if (CanProceedToNextDay())
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TriggerReviewPanel();
-                textFadeTrans.FadeOut();
-            }
-        }
-    }
-
-    private void TriggerReviewPanel()
-    {
-        InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.PublishedPaperPanel);
-    }
-
     public void NextDay()
     {
-        if (IsPossibleToProceedToNextDay())
-        {
-            OnDayChangedEvent.Invoke();
-            SetCurrentDay(dayData.currentDay + 1);
-        }
+        OnDayChangedEvent.Invoke();
+        SetCurrentDay(dayData.currentDay + 1);
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
     }
 
-    private bool IsPossibleToProceedToNextDay()
+    private bool HasPublishedEnoughPaper()
     {
         return dayData.currentDay < dayData.amountOfPaperNeededPerDay.Count;
     }
@@ -88,17 +67,21 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 
     public void ReceiveData(DataPack pack, string eventName)
     {
-        if (eventName == GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT)
+        if (eventName == GameEvent.InGameUiStateEvent.ON_IN_GAME_UIS_STATE_CHANGED)
         {
-            if (CanProceedToNextDay())
+            var newState = pack.GetValue<InGameUIState.InGameUIStateEnum>(GameEvent.InGameUiStateEvent.OnInGameUIsStateChangedData.NEW_STATE);
+            if (newState == InGameUIState.InGameUIStateEnum.NormalState)
             {
-                textFadeTrans.FadeIn();
+                if (CanProceedToNextDay())
+                {
+                    NextDay();
+                }
             }
         }
     }
 
     private bool CanProceedToNextDay()
     {
-        return IsPossibleToProceedToNextDay() && publishedPaperData.paperDatas.Count >= dayData.amountOfPaperNeededPerDay[dayData.currentDay];
+        return HasPublishedEnoughPaper() && publishedPaperData.paperDatas.Count >= dayData.amountOfPaperNeededPerDay[dayData.currentDay];
     }
 }

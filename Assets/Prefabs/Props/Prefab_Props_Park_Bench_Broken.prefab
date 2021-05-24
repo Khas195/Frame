@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1754359813358866462}
   - component: {fileID: 8333156349638303801}
   m_Layer: 0
-  m_Name: Prefab_Props_Park_Bench_01
+  m_Name: Prefab_Props_Park_Bench_Broken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: 5cdda5763d2b42646a6ea22b424a7123, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8487b41f58716e4fb33289c7d3245a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

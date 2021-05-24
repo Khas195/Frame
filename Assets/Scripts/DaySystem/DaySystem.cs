@@ -14,14 +14,6 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
     DaySystemData dayData;
     [SerializeField]
     PublishedPapersData publishedPaperData;
-    [SerializeField]
-    GameObject nextDayButton = null;
-    [SerializeField]
-    Text nextDayText = null;
-    [SerializeField]
-    FadeTransition textFadeTrans = null;
-    [SerializeField]
-    GameInstance reviewInstance;
 
 
     protected override void Awake()

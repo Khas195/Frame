@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659849211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.08, y: -0.007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3001554202196599225}
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef793efd290da94aaa4f112b59f8c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasFlipTarget: 1
-  flipTarget: {fileID: 3001554202196599225}
+  hasFlipTarget: 0
+  flipTarget: {fileID: 0}
   useRigidBody: 1
   body: {fileID: 580247733070267181}
   useMovementScript: 0
@@ -242,9 +242,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2861600786703080168}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb084e55e7b8656429bf98fe00b47ee9, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -290,15 +290,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -968240595
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cc6a482eddb19d34db5f9d0c614e03d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a40b73045770ab542a89ab07b659d077, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 16, y: 4.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 9190858446792104341}
   - component: {fileID: 580247733070267181}
   m_Layer: 0
-  m_Name: Citizen_Female_01_Prefab
+  m_Name: Scenario_Statue_Branch01_ProtestorOnStatue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,7 +581,7 @@ Transform:
   m_LocalPosition: {x: -2.8924825, y: 1.7560107, z: 1.7710106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4088140856289101075}
+  - {fileID: 3527887304202383271}
   - {fileID: 3001554202196599225}
   - {fileID: 1965312243815815601}
   - {fileID: 3613919809456115095}
@@ -711,7 +711,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &6883213082079731175
+--- !u!1001 &6325439170179725139
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439361260441868532, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.3
+      value: 1.2999878
       objectReference: {fileID: 0}
     - target: {fileID: 7439361260441868532, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -848,8 +848,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
---- !u!224 &4088140856289101075 stripped
+--- !u!224 &3527887304202383271 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7439361260441868532, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
-  m_PrefabInstance: {fileID: 6883213082079731175}
+  m_PrefabInstance: {fileID: 6325439170179725139}
   m_PrefabAsset: {fileID: 0}

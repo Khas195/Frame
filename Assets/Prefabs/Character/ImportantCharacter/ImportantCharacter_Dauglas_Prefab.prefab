@@ -708,7 +708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3946580930847969649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.761, y: -2.506, z: 5.0447984}
+  m_LocalPosition: {x: 20.761, y: -2.506, z: -2.491}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 6880059026184302286}
@@ -890,7 +890,7 @@ MonoBehaviour:
   conversationStitch: ConversationDaughi.StartConversation
   isInConvesation: 0
   textPrintSound: {fileID: 822276737}
-  wordPerSeconds: 0.02
+  letterPause: 0.02
   textToShow: 
 --- !u!1 &6609871411545935384
 GameObject:
@@ -1167,7 +1167,7 @@ Animator:
   m_GameObject: {fileID: 8707878894283271180}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb084e55e7b8656429bf98fe00b47ee9, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1216,7 +1216,7 @@ SpriteRenderer:
   m_SortingLayerID: 1476606107
   m_SortingLayer: -3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 938666c47a0392d468e9c74472bea177, type: 3}
+  m_Sprite: {fileID: -5480251388242272208, guid: caedf73ab9f925144ac4ccb49f77fac2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0

@@ -20,8 +20,7 @@ public class MusicControl : MonoBehaviour, IObserver
     [ReadOnly]
     List<float> changeAmounts = new List<float>();
     [SerializeField]
-    [ReadOnly]
-    bool isPlaying = false;
+    bool isPlaying = true;
     bool inTransitionIN = false;
     bool inTransitionOUT = false;
     private void Start()
@@ -31,7 +30,6 @@ public class MusicControl : MonoBehaviour, IObserver
         {
             changeAmounts.Add(musicSources[i].volume / transitionInTime);
         }
-        isPlaying = true;
 
     }
     private void OnDestroy()

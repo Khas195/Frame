@@ -95242,10 +95242,10 @@ MonoBehaviour:
   - {fileID: 443440634}
   - {fileID: 868244455}
   transitionInTime: 5
-  transitionOutTime: 4
+  transitionOutTime: 3
   currentTime: 0
   changeAmounts: []
-  isPlaying: 0
+  isPlaying: 1
 --- !u!1 &2124125301
 GameObject:
   m_ObjectHideFlags: 0

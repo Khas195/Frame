@@ -8370,7 +8370,7 @@ MonoBehaviour:
   musicSources:
   - {fileID: 1416886091}
   transitionInTime: 5
-  transitionOutTime: 4
+  transitionOutTime: 3
   currentTime: 0
   changeAmounts: []
   isPlaying: 0

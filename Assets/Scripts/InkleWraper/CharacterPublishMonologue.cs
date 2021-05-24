@@ -34,9 +34,15 @@ public class CharacterPublishMonologue : MonoBehaviour
     [SerializeField]
     [ReadOnly]
     MonologueLine currentLine = null;
+    [SerializeField]
+    float letterPause = 0.02f;
+    [SerializeField]
+    [ReadOnly]
+    string currentMessage = "";
     bool isSpeaking = false;
     bool isResting = false;
-
+    [SerializeField]
+    List<MonologueLine> possibleLineToSpeak;
     // Start is called before the first frame update
 
 
@@ -87,8 +93,7 @@ public class CharacterPublishMonologue : MonoBehaviour
         isSpeaking = false;
         isResting = true;
     }
-    [SerializeField]
-    List<MonologueLine> possibleLineToSpeak;
+
     private void Speak()
     {
         var possibleLines = new List<MonologueLine>();
@@ -107,6 +112,7 @@ public class CharacterPublishMonologue : MonoBehaviour
 
         ShowLine(currentLine);
     }
+
 
     private List<MonologueLine> FindAllElementsWithHighestPiority(List<MonologueLine> possibleLines)
     {
@@ -127,10 +133,22 @@ public class CharacterPublishMonologue : MonoBehaviour
 
     private void ShowLine(MonologueLine currentLine)
     {
-        textUI.text = currentLine.GetLine();
+        StopCoroutine("TypeText");
+        textUI.text = "";
+        currentMessage = currentLine.GetLine();
         fadeManyTransition.FadeIn();
         curShowTime = 0;
         isSpeaking = true;
+        StartCoroutine("TypeText");
+    }
+    IEnumerator TypeText()
+    {
+        textUI.text = "";
+        foreach (char letter in currentMessage.ToCharArray())
+        {
+            textUI.text += letter;
+            yield return new WaitForSeconds(letterPause);
+        }
     }
 
     [Button]

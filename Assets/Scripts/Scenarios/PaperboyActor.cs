@@ -33,7 +33,8 @@ public class PaperboyActor : MonoBehaviour
     bool genericLine = true;
     [ReadOnly]
     string currentLine = "";
-
+    [SerializeField]
+    float letterPause = 0.02f;
 
 
     private void Awake()
@@ -104,7 +105,8 @@ public class PaperboyActor : MonoBehaviour
             this.myCanvas.gameObject.SetActive(false);
         }
 
-        dialogueBox.text = currentLine;
+        StopCoroutine("TypeText");
+        StartCoroutine("TypeText");
 
         curShowTime = 0;
 
@@ -114,4 +116,15 @@ public class PaperboyActor : MonoBehaviour
             listToIgnore.Clear();
         }
     }
+    IEnumerator TypeText()
+    {
+        dialogueBox.text = "";
+        foreach (char letter in currentLine.ToCharArray())
+        {
+            dialogueBox.text += letter;
+            yield return new WaitForSeconds(letterPause);
+        }
+    }
+
+
 }

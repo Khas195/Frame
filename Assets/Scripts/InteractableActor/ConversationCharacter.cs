@@ -20,7 +20,9 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     IParticipant playerChar = null;
 
     [SerializeField]
-    float wordPerSeconds = 0.02f;
+    AudioSource textPrintSound = null;
+    [SerializeField]
+    float letterPause = 0.02f;
     [SerializeField]
     [ReadOnly]
     string textToShow = "";
@@ -45,18 +47,25 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     }
     IEnumerator TypeText()
     {
+        textUI.text = "";
         foreach (char letter in textToShow.ToCharArray())
         {
             textUI.text += letter;
-            yield return new WaitForSeconds(wordPerSeconds);
+            if (textPrintSound != null)
+            {
+                textPrintSound.Play();
+                yield return 0;
+            }
+            yield return new WaitForSeconds(letterPause);
         }
     }
 
     public void Show(string textToShow)
     {
+        StopCoroutine("TypeText");
         textUI.text = "";
         this.textToShow = textToShow;
-        StartCoroutine(TypeText());
+        StartCoroutine("TypeText");
     }
 
     public void ChooseFromChoices(List<Ink.Runtime.Choice> currentChoices, Action<Choice> choiceCallBack)

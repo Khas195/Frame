@@ -31,6 +31,7 @@ public class MusicControl : MonoBehaviour, IObserver
         {
             changeAmounts.Add(musicSources[i].volume / transitionInTime);
         }
+        isPlaying = true;
 
     }
     private void OnDestroy()

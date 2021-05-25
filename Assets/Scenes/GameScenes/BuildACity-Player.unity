@@ -9595,7 +9595,7 @@ MonoBehaviour:
   possibleTransitions: []
   controller: {fileID: 0}
   overlayUI: {fileID: 1333447727}
-  allowedDirectTransitionToNewspanel: 1
+  allowedDirectTransitionToNewspanel: 0
   testInstance: {fileID: 11400000, guid: 55c01a7c66b607f448cdb31fe1506fb4, type: 2}
 --- !u!4 &1672024443
 Transform:

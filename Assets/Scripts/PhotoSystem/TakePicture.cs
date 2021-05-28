@@ -29,6 +29,9 @@ public class TakePicture : MonoBehaviour
     PhotoListManager newsPaperPanel;
     [SerializeField]
     [Required]
+    DiaryPanel diaryPanel;
+    [SerializeField]
+    [Required]
     CameraZoomInTransition transition;
     [SerializeField]
     UnityEvent OnScreenshotTaken = new UnityEvent();
@@ -92,6 +95,8 @@ public class TakePicture : MonoBehaviour
 
 
         newsPaperPanel.AddPhoto(newPhoto);
+        diaryPanel.AddDiaryItem(newPhoto);
+
         photoModeHoder.SetPhotoInfo(newPhoto);
         takeHiResShot = false;
 

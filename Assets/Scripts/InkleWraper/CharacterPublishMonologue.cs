@@ -157,7 +157,7 @@ public class CharacterPublishMonologue : MonoBehaviour
         InkleManager.GetInstance().CreateStory();
         for (int i = 0; i < stitchesInStory.Count; i++)
         {
-            var newLines = InkleManager.GetInstance().GetLinesFromSticth(stitchesInStory[i]);
+            var newLines = InkleManager.GetInstance().GetCharacterPublishMonologues(stitchesInStory[i]);
             this.AddMonologueLines(monologueLines, newLines);
 
         }

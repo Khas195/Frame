@@ -36,6 +36,10 @@ public class NormalUiState : InGameUIState
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
         }
+        else if (Input.GetKeyDown(KeyCode.O))
+        {
+            controller.RequestState(InGameUIStateEnum.DiaryPanelState);
+        }
     }
 
 }

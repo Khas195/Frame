@@ -58,6 +58,19 @@ Hmm, sure, but ya' be quick with it!.
             - - - -> TaxiDriverQuestionsHub
         
 -> DONE
+=== ConversationPoliceBlockStatueEvent
+
+= StartConversation
+I'm watching you!.
+    + Hey ?.
+    -> LoopConversation
+
+= LoopConversation
+Where do you think you're going ?. This area is blocked to all citizens.
+    + I'm a journalist. I need to get in to report.
+    + What's going on in there ?.
+
+    - -> DONE
 === ConversationDaughi
 = StartConversation
 Jackie'!

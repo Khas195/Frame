@@ -204,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologues: {fileID: 4900000, guid: eb1325860e11d3f42b3574362be30ff4, type: 3}
   playerConversations: {fileID: 4900000, guid: a962d9bac8e8fb0499ce5a4ffc62e702, type: 3}
+  actorDescriptions: {fileID: 4900000, guid: 4d480740864a0f94c89558d23f4749e0, type: 3}
   paperboysLines: []
 --- !u!4 &407093969
 Transform:

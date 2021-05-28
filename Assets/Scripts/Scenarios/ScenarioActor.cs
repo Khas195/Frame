@@ -35,6 +35,13 @@ public class ScenarioActor : MonoBehaviour
     Color targetColor;
     [SerializeField]
     float transitionTime = 1.0f;
+
+    [SerializeField]
+    string inkDescStitch = "RandomPeople";
+    [SerializeField]
+    [ReadOnly]
+    string inkDesc = "";
+
     float curTime = 100;
 
     private void Start()
@@ -50,6 +57,10 @@ public class ScenarioActor : MonoBehaviour
         if (isFactionFixed == false)
         {
             ChangeColorToFaction();
+        }
+        if (inkDescStitch != "")
+        {
+            inkDesc = InkleManager.GetInstance().RequestActorDesc(inkDescStitch);
         }
     }
 
@@ -112,6 +123,11 @@ public class ScenarioActor : MonoBehaviour
         return capitalInfluence;
     }
 
+    public string GetActorDiaryStitch()
+    {
+        return inkDescStitch;
+    }
+
     public int GetCommunistInfluence()
     {
         return communistInfluence;
@@ -121,5 +137,10 @@ public class ScenarioActor : MonoBehaviour
     {
         this.capitalInfluence = 0;
         this.communistInfluence = 0;
+    }
+
+    public string GetActorDiaryDesc()
+    {
+        return inkDesc;
     }
 }

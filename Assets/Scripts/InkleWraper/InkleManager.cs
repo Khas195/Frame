@@ -13,6 +13,8 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     [SerializeField]
     TextAsset playerConversations;
     [SerializeField]
+    TextAsset actorDescriptions;
+    [SerializeField]
     [ReadOnly]
     Story monologueStory;
 
@@ -21,6 +23,9 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     [SerializeField]
     [ReadOnly]
     Story playerConversationStory;
+    [SerializeField]
+    [ReadOnly]
+    Story actorDescriptionsStory;
     [SerializeField]
     [ReadOnly]
     List<string> paperboysLines = new List<string>();
@@ -34,7 +39,7 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     {
         monologueStory = new Story(monologues.text);
         playerConversationStory = new Story(playerConversations.text);
-
+        actorDescriptionsStory = new Story(actorDescriptions.text);
     }
     public Story GetPlayerConversation()
     {
@@ -42,24 +47,42 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     }
     public void AddPaperboyLines(string inkleStitch)
     {
-        paperboysLines.AddRange(GetLinesFromSticth(inkleStitch));
+        paperboysLines.AddRange(GetLinesFromSticth(inkleStitch, monologueStory));
     }
-    public List<string> GetLinesFromSticth(string stitch)
+    public List<string> GetCharacterPublishMonologues(string inkleStitch)
+    {
+        return GetLinesFromSticth(inkleStitch, monologueStory);
+    }
+    public List<string> GetLinesFromSticth(string stitch, Story StichStory)
     {
         var result = new List<string>();
-        monologueStory.ChoosePathString(stitch);
-        monologueStory.Continue();
-        for (int i = 0; i < monologueStory.currentChoices.Count; i++)
+        StichStory.ChoosePathString(stitch);
+        StichStory.Continue();
+        for (int i = 0; i < StichStory.currentChoices.Count; i++)
         {
-            result.Add(monologueStory.currentChoices[i].text);
+            result.Add(StichStory.currentChoices[i].text);
         }
         return result;
     }
 
     public List<string> GetGenericPaperLines()
     {
-        return GetLinesFromSticth("PaperboysLine.GenericLines");
+        return GetLinesFromSticth("PaperboysLine.GenericLines", monologueStory);
     }
+
+    public string RequestActorDesc(string stitch)
+    {
+        var descList = GetLinesFromSticth(stitch, actorDescriptionsStory);
+        if (descList.Count > 0)
+        {
+            return descList[0];
+        }
+        else
+        {
+            return "";
+        }
+    }
+
     public void ClearPaperboyLines()
     {
         paperboysLines.Clear();

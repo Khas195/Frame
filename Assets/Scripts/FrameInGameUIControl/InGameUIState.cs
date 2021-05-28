@@ -14,7 +14,8 @@ public abstract class InGameUIState : State
         CapturingState,
         PhotoMode,
         PublishedPaperPanel,
-        MapState
+        MapState,
+        DiaryPanelState
     }
     [SerializeField]
     [ReadOnly]

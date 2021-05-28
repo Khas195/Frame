@@ -9,6 +9,8 @@ public class DiaryPanel : MonoBehaviour
     [SerializeField]
     List<DiaryItem> diaryItems = null;
     [SerializeField]
+    Transform diaryPanelRoot = null;
+    [SerializeField]
     Transform diaryItemRoot = null;
     [SerializeField]
     DiaryItem prototype = null;
@@ -39,13 +41,16 @@ public class DiaryPanel : MonoBehaviour
     }
     public void AddDiaryItem(Sprite photo, string photoText, string diaryStitch)
     {
+        LogHelper.Log("DiarySystem - Checking for duplicate based on actor's stitch.");
         var item = diaryItems.Find((DiaryItem x) => x.GetStitch() == diaryStitch);
         if (item != null)
         {
+            LogHelper.Log("DiarySystem - found duplicate, replacing photo of previous diary item.");
             item.SetPhoto(photo);
         }
         else
         {
+            LogHelper.Log("DiarySystem - found NO duplicate, creating a new diary item to add.");
             var newItem = AddDiaryItem();
             newItem.SetPhoto(photo);
             newItem.SetText(photoText);
@@ -68,12 +73,12 @@ public class DiaryPanel : MonoBehaviour
 
     public void Show()
     {
-        diaryItemRoot.gameObject.SetActive(true);
+        diaryPanelRoot.gameObject.SetActive(true);
         ShowItemsOnCurrentPage();
     }
     public void Hide()
     {
-        diaryItemRoot.gameObject.SetActive(false);
+        diaryPanelRoot.gameObject.SetActive(false);
     }
     [Button]
     public void NextPage()
@@ -122,10 +127,13 @@ public class DiaryPanel : MonoBehaviour
 
     public void AddDiaryItem(PhotoInfo newPhoto)
     {
-        if (newPhoto.participants.Count > 1)
+        if (newPhoto.participants.Count > 1 || newPhoto.participants.Count <= 0)
         {
+            LogHelper.Log("DiarySystem - Didn't find any participant or number of participants is > 1 in photo.");
+            LogHelper.Log("DiarySystem - Number of participants: " + newPhoto.participants.Count);
             return;
         }
+        LogHelper.Log("DiarySystem - Found a participant in photo.");
         var actor = newPhoto.participants[0];
         this.AddDiaryItem(newPhoto.sprite, actor.GetActorDiaryDesc(), actor.GetActorDiaryStitch());
     }

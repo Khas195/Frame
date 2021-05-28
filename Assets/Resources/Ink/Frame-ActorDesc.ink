@@ -2,7 +2,7 @@
 
 === RandomPeople
 
-* Random people on the street.
+* Some random person on the street.
 
 -> DONE
 

@@ -4,7 +4,7 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PaperboyActor : MonoBehaviour
+public class PaperboyActor : ScenarioActor
 {
     [SerializeField]
     Canvas myCanvas;
@@ -39,12 +39,14 @@ public class PaperboyActor : MonoBehaviour
 
     private void Awake()
     {
+
         genericLines.Clear();
         todayLines.Clear();
         Scenario.OnScenarioEnter.AddListener(this.AskForTodayLines);
     }
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         genericLines.AddRange(InkleManager.GetInstance().GetGenericPaperLines());
         YellDialogue();
     }
@@ -65,8 +67,9 @@ public class PaperboyActor : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
+        base.Update();
         if (curShowTime <= showTime)
         {
             curShowTime += Time.deltaTime;

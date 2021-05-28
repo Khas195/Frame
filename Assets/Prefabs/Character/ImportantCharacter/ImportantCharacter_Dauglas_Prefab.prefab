@@ -397,8 +397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d337ed5bed71d84f85c56189237700c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCitizen: 1
-  isFactionFixed: 0
+  isCitizen: 0
+  isFactionFixed: 1
   highlightSprite: {fileID: 3994525485397003951}
   characterSprite: {fileID: 1488271368236236710}
   curFaction: 0

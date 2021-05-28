@@ -610,6 +610,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f812647fb57174d9be7163f51dc2eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCitizen: 0
+  isFactionFixed: 1
+  highlightSprite: {fileID: 0}
+  characterSprite: {fileID: 3823075409313499099}
+  curFaction: 0
+  capitalInfluence: 0
+  communistInfluence: 0
+  isOnCamera: 0
+  previousColor: {r: 0, g: 0, b: 0, a: 0}
+  targetColor: {r: 0, g: 0, b: 0, a: 0}
+  transitionTime: 1
+  inkDescStitch: RandomPeople
+  inkDesc: 
   myCanvas: {fileID: 131250177}
   dialogueBox: {fileID: 1279232582}
   todayLines:
@@ -624,6 +637,7 @@ MonoBehaviour:
   showTime: 5
   curShowTime: 0
   genericLine: 1
+  letterPause: 0.02
 --- !u!1 &3447725463243944199
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +867,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -968240595
-  m_SortingLayer: 4
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ac31858e94fcbed4191952e7d1b18987, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

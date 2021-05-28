@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.04278934
+      value: 0.15495294
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -1036,7 +1036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.24741249
+      value: -0.001064759
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -4161,7 +4161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.04278934
+      value: 0.15495294
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -4173,7 +4173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.24741249
+      value: -0.001064759
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -5683,7 +5683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.0037164022
+      value: 0.33131164
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -6514,7 +6514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.0019542973
+      value: 0.09661242
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -10735,6 +10735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b4bed1e917e5e942a33603fde19f3ff, type: 3}
+--- !u!212 &1313827594 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3823075409313499099, guid: 067f3d4fe9e029541a9a7d85f94e9dcd, type: 3}
+  m_PrefabInstance: {fileID: 1749535247}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1329204587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14219,6 +14224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paperboy_TestInkle01_Pfb
       objectReference: {fileID: 0}
+    - target: {fileID: 8797716917294951252, guid: 067f3d4fe9e029541a9a7d85f94e9dcd, type: 3}
+      propertyPath: characterSprite
+      value: 
+      objectReference: {fileID: 1313827594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 067f3d4fe9e029541a9a7d85f94e9dcd, type: 3}
 --- !u!4 &1749535248 stripped
@@ -15865,7 +15874,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.0037164022
+      value: 0.33131164
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -15999,7 +16008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.0037164022
+      value: 0.33131164
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer

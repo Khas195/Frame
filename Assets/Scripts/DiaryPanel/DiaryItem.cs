@@ -11,6 +11,8 @@ public class DiaryItem : MonoBehaviour
     [Required]
     Image itemPhoto = null;
     [SerializeField]
+    GameObject photoRoot = null;
+    [SerializeField]
     [Required]
     Text itemText = null;
     [SerializeField]
@@ -33,9 +35,10 @@ public class DiaryItem : MonoBehaviour
     [Button]
     public void RandomPhotoRotation()
     {
-        var eulerRot = itemPhoto.transform.eulerAngles;
+        var eulerRot = photoRoot.transform.eulerAngles;
         eulerRot.z = UnityEngine.Random.Range(photoRotMin, photoRotMax);
-        itemPhoto.transform.eulerAngles = eulerRot;
+        photoRoot.transform.eulerAngles = eulerRot;
+
     }
     [Button]
     public void RandomSwapPhotoAndText()
@@ -44,12 +47,12 @@ public class DiaryItem : MonoBehaviour
         randomSwap = UnityEngine.Random.Range(0.0f, 1.0f) >= 0.5f ? true : false;
         if (randomSwap)
         {
-            var photoPos = itemPhoto.transform.position;
+            var photoPos = photoRoot.transform.position;
             var textPos = itemText.transform.position;
             var temp = photoPos;
             photoPos = textPos;
             textPos = temp;
-            itemPhoto.transform.position = photoPos;
+            photoRoot.transform.position = photoPos;
             itemText.transform.position = textPos;
         }
     }

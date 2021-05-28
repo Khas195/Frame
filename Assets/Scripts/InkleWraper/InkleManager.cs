@@ -75,7 +75,8 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
         var descList = GetLinesFromSticth(stitch, actorDescriptionsStory);
         if (descList.Count > 0)
         {
-            return descList[0];
+            var randomedLine = descList[UnityEngine.Random.Range(0, descList.Count)];
+            return randomedLine;
         }
         else
         {

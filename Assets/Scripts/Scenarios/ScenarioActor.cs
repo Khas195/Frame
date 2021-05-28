@@ -44,7 +44,7 @@ public class ScenarioActor : MonoBehaviour
 
     float curTime = 100;
 
-    private void Start()
+    protected virtual void Start()
     {
         if (isCitizen)
         {
@@ -64,7 +64,7 @@ public class ScenarioActor : MonoBehaviour
         }
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         isOnCamera = characterSprite.isVisible;
         if (isFactionFixed == false)

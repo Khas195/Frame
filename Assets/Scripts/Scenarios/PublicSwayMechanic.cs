@@ -124,6 +124,17 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
                 newPhoto.participants.Add(scenarioActors[i]);
             }
         }
+
+        if (newPhoto.participants.Count <= 0)
+        {
+            for (int i = 0; i < cititzens.Count; i++)
+            {
+                if (cititzens[i].IsOnCamera())
+                {
+                    newPhoto.participants.Add(cititzens[i]);
+                }
+            }
+        }
     }
 
 

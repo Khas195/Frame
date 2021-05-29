@@ -244,7 +244,7 @@ Animator:
   m_GameObject: {fileID: 2861600786703080168}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eb084e55e7b8656429bf98fe00b47ee9, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -291,7 +291,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -968240595
-  m_SortingLayer: 4
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4ff01cffe7479743a89bd7fe03b8016, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -408,6 +408,8 @@ MonoBehaviour:
   previousColor: {r: 0, g: 0, b: 0, a: 0}
   targetColor: {r: 0, g: 0, b: 0, a: 0}
   transitionTime: 3
+  inkDescStitch: RandomPeople
+  inkDesc: 
 --- !u!1 &5845407629093928862
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,9 +720,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9190858446792104341}
     m_Modifications:
+    - target: {fileID: 1070495650484680296, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
+      propertyPath: isFadedOut
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1550495627968446480, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: m_Name
       value: CharacterMonologueCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532634550682921614, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4437427864562471869, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -748,6 +758,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135385151599456823, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399360212180692497, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7439361260441868532, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}

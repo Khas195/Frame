@@ -87,49 +87,83 @@ Day02: Scenario 02 Protestors failed to break the statue.
     -> DONE
     * I feel sick. I think I've been afflicted by "Lazy dialogue writing"!.
     -> DONE
-= ParkStatueScenarioProtestorMale02
-
-    * Pull man pull!
-    -> DONE
-    * Don't let your dream be dreams. JUST PULLLL!.
-    -> DONE
-    * PULLLLL!
-    -> DONE
     
-= ParkStatueScenarioProtestorPullingStatue
+= DrunkProtestors
+    * Wuppp!.
+    -> DONE
+    * Wrante sroomee rinnnk?.
+    -> DONE
+    * rooo arayyy!.
+    -> DONE
+=== Scenario01_MarestromPark_StatueBreaking
 
-    * I am PULLLING!!
+= Protestors_HoldingBoard
+    * Down with the symbol of oppression.
     -> DONE
-    * Can't you help ?!!!.
+    * Not OUR history! Not OUR heritage!.
+    -> DONE 
+    * Break it All! Break it All!.
     -> DONE
-    * DUDE, this rope is long enough for both of us!!.
+= PoliceBeating_Protestors
+    * You Makrele!.
     -> DONE
-    
-= ParkStatueScenarioProtestorHoldingBoard
-    * Holding a board, protesting.... man this is boring. Those other guys have more actions than us.
+    * If you don't want to live here then LEAVE!.
     -> DONE
-    * Yawnnnnnn
+= PoliceHitting_ProtestorsWithBaton
+    * Stop destroying our country!
     -> DONE
-    * Man, they are fighting right next to us. If only we have the animations to help.
+    * Where are all you rats hiding ?.
     -> DONE
-= ParkStatueScenarioPoliceBeatingProtestors
-    * WHO'S YOUR DADDY!!
+= Protestors_Beating_Polices
+    * Where did you take our comrades?.
     -> DONE
-    * Gosh!!, just wait until I have the animation to make this swing.
+    * What did you do to them ?.
     -> DONE
-    * My arm is getting tired!!.
+= Protestors_Holding_Polices
+    * How does it feel to be on the recieving side ?.
     -> DONE
-    * I wonder when Sagar will give me my swinging animation
+    * Screw you!.
     -> DONE
-= PoliceHittingDudeWithBaton
-    * WHO'S YOUR DADDY!!
+= Protestors_BeingBeaten
+    * Tsraww You!.
     -> DONE
-    * Gosh!!, just wait until I have the animation to make this swing.
+    * Furrr Hreerom!.
     -> DONE
-    * My arm is getting tired!!.
+=== Scenario01_MarestromPark_StatueBreaking_Success
+= ProtestorsCheering
+    * We DID it!.
     -> DONE
-    * I wonder when Sagar will give me my swinging animation
+    * Our chains are broken!.
     -> DONE
-
+    * Cheers the Workers' Party.
+    -> DONE
+    * Freedom!!.
+    -> DONE
+= ProtestorsCheering_Siblings_Man
+    * We did it, Sis!.
+    -> DONE
+    * We need to do more, after this.
+    -> DONE
+    * This is for Dad!
+    -> DONE
+= ProtestorsCheering_Siblings_Woman
+    * Woooo!
+    -> DONE
+    * He will be proud of us!.
+    -> DONE
+    * They will remember what happened on this day!.
+    -> DONE
+=== Scenario01_MarestromPark_StatueBreaking_Failed
+= Police_Son
+    * Papa, are you alright ?.
+    -> DONE
+    * Why are they doing this Papa?
+    -> DONE
+    *  It's just a statue, right?
+    -> DONE
+=  Police_Dad
+    * It is our history.
+    -> DONE
+    * I'm ok, son!.
+    -> DONE
 -> END
-

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12bc60d9ea326e44bf51a62e125aefa, type: 3}
+  m_Name: PublishingData
+  m_EditorClassIdentifier: 
+  stitchesInStory:
+  - MainCharacterLines.PublishLineProCommie
+  - MainCharacterLines.PublishLineProCapital
+  - MainCharacterLines.PublishLineNeutral
+  - MainCharacterLines.PublishLineGeneric
+  monologueLines:
+  - line: The workers down on the Low Tide dockyard will lov' this piece.
+    showTime: 12
+    piority: 2
+    conditions:
+    - {fileID: 11400000, guid: 33df9b20e159b7a43bd64793e5a0bda9, type: 2}
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+  - line: Those Elites in Wad Street gonna be really mad.
+    showTime: 8
+    piority: 2
+    conditions:
+    - {fileID: 11400000, guid: 33df9b20e159b7a43bd64793e5a0bda9, type: 2}
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+  - line: I'm curious how Daugi' would feel about this.
+    showTime: 8
+    piority: 2
+    conditions:
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+    - {fileID: 11400000, guid: 33df9b20e159b7a43bd64793e5a0bda9, type: 2}
+  - line: I hope those Elites send tips!
+    showTime: 8
+    piority: 2
+    conditions:
+    - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+  - line: Maybe they'll let me into Wad Street if I'm really good to them. I heard
+      the food upthere is THE makrele!.
+    showTime: 12
+    piority: 2
+    conditions:
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+    - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
+  - line: This will boost the law's approval  by a lot. Maybe Chief Slander will
+      let me off the next time I'm in the lockup.
+    showTime: 12
+    piority: 2
+    conditions:
+    - {fileID: 11400000, guid: 67f389bedfc1c1b47b50706f78480b56, type: 2}
+    - {fileID: 11400000, guid: 2a51177bcc760a74b9c69af74fe38e8e, type: 2}
+  - line: Not picking a side may not be the best thing to do. A friend to some is
+      a friend to few or whatever makrele Daugi' always say.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 70c379050b98811479a9176be19ea7ef, type: 2}
+    - {fileID: 11400000, guid: 665464f8d4026c34d8b44683a40d7c69, type: 2}
+  - line: Ther', unbias and completely represent both side.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 70c379050b98811479a9176be19ea7ef, type: 2}
+    - {fileID: 11400000, guid: 665464f8d4026c34d8b44683a40d7c69, type: 2}
+  - line: Hmm, I wonder when they will stop blocking the Dock. I heard something
+      rough happened ther' and the owner got hurt really bad.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: The Coppers hav' being preventing anyone from entering Wad Street. Those
+      Elites up ther' must hav' pulled some strings.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: Man, I need to take more pictures for Daugi'. Otherwise, he will be mad,
+      very mad..... I would lov' to sei that. (giggles)
+    showTime: 0
+    piority: 0
+    conditions:
+    - {fileID: 11400000, guid: 864c7a1790a02df4cb6074f3ddb08b76, type: 2}
+  - line: Power to the people they say, well, the people took their power but nothing
+      seim to be better.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: grumble...grumble..grumble.. uh oh, running a bit' thin ther', is the pig
+      blood guy's around in Central?. I should buy Daugi' some too.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: I need to get a new Big Daddy-O Camera, this piece of makrele! doesn't
+      eve' have a zoom function.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: Why in the holy makrele is the park always dark when I'm ther' !!.
+    showTime: 12
+    piority: 0
+    conditions: []

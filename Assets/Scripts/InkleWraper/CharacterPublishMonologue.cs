@@ -6,11 +6,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CharacterPublishMonologue : MonoBehaviour
 {
-    [SerializeField]
-    List<string> stitchesInStory = new List<string>();
 
     [SerializeField]
-    List<MonologueLine> monologueLines;
+    MonologueData monologueData = null;
+
     [SerializeField]
     [ReadOnly]
     MonologueLine lastSpokenLine = null;
@@ -48,14 +47,20 @@ public class CharacterPublishMonologue : MonoBehaviour
 
     private void Start()
     {
-        SortPiority();
+        if (monologueData)
+        {
+            monologueData.SortPiority();
+        }
     }
     // Update is called once per frame
     void Update()
     {
         if (isSpeaking == false && isResting == false)
         {
-            Speak();
+            if (monologueData)
+            {
+                Speak();
+            }
         }
         else
         {
@@ -97,7 +102,7 @@ public class CharacterPublishMonologue : MonoBehaviour
     private void Speak()
     {
         var possibleLines = new List<MonologueLine>();
-        possibleLines.AddRange(this.monologueLines.FindAll((x) => x.IsAllConditionSatisfied() == true && x != lastSpokenLine));
+        possibleLines.AddRange(monologueData.monologueLines.FindAll((x) => x.IsAllConditionSatisfied() == true && x != lastSpokenLine));
         possibleLines = FindAllElementsWithHighestPiority(possibleLines);
         possibleLineToSpeak = possibleLines;
         if (possibleLines.Count > 0)
@@ -151,38 +156,7 @@ public class CharacterPublishMonologue : MonoBehaviour
         }
     }
 
-    [Button]
-    public void LoadLines()
-    {
-        InkleManager.GetInstance().CreateStory();
-        for (int i = 0; i < stitchesInStory.Count; i++)
-        {
-            var newLines = InkleManager.GetInstance().GetCharacterPublishMonologues(stitchesInStory[i]);
-            this.AddMonologueLines(monologueLines, newLines);
 
-        }
-        SortPiority();
-    }
-    [Button]
-    public void ClearAll()
-    {
-        monologueLines.Clear();
 
-    }
-    [Button]
-    public void SortPiority()
-    {
-        monologueLines.Sort((line1, line2) => line2.GetPiority().CompareTo(line1.GetPiority()));
-    }
 
-    private void AddMonologueLines(List<MonologueLine> monologueLine, List<string> line)
-    {
-        for (int i = 0; i < line.Count; i++)
-        {
-            if (monologueLine.Find((MonologueLine x) => x.GetLine() == line[i]) == null)
-            {
-                monologueLine.Add(new MonologueLine(line[i], 0));
-            }
-        }
-    }
 }

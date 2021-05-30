@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20511c714e051b0429b5b05f14d2967e, type: 3}
   m_Name: PedestrianMove_Data
   m_EditorClassIdentifier: 
-  walkSpeed: 0.1
+  walkSpeed: 0.5
   runSpeed: 0.5
   jumpForce: 5
   rotateSpeed: 20

@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468380870006312662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.889, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 617519328081261959}
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 6825779341843746219}
   - component: {fileID: 2970971777965741843}
   m_Layer: 0
-  m_Name: Prefab_ProtestorSpecial_Police_03
+  m_Name: Prefab_Scenario01_ProtestorSpecial_Police_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,6 +634,8 @@ MonoBehaviour:
   previousColor: {r: 0.8500382, g: 0.8584906, b: 0.068841234, a: 1}
   targetColor: {r: 0.8500382, g: 0.8584906, b: 0.068841234, a: 1}
   transitionTime: 3
+  inkDescStitch: RandomPeople
+  inkDesc: 
 --- !u!1 &9059551999019753115
 GameObject:
   m_ObjectHideFlags: 0

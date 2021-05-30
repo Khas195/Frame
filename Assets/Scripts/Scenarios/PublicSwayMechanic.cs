@@ -18,6 +18,8 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
     [SerializeField]
     List<ScenarioActor> scenarioActors;
     [SerializeField]
+    List<IPhotoParticipant> buildings = new List<IPhotoParticipant>();
+    [SerializeField]
     [Expandable]
     PublicSwayData currentSwayData;
     [SerializeField]
@@ -124,15 +126,24 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
                 newPhoto.participants.Add(scenarioActors[i]);
             }
         }
+        if (newPhoto.participants.Count > 0)
+            return;
 
-        if (newPhoto.participants.Count <= 0)
+        for (int i = 0; i < buildings.Count; i++)
         {
-            for (int i = 0; i < cititzens.Count; i++)
+            if (buildings[i].IsOnCamera())
             {
-                if (cititzens[i].IsOnCamera())
-                {
-                    newPhoto.participants.Add(cititzens[i]);
-                }
+                newPhoto.participants.Add(buildings[i]);
+            }
+        }
+
+        if (newPhoto.participants.Count > 0)
+            return;
+        for (int i = 0; i < cititzens.Count; i++)
+        {
+            if (cititzens[i].IsOnCamera())
+            {
+                newPhoto.participants.Add(cititzens[i]);
             }
         }
     }
@@ -141,6 +152,10 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
     public void RegisterCitizen(ScenarioActor newCitizen)
     {
         this.cititzens.Add(newCitizen);
+    }
+    public void RegisterBuilding(IPhotoParticipant buildings)
+    {
+        this.buildings.Add(buildings);
     }
     public void RegisterScenarioActors(ScenarioActor newScenarioActor)
     {

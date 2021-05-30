@@ -1024,7 +1024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.18645948
+      value: 0.2639529
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -1036,7 +1036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06344971
+      value: 0.15187961
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -1661,37 +1661,6 @@ Transform:
   m_Father: {fileID: 1879591320}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &305093221
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 305093222}
-  m_Layer: 0
-  m_Name: Shop_Clothes01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &305093222
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305093221}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.369885, y: -6.8321834, z: 4.1961136}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1516199370}
-  m_Father: {fileID: 1368158273}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &344444551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2274,6 +2243,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &439792435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5556104094917395832, guid: b6aaa4c55737149c9a6c5e97c25666ae, type: 3}
+  m_PrefabInstance: {fileID: 1489923461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &439792436 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8371822262720457413, guid: b6aaa4c55737149c9a6c5e97c25666ae, type: 3}
+  m_PrefabInstance: {fileID: 1489923461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &439792437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439792435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 439792436}
+  inkStitch: RestaurantOutTable
+  inkDesc: No Description
 --- !u!1 &443440632
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,37 +3486,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7379860109750434604, guid: 4cd1d0215e4a64f4d98f157599354c82, type: 3}
   m_PrefabInstance: {fileID: 522623515}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &523399598
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 523399599}
-  m_Layer: 0
-  m_Name: appartment01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &523399599
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523399598}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0898848, y: -6.8321834, z: 4.1961136}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 628900019}
-  m_Father: {fileID: 1368158273}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &553967404
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,7 +4124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.18645948
+      value: 0.2639529
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -4173,7 +4136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06344971
+      value: 0.15187961
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -4545,6 +4508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 628900019}
   - component: {fileID: 628900020}
+  - component: {fileID: 628900021}
   m_Layer: 0
   m_Name: appartment01_0
   m_TagString: Untagged
@@ -4560,11 +4524,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628900018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.21, y: 2.37, z: 0}
+  m_LocalPosition: {x: -12.120114, y: -4.4621835, z: 4.1961136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 523399599}
-  m_RootOrder: 0
+  m_Father: {fileID: 1368158273}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &628900020
 SpriteRenderer:
@@ -4617,6 +4581,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &628900021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628900018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 628900020}
+  inkStitch: Apartment666
+  inkDesc: No Description
 --- !u!1001 &640120584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5683,7 +5662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.003906753
+      value: 0.21758606
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -6514,7 +6493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.00009008839
+      value: 0.5575291
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -7084,6 +7063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 980670740}
   - component: {fileID: 980670741}
+  - component: {fileID: 980670742}
   m_Layer: 0
   m_Name: newsoski_shop_window
   m_TagString: Untagged
@@ -7156,6 +7136,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &980670742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980670739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 980670741}
+  inkStitch: NewoskiOldNewsPanel
+  inkDesc: No Description
 --- !u!1 &984068386
 GameObject:
   m_ObjectHideFlags: 0
@@ -7353,6 +7348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031764883}
   - component: {fileID: 1031764884}
+  - component: {fileID: 1031764885}
   m_Layer: 0
   m_Name: police_station
   m_TagString: Untagged
@@ -7425,6 +7421,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1031764885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031764882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 1031764884}
+  inkStitch: PoliceStation
+  inkDesc: No Description
 --- !u!1 &1053270779
 GameObject:
   m_ObjectHideFlags: 0
@@ -9141,6 +9152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1238272291}
   - component: {fileID: 1238272292}
+  - component: {fileID: 1238272293}
   m_Layer: 0
   m_Name: restaurant01_restaurant
   m_TagString: Untagged
@@ -9213,6 +9225,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1238272293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238272290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 1238272292}
+  inkStitch: Restaurant
+  inkDesc: No Description
 --- !u!1001 &1240446561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10998,8 +11025,8 @@ Transform:
   m_Children:
   - {fileID: 1091862690}
   - {fileID: 1742032909}
-  - {fileID: 523399599}
-  - {fileID: 305093222}
+  - {fileID: 628900019}
+  - {fileID: 1516199370}
   - {fileID: 518426578}
   - {fileID: 1031764883}
   - {fileID: 2068283839}
@@ -11576,6 +11603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516199370}
   - component: {fileID: 1516199371}
+  - component: {fileID: 1516199372}
   m_Layer: 0
   m_Name: shop_clothes01_0
   m_TagString: Untagged
@@ -11591,11 +11619,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516199369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.48, y: 2.36, z: 0}
+  m_LocalPosition: {x: -8.110115, y: -4.472183, z: 4.1961136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 305093222}
-  m_RootOrder: 0
+  m_Father: {fileID: 1368158273}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1516199371
 SpriteRenderer:
@@ -11648,6 +11676,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1516199372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516199369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 1516199371}
+  inkStitch: ClothShop
+  inkDesc: No Description
 --- !u!1 &1538444671
 GameObject:
   m_ObjectHideFlags: 0
@@ -13426,6 +13469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665036933}
   - component: {fileID: 1665036934}
+  - component: {fileID: 1665036935}
   m_Layer: 0
   m_Name: newsoski_shop_name
   m_TagString: Untagged
@@ -13498,6 +13542,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1665036935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665036932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 1665036934}
+  inkStitch: NewoskiShopPanel
+  inkDesc: No Description
 --- !u!1 &1675632907
 GameObject:
   m_ObjectHideFlags: 0
@@ -15874,7 +15933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.003906753
+      value: 0.21758606
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -16008,7 +16067,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.003906753
+      value: 0.21758606
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_SortingLayer
@@ -96121,6 +96180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068283839}
   - component: {fileID: 2068283840}
+  - component: {fileID: 2068283841}
   m_Layer: 0
   m_Name: shop_barber01_0
   m_TagString: Untagged
@@ -96193,6 +96253,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2068283841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068283838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 2068283840}
+  inkStitch: BarberShop
+  inkDesc: No Description
 --- !u!1 &2086642169
 GameObject:
   m_ObjectHideFlags: 0

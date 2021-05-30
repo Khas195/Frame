@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
 
-public class ScenarioActor : MonoBehaviour
+public class ScenarioActor : MonoBehaviour, IPhotoParticipant
 {
     public enum ActorFaction
     {
@@ -139,7 +139,14 @@ public class ScenarioActor : MonoBehaviour
         this.communistInfluence = 0;
     }
 
-    public string GetActorDiaryDesc()
+
+
+    public string GetStoryStitch()
+    {
+        return inkDescStitch;
+    }
+
+    public string GetDescription()
     {
         return inkDesc;
     }

@@ -4,6 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public interface IPhotoParticipant
+{
+    int GetCapitalInfluence();
+    int GetCommunistInfluence();
+    string GetStoryStitch();
+    string GetDescription();
+    void ResetInfluences();
+    bool IsOnCamera();
+}
+
 [Serializable]
 public class PhotoInfo
 {
@@ -32,7 +42,7 @@ public class PhotoInfo
             return influence;
         }
     }
-    public List<ScenarioActor> participants = new List<ScenarioActor>();
+    public List<IPhotoParticipant> participants = new List<IPhotoParticipant>();
     public void ClearInfo()
     {
         sprite = null;

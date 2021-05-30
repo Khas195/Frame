@@ -479,7 +479,7 @@ RectTransform:
   m_Children:
   - {fileID: 1465722935}
   m_Father: {fileID: 1395825042}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1167,13 +1167,11 @@ MonoBehaviour:
     sectionPhotoHolder: {fileID: 0}
     sectionPhotoInfo:
       sprite: {fileID: 0}
-      participants: []
   holdingData:
     sectionSprite: {fileID: 0}
     sectionPhotoHolder: {fileID: 0}
     sectionPhotoInfo:
       sprite: {fileID: 0}
-      participants: []
   mouseOverPhotoFrame: {fileID: 2063975836}
   modiferText: {fileID: 241854679}
   modifer: 2
@@ -1800,7 +1798,7 @@ GameObject:
   - component: {fileID: 247449048}
   - component: {fileID: 247449047}
   m_Layer: 5
-  m_Name: DiaryLeftCorner (1)
+  m_Name: DiaryRightCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2785,6 +2783,85 @@ Transform:
   m_Father: {fileID: 1810121306}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &424390804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424390807}
+  - component: {fileID: 424390806}
+  - component: {fileID: 424390805}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &424390805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424390804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.5882353, b: 0.6745098, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 585188cdc4600544eb408bee749e4b3a, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Photo added to diary.
+--- !u!222 &424390806
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424390804}
+  m_CullTransparentMesh: 1
+--- !u!224 &424390807
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424390804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1148804333}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00021362, y: 5}
+  m_SizeDelta: {x: 303.39, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &425026529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,7 +6032,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     sprite: {fileID: 0}
-    participants: []
   photoImage: {fileID: 1648980292}
   PhotoFrame: {fileID: 969236034}
   influenceText: {fileID: 373232776}
@@ -6972,13 +7048,11 @@ MonoBehaviour:
     sectionPhotoHolder: {fileID: 0}
     sectionPhotoInfo:
       sprite: {fileID: 0}
-      participants: []
   holdingData:
     sectionSprite: {fileID: 0}
     sectionPhotoHolder: {fileID: 0}
     sectionPhotoInfo:
       sprite: {fileID: 0}
-      participants: []
   mouseOverPhotoFrame: {fileID: 1228981880}
   modiferText: {fileID: 741910659}
   modifer: 1
@@ -7641,6 +7715,102 @@ MonoBehaviour:
   cameraCapturingBound: {fileID: 1165479976}
   mapBound: {fileID: 0}
   cam: {fileID: 2057874600}
+--- !u!1 &1148804331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1148804333}
+  - component: {fileID: 1148804332}
+  m_Layer: 5
+  m_Name: DiaryUpdateNotifer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1148804332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148804331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f5117e30c3a3146986f3f79281f626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notifyTexts:
+  - {fileID: 1582498019}
+  - {fileID: 424390805}
+  notifyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: -0.0153657915
+      outSlope: -0.0153657915
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.15842032
+    - serializedVersion: 3
+      time: 2.5
+      value: 1
+      inSlope: -0.05827904
+      outSlope: -0.05827904
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13708067
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3
+      value: 0
+      inSlope: -2
+      outSlope: -2
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  notifyDuration: 3
+--- !u!224 &1148804333
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148804331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1582498017}
+  - {fileID: 424390807}
+  m_Father: {fileID: 1395825042}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0001373291, y: 243}
+  m_SizeDelta: {x: 800, y: 92.3182}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1164991189
 GameObject:
   m_ObjectHideFlags: 0
@@ -7989,7 +8159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   info:
     sprite: {fileID: 0}
-    participants: []
   photoImage: {fileID: 1864974524}
   PhotoFrame: {fileID: 1334344246}
   influenceText: {fileID: 1332897986}
@@ -8760,7 +8929,7 @@ RectTransform:
   - {fileID: 772537986}
   - {fileID: 390628398}
   m_Father: {fileID: 1395825042}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9022,6 +9191,7 @@ RectTransform:
   - {fileID: 880819806}
   - {fileID: 958826036}
   - {fileID: 342377456}
+  - {fileID: 1148804333}
   - {fileID: 1333447728}
   - {fileID: 49818716}
   - {fileID: 1716548895}
@@ -9431,7 +9601,7 @@ RectTransform:
   m_Children:
   - {fileID: 195485085}
   m_Father: {fileID: 1395825042}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9457,6 +9627,7 @@ MonoBehaviour:
   currentPage: 0
   itemPerPage: 4
   totalPage: 0
+  notifier: {fileID: 1148804332}
 --- !u!1 &1486212976
 GameObject:
   m_ObjectHideFlags: 0
@@ -9851,6 +10022,85 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 150, y: 10}
   m_EdgeRadius: 0
+--- !u!1 &1582498016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582498017}
+  - component: {fileID: 1582498018}
+  - component: {fileID: 1582498019}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1582498017
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582498016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1148804333}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 34.999992}
+  m_SizeDelta: {x: 303.3891, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1582498018
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582498016}
+  m_CullTransparentMesh: 1
+--- !u!114 &1582498019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582498016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.88235295, b: 0.3254902, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 585188cdc4600544eb408bee749e4b3a, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Diary Updated
 --- !u!1 &1593676670
 GameObject:
   m_ObjectHideFlags: 0
@@ -10315,13 +10565,11 @@ MonoBehaviour:
     sectionPhotoHolder: {fileID: 0}
     sectionPhotoInfo:
       sprite: {fileID: 0}
-      participants: []
   holdingData:
     sectionSprite: {fileID: 0}
     sectionPhotoHolder: {fileID: 0}
     sectionPhotoInfo:
       sprite: {fileID: 0}
-      participants: []
   mouseOverPhotoFrame: {fileID: 1652579923}
   modiferText: {fileID: 2052996668}
   modifer: 4
@@ -10602,7 +10850,7 @@ RectTransform:
   - {fileID: 1486212977}
   - {fileID: 39281387}
   m_Father: {fileID: 1395825042}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

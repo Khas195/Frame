@@ -21,6 +21,8 @@ public class DiaryPanel : MonoBehaviour
     [SerializeField]
     [ReadOnly]
     int totalPage = 0;
+    [SerializeField]
+    PaperPublishedNotifier notifier = null;
     private void Start()
     {
         prototype.gameObject.SetActive(false);
@@ -50,6 +52,7 @@ public class DiaryPanel : MonoBehaviour
         }
         else
         {
+            notifier.Notify();
             LogHelper.Log("DiarySystem - found NO duplicate, creating a new diary item to add.");
             var newItem = AddDiaryItem();
             newItem.SetPhoto(photo);
@@ -74,6 +77,7 @@ public class DiaryPanel : MonoBehaviour
     public void Show()
     {
         diaryPanelRoot.gameObject.SetActive(true);
+        currentPage = totalPage - 1;
         ShowItemsOnCurrentPage();
     }
     public void Hide()
@@ -127,15 +131,15 @@ public class DiaryPanel : MonoBehaviour
 
     public void AddDiaryItem(PhotoInfo newPhoto)
     {
-        if (newPhoto.participants.Count > 1 || newPhoto.participants.Count <= 0)
+        if (newPhoto.participants.Count <= 0)
         {
-            LogHelper.Log("DiarySystem - Didn't find any participant or number of participants is > 1 in photo.");
+            LogHelper.Log("DiarySystem - Didn't find any participant in photo.");
             LogHelper.Log("DiarySystem - Number of participants: " + newPhoto.participants.Count);
             return;
         }
         LogHelper.Log("DiarySystem - Found a participant in photo.");
         var actor = newPhoto.participants[0];
-        this.AddDiaryItem(newPhoto.sprite, actor.GetActorDiaryDesc(), actor.GetActorDiaryStitch());
+        this.AddDiaryItem(newPhoto.sprite, actor.GetDescription(), actor.GetStoryStitch());
     }
 
     [Button]

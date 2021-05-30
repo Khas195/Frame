@@ -176,7 +176,7 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
     {
         paperPublishedNotifer.Notify();
 
-        List<ScenarioActor> participatedActors = new List<ScenarioActor>();
+        List<IPhotoParticipant> participatedActors = new List<IPhotoParticipant>();
         for (int i = 0; i < publishedPhoto.Count; i++)
         {
             participatedActors.AddRange(publishedPhoto[i].participants.ToArray());

@@ -109,10 +109,10 @@ TextureImporter:
       name: restaurant01_block
       rect:
         serializedVersion: 2
-        x: 64
+        x: 56
         y: 0
-        width: 80
-        height: 151
+        width: 84
+        height: 163
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,7 +130,7 @@ TextureImporter:
       name: restaurant01_restaurant
       rect:
         serializedVersion: 2
-        x: 212
+        x: 190
         y: 0
         width: 80
         height: 72
@@ -151,7 +151,7 @@ TextureImporter:
       name: restaurant01_chair
       rect:
         serializedVersion: 2
-        x: 161
+        x: 144
         y: 0
         width: 7
         height: 9
@@ -172,7 +172,7 @@ TextureImporter:
       name: restaurant01_table
       rect:
         serializedVersion: 2
-        x: 176
+        x: 153
         y: 0
         width: 19
         height: 12
@@ -193,9 +193,9 @@ TextureImporter:
       name: restaurant01_tent
       rect:
         serializedVersion: 2
-        x: 7
+        x: 0
         y: 0
-        width: 57
+        width: 56
         height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

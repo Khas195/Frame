@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 794addd85a06e4b208765e8d3f762c3f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2728945531603991871
+    second: police_station_flag01
+  - first:
+      213: 3240971370931928731
+    second: police_station_flag02
+  - first:
+      213: 4288883988843521701
+    second: police_station_flag03
+  - first:
+      213: 2440781656660513003
+    second: police_station_flag04
+  - first:
+      213: 732096243626790640
+    second: police_station_flag05
+  - first:
+      213: -4198979204215970594
+    second: police_station_flag06
+  - first:
+      213: -3928316669534133507
+    second: police_station_flag07
+  - first:
+      213: 5939520925259405935
+    second: police_station_flag08
+  - first:
+      213: 6696963675230530924
+    second: police_station_car
+  - first:
+      213: 5108346530036182741
+    second: police_station_car_light
+  - first:
+      213: 5998717288431026359
+    second: police_station_fence
+  - first:
+      213: 1943498673327534057
+    second: police_station_
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +77,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -89,7 +125,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: police_station_flag01
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d35ae90892fd520800000000000000
+      internalID: 2728945531603991871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag02
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ebb9b5a4e3afc20800000000000000
+      internalID: 3240971370931928731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag03
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6e0eda34d258b30800000000000000
+      internalID: 4288883988843521701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag04
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be01a832cf56fd120800000000000000
+      internalID: 2440781656660513003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag05
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fec5ce97ade82a00800000000000000
+      internalID: 732096243626790640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag06
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4647139aa3ab5c0800000000000000
+      internalID: -4198979204215970594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag07
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df22c2b5dc0db79c0800000000000000
+      internalID: -3928316669534133507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_flag08
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 226
+        width: 68
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a161600da6d6250800000000000000
+      internalID: 5939520925259405935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_car
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 79
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d6fc70bf460fc50800000000000000
+      internalID: 6696963675230530924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_car_light
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 43
+        width: 120
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dee7689a1e74e640800000000000000
+      internalID: 5108346530036182741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_fence
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 448
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b00dec5799bf3350800000000000000
+      internalID: 5998717288431026359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police_station_
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 0
+        width: 469
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef612d0fb1b8fa10800000000000000
+      internalID: 1943498673327534057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

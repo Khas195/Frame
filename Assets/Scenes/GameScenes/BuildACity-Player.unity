@@ -3719,7 +3719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &548377451
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3736,8 +3736,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -516, y: -534}
-  m_SizeDelta: {x: 85, y: 12}
+  m_AnchoredPosition: {x: -646.7, y: -544}
+  m_SizeDelta: {x: 40, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548377452
 MonoBehaviour:
@@ -3759,7 +3759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7975249404588759376, guid: b3c3cb1d59ca34ac0ae1957a7395f68e, type: 3}
+  m_Sprite: {fileID: -7420991742971661633, guid: b3c3cb1d59ca34ac0ae1957a7395f68e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5586,7 +5586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 117.5, y: 1032.4}
+  m_AnchoredPosition: {x: 392.9, y: 1123}
   m_SizeDelta: {x: 48, y: 14}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772537987
@@ -10898,8 +10898,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -868, y: -534}
-  m_SizeDelta: {x: 59, y: 12}
+  m_AnchoredPosition: {x: -926.5, y: -544}
+  m_SizeDelta: {x: 58, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706749933
 MonoBehaviour:
@@ -13480,15 +13480,15 @@ PrefabInstance:
       objectReference: {fileID: 8088190289166948531}
     - target: {fileID: 8734785930757364860, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: m_BackGroundColor.b
-      value: 0.49803922
+      value: 0.42745098
       objectReference: {fileID: 0}
     - target: {fileID: 8734785930757364860, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: m_BackGroundColor.g
-      value: 0.2509804
+      value: 0.23921569
       objectReference: {fileID: 0}
     - target: {fileID: 8734785930757364860, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}
       propertyPath: m_BackGroundColor.r
-      value: 0.050980393
+      value: 0.49803922
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8734785930757364861, guid: 4c4ae70005de72c49b2d18de9e3a3565, type: 3}

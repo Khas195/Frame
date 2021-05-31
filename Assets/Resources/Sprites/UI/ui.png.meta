@@ -4,19 +4,19 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5707218116961789024
-    second: ui_0
+    second: ui_day
   - first:
       213: 3556181715638617739
-    second: ui_1
+    second: ui_news
   - first:
       213: -8816031292267695619
     second: ui_2
   - first:
       213: 7263181891274304025
-    second: ui_3
+    second: ui_take_photo
   - first:
       213: -7975249404588759376
-    second: ui_4
+    second: ui_print_newspaper
   - first:
       213: -9005941153719796207
     second: ui_5
@@ -38,6 +38,9 @@ TextureImporter:
   - first:
       213: 8852797563311604980
     second: ui_11
+  - first:
+      213: -7420991742971661633
+    second: ui_diary
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui_0
+      name: ui_day
       rect:
         serializedVersion: 2
         x: 4
@@ -160,7 +163,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_1
+      name: ui_news
       rect:
         serializedVersion: 2
         x: 4
@@ -202,12 +205,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_3
+      name: ui_take_photo
       rect:
         serializedVersion: 2
         x: 3
         y: 38
-        width: 59
+        width: 58
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -223,12 +226,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ui_4
+      name: ui_print_newspaper
       rect:
         serializedVersion: 2
         x: 3
         y: 23
-        width: 85
+        width: 84
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -331,8 +334,8 @@ TextureImporter:
       name: ui_9
       rect:
         serializedVersion: 2
-        x: 94
-        y: 77
+        x: 68
+        y: 83
         width: 3
         height: 12
       alignment: 0
@@ -352,12 +355,12 @@ TextureImporter:
       name: ui_10
       rect:
         serializedVersion: 2
-        x: 97
-        y: 77
+        x: 71
+        y: 83
         width: 5
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,9 +376,30 @@ TextureImporter:
       name: ui_11
       rect:
         serializedVersion: 2
-        x: 102
-        y: 77
+        x: 76
+        y: 83
         width: 3
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4c1adca747bda70800000000000000
+      internalID: 8852797563311604980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_diary
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 83
+        width: 40
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -384,8 +408,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f4c1adca747bda70800000000000000
-      internalID: 8852797563311604980
+      spriteID: fb2311fe357530990800000000000000
+      internalID: -7420991742971661633
       vertices: []
       indices: 
       edges: []

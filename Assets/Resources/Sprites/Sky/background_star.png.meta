@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: f53a4cb4b61c54931aaa3acf989c6a3a
+guid: a864f3df82ccd4de1a204b1220ec3e8b
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2183204525998199179
-    second: appartment01_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -92,28 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: appartment01_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 166
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57e2adbfc03b3b1e0800000000000000
-      internalID: -2183204525998199179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

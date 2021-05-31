@@ -84,7 +84,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 32
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6283268181891163703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   startAlpha: 1
   isTransitioning: 0
   isFadedOut: 0
+  startFadeOut: 1
 --- !u!1 &1634139991690841258
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,21 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c73a0fe0f59bd40869c6eb4982fd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stitchesInStory:
-  - CitizenLines.ParkScene
-  monologueLines:
-  - line: Sup
-    showTime: 3
-    piority: 0
-    conditions: []
-  - line: What a beautiful night
-    showTime: 5
-    piority: 0
-    conditions: []
-  - line: Excercising by going back and forth
-    showTime: 7
-    piority: 0
-    conditions: []
+  monologueData: {fileID: 0}
   lastSpokenLine:
     line: 
     showTime: 0
@@ -197,6 +184,8 @@ MonoBehaviour:
     showTime: 0
     piority: 0
     conditions: []
+  letterPause: 0.02
+  currentMessage: 
   possibleLineToSpeak: []
 --- !u!1 &3620104384967642892
 GameObject:

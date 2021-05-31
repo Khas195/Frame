@@ -119,6 +119,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
 
     public void AssignPhotoInfluence(ref PhotoInfo newPhoto)
     {
+        LogHelper.Log("PublicSwayMechanic - Checking for Scenario Actors in the Shot.");
         for (int i = 0; i < scenarioActors.Count; i++)
         {
             if (scenarioActors[i].IsOnCamera())
@@ -126,9 +127,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
                 newPhoto.participants.Add(scenarioActors[i]);
             }
         }
-        if (newPhoto.participants.Count > 0)
-            return;
-
+        LogHelper.Log("PublicSwayMechanic - Checking for buildings in the Shot.");
         for (int i = 0; i < buildings.Count; i++)
         {
             if (buildings[i].IsOnCamera())
@@ -137,8 +136,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
             }
         }
 
-        if (newPhoto.participants.Count > 0)
-            return;
+        LogHelper.Log("PublicSwayMechanic - Checking for citizens in the Shot.");
         for (int i = 0; i < cititzens.Count; i++)
         {
             if (cititzens[i].IsOnCamera())

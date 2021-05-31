@@ -167,3 +167,51 @@ Day02: Scenario 02 Protestors failed to break the statue.
     * I'm ok, son!.
     -> DONE
 -> END
+=== PicisStreet_CopTakingBribes
+
+    * Thanks for the donation. He he.
+    -> DONE
+    * You know, maybe we should just throw him in jail and be done with it.
+    -> DONE
+    * Got another one, that will give me a raise next month. 
+    -> DONE
+
+-> DONE 
+
+=== PicisStreet_CopHoldingCaptive
+
+    * Just throw him in jail.
+    -> DONE
+    * I need 2 more for a raise. Damn.
+    -> DONE
+    * At least we have some cash to drink later today. He he.
+    -> DONE
+
+-> DONE 
+
+=== PicisStreet_Captive
+
+    * What, I gave you all my money, just let me go.
+    -> DONE
+    * You lying bastards!!.
+    -> DONE
+    * I need to get home. My little sister is waiting for me. Please!.
+    -> DONE
+
+-> DONE
+
+=== PicisStreet_ProtestorBurning
+    * Again and again and again. They kept mackreling takin' from me.
+    -> DONE
+    * Those coppers and their mackrele batons.
+    -> DONE
+    * Mackrele!!!.
+    -> DONE
+-> DONE
+
+=== PicisStreet_Thief
+    * Got another nice haul, he he he.
+    -> DONE
+    * I'm gonna have some good food tonight.
+    -> DONE
+-> DONE

@@ -41,7 +41,7 @@ public class DiaryPanel : MonoBehaviour
         newDiaryItem.gameObject.SetActive(itemActive);
         return newDiaryItem;
     }
-    public void AddDiaryItem(Sprite photo, string photoText, string diaryStitch)
+    public bool AddDiaryItem(Sprite photo, string photoText, string diaryStitch)
     {
         LogHelper.Log("DiarySystem - Checking for duplicate based on actor's stitch.");
         var item = diaryItems.Find((DiaryItem x) => x.GetStitch() == diaryStitch);
@@ -49,6 +49,7 @@ public class DiaryPanel : MonoBehaviour
         {
             LogHelper.Log("DiarySystem - found duplicate, replacing photo of previous diary item.");
             item.SetPhoto(photo);
+            return false;
         }
         else
         {
@@ -58,6 +59,7 @@ public class DiaryPanel : MonoBehaviour
             newItem.SetPhoto(photo);
             newItem.SetText(photoText);
             newItem.SetStitch(diaryStitch);
+            return true;
         }
     }
 
@@ -125,6 +127,11 @@ public class DiaryPanel : MonoBehaviour
                 {
                     diaryItems[i].TransitionIn();
                 }
+                else
+                {
+
+                    diaryItems[i].SkipTransition();
+                }
             }
         }
     }
@@ -138,8 +145,17 @@ public class DiaryPanel : MonoBehaviour
             return;
         }
         LogHelper.Log("DiarySystem - Found a participant in photo.");
-        var actor = newPhoto.participants[0];
-        this.AddDiaryItem(newPhoto.sprite, actor.GetDescription(), actor.GetStoryStitch());
+
+        LogHelper.Log("DiarySystem - Checking for duplicate based on actor's stitch.");
+        for (int i = 0; i < newPhoto.participants.Count; i++)
+        {
+            var actor = newPhoto.participants[i];
+            var newDiaryItemAdded = this.AddDiaryItem(newPhoto.sprite, actor.GetDescription(), actor.GetStoryStitch());
+            if (newDiaryItemAdded)
+            {
+                return;
+            }
+        }
     }
 
     [Button]

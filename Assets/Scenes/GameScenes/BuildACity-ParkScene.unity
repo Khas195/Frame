@@ -237,6 +237,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -19.53125
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_FamilyOfTheLost
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_OldLady
@@ -251,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.332
+      value: -2.742
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -321,6 +333,10 @@ PrefabInstance:
     - target: {fileID: 1192597377987495268, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -19.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_FamilyOfTheLost
       objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: a98b267779d02af4aa14b3f253a3755f, type: 3}
       propertyPath: m_Name
@@ -411,6 +427,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -1.021
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceCaptureProtester
+      objectReference: {fileID: 0}
     - target: {fileID: 5461051716895017282, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -429,7 +449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.327
+      value: -5.6797743
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -499,6 +519,18 @@ PrefabInstance:
     - target: {fileID: 1192597377987495268, guid: eef44a32cbc909840b338821e89928ae, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -19.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: eef44a32cbc909840b338821e89928ae, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: eef44a32cbc909840b338821e89928ae, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceCaptureProtester
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: eef44a32cbc909840b338821e89928ae, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5461051716895017282, guid: eef44a32cbc909840b338821e89928ae, type: 3}
       propertyPath: m_FlipX
@@ -624,6 +656,10 @@ PrefabInstance:
     - target: {fileID: 2710693362873755781, guid: 2a479d14a8acb304593ad0f6f4b2c370, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3032346473885120392, guid: 2a479d14a8acb304593ad0f6f4b2c370, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4057979801420264685, guid: 2a479d14a8acb304593ad0f6f4b2c370, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -783,6 +819,10 @@ PrefabInstance:
     - target: {fileID: 3716158618394931402, guid: 642e1927cb77b2540bafcd16cb2555ac, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 642e1927cb77b2540bafcd16cb2555ac, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Revolutionaries
       objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 642e1927cb77b2540bafcd16cb2555ac, type: 3}
       propertyPath: isFadedOut
@@ -1042,7 +1082,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 603896883}
+    m_TransformParent: {fileID: 1814991073}
     m_Modifications:
     - target: {fileID: 2667842037891694962, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_Name
@@ -1050,7 +1090,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1058,7 +1102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1385,11 +1429,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.057234462
+      value: 0.19853202
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.5232068
+      value: -0.0026359532
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -1634,6 +1678,10 @@ PrefabInstance:
     - target: {fileID: 6226064937780550525, guid: 937295d401315f742a717e46a83c28ad, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 937295d401315f742a717e46a83c28ad, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
       objectReference: {fileID: 0}
     - target: {fileID: 8432341893544519845, guid: 937295d401315f742a717e46a83c28ad, type: 3}
       propertyPath: capitalInfluence
@@ -2006,7 +2054,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 603896883}
+    m_TransformParent: {fileID: 1814991073}
     m_Modifications:
     - target: {fileID: 2667842037891694962, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_Name
@@ -2014,7 +2062,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2022,7 +2074,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2942,11 +2994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.057234462
+      value: 0.19853202
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.5232068
+      value: -0.0026359532
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -2992,6 +3044,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3716158618394931402, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
       propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_FamilyOfTheLost
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: isFactionFixed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
@@ -3564,11 +3628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.057234462
+      value: 0.19853202
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.5232068
+      value: -0.0026359532
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -3615,9 +3679,7 @@ Transform:
   - {fileID: 941602635}
   - {fileID: 1636000777}
   - {fileID: 712120900}
-  - {fileID: 125724786}
-  - {fileID: 311351220}
-  - {fileID: 1355806083}
+  - {fileID: 1814991073}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3649,6 +3711,9 @@ MonoBehaviour:
     parallaxFactor: 0.45
   - loop: 0
     objectTransform: {fileID: 712120900}
+    parallaxFactor: 0.65
+  - loop: 0
+    objectTransform: {fileID: 1814991073}
     parallaxFactor: 0.65
 --- !u!4 &606001553 stripped
 Transform:
@@ -4112,6 +4177,14 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 8bdcb9f4f65a5494db81a913ccea556d, type: 3}
+      propertyPath: curFaction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 8bdcb9f4f65a5494db81a913ccea556d, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceAndSon
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 8bdcb9f4f65a5494db81a913ccea556d, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -4203,6 +4276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 744651059}
+  - component: {fileID: 744651060}
   m_Layer: 0
   m_Name: Branch03
   m_TagString: Untagged
@@ -4227,6 +4301,28 @@ Transform:
   m_Father: {fileID: 1611100542}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744651060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744651058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a0b01b9c2e98649ba62076664f7cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenarioProps:
+  - {fileID: 406670729}
+  - {fileID: 807007125}
+  - {fileID: 1142483953}
+  branches: []
+  conditionsToEnterThisScenario:
+  - {fileID: 11400000, guid: 81dbcf7eb9f2fce40a9728afc1ef36ef, type: 2}
+  - {fileID: 11400000, guid: ebab8b4eb66a2df44b4db76481555859, type: 2}
+  - {fileID: 11400000, guid: 22f2b120ad3f4b7408b59360e66d6f5b, type: 2}
+  isScenarioActive: 0
 --- !u!1 &763771894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4714,6 +4810,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26079de470966546a5e492e1aa9003d, type: 3}
+--- !u!1 &807007125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2424324908780020228, guid: d26079de470966546a5e492e1aa9003d, type: 3}
+  m_PrefabInstance: {fileID: 807007124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &807007126 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3720805899521490608, guid: d26079de470966546a5e492e1aa9003d, type: 3}
+  m_PrefabInstance: {fileID: 807007124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &807007127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807007125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 807007126}
+  inkStitch: TheKingStatueBroken
+  inkDesc: No Description
 --- !u!1001 &813038602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4768,6 +4889,10 @@ PrefabInstance:
     - target: {fileID: 1719621045234574874, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
       propertyPath: m_Name
       value: Prefab_Scenario01_ProtestorBoard_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800912117277595074, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsWithBoard
       objectReference: {fileID: 0}
     - target: {fileID: 3800912117277595074, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
       propertyPath: capitalInfluence
@@ -4950,7 +5075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06363022
+      value: 0.5123552
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -5566,7 +5691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.057234462
+      value: 0.22166032
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -5767,6 +5892,14 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Revolutionaries
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -5805,7 +5938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.636
+      value: 5.553
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5944,6 +6077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Scenario01_ProtestorBoard_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3800912117277595074, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsWithBoard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
 --- !u!4 &953074902 stripped
@@ -5993,7 +6130,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953857479}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62a0b01b9c2e98649ba62076664f7cb7, type: 3}
   m_Name: 
@@ -6303,6 +6440,62 @@ PrefabInstance:
     - target: {fileID: 1192597377987495268, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -19.53125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Widow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5849056
       objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
       propertyPath: m_Name
@@ -6782,6 +6975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prefab_Scenario01_ProtestorDrunk_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3800912117277595074, guid: e2b377eac7e4ea943a4932b1be7abe38, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorBeggar
+      objectReference: {fileID: 0}
     - target: {fileID: 8312739696008433294, guid: e2b377eac7e4ea943a4932b1be7abe38, type: 3}
       propertyPath: m_Controller
       value: 
@@ -6847,6 +7044,46 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: curFaction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceAndSon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.b
+      value: 0.068841234
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.r
+      value: 0.8500382
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.b
+      value: 0.068841234
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.r
+      value: 0.8500382
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -6867,6 +7104,18 @@ PrefabInstance:
       propertyPath: monologueData
       value: 
       objectReference: {fileID: 11400000, guid: 1670c92e72a40a64f80677af9b146f80, type: 2}
+    - target: {fileID: 7494425964070254667, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: m_Color.b
+      value: 0.068841234
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8500382
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_Child
@@ -7421,6 +7670,50 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceAndSon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: targetColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: previousColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -7441,6 +7734,18 @@ PrefabInstance:
       propertyPath: monologueData
       value: 
       objectReference: {fileID: 11400000, guid: 1670c92e72a40a64f80677af9b146f80, type: 2}
+    - target: {fileID: 7494425964070254667, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: f1e9770c0ed22f84bb82b52012243441, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_Child
@@ -7690,6 +7995,62 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -19.53125
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Widow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: targetColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: previousColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: 20064790565ceaf42aa08da4463c4b9a, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_YoungFemale 1
@@ -7896,6 +8257,10 @@ PrefabInstance:
     - target: {fileID: 3716158618394931402, guid: 642e1927cb77b2540bafcd16cb2555ac, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 642e1927cb77b2540bafcd16cb2555ac, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Revolutionaries
       objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 642e1927cb77b2540bafcd16cb2555ac, type: 3}
       propertyPath: isFadedOut
@@ -8350,6 +8715,62 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_FamilyOfTheLost
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: targetColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: targetColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: targetColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: previousColor.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: previousColor.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: previousColor.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5849056
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_PoliceHandBroken
@@ -8364,7 +8785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.98
+      value: -2.21
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: fae5d437f67cb6548a32caba11986ef4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8450,6 +8871,10 @@ PrefabInstance:
     - target: {fileID: 1391494554777731409, guid: 589e6f2b0c8545441a1418598d88439e, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3032346473885120392, guid: 589e6f2b0c8545441a1418598d88439e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3475833167183492044, guid: 589e6f2b0c8545441a1418598d88439e, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -9248,6 +9673,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1.847
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 3b4bed1e917e5e942a33603fde19f3ff, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsWithBoard
+      objectReference: {fileID: 0}
     - target: {fileID: 6207913183139983362, guid: 3b4bed1e917e5e942a33603fde19f3ff, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -9639,7 +10068,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 603896883}
+    m_TransformParent: {fileID: 1814991073}
     m_Modifications:
     - target: {fileID: 2667842037891694962, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_Name
@@ -9647,7 +10076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9655,7 +10088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.28
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 8891236526933730091, guid: 40119d2c4424742df97c2c17c2c0cb79, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9905,6 +10338,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -1.021
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceCaptureProtester
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5461051716895017282, guid: 5c58f9986aba35846a9e8930a2f872e3, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -10102,6 +10547,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -19.53125
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: eef44a32cbc909840b338821e89928ae, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_PoliceCaptureProtester
+      objectReference: {fileID: 0}
     - target: {fileID: 5461051716895017282, guid: eef44a32cbc909840b338821e89928ae, type: 3}
       propertyPath: m_FlipX
       value: 1
@@ -10120,7 +10569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: eef44a32cbc909840b338821e89928ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.817225
+      value: -6.17
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: eef44a32cbc909840b338821e89928ae, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10362,7 +10811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629956712685757821, guid: 0c092a3e68cf3774da35128ea5ac9b78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.467
+      value: -2.277
       objectReference: {fileID: 0}
     - target: {fileID: 4629956712685757821, guid: 0c092a3e68cf3774da35128ea5ac9b78, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10406,6 +10855,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6226064937780550525, guid: 0c092a3e68cf3774da35128ea5ac9b78, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 0c092a3e68cf3774da35128ea5ac9b78, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 0c092a3e68cf3774da35128ea5ac9b78, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 0c092a3e68cf3774da35128ea5ac9b78, type: 3}
+      propertyPath: capitalInfluence
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11116,6 +11577,22 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 9a7b44f436806d445b601559082b795b, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 9a7b44f436806d445b601559082b795b, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 9a7b44f436806d445b601559082b795b, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Siblings
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 9a7b44f436806d445b601559082b795b, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 9a7b44f436806d445b601559082b795b, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -11427,6 +11904,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8432341893544519845, guid: f9a998203f994a648a9ee0bfcbe1da54, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: f9a998203f994a648a9ee0bfcbe1da54, type: 3}
       propertyPath: capitalInfluence
       value: -2
       objectReference: {fileID: 0}
@@ -11575,6 +12056,7 @@ MonoBehaviour:
   branches:
   - {fileID: 953857481}
   - {fileID: 1378708300}
+  - {fileID: 744651060}
   conditionsToEnterThisScenario: []
   isScenarioActive: 1
 --- !u!114 &1611100544
@@ -11917,7 +12399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629956712685757821, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.265
+      value: -3.0750003
       objectReference: {fileID: 0}
     - target: {fileID: 4629956712685757821, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11958,6 +12440,54 @@ PrefabInstance:
     - target: {fileID: 6226064937780550525, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
       propertyPath: m_Name
       value: Prefab_Scenario01_ProtestorSpecial_Protestor_01_PolicePunched
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326740141549274275, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: m_Color.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326740141549274275, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: m_Color.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326740141549274275, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: targetColor.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: targetColor.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: targetColor.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: previousColor.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: previousColor.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: previousColor.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
+      propertyPath: capitalInfluence
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c41f8e4430bb88d46b5fda67b9910b09, type: 3}
@@ -12110,6 +12640,54 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: isCitizen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Siblings
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: targetColor.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: targetColor.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: targetColor.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: isFactionFixed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: previousColor.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: previousColor.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: previousColor.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -12130,6 +12708,18 @@ PrefabInstance:
       propertyPath: monologueData
       value: 
       objectReference: {fileID: 11400000, guid: a361985c548a48249951da12b828a319, type: 2}
+    - target: {fileID: 7494425964070254667, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: 4cedb95704198074b85de70ee3e9112d, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_HuggingFenale
@@ -12910,6 +13500,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1814991072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1814991073}
+  m_Layer: 0
+  m_Name: Skybackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814991073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814991072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 125724786}
+  - {fileID: 311351220}
+  - {fileID: 1355806083}
+  m_Father: {fileID: 603896883}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1822035783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12923,7 +13546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4629956712685757821, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.92
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 4629956712685757821, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12964,6 +13587,54 @@ PrefabInstance:
     - target: {fileID: 6226064937780550525, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
       propertyPath: m_Name
       value: Prefab_Scenario01_ProtestorSpecial_Police_01_PolicePunched
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326740141549274275, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: m_Color.b
+      value: 0.068841234
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326740141549274275, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326740141549274275, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8500382
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: curFaction
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: targetColor.b
+      value: 0.068841234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: targetColor.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: targetColor.r
+      value: 0.8500382
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: previousColor.b
+      value: 0.068841234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: previousColor.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: previousColor.r
+      value: 0.8500382
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432341893544519845, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
+      propertyPath: capitalInfluence
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e12781f2496c064e86fcc07f71004e8, type: 3}
@@ -13385,6 +14056,14 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Revolutionaries
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_ProtestorHandRaise (2)
@@ -13402,8 +14081,12 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190858446792104341, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.89
+      value: -6.991
       objectReference: {fileID: 0}
     - target: {fileID: 9190858446792104341, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13443,6 +14126,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+--- !u!1 &1888200035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3172642250656838839, guid: a08e6a31fdb05d64bbf15a8f02d73f16, type: 3}
+  m_PrefabInstance: {fileID: 6720220162172327152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1888200036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888200035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 1888200038}
+  inkStitch: TheKingStatue
+  inkDesc: No Description
+--- !u!212 &1888200038 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6368716805412174707, guid: a08e6a31fdb05d64bbf15a8f02d73f16, type: 3}
+  m_PrefabInstance: {fileID: 6720220162172327152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1890679389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13497,6 +14205,10 @@ PrefabInstance:
     - target: {fileID: 1719621045234574874, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
       propertyPath: m_Name
       value: Prefab_Scenario01_ProtestorBoard_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3800912117277595074, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsWithBoard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3f374b70eec53a469845c1d46ffc714, type: 3}
@@ -14131,7 +14843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06363022
+      value: 0.5123552
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -14299,7 +15011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06363022
+      value: 0.5123552
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -94868,6 +95580,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.804
       objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: curFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_Revolutionaries
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: targetColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: targetColor.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: targetColor.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: targetColor.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: previousColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: previousColor.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: previousColor.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388880558220465229, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: previousColor.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
     - target: {fileID: 6418565661116203323, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: isFadedOut
       value: 0
@@ -94888,6 +95640,18 @@ PrefabInstance:
       propertyPath: monologueData
       value: 
       objectReference: {fileID: 11400000, guid: 316a36287a2401c4094ebaf034142b98, type: 2}
+    - target: {fileID: 7494425964070254667, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: m_Color.b
+      value: 0.21176468
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: m_Color.g
+      value: 0.27214965
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494425964070254667, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7176471
+      objectReference: {fileID: 0}
     - target: {fileID: 7614453392723437461, guid: 631e21c3fa24b3841a272c821868100d, type: 3}
       propertyPath: m_Name
       value: Scenario_Statue_Branch01_ProtestorHandRaise
@@ -95138,6 +95902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202673397}
     m_Modifications:
+    - target: {fileID: 6395560726037403965, guid: f33a6db6864b127489fdd9d5648ab531, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
+      objectReference: {fileID: 0}
     - target: {fileID: 7891647707778536677, guid: f33a6db6864b127489fdd9d5648ab531, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -95290,16 +96058,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d26079de470966546a5e492e1aa9003d, type: 3}
+--- !u!212 &1657651305445396827 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3720805899521490608, guid: d26079de470966546a5e492e1aa9003d, type: 3}
+  m_PrefabInstance: {fileID: 1657651305445396826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3937773061780009822 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2424324908780020228, guid: d26079de470966546a5e492e1aa9003d, type: 3}
   m_PrefabInstance: {fileID: 1657651305445396826}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3937773061780009823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937773061780009822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 1657651305445396827}
+  inkStitch: TheKingStatueBroken
+  inkDesc: No Description
 --- !u!1 &4178575831217994073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8669963495937033862, guid: 414de5942db365e428cd44d296cf18e2, type: 3}
   m_PrefabInstance: {fileID: 4732347839117115359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4178575831217994074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178575831217994073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39edb5cc397da3844a815a5ab369137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRender: {fileID: 4732347839117115360}
+  inkStitch: TheKingStatueFlowers
+  inkDesc: No Description
 --- !u!1001 &4245109105579978433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95527,6 +96330,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.0000025629997
       objectReference: {fileID: 0}
+    - target: {fileID: 8079614333686903944, guid: 28e287274e0587241b2411c0494028cb, type: 3}
+      propertyPath: inkDescStitch
+      value: MarestromPark_ProtestorsBeatingPolice
+      objectReference: {fileID: 0}
     - target: {fileID: 8983840711876096374, guid: 28e287274e0587241b2411c0494028cb, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -95614,6 +96421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 414de5942db365e428cd44d296cf18e2, type: 3}
+--- !u!212 &4732347839117115360 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5262146845316197949, guid: 414de5942db365e428cd44d296cf18e2, type: 3}
+  m_PrefabInstance: {fileID: 4732347839117115359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6720220162172327152
 PrefabInstance:
   m_ObjectHideFlags: 0

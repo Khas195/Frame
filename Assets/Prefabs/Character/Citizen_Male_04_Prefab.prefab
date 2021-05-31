@@ -106,6 +106,8 @@ MonoBehaviour:
   body: {fileID: 580247733070267181}
   useMovementScript: 0
   movementBehavior: {fileID: 4202726402566558456}
+  isFacingRight: 1
+  velocityX: 0
 --- !u!1 &347921152569440508
 GameObject:
   m_ObjectHideFlags: 0

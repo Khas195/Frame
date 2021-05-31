@@ -100,4 +100,10 @@ public class DiaryItem : MonoBehaviour
             yield return new WaitForSeconds(letterPause);
         }
     }
+
+    public void SkipTransition()
+    {
+        StopCoroutine("TypeText");
+        itemText.text = textToShow;
+    }
 }

@@ -23,7 +23,12 @@ public class Flip : MonoBehaviour
     [Required]
     [ShowIf("useMovementScript")]
     IMovement movementBehavior = null;
+    [SerializeField]
+    [ReadOnly]
     bool isFacingRight = true;
+    [SerializeField]
+    [ReadOnly]
+    float velocityX = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +55,7 @@ public class Flip : MonoBehaviour
         {
             FlipModel();
         }
+        velocityX = velToAsset.x;
     }
 
     private void FlipModel()

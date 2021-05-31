@@ -60,3 +60,12 @@
 === BrokenDownBuilding
 * Even though king Primulus's reign was awful. Famine, death, public execution was everywhere. Yet, law and order was always there. It was peaceful. Some people supported him... and they were punished for that.
 -> DONE
+=== TheKingStatue
+* King Primulus Julius Pius Marestrom the V. How did they came up with these long-ass names back in the day. Ruled and defended Maresland for 34 years before losing everything to revolution.
+-> DONE
+=== TheKingStatueBroken
+* They finally broken toppled the statue after yesterday. Does little more than a symbolic gesture. A gesture that people would die for. Pointless.
+-> DONE
+=== TheKingStatueFlowers
+* Long live the kind as they say. Every morning since my childhood, I had to go outside and yell it out as it was required for his citizen to show their "loyalty". That didn't stop them from raising an army against him.
+-> DONE

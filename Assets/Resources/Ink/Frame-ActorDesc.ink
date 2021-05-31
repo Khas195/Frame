@@ -42,3 +42,21 @@
 === BarberShop
 * Used be just for the Elites. The ex-owner didn't want those lowly commoners into his shop. Some of those commoners join the resistance and they didn't bat an eye when the others stormed in and "replace" him.
 -> DONE
+=== PoliceStationFlag
+* The flag of Maresland, used to be a golden eagle over a purple background. The eagle represented the Marestrom dynasty. Now  the eagle is forever chained.
+-> DONE
+=== FlowerFactory
+* Those Elites thought that slabbing the word Flower over a factory make it sounds better. At the end of the day, it looks more like a prison than anything else.
+->DONE
+=== CandyShop
+* They sells all types of candy here, mostly from the far east. I heard the owner is a foreigner that came from the land of, in his words, "The Jade Dragons". Though, I doubt that dragons exist in this world. 
+->DONE
+=== MarestromHotel
+* Ah Marestrom Hotel, they allowed the hotel to keep the name Marestrom after the war. Eventhough every hated the king, every one wanted to be treat like one. 
+->DONE
+=== Hawkers
+* Some people was so downtrodden that they couldn't simply open a restaurant or have a home to live.That did not stop them from making a living, however. They sell foods while pushing these street hawkers around.
+->DONE
+=== BrokenDownBuilding
+* Even though king Primulus's reign was awful. Famine, death, public execution was everywhere. Yet, law and order was always there. It was peaceful. Some people supported him... and they were punished for that.
+-> DONE

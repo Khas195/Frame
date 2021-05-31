@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f53a4cb4b61c54931aaa3acf989c6a3a
+guid: f359839020998402199fdda20e5a5a98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2183204525998199179
-    second: appartment01_0
+      213: -4620608564462520198
+    second: wood_board_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,22 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: appartment01_0
+      name: wood_board_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 42
         y: 0
-        width: 166
-        height: 152
+        width: 220
+        height: 90
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e2adbfc03b3b1e0800000000000000
-      internalID: -2183204525998199179
+      spriteID: a78751dddfc40efb0800000000000000
+      internalID: -4620608564462520198
       vertices: []
       indices: 
       edges: []

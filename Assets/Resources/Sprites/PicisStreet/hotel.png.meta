@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f53a4cb4b61c54931aaa3acf989c6a3a
+guid: 96bd2e09833534392a3e6b65d006a89d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2183204525998199179
-    second: appartment01_0
+      213: 5296889057542495800
+    second: hotel_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,22 +94,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: appartment01_0
+      name: hotel_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 166
-        height: 152
+        y: 1
+        width: 209
+        height: 260
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57e2adbfc03b3b1e0800000000000000
-      internalID: -2183204525998199179
+      spriteID: 83e5971a884528940800000000000000
+      internalID: 5296889057542495800
       vertices: []
       indices: 
       edges: []

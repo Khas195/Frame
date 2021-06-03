@@ -10,7 +10,7 @@ TextureImporter:
     second: city_map01_picis_street_button
   - first:
       213: 3475498442065205134
-    second: city_map01_marestrom_park_button
+    second: city_map01_park_button
   - first:
       213: -8117711346192465941
     second: city_map01_text_maresland
@@ -20,6 +20,15 @@ TextureImporter:
   - first:
       213: -4868583988976736882
     second: city_map01_text_picis street
+  - first:
+      213: 4771255151638817413
+    second: city_map01_map_broken_statue
+  - first:
+      213: -66118517018344229
+    second: city_map01_broken_park_button
+  - first:
+      213: 8423906692134809867
+    second: city_map01_player_location
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +126,7 @@ TextureImporter:
         width: 125
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,12 +142,12 @@ TextureImporter:
       name: city_map01_picis_street_button
       rect:
         serializedVersion: 2
-        x: 9
-        y: 8
+        x: 3
+        y: 3
         width: 69
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,15 +160,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: city_map01_marestrom_park_button
+      name: city_map01_park_button
       rect:
         serializedVersion: 2
-        x: 90
-        y: 19
-        width: 42
-        height: 33
+        x: 84
+        y: 14
+        width: 43
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +189,7 @@ TextureImporter:
         width: 39
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +210,7 @@ TextureImporter:
         width: 63
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +231,7 @@ TextureImporter:
         width: 37
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,6 +239,69 @@ TextureImporter:
       bones: []
       spriteID: e8523e928a05f6cb0800000000000000
       internalID: -4868583988976736882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_map01_map_broken_statue
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 4
+        width: 125
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a2f2ef747e63240800000000000000
+      internalID: 4771255151638817413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_map01_broken_park_button
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 14
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4cb002f89151ff0800000000000000
+      internalID: -66118517018344229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: city_map01_player_location
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 178
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b013bb5318ab7e470800000000000000
+      internalID: 8423906692134809867
       vertices: []
       indices: 
       edges: []

@@ -18,7 +18,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
     [SerializeField]
     List<ScenarioActor> scenarioActors;
     [SerializeField]
-    List<IPhotoParticipant> buildings = new List<IPhotoParticipant>();
+    List<Building> buildings = new List<Building>();
     [SerializeField]
     [Expandable]
     PublicSwayData currentSwayData;
@@ -151,7 +151,7 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
     {
         this.cititzens.Add(newCitizen);
     }
-    public void RegisterBuilding(IPhotoParticipant buildings)
+    public void RegisterBuilding(Building buildings)
     {
         this.buildings.Add(buildings);
     }
@@ -212,6 +212,13 @@ public class PublicSwayMechanic : SingletonMonobehavior<PublicSwayMechanic>, IOb
             if (cititzens[i] == null)
             {
                 cititzens.Remove(cititzens[i]);
+            }
+        }
+        for (int i = buildings.Count - 1; i >= 0; i--)
+        {
+            if (buildings[i] == null)
+            {
+                buildings.Remove(buildings[i]);
             }
         }
     }

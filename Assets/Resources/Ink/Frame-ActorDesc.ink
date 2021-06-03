@@ -103,3 +103,6 @@
 === MarestromPark_FamilyOfTheLost
     * Family of the people who suffered losses in yesterday event.
 -> DONE
+=== MarestromPark_PoliceCaptureProtester
+    * Police capturing one of the leftover protestors.
+-> DONE

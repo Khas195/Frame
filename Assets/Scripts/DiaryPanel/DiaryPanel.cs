@@ -114,6 +114,10 @@ public class DiaryPanel : MonoBehaviour
         {
             diaryItems[i].gameObject.SetActive(false);
         }
+        if (this.diaryItems.Count <= 0)
+        {
+            return;
+        }
         for (int i = currentPage * itemPerPage; i < currentPage * itemPerPage + itemPerPage; i++)
         {
             if (i >= diaryItems.Count)

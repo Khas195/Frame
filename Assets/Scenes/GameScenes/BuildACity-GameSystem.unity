@@ -157,6 +157,7 @@ MonoBehaviour:
   neutralColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   cititzens: []
   scenarioActors: []
+  buildings: []
   currentSwayData: {fileID: 11400000, guid: 06701f038dcda88419efd538407f903f, type: 2}
   startGameSwayData: {fileID: 11400000, guid: 8984c814910dd184aaa03e95cd85112d, type: 2}
 --- !u!4 &371686879

@@ -30,7 +30,7 @@ public class ConstraintCamera : SingletonMonobehavior<ConstraintCamera>
     {
         if (this.mapBound == null)
         {
-            LogHelper.LogError("Camera Bound is missing the map Boundary Box!!.", true);
+            LogHelper.LogWarning("Camera Bound is missing the map Boundary Box!!.", true);
             return;
         }
 

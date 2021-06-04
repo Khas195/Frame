@@ -13,7 +13,8 @@ public class Scenario : MonoBehaviour, IObserver
     public static UnityEvent<Scenario> OnScenarioLeave = new UnityEvent<Scenario>();
 
 
-
+    [SerializeField]
+    string scenarioName = "";
     [SerializeField]
     List<GameObject> scenarioProps = new List<GameObject>();
     [SerializeField]
@@ -42,6 +43,7 @@ public class Scenario : MonoBehaviour, IObserver
                     this.LeaveScenario();
                     branches[i].EnterScenario();
                     canEnterChildScenario = true;
+                    break;
                 }
             }
             if (canEnterChildScenario == false)
@@ -49,6 +51,11 @@ public class Scenario : MonoBehaviour, IObserver
                 EnterScenario();
             }
         }
+    }
+
+    public string GetScenarioName()
+    {
+        return scenarioName;
     }
 
     [Button]

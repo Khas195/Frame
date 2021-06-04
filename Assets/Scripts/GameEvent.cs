@@ -19,7 +19,13 @@ public static class GameEvent
     }
     public static class MapChangedEvent
     {
+        public enum MapLocation
+        {
+            MarestromPark,
+            PicisStreet
+        }
         public static string MAP_CHANGED_EVENT = "MAP_CHANGED_EVENT";
+        public static string MAP_LOCATION_DATA = "MAP_LOCATION_DATA";
     }
     public static class InGameUiStateEvent
     {

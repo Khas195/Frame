@@ -1429,11 +1429,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06517762
+      value: 0.5851338
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.17343257
+      value: 0.61682665
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -2994,11 +2994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06517762
+      value: 0.5851338
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.17343257
+      value: 0.61682665
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -3628,11 +3628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06517762
+      value: 0.5851338
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.17343257
+      value: 0.61682665
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -3850,6 +3850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa5cb5ae8c6eec4f8d88c5554b16a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLocation: 0
 --- !u!1 &664059257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4299,7 +4300,7 @@ Transform:
   - {fileID: 543267782}
   - {fileID: 1142483954}
   m_Father: {fileID: 1611100542}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &744651060
 MonoBehaviour:
@@ -4313,6 +4314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a0b01b9c2e98649ba62076664f7cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenarioName: StatueBreaking_Mixed
   scenarioProps:
   - {fileID: 406670729}
   - {fileID: 807007125}
@@ -5075,7 +5077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.00378189
+      value: -0.0025250784
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -5691,7 +5693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.0016307781
+      value: 0.5851338
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -6121,7 +6123,7 @@ Transform:
   - {fileID: 7657213066291577691}
   - {fileID: 668735962}
   m_Father: {fileID: 1611100542}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &953857481
 MonoBehaviour:
@@ -6135,6 +6137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a0b01b9c2e98649ba62076664f7cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenarioName: StatueBreaking_Broken
   scenarioProps:
   - {fileID: 3937773061780009822}
   - {fileID: 337515250}
@@ -8213,7 +8216,7 @@ Transform:
   m_Children:
   - {fileID: 1202673397}
   m_Father: {fileID: 1611100542}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1227624267
 PrefabInstance:
@@ -10255,7 +10258,7 @@ Transform:
   - {fileID: 1660651043}
   - {fileID: 1248410732}
   m_Father: {fileID: 1611100542}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1378708300
 MonoBehaviour:
@@ -10269,6 +10272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a0b01b9c2e98649ba62076664f7cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenarioName: StatueBreaking_StillThere
   scenarioProps:
   - {fileID: 4178575831217994073}
   - {fileID: 1660651042}
@@ -12015,7 +12019,7 @@ GameObject:
   - component: {fileID: 1611100543}
   - component: {fileID: 1611100544}
   m_Layer: 0
-  m_Name: Default
+  m_Name: StatueBreakin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12032,10 +12036,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1222706647}
   - {fileID: 1378708299}
   - {fileID: 953857480}
   - {fileID: 744651059}
-  - {fileID: 1222706647}
   m_Father: {fileID: 292944276}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12051,6 +12055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a0b01b9c2e98649ba62076664f7cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenarioName: StatueBreaking_Default
   scenarioProps:
   - {fileID: 1222706646}
   branches:
@@ -14843,7 +14848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.00378189
+      value: -0.0025250784
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -15011,7 +15016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.00378189
+      value: -0.0025250784
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a

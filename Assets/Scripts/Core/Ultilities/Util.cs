@@ -117,7 +117,7 @@ public static class Util
     {
         return "<i>" + text + "</i>";
     }
-    public static List<T> Shuffle<T>(List<T> _list)
+    public static List<T> Shuffle<T>(this List<T> _list)
     {
         for (int i = 0; i < _list.Count; i++)
         {
@@ -128,5 +128,27 @@ public static class Util
         }
 
         return _list;
+    }
+    public static void ForLoop<T>(this List<T> _list, Action<T> loopAction)
+    {
+        for (int i = 0; i < _list.Count; i++)
+        {
+            loopAction(_list[i]);
+        }
+    }
+    // not much usage to these functions, just use If else :v
+    public static void DoWhenTrue(this bool condition, Action action)
+    {
+        if (condition)
+        {
+            action();
+        }
+    }
+    public static void DoWhenFalse(this bool condition, Action action)
+    {
+        if (condition == false)
+        {
+            action();
+        }
     }
 }

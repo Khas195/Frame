@@ -24,7 +24,7 @@ public class DiaryPanelState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Q))
         {
             InGameUIControl.GetInstance().RequestState(InGameUIStateEnum.NormalState);
         }

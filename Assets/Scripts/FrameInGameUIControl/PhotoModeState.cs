@@ -25,7 +25,7 @@ public class PhotoModeState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);
             entertingOtherUI = true;

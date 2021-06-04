@@ -28,7 +28,7 @@ public class NormalUiState : InGameUIState
 
     public override void UpdateState()
     {
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);
         }
@@ -36,7 +36,7 @@ public class NormalUiState : InGameUIState
         {
             controller.RequestState(InGameUIStateEnum.NewsPanelState);
         }
-        else if (Input.GetKeyDown(KeyCode.O))
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
             controller.RequestState(InGameUIStateEnum.DiaryPanelState);
         }

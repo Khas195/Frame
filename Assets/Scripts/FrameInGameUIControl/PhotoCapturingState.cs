@@ -33,7 +33,7 @@ public class PhotoCapturingState : InGameUIState
                 takePhoto.TakePhoto();
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.V))
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
             this.controller.RequestState(InGameUIStateEnum.NormalState);
         }

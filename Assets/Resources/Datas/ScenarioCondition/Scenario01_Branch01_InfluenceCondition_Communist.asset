@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed21308c971b574ca3fa1cdc91087a2, type: 3}
-  m_Name: Scenario01_Branch01_InfluenceCondition
+  m_Name: Scenario01_Branch01_InfluenceCondition_Communist
   m_EditorClassIdentifier: 
   influence:
     faction: 1

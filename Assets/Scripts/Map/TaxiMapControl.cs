@@ -41,6 +41,7 @@ public class TaxiMapControl : MonoBehaviour, IObserver
     public void ShowMap()
     {
         mapPanel.SetActive(true);
+        ConversationMananger.GetInstance().TerminateCurrentConversation();
     }
     public void HideMap()
     {
@@ -82,13 +83,14 @@ public class TaxiMapControl : MonoBehaviour, IObserver
 
             conditionsToChangeMap.ForLoop<ScenarioBranchCondition>((ScenarioBranchCondition curCondition) =>
             {
+                LogHelper.Log("Map Control - Checking branching conditions:" + curCondition.name + "- " + curCondition.IsSatisfied());
                 if (curCondition.IsSatisfied() == false)
                 {
                     condition = false;
                 }
             });
 
-            if (condition == false)
+            if (condition == true)
             {
                 ChangeMapToBroken();
             }

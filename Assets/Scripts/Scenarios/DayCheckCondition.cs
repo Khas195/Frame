@@ -9,6 +9,6 @@ public class DayCheckCondition : ScenarioBranchCondition
     int dayToCheck = 0;
     public override bool IsSatisfied()
     {
-        return data.currentDay >= dayToCheck;
+        return data.currentDay >= dayToCheck - 1;
     }
 }

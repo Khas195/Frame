@@ -104,4 +104,8 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
             ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, playerChar, this);
         }
     }
+    private void OnDestroy()
+    {
+        StopCoroutine("TypeText");
+    }
 }

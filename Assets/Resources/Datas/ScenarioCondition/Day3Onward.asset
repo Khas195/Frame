@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ed21308c971b574ca3fa1cdc91087a2, type: 3}
-  m_Name: Scenario01_Branch02_InfluenceCondition
+  m_Script: {fileID: 11500000, guid: 133c13918320ca244bda61620c3277c8, type: 3}
+  m_Name: Day3Onward
   m_EditorClassIdentifier: 
-  influence:
-    faction: 2
-    numberToCompare: 20
-    compareMethod: 0
-  data: {fileID: 11400000, guid: 06701f038dcda88419efd538407f903f, type: 2}
+  data: {fileID: 11400000, guid: 635edd2c161050147817c320b0278800, type: 2}
+  dayToCheck: 3

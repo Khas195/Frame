@@ -34,18 +34,7 @@ public class Scenario : MonoBehaviour, IObserver
         FindChildBranches();
         if (isScenarioActive)
         {
-            bool canEnterChildScenario = false;
-            for (int i = 0; i < branches.Count; i++)
-            {
-                if (branches[i].CanAdvanceToBranch())
-                {
-                    LogHelper.Log(("Advance to branch " + branches[i]).Bolden().Colorize(Color.green));
-                    this.LeaveScenario();
-                    branches[i].EnterScenario();
-                    canEnterChildScenario = true;
-                    break;
-                }
-            }
+            bool canEnterChildScenario = TryToAdvanceToBranches();
             if (canEnterChildScenario == false)
             {
                 EnterScenario();
@@ -76,23 +65,33 @@ public class Scenario : MonoBehaviour, IObserver
         {
             if (eventName == GameEvent.DaySystemEvent.DAY_CHANGED_EVENT)
             {
-                for (int i = 0; i < branches.Count; i++)
-                {
-                    if (branches[i].CanAdvanceToBranch())
-                    {
-                        LogHelper.Log(("Advance to branch " + branches[i]).Bolden().Colorize(Color.green));
-                        this.LeaveScenario();
-                        branches[i].EnterScenario();
-                        return;
-                    }
-                }
+                TryToAdvanceToBranches();
             }
         }
 
     }
-
+    public bool TryToAdvanceToBranches()
+    {
+        LogHelper.Log("Scenario - Checking available branches to advance for " + this);
+        for (int i = 0; i < branches.Count; i++)
+        {
+            LogHelper.Log("Scenario - Checking " + branches[i] + ".");
+            if (branches[i].CanAdvanceToBranch())
+            {
+                LogHelper.Log(("Scenario - Advance to branch " + branches[i]).Bolden().Colorize(Color.green));
+                this.LeaveScenario();
+                branches[i].EnterScenario();
+                return true;
+            }
+        }
+        return false;
+    }
     public void EnterScenario()
     {
+        bool continueToBranch = false;
+        continueToBranch = TryToAdvanceToBranches();
+        if (continueToBranch == true) return;
+
         for (int i = 0; i < scenarioProps.Count; i++)
         {
             scenarioProps[i].SetActive(true);

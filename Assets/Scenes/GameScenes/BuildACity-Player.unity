@@ -2279,6 +2279,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1630512123}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &275627997
 GameObject:
   m_ObjectHideFlags: 0
@@ -9743,7 +9755,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -11147,7 +11159,7 @@ MonoBehaviour:
   possibleTransitions: []
   controller: {fileID: 0}
   overlayUI: {fileID: 1333447727}
-  allowedDirectTransitionToNewspanel: 0
+  allowedDirectTransitionToNewspanel: 1
   testInstance: {fileID: 11400000, guid: 55c01a7c66b607f448cdb31fe1506fb4, type: 2}
 --- !u!4 &1672024443
 Transform:
@@ -11374,7 +11386,7 @@ MonoBehaviour:
   parkButtonNormal: {fileID: 668669205}
   parkBrokenButton: {fileID: 458869803}
   conditionsToChangeMap:
-  - {fileID: 11400000, guid: 81dbcf7eb9f2fce40a9728afc1ef36ef, type: 2}
+  - {fileID: 11400000, guid: 18b2c00aed092894f8402dc61718613c, type: 2}
   - {fileID: 11400000, guid: 9a7b5f178102e7c4c87c2b0f0156775a, type: 2}
 --- !u!1 &1731956886
 GameObject:

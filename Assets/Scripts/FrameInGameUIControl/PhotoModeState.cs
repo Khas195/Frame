@@ -21,17 +21,15 @@ public class PhotoModeState : InGameUIState
     {
         selection.ExitPhotoMode();
     }
-    bool entertingOtherUI = false;
 
     public override void UpdateState()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             controller.RequestState(InGameUIStateEnum.CapturingState);
-            entertingOtherUI = true;
         }
 
-        if (Input.anyKeyDown && entertingOtherUI == false)
+        if (Input.anyKeyDown)
         {
             this.controller.RequestState(InGameUIStateEnum.NormalState);
         }

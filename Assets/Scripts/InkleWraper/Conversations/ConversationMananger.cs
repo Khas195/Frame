@@ -38,7 +38,14 @@ public class ConversationMananger : SingletonMonobehavior<ConversationMananger>
                 sentence = sentence.Trim(charsToTrim);
                 if (skipFirstLine == false)
                 {
-                    other.Show(sentence);
+                    if (other != null)
+                    {
+                        other.Show(sentence);
+                    }
+                    else
+                    {
+                        TerminateCurrentConversation();
+                    }
                 }
                 else
                 {

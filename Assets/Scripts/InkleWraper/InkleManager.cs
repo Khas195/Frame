@@ -29,15 +29,19 @@ public class InkleManager : SingletonMonobehavior<InkleManager>, IObserver
     [SerializeField]
     [ReadOnly]
     List<string> paperboysLines = new List<string>();
+    public UnityEvent OnNewPaperboyLinesAdded = new UnityEvent();
     protected override void Awake()
     {
         base.Awake();
         CreateStory();
         PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+        PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
     }
+
     private void OnDestroy()
     {
         PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+        PostOffice.Unsubscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
     }
     [Button]
     public void CreateStory()
@@ -54,6 +58,7 @@ public class InkleManager : SingletonMonobehavior<InkleManager>, IObserver
     public void AddPaperboyLines(string inkleStitch)
     {
         paperboysLines.AddRange(GetLinesFromSticth(inkleStitch, monologueStory));
+        OnNewPaperboyLinesAdded.Invoke();
     }
     public List<string> GetCharacterPublishMonologues(string inkleStitch)
     {
@@ -122,6 +127,10 @@ public class InkleManager : SingletonMonobehavior<InkleManager>, IObserver
             var capitalPoint = pack.GetValue<int>(GameEvent.NewspaperEvent.PaperPublishedData.TOTAL_CAPITAL_POINT);
             this.SetVariable("newPaperCommiePoint", commiePoint);
             this.SetVariable("newPaperCapitalPoint", capitalPoint);
+        }
+        else if (eventName == GameEvent.DaySystemEvent.DAY_CHANGED_EVENT)
+        {
+            this.ClearPaperboyLines();
         }
     }
 }

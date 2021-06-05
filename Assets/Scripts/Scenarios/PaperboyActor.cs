@@ -42,7 +42,7 @@ public class PaperboyActor : ScenarioActor
 
         genericLines.Clear();
         todayLines.Clear();
-        Scenario.OnScenarioEnter.AddListener(this.AskForTodayLines);
+        InkleManager.GetInstance().OnNewPaperboyLinesAdded.AddListener(this.AskForTodayLines);
     }
     protected override void Start()
     {
@@ -51,12 +51,9 @@ public class PaperboyActor : ScenarioActor
         YellDialogue();
     }
 
-    private void AskForTodayLines(Scenario newScenario)
-    {
-        todayLines.AddRange(InkleManager.GetInstance().RequestTodayLines());
-    }
     private void AskForTodayLines()
     {
+        todayLines.Clear();
         todayLines.AddRange(InkleManager.GetInstance().RequestTodayLines());
     }
     private void FixedUpdate()

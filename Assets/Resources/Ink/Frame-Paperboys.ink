@@ -12,7 +12,7 @@ Generic Lines:
     -> DONE
 
 = Scenario01_StatueBreaking
-Day01: Scenario 01 Protestors breaking the King's statue.
+Day03: Scenario 01 Protestors breaking the King's statue.
     * Protestors gathered to break the Tyrant' King's Statchu'!.
     -> DONE
     * Join the King's statchu' breaking in Marestrom Park!.
@@ -20,7 +20,7 @@ Day01: Scenario 01 Protestors breaking the King's statue.
     * Coppers trading knuckl' sandwiches with a punch of Goons under the King's Statchu'! 
     ->DONE
 = Scenario01_StatueBroken
-Day02: Scenario 02 Protestors broke the statue
+Day04: Scenario 02 Protestors broke the statue
     * The King's Statue in Marestrom Park was broken by the T.M.F.P!!.
     -> DONE
     * The Speaker for the N.D.P.M called what happened in Marestorm Park an act of anarchy!!.
@@ -28,14 +28,21 @@ Day02: Scenario 02 Protestors broke the statue
     * Protestors are gathering in Marestrom Park Celebrating!!.
     ->DONE
 = Scenario01_StatueStillThere
-Day02: Scenario 02 Protestors failed to break the statue.
+Day04: Scenario 02 Protestors failed to break the statue.
     * Coppers succeeded in protecting Maresland's legacy in Marestrom Park.
     -> DONE
     * All workers are banned from entering Marestrom Park from this day onward!!.
     -> DONE
     * The Elites holding a ceremony in Marestrom Park, today!.
     ->DONE
-
+= Scenario01_StatueMixed
+Day04: Scenario 02 Protestors failed to break the statue.
+    * The King's Statue in Marestrom Park was broken by the T.M.F.P!!.
+    -> DONE
+    * All workers are banned from entering Marestrom Park from this day onward!!.
+    -> DONE
+    * A Slaughter happened in Marestrom Park yesterday, hundreds of people died!!.
+    ->DONE
 === MainCharacterLines ===
 
 = PublishLineProCommie

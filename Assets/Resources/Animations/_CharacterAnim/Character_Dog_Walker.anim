@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Citizen_Female_01-WalkAnim
+  m_Name: Character_Dog_Walker
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,17 +20,17 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 6960876814494834305, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+      value: {fileID: -3412149820837992096, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
     - time: 0.083333336
-      value: {fileID: -1588933741938361770, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+      value: {fileID: 6296303818298804107, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
     - time: 0.16666667
-      value: {fileID: -680155084948280955, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+      value: {fileID: -3656747269235578847, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
     - time: 0.25
-      value: {fileID: 939551282954162994, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+      value: {fileID: 6945458921151768607, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
     - time: 0.33333334
-      value: {fileID: -6973528372038600605, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+      value: {fileID: 7688618020007094978, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
     - time: 0.41666666
-      value: {fileID: 2556918466064498637, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+      value: {fileID: -7672566480683776745, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,12 +50,12 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 6960876814494834305, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
-    - {fileID: -1588933741938361770, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
-    - {fileID: -680155084948280955, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
-    - {fileID: 939551282954162994, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
-    - {fileID: -6973528372038600605, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
-    - {fileID: 2556918466064498637, guid: e68a0a6a5caade24d9bacbede14ada81, type: 3}
+    - {fileID: -3412149820837992096, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
+    - {fileID: 6296303818298804107, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
+    - {fileID: -3656747269235578847, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
+    - {fileID: 6945458921151768607, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
+    - {fileID: 7688618020007094978, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
+    - {fileID: -7672566480683776745, guid: ea2d6774bec78664b881035b0cc79e1c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

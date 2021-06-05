@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2144104586734080531}
   - component: {fileID: 8519841528805368372}
   m_Layer: 0
-  m_Name: ParkProp_Lamp_01
+  m_Name: Prefab_Props_Park_PictureFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: af9b8ba7d06526e4697aaf60ed033197, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 113a54583a257a34dadaac46f65fb1b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

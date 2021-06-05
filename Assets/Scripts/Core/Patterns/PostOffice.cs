@@ -35,6 +35,20 @@ public class PostOffice : MonoBehaviour
             targetEvent.subscribers[i].ReceiveData(pack, eventName);
         }
     }
+    public static void LazySend(Action<DataPack> setDataAction, string eventName)
+    {
+        if (setDataAction != null)
+        {
+            var data = DataPool.GetInstance().RequestInstance();
+            setDataAction(data);
+            PostOffice.SendData(data, eventName);
+            DataPool.GetInstance().ReturnInstance(data);
+        }
+        else
+        {
+            PostOffice.SendData(pack: null, eventName);
+        }
+    }
 
     public static void Unsubscribes(IObserver observer, string eventToUnsubscribe)
     {

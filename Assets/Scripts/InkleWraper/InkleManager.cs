@@ -6,7 +6,7 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class InkleManager : SingletonMonobehavior<InkleManager>
+public class InkleManager : SingletonMonobehavior<InkleManager>, IObserver
 {
     [SerializeField]
     TextAsset monologues;
@@ -33,6 +33,11 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     {
         base.Awake();
         CreateStory();
+        PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
     }
     [Button]
     public void CreateStory()
@@ -41,6 +46,7 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
         playerConversationStory = new Story(playerConversations.text);
         actorDescriptionsStory = new Story(actorDescriptions.text);
     }
+
     public Story GetPlayerConversation()
     {
         return playerConversationStory;
@@ -64,6 +70,8 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
         }
         return result;
     }
+
+
 
     public List<string> GetGenericPaperLines()
     {
@@ -92,5 +100,28 @@ public class InkleManager : SingletonMonobehavior<InkleManager>
     public List<string> RequestTodayLines()
     {
         return paperboysLines;
+    }
+
+    public void SetVariable<T>(string variableName, T value)
+    {
+        this.playerConversationStory.variablesState[variableName] = value;
+        LogHelper.Log("Inkle Manager - Setting Variable: " + variableName + " with value " + value);
+    }
+    public T GetVariable<T>(string variableName)
+    {
+        var result = this.playerConversationStory.variablesState[variableName];
+        LogHelper.Log("Inkle Manager - Getting Variable: " + variableName + " with result " + (T)result);
+        return (T)result;
+    }
+
+    public void ReceiveData(DataPack pack, string eventName)
+    {
+        if (eventName == GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT)
+        {
+            var commiePoint = pack.GetValue<int>(GameEvent.NewspaperEvent.PaperPublishedData.TOTAL_COMMIE_POINT);
+            var capitalPoint = pack.GetValue<int>(GameEvent.NewspaperEvent.PaperPublishedData.TOTAL_CAPITAL_POINT);
+            this.SetVariable("newPaperCommiePoint", commiePoint);
+            this.SetVariable("newPaperCapitalPoint", capitalPoint);
+        }
     }
 }

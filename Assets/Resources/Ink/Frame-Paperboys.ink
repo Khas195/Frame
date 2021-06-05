@@ -1,4 +1,5 @@
 -> PaperboysLine
+
 === PaperboysLine ===
 
 = GenericLines
@@ -14,9 +15,9 @@ Generic Lines:
 Day01: Scenario 01 Protestors breaking the King's statue.
     * Protestors gathered to break the Tyrant' King's Statchu'!.
     -> DONE
-    * Join the King's statchu' breaking in Grein Park!.
+    * Join the King's statchu' breaking in Marestrom Park!.
     -> DONE
-    * Coppers trading knuckl' sandwiches with a punch of Goons under King's Statchu'! 
+    * Coppers trading knuckl' sandwiches with a punch of Goons under the King's Statchu'! 
     ->DONE
 = Scenario01_StatueBroken
 Day02: Scenario 02 Protestors broke the statue

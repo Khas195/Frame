@@ -7,10 +7,22 @@ public class WaypointsManager : MonoBehaviour
 {
     [SerializeField]
     List<Waypoint> waypoints = new List<Waypoint>();
+    [SerializeField]
+    List<AIController2D> citizens = new List<AIController2D>();
+    [SerializeField]
+    Transform citizenRoot = null;
     // Start is called before the first frame update
     protected void Awake()
     {
         waypoints.AddRange(this.GetComponentsInChildren<Waypoint>());
+        citizens.AddRange(citizenRoot.GetComponentsInChildren<AIController2D>());
+    }
+    private void Start()
+    {
+        citizens.ForEach((AIController2D curCitizen) =>
+        {
+            curCitizen.SetWaypoint(this.GetRandomWaypoint());
+        });
     }
 
     public Waypoint GetRandomWaypoint()

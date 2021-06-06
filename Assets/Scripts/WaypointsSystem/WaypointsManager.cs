@@ -15,7 +15,10 @@ public class WaypointsManager : MonoBehaviour
     protected void Awake()
     {
         waypoints.AddRange(this.GetComponentsInChildren<Waypoint>());
-        citizens.AddRange(citizenRoot.GetComponentsInChildren<AIController2D>());
+        if (citizenRoot != null)
+        {
+            citizens.AddRange(citizenRoot.GetComponentsInChildren<AIController2D>());
+        }
     }
     private void Start()
     {

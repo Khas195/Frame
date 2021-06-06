@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3728280806081441522, guid: 2a479d14a8acb304593ad0f6f4b2c370, type: 3}
+      propertyPath: monologueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 4057979801420264685, guid: 2a479d14a8acb304593ad0f6f4b2c370, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -1462,11 +1466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.57148844
+      value: 0.2727153
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.45145676
+      value: -0.00042706236
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -3182,11 +3186,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.57148844
+      value: 0.2727153
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.45145676
+      value: -0.00042706236
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -3517,6 +3521,10 @@ PrefabInstance:
       propertyPath: previousColor.r
       value: 0.5849056
       objectReference: {fileID: 0}
+    - target: {fileID: 7315582871139476053, guid: a1faad9b19206bc4db9540d812998677, type: 3}
+      propertyPath: monologueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 7494425964070254667, guid: a1faad9b19206bc4db9540d812998677, type: 3}
       propertyPath: m_Color.b
       value: 0.5849056
@@ -3816,11 +3824,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.57148844
+      value: 0.2727153
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.45145676
+      value: -0.00042706236
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -4739,6 +4747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Citizen_Female_01_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7955210904254712807, guid: 0fbe32fa604315043b66ee97bb6a07f4, type: 3}
+      propertyPath: monologueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 8666408686364118416, guid: 0fbe32fa604315043b66ee97bb6a07f4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5320,7 +5332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.003899503
+      value: 0.052329123
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -5596,6 +5608,10 @@ PrefabInstance:
       propertyPath: m_Padding.m_Bottom
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7491953541765692219, guid: 5d8c33e106950944ca0f0cef7761aaff, type: 3}
+      propertyPath: monologueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 7614453392723437461, guid: 5d8c33e106950944ca0f0cef7761aaff, type: 3}
       propertyPath: m_Name
       value: Citizen_Female_03_Prefab
@@ -5936,7 +5952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: 0.06897104
+      value: 0.2727153
       objectReference: {fileID: 0}
     - target: {fileID: 9006267969126792686, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Name
@@ -9220,6 +9236,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2250671931517158636, guid: 589e6f2b0c8545441a1418598d88439e, type: 3}
+      propertyPath: monologueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 3032346473885120392, guid: 589e6f2b0c8545441a1418598d88439e, type: 3}
       propertyPath: m_LocalScale.x
       value: -1
@@ -11449,6 +11469,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6173583537728321433, guid: c03c494e95c239c42b687150d8d02df3, type: 3}
+      propertyPath: monologueData
+      value: 
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 6474086479387816484, guid: c03c494e95c239c42b687150d8d02df3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -15307,7 +15331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.003899503
+      value: 0.052329123
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -15475,7 +15499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5384170642956191152, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
-      value: -0.003899503
+      value: 0.052329123
       objectReference: {fileID: 0}
     - target: {fileID: 7323571924276196476, guid: 09bd04d976bb699449ae777c5ce6e8f8, type: 3}
       propertyPath: m_Color.a
@@ -95798,7 +95822,7 @@ PrefabInstance:
     - target: {fileID: 3594017635823883776, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: monologueData
       value: 
-      objectReference: {fileID: 11400000, guid: d1ab0b36e49773b4dbc7eaf9dac31a3d, type: 2}
+      objectReference: {fileID: 11400000, guid: b4a8486a3a80e9742a70ac3f6b078e9f, type: 2}
     - target: {fileID: 3594017635823883776, guid: 8c8850dd51956e2488e64858e108c4e4, type: 3}
       propertyPath: monologueLines.Array.data[0].line
       value: Want some drinks?

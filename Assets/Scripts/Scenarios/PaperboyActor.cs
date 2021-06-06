@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class PaperboyActor : ScenarioActor
 {
     [SerializeField]
+    Flip flipControl = null;
+    [SerializeField]
+    AudioSource extras;
+    [SerializeField]
     Canvas myCanvas;
     [SerializeField]
     Text dialogueBox;
@@ -85,6 +89,18 @@ public class PaperboyActor : ScenarioActor
         {
             listToRead = todayLines;
             listToIgnore = readTodayLines;
+
+        }
+        else
+        {
+            if (extras != null)
+            {
+                extras.Play();
+            }
+            if (flipControl != null)
+            {
+                flipControl.FlipModel();
+            }
         }
         if (listToRead.Count > 0)
         {

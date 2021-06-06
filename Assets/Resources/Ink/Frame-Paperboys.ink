@@ -1,5 +1,4 @@
 -> PaperboysLine
-
 === PaperboysLine ===
 
 = GenericLines
@@ -84,18 +83,75 @@ Day04: Scenario 02 Protestors failed to break the statue.
     -> DONE
 === CitizenLines ===
 
-= ParkScene
-    * Sup
+= MarestromPark
+    * The park is the only place where I feel calm.
     -> DONE
-    * What a beautiful night
+    * The street is always clustered with crazy bastards. 
     -> DONE
-    * Excercising by going back and forth
+    * Why are they keep fighting, the king is dead. Can we just have peace?
     -> DONE
-    * It is funny how we're all saying the same thing.
+    * The coppers are corrupted to the core.
     -> DONE
-    * I feel sick. I think I've been afflicted by "Lazy dialogue writing"!.
+    * I wonder will some of the Hawkers be there later tonight in Picis Street. Quite fond of their food.
     -> DONE
-    
+    * I'm going to stop by the candy shop in Picistreet later tonight.
+    -> DONE
+    * When are they going to fix these streetlights. 
+    -> DONE
+    * Going to drop by the Newsoki in Picis street later. 
+    -> DONE
+= PicisStreet
+    * I heard some of the workers are planning to do something in the Marestrom Park. 
+    -> DONE
+    * I can smell the food on those Hawkers all the way from here. Yummy.
+    -> DONE
+    * I've never seen anyone entered the Marestrom Hotel since like ever. 
+    -> DONE
+    * Man, those coppers looked at me with funny eyes. I'm going to avoid them...
+    -> DONE
+    * Than crazy dude is burning something in the alley. 
+    -> DONE
+    * That guy with the saxophone is actually not that bad. 
+    ->DONE
+    * Is it me or I saw a bugler on the roof near the Newsoski.
+    -> DONE
+= ProCommiePaper
+    * I'm going to go and sign up to join the workers' party now.
+    -> DONE
+    * We fought the king for our freedom not to be stepped on by another type of tyranny.
+    -> DONE
+    * We need to get rid of the coppers in order to make this country great again.
+    -> DONE
+    * My brother asked me to join the workers' party,  but I hesitated. Not anymore.
+    -> DONE
+    * Out of one tyranny's hand into another. Damn this country.
+    -> DONE
+    * This is crazy, I'm going to move to Sovit next month.
+    -> DONE
+= ProCapitalPaper
+    * Damn those crazy bastards trying to destroy this country. 
+    -> DONE
+    * Why don't they just abolish that mackerel party already. 
+    -> DONE
+    * Maybe I should join the copper forces to help keep the peace. 
+    -> DONE
+    * Man, they need to invest more into the copper forces, they're getting destroyed out there.
+    -> DONE
+    * Perhaps Antie's advice to move to Amrica is good. I heard it is the leader of the free world.
+    -> DONE
+= NeutralPaper
+        * Man these newspapers are so boring, there's nothing really in it.
+    -> DONE
+    * The newspapers nowadays are mackerels. They are nothing of scenic photos, there's no news.
+    -> DONE
+    * Maybe they should hire me to take those photos, the one in the recent newspaper sucks.
+    -> DONE
+    * I feel like I'm wasting money buying newspapers from the Newsoki. There isn't really any news.
+    -> DONE
+    * The newspaper is so calm, nothing much really happened. Perchance, the conflict is over ?!.
+    -> DONE
+    * I saw some crazy shit the other days, but I guess the guy taking these photos didn't get it.  Shame!.
+    -> DONE
 = DrunkProtestors
     * Wuppp!.
     -> DONE

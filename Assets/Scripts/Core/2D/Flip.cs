@@ -58,7 +58,7 @@ public class Flip : MonoBehaviour
         velocityX = velToAsset.x;
     }
 
-    private void FlipModel()
+    public void FlipModel()
     {
         var flip = body.transform;
         if (hasFlipTarget)

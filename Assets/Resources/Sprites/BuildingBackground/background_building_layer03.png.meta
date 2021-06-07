@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -8603565544862469097
-    second: background_building_layer03_0
+    second: background_building_layer03_side_board01
   - first:
       213: 3760184773938239738
     second: background_building_layer03_1
@@ -26,6 +26,33 @@ TextureImporter:
   - first:
       213: -2534038048380879207
     second: background_building_layer03_tower
+  - first:
+      213: 7647414799494427092
+    second: background_building_layer03_8
+  - first:
+      213: -1253870306675487067
+    second: background_building_layer03_9
+  - first:
+      213: -154656174139906515
+    second: background_building_layer03_10
+  - first:
+      213: 5730118427628720455
+    second: background_building_layer03_11
+  - first:
+      213: -1961512227240372216
+    second: background_building_layer03_12
+  - first:
+      213: -9010276336868577833
+    second: background_building_layer03_13
+  - first:
+      213: -4665784954166630190
+    second: background_building_layer03_14
+  - first:
+      213: -4097738439410485676
+    second: background_building_layer03_side_board02
+  - first:
+      213: -6001209254570448319
+    second: background_building_layer03_side_board03
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +142,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background_building_layer03_0
+      name: background_building_layer03_side_board01
       rect:
         serializedVersion: 2
         x: 0
@@ -123,7 +150,7 @@ TextureImporter:
         width: 16
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +171,7 @@ TextureImporter:
         width: 127
         height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +192,7 @@ TextureImporter:
         width: 182
         height: 219
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +213,7 @@ TextureImporter:
         width: 179
         height: 202
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +234,7 @@ TextureImporter:
         width: 94
         height: 148
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +255,7 @@ TextureImporter:
         width: 218
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +276,7 @@ TextureImporter:
         width: 78
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +297,7 @@ TextureImporter:
         width: 93
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,6 +305,195 @@ TextureImporter:
       bones: []
       spriteID: 99efee622d945dcd0800000000000000
       internalID: -2534038048380879207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_8
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 0
+        width: 68
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d13eed0e33112a60800000000000000
+      internalID: 7647414799494427092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_9
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 0
+        width: 129
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae8230799b599ee0800000000000000
+      internalID: -1253870306675487067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_10
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 0
+        width: 75
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26e11e670d8addf0800000000000000
+      internalID: -154656174139906515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_11
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 0
+        width: 79
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741dab7b958758f40800000000000000
+      internalID: 5730118427628720455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_12
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 0
+        width: 71
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80890c8950f47c4e0800000000000000
+      internalID: -1961512227240372216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_13
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 0
+        width: 63
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd27dcf86115f280800000000000000
+      internalID: -9010276336868577833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_14
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 0
+        width: 101
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d82988fd4dcf3fb0800000000000000
+      internalID: -4665784954166630190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_side_board02
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 30
+        width: 15
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4567970a998e127c0800000000000000
+      internalID: -4097738439410485676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background_building_layer03_side_board03
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 32
+        width: 13
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14aaa8e8afb67bca0800000000000000
+      internalID: -6001209254570448319
       vertices: []
       indices: 
       edges: []

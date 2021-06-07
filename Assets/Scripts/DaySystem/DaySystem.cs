@@ -30,7 +30,7 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
     {
         return dayData.currentDay;
     }
-
+    [Button]
     public void NextDay()
     {
         OnDayChangedEvent.Invoke();

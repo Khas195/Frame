@@ -57,6 +57,8 @@ public static class GameEvent
         public static class PaperPublishedData
         {
             public static string NEWSPAPER_DATA = "NEWSPAPER_DATA";
+            public static string TOTAL_COMMIE_POINT = "TOTAL_COMMIE_POINT";
+            public static string TOTAL_CAPITAL_POINT = "TOTAL_CAPITAL_POINT";
         }
     }
 }

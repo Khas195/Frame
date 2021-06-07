@@ -6,7 +6,7 @@ using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ConversationCharacter : MonoBehaviour, IParticipant
+public class ConversationCharacter : MonoBehaviour, IParticipant, IObserver
 {
     [SerializeField]
     FadeManyTransition textBoxControl = null;
@@ -26,7 +26,15 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
     [SerializeField]
     [ReadOnly]
     string textToShow = "";
-
+    private void Start()
+    {
+        PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+        StopCoroutine("TypeText");
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -36,7 +44,20 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
             ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, playerChar, this);
         }
     }
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            LogHelper.Log("Conversation Character - player in range");
+            if (InkleManager.GetInstance().GetVariable<bool>("JustPublishedPaper") == true)
+            {
+                LogHelper.Log("Conversation Character - Newspaper just published - reacting");
+                playerChar = other.gameObject.GetComponent<IParticipant>();
+                ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, playerChar, this);
+            }
+        }
 
+    }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
@@ -104,8 +125,13 @@ public class ConversationCharacter : MonoBehaviour, IParticipant
             ConversationMananger.GetInstance().RequestPlayerConversation(conversationStitch, playerChar, this);
         }
     }
-    private void OnDestroy()
+
+
+    public void ReceiveData(DataPack pack, string eventName)
     {
-        StopCoroutine("TypeText");
+        if (eventName == GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT)
+        {
+            InkleManager.GetInstance().SetVariable("JustPublishedPaper", true);
+        }
     }
 }

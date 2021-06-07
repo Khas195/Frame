@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class PaperboyActor : ScenarioActor
 {
     [SerializeField]
+    Flip flipControl = null;
+    [SerializeField]
+    AudioSource extras;
+    [SerializeField]
     Canvas myCanvas;
     [SerializeField]
     Text dialogueBox;
@@ -42,7 +46,7 @@ public class PaperboyActor : ScenarioActor
 
         genericLines.Clear();
         todayLines.Clear();
-        Scenario.OnScenarioEnter.AddListener(this.AskForTodayLines);
+        InkleManager.GetInstance().OnNewPaperboyLinesAdded.AddListener(this.AskForTodayLines);
     }
     protected override void Start()
     {
@@ -51,12 +55,9 @@ public class PaperboyActor : ScenarioActor
         YellDialogue();
     }
 
-    private void AskForTodayLines(Scenario newScenario)
-    {
-        todayLines.AddRange(InkleManager.GetInstance().RequestTodayLines());
-    }
     private void AskForTodayLines()
     {
+        todayLines.Clear();
         todayLines.AddRange(InkleManager.GetInstance().RequestTodayLines());
     }
     private void FixedUpdate()
@@ -88,6 +89,18 @@ public class PaperboyActor : ScenarioActor
         {
             listToRead = todayLines;
             listToIgnore = readTodayLines;
+
+        }
+        else
+        {
+            if (extras != null)
+            {
+                extras.Play();
+            }
+            if (flipControl != null)
+            {
+                flipControl.FlipModel();
+            }
         }
         if (listToRead.Count > 0)
         {

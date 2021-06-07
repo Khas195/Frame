@@ -5,6 +5,7 @@ public class MoreCapitalPointThanCommiePointInNewspaper : MonologueLineCondition
 {
     [SerializeField]
     bool inversed = false;
+
     public override bool IsSatisfied()
     {
         var totalCapitalPoint = NewsPaperPanel.GetInstance().GetTotalCapitalistPointFromSections();

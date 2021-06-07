@@ -182,28 +182,29 @@ public class NewsPaperPanel : SingletonMonobehavior<NewsPaperPanel>, IObserver
             participatedActors.AddRange(publishedPhoto[i].participants.ToArray());
         }
 
-        for (int i = 0; i < participatedActors.Count; i++)
-        {
-            participatedActors[i].ResetInfluences();
-        }
-
-
-        var package = DataPool.GetInstance().RequestInstance();
         var newspaperData = new NewspaperData();
         newspaperData.mainArticle = sections[0].GetPhoto();
         newspaperData.leftArticle = sections[1].GetPhoto();
         newspaperData.rightArticle = sections[2].GetPhoto();
 
+        PostOffice.LazySend((DataPack pack) =>
+                {
+                    pack.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.NEWSPAPER_DATA, newspaperData);
+                    pack.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.TOTAL_CAPITAL_POINT, GetTotalCapitalistPointFromSections());
+                    pack.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.TOTAL_COMMIE_POINT, GetTotalCommiePointFromSections());
+                },
+                GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+
+
+        for (int i = 0; i < participatedActors.Count; i++)
+        {
+            participatedActors[i].ResetInfluences();
+        }
+
+        publishedPaperdataArchive.paperDatas.Add(newspaperData);
         newspaperAfterPrint.PrintPhotos(newspaperData);
         newspaperAfterPrint.gameObject.SetActive(true);
-
         publishedPapersData.paperDatas.Add(newspaperData);
-        publishedPaperdataArchive.paperDatas.Add(newspaperData);
-        package.SetValue(GameEvent.NewspaperEvent.PaperPublishedData.NEWSPAPER_DATA, newspaperData);
-
-
-        PostOffice.SendData(package, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
-        DataPool.GetInstance().ReturnInstance(package);
     }
 
     public void TriggerDiscardPublishedPhotoEvent(List<PhotoInfo> photoToDiscard)

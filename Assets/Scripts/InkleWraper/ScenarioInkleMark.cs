@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScenarioInkleMark : MonoBehaviour
 {
     [SerializeField]
-    Scenario mScenario;
+    string scenarioName;
     [SerializeField]
     string inkleStitch;
     private void Awake()
@@ -16,7 +16,7 @@ public class ScenarioInkleMark : MonoBehaviour
 
     public void AddPaperboyLines(Scenario newScenario)
     {
-        if (newScenario == mScenario)
+        if (newScenario.GetScenarioName() == scenarioName)
         {
             InkleManager.GetInstance().AddPaperboyLines(inkleStitch);
         }

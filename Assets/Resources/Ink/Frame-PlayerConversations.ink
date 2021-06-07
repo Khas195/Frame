@@ -1,5 +1,8 @@
 EXTERNAL OpenTaxiMap()
 EXTERNAL OpenNewsPanel()
+VAR JustPublishedPaper = false
+VAR newPaperCommiePoint = 0
+VAR newPaperCapitalPoint = 0
 
 -> Conversations.TaxiDriver
 === Conversations ===
@@ -77,8 +80,37 @@ Jackie'!
     + Hey Daugie'!
     -> LoopConversation
 = LoopConversation
-Yau' got anything new for me today ?.
-    + Yeah, got some new shots her'. Will make a good piece!.
+{ 
+    
+    - JustPublishedPaper == true:
+    
+    { 
+        - newPaperCommiePoint > newPaperCapitalPoint:
+        { shuffle:
+                - Going against the system ha. Be careful Jackie', the coppers might bite back.
+                - Those coppers have been pretty bold these days. Good things that you are there to catch them in the act.
+                - Some coppers have been walking by lately, with their eyes glaring at the shop.
+                
+        }
+        - newPaperCommiePoint < newPaperCapitalPoint:
+        
+        { shuffle:
+                - Look at those coppers being helpless against those renegades. Letting them causing so much chaos.
+                - Somebody needs to put a stop to those renegades. Without the Law to regulate them, who knows what else they might do.
+                - I feel for them Jackie', I do. They struggle and struggle for a better Maresland but this is just pointless violence.
+        }
+        - else:
+        { shuffle:
+                - What is this newspaper ?. There's no news in it, Jackie'. Nobody gonna buy this!!.
+                - I hired yau' to find news, not to take scenary shots, Jackie'. We're going to run out of business like this.
+                - I am sure that there are more interesting things out there to write about. This is just boring!.
+        }
+    }
+    - else:
+        Yau' got anything new for me today ?.
+}
+~ JustPublishedPaper = false
+    + Got some new shots her'. Will make a good piece!.
      Then, head up to the office start writing.
      + + Sure.
         ~ OpenNewsPanel()

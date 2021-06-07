@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12bc60d9ea326e44bf51a62e125aefa, type: 3}
+  m_Name: CitizensPicisStreet
+  m_EditorClassIdentifier: 
+  stitchesInStory:
+  - CitizenLines.PicisStreet
+  monologueLines:
+  - line: Out of one tyranny's hand into another. Damn this country.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 4e1da33c1d3d140418855e3db59ff22f, type: 2}
+  - line: Man these newspapers are so boring, there's nothing really in it.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: The newspapers nowadays are mackerels. They are nothing but scenic photos,
+      there's no news.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: Maybe I should join the copper forces to help keep the peace. I heard the
+      salary is quite good.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 30e1dfbaa8b33b747b87eabafb471d0d, type: 2}
+  - line: 'Why don''t they just abolish that mackerel party already. '
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 30e1dfbaa8b33b747b87eabafb471d0d, type: 2}
+  - line: We fought the king for our freedom not to be stepped on by another type
+      of tyranny.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 4e1da33c1d3d140418855e3db59ff22f, type: 2}
+  - line: We need to get rid of the coppers in order to make this country great again.
+    showTime: 8
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 4e1da33c1d3d140418855e3db59ff22f, type: 2}
+  - line: Damn those coppers abusing their power. I'm going to go and sign up to
+      join the workers' party now.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 4e1da33c1d3d140418855e3db59ff22f, type: 2}
+  - line: Perhaps Antie's advice to move to Amrica is good. I heard it is the leader
+      of the free world.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 30e1dfbaa8b33b747b87eabafb471d0d, type: 2}
+  - line: Those damn corrupted coppers. My brother asked me to join the workers'
+      party,  but I hesitated. Not anymore.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 4e1da33c1d3d140418855e3db59ff22f, type: 2}
+  - line: Man, they need to invest more into the copper forces, they're getting destroyed
+      out there.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 30e1dfbaa8b33b747b87eabafb471d0d, type: 2}
+  - line: Maybe they should hire me to take those photos, the one in the recent newspaper
+      sucks.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: The newspapers nowadays are mackerels. They are nothing of scenic photos,
+      there's no news.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: I feel like I'm wasting money buying newspapers from the Newsoki. There
+      isn't really any news.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: The newspaper is so calm, nothing much really happened. Perchance, the
+      conflict is over ?!.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: This is crazy, I'm going to move to Sovit next month. I heard their copper
+      forces serve the people, unlike here.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 4e1da33c1d3d140418855e3db59ff22f, type: 2}
+  - line: 'Damn those crazy bastards trying to destroy this country. '
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 30e1dfbaa8b33b747b87eabafb471d0d, type: 2}
+  - line: I saw some crazy shit the other days, but I guess the guy taking these
+      photos didn't get it.  Shame!.
+    showTime: 12
+    piority: 1
+    conditions:
+    - {fileID: 11400000, guid: 5a0a1af462307d047932b0cfcc4625da, type: 2}
+  - line: I can smell the food on those Hawkers all the way from here. Yummy.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: I've never seen anyone entered the Marestrom Hotel since like ever. How
+      the hell are they still be able to open.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: Man, those coppers looked at me with funny eyes. I'm going to avoid them...
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: 'Than crazy dude is burning something in the alley. '
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: That guy with the saxophone is actually not that bad. I wish he players
+      more songs though.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: I heard some of the workers are planning to do something in the Marestrom
+      Park.
+    showTime: 12
+    piority: 0
+    conditions: []
+  - line: Is it me or I saw a bugler on the roof near the Newsoski.
+    showTime: 8
+    piority: 0
+    conditions: []

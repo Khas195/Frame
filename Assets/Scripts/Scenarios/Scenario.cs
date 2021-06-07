@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
-
 public class Scenario : MonoBehaviour, IObserver
 {
     [SerializeField]
@@ -16,21 +13,16 @@ public class Scenario : MonoBehaviour, IObserver
     [SerializeField]
     string scenarioName = "";
     [SerializeField]
-    List<GameObject> scenarioProps = new List<GameObject>();
-    [SerializeField]
     List<Scenario> branches = new List<Scenario>();
     [SerializeField]
     List<ScenarioBranchCondition> conditionsToEnterThisScenario = new List<ScenarioBranchCondition>();
     [SerializeField]
+    [ReadOnly]
     private bool isScenarioActive = false;
-
-    private void Awake()
-    {
-        PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
-    }
 
     private void Start()
     {
+        PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
         FindChildBranches();
         if (isScenarioActive)
         {
@@ -40,6 +32,10 @@ public class Scenario : MonoBehaviour, IObserver
                 EnterScenario();
             }
         }
+    }
+    private void OnDestroy()
+    {
+        PostOffice.Unsubscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
     }
 
     public string GetScenarioName()
@@ -55,10 +51,7 @@ public class Scenario : MonoBehaviour, IObserver
         branches.Remove(this);
     }
 
-    private void OnDestroy()
-    {
-        PostOffice.Unsubscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
-    }
+
     public void ReceiveData(DataPack pack, string eventName)
     {
         if (isScenarioActive)
@@ -91,21 +84,13 @@ public class Scenario : MonoBehaviour, IObserver
         bool continueToBranch = false;
         continueToBranch = TryToAdvanceToBranches();
         if (continueToBranch == true) return;
-
-        for (int i = 0; i < scenarioProps.Count; i++)
-        {
-            scenarioProps[i].SetActive(true);
-        }
         this.isScenarioActive = true;
         OnScenarioEnter.Invoke(this);
     }
 
     public void LeaveScenario()
     {
-        for (int i = 0; i < scenarioProps.Count; i++)
-        {
-            scenarioProps[i].SetActive(false);
-        }
+        OnScenarioLeave.Invoke(this);
         this.isScenarioActive = false;
     }
 

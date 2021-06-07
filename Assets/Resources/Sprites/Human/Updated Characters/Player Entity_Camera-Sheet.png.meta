@@ -113,6 +113,27 @@ TextureImporter:
   - first:
       213: 967788308254319730
     second: Player Entity_Camera-Sheet_36
+  - first:
+      213: 6579932058020357393
+    second: Player Entity_Camera-Sheet_37
+  - first:
+      213: 4512300099922760234
+    second: Player Entity_Camera-Sheet_38
+  - first:
+      213: 4731030827349683915
+    second: Player Entity_Camera-Sheet_39
+  - first:
+      213: -8060409443113416740
+    second: Player Entity_Camera-Sheet_40
+  - first:
+      213: -2756165865291807333
+    second: Player Entity_Camera-Sheet_41
+  - first:
+      213: -5336422711180870799
+    second: Player Entity_Camera-Sheet_42
+  - first:
+      213: -1121997327725621149
+    second: Player Entity_Camera-Sheet_43
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -974,6 +995,153 @@ TextureImporter:
       bones: []
       spriteID: 274664bb6564e6d00800000000000000
       internalID: 967788308254319730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1152284485d905b50800000000000000
+      internalID: 6579932058020357393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a221bdf9809ee9e30800000000000000
+      internalID: 4512300099922760234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcea99da87ff7a140800000000000000
+      internalID: 4731030827349683915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7450f315ca32090800000000000000
+      internalID: -8060409443113416740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9589319fb120c9d0800000000000000
+      internalID: -2756165865291807333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bbcb851d731f5b0800000000000000
+      internalID: -5336422711180870799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Entity_Camera-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3601af1006ddd60f0800000000000000
+      internalID: -1121997327725621149
       vertices: []
       indices: 
       edges: []

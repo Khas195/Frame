@@ -588,6 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: a32f579b9b300bf4abc91f43e0bed27d, type: 2}
+  loadAndWait: 1
 --- !u!4 &1980767143
 Transform:
   m_ObjectHideFlags: 0

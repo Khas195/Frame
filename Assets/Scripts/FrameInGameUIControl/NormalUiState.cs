@@ -40,6 +40,17 @@ public class NormalUiState : InGameUIState
         {
             controller.RequestState(InGameUIStateEnum.DiaryPanelState);
         }
+        if (GameMaster.GetInstance(forceCreate: false))
+        {
+            if ((GameState.GameStateEnum)GameMaster.GetInstance().GetCurrentState().GetEnum() == GameState.GameStateEnum.LoadState)
+            {
+                overlayUI.gameObject.SetActive(false);
+            }
+            else
+            {
+                overlayUI.gameObject.SetActive(true);
+            }
+        }
     }
 
 }

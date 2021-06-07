@@ -57,11 +57,11 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
     }
 
 
-    public void RequestInstance(GameInstance newInstance)
+    public void RequestInstance(GameInstance newInstance, bool loadAndWait = true)
     {
         if (this.gameStates.RequestState(newInstance.desiredGameState))
         {
-            loadingManager.InitiateLoadingSequenceFor(newInstance);
+            loadingManager.InitiateLoadingSequenceFor(newInstance, loadAndWait);
         }
         else
         {

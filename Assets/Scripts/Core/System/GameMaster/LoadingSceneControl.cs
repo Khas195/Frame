@@ -21,25 +21,38 @@ public class LoadingSceneControl : SingletonMonobehavior<LoadingSceneControl>
     float curTime = 0.0f;
     private void Start()
     {
-        currentLoading.text = "Loading...";
-        var unfillColor = loadingUnfillImage.color;
-        unfillColor.a = 1.0f;
-        loadingUnfillImage.color = unfillColor;
+        if (currentLoading)
+        {
+            currentLoading.text = "Loading...";
+            var unfillColor = loadingUnfillImage.color;
+            unfillColor.a = 1.0f;
+            loadingUnfillImage.color = unfillColor;
+        }
     }
     // Update is called once per frame
     void Update()
     {
         if (curTime < minLoadTime)
         {
-            var unfillColor = loadingUnfillImage.color;
-            unfillColor.a = curTime / minLoadTime;
-            loadingProgress.text = ((curTime / minLoadTime) * 100).ToString("F1") + "%";
-            loadingUnfillImage.color = unfillColor;
+            if (loadingUnfillImage)
+            {
+                var unfillColor = loadingUnfillImage.color;
+                unfillColor.a = curTime / minLoadTime;
+                loadingUnfillImage.color = unfillColor;
+
+            }
+            if (loadingProgress)
+            {
+                loadingProgress.text = ((curTime / minLoadTime) * 100).ToString("F1") + "%";
+            }
             curTime += Time.deltaTime;
         }
         else
         {
-            loadingProgress.text = (SceneLoadingManager.GetInstance().GetLoadingProgress() * 100).ToString() + "%";
+            if (loadingProgress)
+            {
+                loadingProgress.text = (SceneLoadingManager.GetInstance().GetLoadingProgress() * 100).ToString() + "%";
+            }
             if (SceneLoadingManager.GetInstance().GetLoadingProgress() >= 1.0f)
             {
                 SetLoadedText("Game");
@@ -50,6 +63,9 @@ public class LoadingSceneControl : SingletonMonobehavior<LoadingSceneControl>
 
     public void SetLoadedText(string name)
     {
-        currentLoading.text = name + " loaded!!";
+        if (currentLoading)
+        {
+            currentLoading.text = name + " loaded!!";
+        }
     }
 }

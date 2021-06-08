@@ -652,6 +652,7 @@ MonoBehaviour:
   loadingManager: {fileID: 1980767142}
   startInstance: {fileID: 11400000, guid: 55c01a7c66b607f448cdb31fe1506fb4, type: 2}
   mainMenuInstance: {fileID: 11400000, guid: f6a061fe48c2285409fd58bcb231e1d4, type: 2}
+  currentInstance: {fileID: 0}
   gameStates: {fileID: 862922356}
 --- !u!114 &2082476178
 MonoBehaviour:

@@ -27,6 +27,12 @@ public class TaxiMapControl : MonoBehaviour, IObserver
     GameObject parkBrokenButton = null;
     [SerializeField]
     List<ScenarioBranchCondition> conditionsToChangeMap = new List<ScenarioBranchCondition>();
+    [SerializeField]
+    Button picisStreetButton = null;
+    [SerializeField]
+    Button parkButton = null;
+    [SerializeField]
+    Button parkBrokenButtonUI = null;
     private void Start()
     {
         HideMap();
@@ -57,7 +63,10 @@ public class TaxiMapControl : MonoBehaviour, IObserver
     }
     public void LoadInstance(GameInstance instance)
     {
-        GameMaster.GetInstance().RequestInstance(instance);
+        var gameMaster = GameMaster.GetInstance();
+        if (gameMaster.GetCurrentGameInstance() == instance) return;
+
+        gameMaster.RequestInstance(instance);
         InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
         carDoorOpen.Play();
         carDoorClose.PlayDelayed(carDoorOpen.clip.length);
@@ -70,10 +79,16 @@ public class TaxiMapControl : MonoBehaviour, IObserver
             var currentLocaton = pack.GetValue<GameEvent.MapChangedEvent.MapLocation>(GameEvent.MapChangedEvent.MAP_LOCATION_DATA);
             if (currentLocaton == GameEvent.MapChangedEvent.MapLocation.PicisStreet)
             {
+                picisStreetButton.interactable = false;
+                parkBrokenButtonUI.interactable = true;
+                parkButton.interactable = true;
                 playerIcon.transform.position = picisLocation.position;
             }
             else
             {
+                picisStreetButton.interactable = true;
+                parkBrokenButtonUI.interactable = false;
+                parkButton.interactable = false;
                 playerIcon.transform.position = parkLocation.position;
             }
         }

@@ -18,6 +18,9 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
     [SerializeField]
     [Required]
     GameInstance mainMenuInstance = null;
+    [SerializeField]
+    [ReadOnly]
+    GameInstance currentInstance = null;
 
 
 
@@ -62,6 +65,7 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
         if (this.gameStates.RequestState(newInstance.desiredGameState))
         {
             loadingManager.InitiateLoadingSequenceFor(newInstance, loadAndWait);
+            currentInstance = newInstance;
         }
         else
         {
@@ -76,6 +80,11 @@ public class GameMaster : SingletonMonobehavior<GameMaster>, IObserver
         data.SetValue(GameMasterEvent.GameStateChangeEvent.New_Game_State, newGameState);
         PostOffice.SendData(data, GameMasterEvent.ON_GAMESTATE_CHANGED);
         DataPool.GetInstance().ReturnInstance(data);
+    }
+
+    public GameInstance GetCurrentGameInstance()
+    {
+        return currentInstance;
     }
 
     void Update()

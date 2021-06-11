@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: StartUpProfile
   m_EditorClassIdentifier: 
   masterScene: MasterScene
-  loadScene: LoadScene_taxi
+  loadScene: LoadScene02
+  loadScene_Taxi: LoadScene_taxi
+  loadScene_Picture: LoadScene02
   logScene: LogScene

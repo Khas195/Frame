@@ -59,6 +59,15 @@ TextureImporter:
   - first:
       213: 1111607783390412941
     second: diary_memo
+  - first:
+      213: 6157230155638324782
+    second: diary_previous_page_button
+  - first:
+      213: -4661845056601793633
+    second: diary_next_page_button
+  - first:
+      213: -2167280601295982289
+    second: diary_close_button
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -542,6 +551,69 @@ TextureImporter:
       bones: []
       spriteID: d808b82b3693d6f00800000000000000
       internalID: 1111607783390412941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diary_previous_page_button
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 230
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e35234430e27550800000000000000
+      internalID: 6157230155638324782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diary_next_page_button
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 230
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bd65bde9ccd4fb0800000000000000
+      internalID: -4661845056601793633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diary_close_button
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 230
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21782f96c54ce1e0800000000000000
+      internalID: -2167280601295982289
       vertices: []
       indices: 
       edges: []

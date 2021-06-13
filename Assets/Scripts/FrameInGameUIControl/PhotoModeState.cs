@@ -28,10 +28,6 @@ public class PhotoModeState : InGameUIState
 		{
 			controller.RequestState(InGameUIStateEnum.CapturingState);
 		}
-		else if (Input.GetKeyDown(KeyCode.Escape))
-		{
-			controller.RequestState(InGameUIStateEnum.OptionState);
-		}
 		else if (Input.anyKeyDown)
 		{
 			this.controller.RequestState(InGameUIStateEnum.NormalState);

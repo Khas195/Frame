@@ -1,43 +1,52 @@
 fileFormatVersion: 2
-guid: 1d067d2b96ee8495985fa512a018642e
+guid: 64cd0e1b8814846478628b0dfaf8983b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9157659805047131383
-    second: mainMenu03_background
+      213: -8646036093092266157
+    second: option_background
   - first:
-      213: 1201197658403001774
-    second: mainMenu03_exit_butten
+      213: 8853677349453673508
+    second: option_text01
   - first:
-      213: 1769407685825716923
-    second: mainMenu03_exit
+      213: 6515702112968830432
+    second: option_text02
   - first:
-      213: 7613671069274148084
-    second: mainMenu03_start_button
+      213: -2878305293451457113
+    second: option_text03
   - first:
-      213: 5617361238581132691
-    second: mainMenu03_start
+      213: -683818623918361172
+    second: option_text04
   - first:
-      213: 7079414250180040722
-    second: mainMenu03_text_start
+      213: 7767795720059055212
+    second: option_button_menu
   - first:
-      213: 8196479219380290466
-    second: mainMenu03_text_exit
+      213: -1996621021366459766
+    second: option_button_quit
   - first:
-      213: 3090360789726554700
-    second: mainMenu03_text_quit
+      213: 1576600600230453981
+    second: option_button_close
   - first:
-      213: 6830759495043357367
-    second: mainMenu03_text_frame
+      213: -2711629028894461603
+    second: option_photo
   - first:
-      213: -8840651335425597337
-    second: mainMenu03_pic_frame
+      213: -2179995561337028697
+    second: option_icon_sound
   - first:
-      213: 144369485529065683
-    second: mainMenu03_player_photo
+      213: -1118126001852425539
+    second: option_icon_music
   - first:
-      213: -2702700785656936764
-    second: mainMenu03_press_stemp
+      213: -2608249714075406830
+    second: option_bar_fill
+  - first:
+      213: -8628828659517994587
+    second: option_bar_background
+  - first:
+      213: -5453000795760942358
+    second: option_sound_bar_border
+  - first:
+      213: -7583766191617249826
+    second: option_music_bar_border
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mainMenu03_background
+      name: option_background
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 280
-        height: 169
+        y: 194
+        width: 184
+        height: 111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 903fa4a3de479e080800000000000000
-      internalID: -9157659805047131383
+      spriteID: 35f77046bfb130880800000000000000
+      internalID: -8646036093092266157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_exit_butten
+      name: option_text01
       rect:
         serializedVersion: 2
-        x: 77
-        y: 169
-        width: 111
-        height: 91
+        x: 3
+        y: 178
+        width: 171
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,81 +171,81 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea55426f7e28ba010800000000000000
-      internalID: 1201197658403001774
+      spriteID: 424bb1af3a49eda70800000000000000
+      internalID: 8853677349453673508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_exit
+      name: option_text02
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 171
+        width: 38
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ede4c1dc8c6c6a50800000000000000
+      internalID: 6515702112968830432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_text03
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 136
+        width: 117
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad03b4e5943e08d0800000000000000
+      internalID: -2878305293451457113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_text04
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 115
+        width: 122
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5bc86a5969286f0800000000000000
+      internalID: -683818623918361172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_button_menu
       rect:
         serializedVersion: 2
         x: 189
-        y: 169
-        width: 111
-        height: 91
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb2ec706ae23e8810800000000000000
-      internalID: 1769407685825716923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mainMenu03_start_button
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 173
-        width: 31
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4fc01c0af7139a960800000000000000
-      internalID: 7613671069274148084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mainMenu03_start
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 173
-        width: 31
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39d3da0d840e4fd40800000000000000
-      internalID: 5617361238581132691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mainMenu03_text_start
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 264
+        y: 296
         width: 25
         height: 7
       alignment: 0
@@ -246,134 +255,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 218d1df80c12f3260800000000000000
-      internalID: 7079414250180040722
+      spriteID: c6c6be54d01cccb60800000000000000
+      internalID: 7767795720059055212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_text_exit
+      name: option_button_quit
       rect:
         serializedVersion: 2
-        x: 5
-        y: 255
-        width: 21
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a388085c6ebfb170800000000000000
-      internalID: 8196479219380290466
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mainMenu03_text_quit
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 274
+        x: 192
+        y: 286
         width: 20
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4a627bc3ca23ea20800000000000000
-      internalID: 3090360789726554700
+      spriteID: a82ef5672c39a44e0800000000000000
+      internalID: -1996621021366459766
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_text_frame
+      name: option_button_close
       rect:
         serializedVersion: 2
-        x: 9
-        y: 288
-        width: 21
-        height: 5
+        x: 196
+        y: 275
+        width: 13
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ba9f20e19bbbce50800000000000000
-      internalID: 6830759495043357367
+      spriteID: dd2676984e531e510800000000000000
+      internalID: 1576600600230453981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_pic_frame
+      name: option_photo
       rect:
         serializedVersion: 2
-        x: 31
-        y: 262
-        width: 58
-        height: 39
+        x: 251
+        y: 244
+        width: 39
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 760efd04372bf4580800000000000000
-      internalID: -8840651335425597337
+      spriteID: d51bb1ad3cb5e5ad0800000000000000
+      internalID: -2711629028894461603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_player_photo
+      name: option_icon_sound
       rect:
         serializedVersion: 2
-        x: 118
-        y: 282
-        width: 17
-        height: 23
+        x: 195
+        y: 241
+        width: 5
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d8ad5d3847e00200800000000000000
-      internalID: 144369485529065683
+      spriteID: 7aff39a46991fb1e0800000000000000
+      internalID: -2179995561337028697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainMenu03_press_stemp
+      name: option_icon_music
       rect:
         serializedVersion: 2
-        x: 89
-        y: 279
-        width: 25
-        height: 25
+        x: 209
+        y: 241
+        width: 7
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c6cfb874f31e7ad0800000000000000
-      internalID: -2702700785656936764
+      spriteID: dba557d435e9b70f0800000000000000
+      internalID: -1118126001852425539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_bar_fill
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 229
+        width: 55
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e650344b2adcbd0800000000000000
+      internalID: -2608249714075406830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_bar_background
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 223
+        width: 55
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a948b93d0e304880800000000000000
+      internalID: -8628828659517994587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_sound_bar_border
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 194
+        width: 55
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae22fb0eaac0354b0800000000000000
+      internalID: -5453000795760942358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: option_music_bar_border
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 194
+        width: 55
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd690944dc01c690800000000000000
+      internalID: -7583766191617249826
       vertices: []
       indices: 
       edges: []

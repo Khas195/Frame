@@ -169,43 +169,88 @@ TextureImporter:
     second: park03_sheet_tree13_blue
   - first:
       213: 7389868561718123228
-    second: park03_sheet_58
+    second: park03_sheet_shrub01_green
   - first:
       213: 35109431916290495
-    second: park03_sheet_59
+    second: park03_sheet_shrub02_green
   - first:
       213: 3582955979889954449
-    second: park03_sheet_60
+    second: park03_sheet_shrub03_green
   - first:
       213: -463596149078134946
-    second: park03_sheet_61
+    second: park03_sheet_shrub04_green
   - first:
       213: 8185280030435828822
-    second: park03_sheet_62
+    second: park03_sheet_shrub05_green
   - first:
       213: -5752928563992734926
-    second: park03_sheet_63
+    second: park03_sheet_shrub06_green
   - first:
       213: 6970998138833096190
-    second: park03_sheet_64
+    second: park03_sheet_shrub07_green
   - first:
       213: 3966287949290225423
-    second: park03_sheet_65
+    second: park03_sheet_shrub01_blue
   - first:
       213: -4161885796687576932
-    second: park03_sheet_66
+    second: park03_sheet_shrub02_blue
   - first:
       213: 1959714084282702065
-    second: park03_sheet_67
+    second: park03_sheet_shrub03_blue
   - first:
       213: -7285779378177284343
-    second: park03_sheet_68
+    second: park03_sheet_shrub04_blue
   - first:
       213: -7806513445693920997
-    second: park03_sheet_69
+    second: park03_sheet_shrub05_blue
   - first:
       213: 6183784507312803770
-    second: park03_sheet_70
+    second: park03_sheet_shrub06_blue
+  - first:
+      213: -895910890026446477
+    second: park03_sheet_71
+  - first:
+      213: -3266921471345791333
+    second: park03_sheet_72
+  - first:
+      213: -4054034778030635726
+    second: park03_sheet_73
+  - first:
+      213: 6647190581222255952
+    second: park03_sheet_74
+  - first:
+      213: 6019721849564953398
+    second: park03_sheet_75
+  - first:
+      213: 5421651027630626634
+    second: park03_sheet_76
+  - first:
+      213: 7707262660114822408
+    second: park03_sheet_77
+  - first:
+      213: -5340655745798539475
+    second: park03_sheet_78
+  - first:
+      213: -4290403566315652097
+    second: park03_sheet_79
+  - first:
+      213: -8819085920241381464
+    second: park03_sheet_80
+  - first:
+      213: -3792432612558422441
+    second: park03_sheet_81
+  - first:
+      213: 1261484829872348626
+    second: park03_sheet_82
+  - first:
+      213: 8918482587268531046
+    second: park03_sheet_83
+  - first:
+      213: 8307031876367396392
+    second: park03_sheet_84
+  - first:
+      213: -5331343114406603554
+    second: park03_sheet_85
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1038,7 +1083,7 @@ TextureImporter:
         width: 86
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1059,7 +1104,7 @@ TextureImporter:
         width: 60
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1080,7 +1125,7 @@ TextureImporter:
         width: 88
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1101,7 +1146,7 @@ TextureImporter:
         width: 81
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1122,7 +1167,7 @@ TextureImporter:
         width: 96
         height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1143,7 +1188,7 @@ TextureImporter:
         width: 62
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1164,7 +1209,7 @@ TextureImporter:
         width: 115
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1185,7 +1230,7 @@ TextureImporter:
         width: 87
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1206,7 +1251,7 @@ TextureImporter:
         width: 86
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1227,7 +1272,7 @@ TextureImporter:
         width: 104
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1248,7 +1293,7 @@ TextureImporter:
         width: 110
         height: 141
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1269,7 +1314,7 @@ TextureImporter:
         width: 115
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1290,7 +1335,7 @@ TextureImporter:
         width: 86
         height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1311,7 +1356,7 @@ TextureImporter:
         width: 114
         height: 152
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1332,7 +1377,7 @@ TextureImporter:
         width: 119
         height: 159
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1353,7 +1398,7 @@ TextureImporter:
         width: 99
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1374,7 +1419,7 @@ TextureImporter:
         width: 74
         height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1395,7 +1440,7 @@ TextureImporter:
         width: 117
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1416,7 +1461,7 @@ TextureImporter:
         width: 70
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1437,7 +1482,7 @@ TextureImporter:
         width: 115
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1458,7 +1503,7 @@ TextureImporter:
         width: 100
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1479,7 +1524,7 @@ TextureImporter:
         width: 110
         height: 141
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1500,7 +1545,7 @@ TextureImporter:
         width: 77
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1513,7 +1558,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_58
+      name: park03_sheet_shrub01_green
       rect:
         serializedVersion: 2
         x: 1183
@@ -1521,7 +1566,7 @@ TextureImporter:
         width: 72
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1534,15 +1579,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_59
+      name: park03_sheet_shrub02_green
       rect:
         serializedVersion: 2
         x: 1273
-        y: 1199
+        y: 1200
         width: 54
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1555,7 +1600,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_60
+      name: park03_sheet_shrub03_green
       rect:
         serializedVersion: 2
         x: 1169
@@ -1563,7 +1608,7 @@ TextureImporter:
         width: 74
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1576,7 +1621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_61
+      name: park03_sheet_shrub04_green
       rect:
         serializedVersion: 2
         x: 1257
@@ -1584,7 +1629,7 @@ TextureImporter:
         width: 174
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1597,7 +1642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_62
+      name: park03_sheet_shrub05_green
       rect:
         serializedVersion: 2
         x: 1441
@@ -1605,7 +1650,7 @@ TextureImporter:
         width: 167
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1618,7 +1663,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_63
+      name: park03_sheet_shrub06_green
       rect:
         serializedVersion: 2
         x: 1619
@@ -1626,7 +1671,7 @@ TextureImporter:
         width: 118
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1639,7 +1684,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_64
+      name: park03_sheet_shrub07_green
       rect:
         serializedVersion: 2
         x: 1763
@@ -1647,7 +1692,7 @@ TextureImporter:
         width: 92
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1660,7 +1705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_65
+      name: park03_sheet_shrub01_blue
       rect:
         serializedVersion: 2
         x: 1540
@@ -1668,7 +1713,7 @@ TextureImporter:
         width: 164
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1681,7 +1726,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_66
+      name: park03_sheet_shrub02_blue
       rect:
         serializedVersion: 2
         x: 1737
@@ -1689,7 +1734,7 @@ TextureImporter:
         width: 82
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1702,7 +1747,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_67
+      name: park03_sheet_shrub03_blue
       rect:
         serializedVersion: 2
         x: 1831
@@ -1710,7 +1755,7 @@ TextureImporter:
         width: 128
         height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1723,7 +1768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_68
+      name: park03_sheet_shrub04_blue
       rect:
         serializedVersion: 2
         x: 1531
@@ -1731,7 +1776,7 @@ TextureImporter:
         width: 130
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1744,7 +1789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_69
+      name: park03_sheet_shrub05_blue
       rect:
         serializedVersion: 2
         x: 1679
@@ -1752,7 +1797,7 @@ TextureImporter:
         width: 98
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1765,7 +1810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_70
+      name: park03_sheet_shrub06_blue
       rect:
         serializedVersion: 2
         x: 1782
@@ -1773,7 +1818,7 @@ TextureImporter:
         width: 138
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1781,6 +1826,321 @@ TextureImporter:
       bones: []
       spriteID: abf81fd0f3731d550800000000000000
       internalID: 6183784507312803770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 650
+        width: 16
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371d191dac51193f0800000000000000
+      internalID: -895910890026446477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 607
+        width: 127
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e665f0b3099a2d0800000000000000
+      internalID: -3266921471345791333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 608
+        width: 182
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235876c39dc2db7c0800000000000000
+      internalID: -4054034778030635726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 608
+        width: 179
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d23148d909f3c50800000000000000
+      internalID: 6647190581222255952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 608
+        width: 94
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bf9f9d0295a8350800000000000000
+      internalID: 6019721849564953398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 608
+        width: 219
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a471e0e62e29d3b40800000000000000
+      internalID: 5421651027630626634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 608
+        width: 78
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805b6c6fd82b5fa60800000000000000
+      internalID: 7707262660114822408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 608
+        width: 93
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27770c25ed22e5b0800000000000000
+      internalID: -5340655745798539475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 608
+        width: 68
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbbfae10bc6574c0800000000000000
+      internalID: -4290403566315652097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 608
+        width: 129
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af0d50c4105c9580800000000000000
+      internalID: -8819085920241381464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 608
+        width: 75
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e39ddc1a29e5bc0800000000000000
+      internalID: -3792432612558422441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 638
+        width: 15
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ddd516e4c1b18110800000000000000
+      internalID: 1261484829872348626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 608
+        width: 79
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663c5a539a0d4cb70800000000000000
+      internalID: 8918482587268531046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 608
+        width: 71
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ea9b0aa71884370800000000000000
+      internalID: 8307031876367396392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 640
+        width: 13
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4d1122fa34306b0800000000000000
+      internalID: -5331343114406603554
       vertices: []
       indices: 
       edges: []

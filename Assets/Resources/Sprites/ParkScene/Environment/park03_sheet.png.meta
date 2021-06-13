@@ -88,25 +88,124 @@ TextureImporter:
     second: park03_sheet_tree11
   - first:
       213: -2506904618722874751
-    second: park03_sheet_tree01_blue
+    second: park03_sheet_tree01_blu
   - first:
       213: 907815318416111101
-    second: park03_sheet_tree02_blue
+    second: park03_sheet_tree02_green
   - first:
       213: 102421660284139774
-    second: park03_sheet_tree03_blue
+    second: park03_sheet_tree03_green
   - first:
       213: 4221381594753423764
-    second: park03_sheet_tree04_blue
+    second: park03_sheet_tree04_green
   - first:
       213: 3436428342476559126
-    second: park03_sheet_tree05_blue
+    second: park03_sheet_tree05_green
   - first:
       213: -394495415279403049
-    second: park03_sheet_tree06_blue
+    second: park03_sheet_tree06_green
   - first:
       213: -5202236180622404569
-    second: park03_sheet_tree01_green
+    second: park03_sheet_tree01_blu
+  - first:
+      213: -1632537078919124384
+    second: park03_sheet_tree15
+  - first:
+      213: -1620714733797999854
+    second: park03_sheet_tree16
+  - first:
+      213: 7975408172994776236
+    second: park03_sheet_tree17
+  - first:
+      213: 4205038175918225559
+    second: park03_sheet_tree18
+  - first:
+      213: 1451998966900752844
+    second: park03_sheet_tree07_green
+  - first:
+      213: 3153976321564165419
+    second: park03_sheet_tree08_green
+  - first:
+      213: 2637145385641174489
+    second: park03_sheet_tree09_green
+  - first:
+      213: -1807072450630448957
+    second: park03_sheet_tree10_green
+  - first:
+      213: -6646803680136596727
+    second: park03_sheet_tree11_green
+  - first:
+      213: -7128445250859917289
+    second: park03_sheet_tree02_blu
+  - first:
+      213: -38057511331840413
+    second: park03_sheet_tree03_blu
+  - first:
+      213: 3130150821064750846
+    second: park03_sheet_tree05_green
+  - first:
+      213: -9211312285074763950
+    second: park03_sheet_tree06_green
+  - first:
+      213: -1139860134238948045
+    second: park03_sheet_tree07_blue
+  - first:
+      213: 2285685267439847229
+    second: park03_sheet_tree08_blue
+  - first:
+      213: 6057133564818579076
+    second: park03_sheet_tree09_blue
+  - first:
+      213: -3965725984168076739
+    second: park03_sheet_tree10_blue
+  - first:
+      213: -2433726392925134558
+    second: park03_sheet_tree11_blue
+  - first:
+      213: -4351783890449755042
+    second: park03_sheet_tree12_blue
+  - first:
+      213: -7682673707586409420
+    second: park03_sheet_tree13_blue
+  - first:
+      213: 7389868561718123228
+    second: park03_sheet_58
+  - first:
+      213: 35109431916290495
+    second: park03_sheet_59
+  - first:
+      213: 3582955979889954449
+    second: park03_sheet_60
+  - first:
+      213: -463596149078134946
+    second: park03_sheet_61
+  - first:
+      213: 8185280030435828822
+    second: park03_sheet_62
+  - first:
+      213: -5752928563992734926
+    second: park03_sheet_63
+  - first:
+      213: 6970998138833096190
+    second: park03_sheet_64
+  - first:
+      213: 3966287949290225423
+    second: park03_sheet_65
+  - first:
+      213: -4161885796687576932
+    second: park03_sheet_66
+  - first:
+      213: 1959714084282702065
+    second: park03_sheet_67
+  - first:
+      213: -7285779378177284343
+    second: park03_sheet_68
+  - first:
+      213: -7806513445693920997
+    second: park03_sheet_69
+  - first:
+      213: 6183784507312803770
+    second: park03_sheet_70
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -767,7 +866,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1017
-        y: 1297
+        y: 1298
         width: 62
         height: 112
       alignment: 0
@@ -784,15 +883,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree01_blue
+      name: park03_sheet_tree01_green
       rect:
         serializedVersion: 2
-        x: 67
+        x: 50
         y: 1112
-        width: 54
-        height: 94
+        width: 81
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -805,15 +904,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree02_blue
+      name: park03_sheet_tree02_green
       rect:
         serializedVersion: 2
-        x: 139
+        x: 138
         y: 1112
-        width: 54
-        height: 94
+        width: 78
+        height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -826,15 +925,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree03_blue
+      name: park03_sheet_tree03_green
       rect:
         serializedVersion: 2
-        x: 212
+        x: 219
         y: 1112
-        width: 95
-        height: 108
+        width: 103
+        height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -847,15 +946,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree04_blue
+      name: park03_sheet_tree04_green
       rect:
         serializedVersion: 2
-        x: 327
+        x: 326
         y: 1112
-        width: 58
-        height: 96
+        width: 71
+        height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -868,15 +967,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree05_blue
+      name: park03_sheet_tree05_green
       rect:
         serializedVersion: 2
-        x: 393
+        x: 405
         y: 1112
         width: 77
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -889,15 +988,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree06_blue
+      name: park03_sheet_tree06_green
       rect:
         serializedVersion: 2
-        x: 485
+        x: 497
         y: 1112
         width: 100
         height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,12 +1009,201 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: park03_sheet_tree01_green
+      name: park03_sheet_tree01_blu
       rect:
         serializedVersion: 2
         x: 55
         y: 874
-        width: 85
+        width: 86
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7241150a1c1fdc7b0800000000000000
+      internalID: -5202236180622404569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet__tree12
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1298
+        width: 86
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de1285b6e3d01dd0800000000000000
+      internalID: -2517279203858964777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree13
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1298
+        width: 60
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a4f7737387c1fe0800000000000000
+      internalID: -1216965620747253142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree14
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 1298
+        width: 88
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be3a85e42df0b740800000000000000
+      internalID: 5165907107505651377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree15
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1298
+        width: 81
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a2f502d201859e0800000000000000
+      internalID: -1632537078919124384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree16
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 1298
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b7ab959801289e0800000000000000
+      internalID: -1620714733797999854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree17
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 1299
+        width: 62
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacc9125a775eae60800000000000000
+      internalID: 7975408172994776236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree18
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1299
+        width: 115
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798ff8611fb4b5a30800000000000000
+      internalID: 4205038175918225559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree07_green
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1112
+        width: 87
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc18a5c0e59862410800000000000000
+      internalID: 1451998966900752844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree08_green
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1110
+        width: 86
         height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -924,8 +1212,575 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7241150a1c1fdc7b0800000000000000
-      internalID: -5202236180622404569
+      spriteID: b2543d401cc25cb20800000000000000
+      internalID: 3153976321564165419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree09_green
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1113
+        width: 104
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5e33c81c5099420800000000000000
+      internalID: 2637145385641174489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree10_green
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1111
+        width: 110
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c807c03e2dfbe6e0800000000000000
+      internalID: -1807072450630448957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree11_green
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1111
+        width: 115
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903f2b9e44fc1c3a0800000000000000
+      internalID: -6646803680136596727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree02_blu
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 874
+        width: 86
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710acadffcca21d90800000000000000
+      internalID: -7128445250859917289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree03_blu
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 874
+        width: 114
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eb70425eac87ff0800000000000000
+      internalID: -38057511331840413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree05_blue
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 874
+        width: 119
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef636f66697807b20800000000000000
+      internalID: 3130150821064750846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree06_blue
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 874
+        width: 99
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f4de4c748da2080800000000000000
+      internalID: -9211312285074763950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree07_blue
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 874
+        width: 74
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335fe054f376e20f0800000000000000
+      internalID: -1139860134238948045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree08_blue
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 874
+        width: 117
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37881204a268bf10800000000000000
+      internalID: 2285685267439847229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree09_blue
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 874
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48e5b1892e24f0450800000000000000
+      internalID: 6057133564818579076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree10_blue
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 875
+        width: 115
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a102d8a39e6f8c0800000000000000
+      internalID: -3965725984168076739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree11_blue
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 874
+        width: 100
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22164357dbaa93ed0800000000000000
+      internalID: -2433726392925134558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree12_blue
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 873
+        width: 110
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54997ebb9b5b93c0800000000000000
+      internalID: -4351783890449755042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_tree13_blue
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 875
+        width: 77
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c241ea7f8a16590800000000000000
+      internalID: -7682673707586409420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1199
+        width: 72
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda190ebd461e8660800000000000000
+      internalID: 7389868561718123228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 1199
+        width: 54
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1e2a1a7dbbc7000800000000000000
+      internalID: 35109431916290495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1111
+        width: 74
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ec33bfa7739b130800000000000000
+      internalID: 3582955979889954449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1111
+        width: 174
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f65f632c9f099f0800000000000000
+      internalID: -463596149078134946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1112
+        width: 167
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654e939f1d4f79170800000000000000
+      internalID: 8185280030435828822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1112
+        width: 118
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233d30d83fd7920b0800000000000000
+      internalID: -5752928563992734926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 1112
+        width: 92
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd4e039fd5fdb060800000000000000
+      internalID: 6970998138833096190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 927
+        width: 164
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f3b5620e51b0730800000000000000
+      internalID: 3966287949290225423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 927
+        width: 82
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9081b42be20e36c0800000000000000
+      internalID: -4161885796687576932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 927
+        width: 128
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8100f939d423b10800000000000000
+      internalID: 1959714084282702065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 860
+        width: 130
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90760ebd146b3ea90800000000000000
+      internalID: -7285779378177284343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 860
+        width: 98
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b196a1fb161b9a390800000000000000
+      internalID: -7806513445693920997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: park03_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 860
+        width: 138
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf81fd0f3731d550800000000000000
+      internalID: 6183784507312803770
       vertices: []
       indices: 
       edges: []

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12bc60d9ea326e44bf51a62e125aefa, type: 3}
+  m_Name: MarestromPark_Women
+  m_EditorClassIdentifier: 
+  stitchesInStory:
+  - MarestromPark_Women
+  monologueLines:
+  - line: No please, take something else. That's the only thing my late husband left
+      me.
+    showTime: 9
+    piority: 0
+    conditions: []
+  - line: Please, comeback, I'll give you anything. Just not that purse!.
+    showTime: 9
+    piority: 0
+    conditions: []
+  - line: COME BACKKKKK!.
+    showTime: 5
+    piority: 0
+    conditions: []

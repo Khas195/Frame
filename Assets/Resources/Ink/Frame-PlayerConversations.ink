@@ -18,7 +18,7 @@ Ya' want to go some where!?
     + No, just passing by.
     + I don't know yet, I have some questions.
     And I ain't have no anwsers!
-        + + Don't be a makrele now!.
+        + + Don't be an asshole now!.
             -> TaxiDriverQuestions
         + + Just some questions her'.
             -> TaxiDriverQuestions
@@ -38,7 +38,7 @@ Hmm, sure, but ya' be quick with it!.
             -> AboutTheEmergency
     +  So, how you doing ?
         Look Pal, me and ya' just met, we're not there yet, are ya' going somewhere or not ?.
-        + +  What a makrele!
+        + +  What an asshole!
         + +  Don't hav' to be so rude!.
         - - Whatever man!.
             -> TaxiDriverQuestions
@@ -122,9 +122,9 @@ Jackie'!
     + So how does this publishing things work again ?, I kind of forgot!.
         ..... How do yau' "forgot" yau' job ?!.
         + + Can't you just awnser me ?.
-        + + Common my friend, Don't be a makrele!.
+        + + Common my friend, Don't be an asshole!.
         + + Just entertain me.
-        - - Fineeee, Listen yau' makrele!, yau go and take photos then come back to me to publish them. 
+        - - Fineeee, Listen yau' shit head!, yau go and take photos then come back to me to publish them. 
         -> DauglasQuestions
     + Daugie', I want some advice.
         - - Grrr, on what ?
@@ -148,7 +148,7 @@ Jackie'!
             + + Whatever man!.
             - - But I guess, there is an exception to everything.
                 + + + ....
-                + + + makrele!.
+                + + + Fuck!.
                 - - - -> END
 = DauglasAdvices
     * You know where things might get interesting ?
@@ -157,7 +157,7 @@ Jackie'!
             + + + Just tell me.
             + + + Why were you written like this ?
             - - - ... how about yau' go around and, I dun know, look?!
-                + + + + Makrele!
+                + + + + Fuck!
                 - - - - but besides from that, grrr, listen to gossips, know what people are talking!.
                     + + + + + Thanks Daugie'.
                     + + + + + Good Daugie'.

@@ -74,10 +74,16 @@
 === PicisStreet_ProtestorBurning
     * A spark of flame that when ignited cannot be stopped. Burning away all that is unjust and cruel. Quickly it runs wild and engulfs everything else in it, even the kind and just.
 -> DONE
+
 === PicisStreet_PoliceCorrupt
     * Corruption runs wild in the country after the war. Everyone needs money to live, even for those coppers. I think Daughie' been paying them to keep them off my back.
 -> DONE
-
+=== PicisStreet_PoliceWorker_Sofa
+    * At what point in humanity that we decided that a unliving thing is worth more than a life. In this case, 3000 gold coins more. I think.
+    -> DONE
+=== PicisStreet_Beggar
+    * We beg when there are no other option but it is true that we're deprived of option?. I used to be like him, until Daughie showed me a new option. 
+    -> DONE
 === MarestromPark_ProtestorsWithBoard
     * This is where every revolution and war starts. People marching on the street calling for changes and not receiving them.
 -> DONE
@@ -106,3 +112,9 @@
 === MarestromPark_PoliceCaptureProtester
     * Police capturing one of the leftover protestors.
 -> DONE
+=== MarestromPark_Hooker_Diary
+    * We're all trying to find a way to live. Some endure the scornful eyes of society while take their dignity and pride to the grave with them.
+    -> DONE
+=== MarestromPark_Robbery
+    * Everyone has their precious, their loved ones. Sometimes we take what is precious to others so that we can keep ours.
+    -> DONE

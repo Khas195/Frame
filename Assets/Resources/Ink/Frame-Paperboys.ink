@@ -131,7 +131,7 @@ Day04: Scenario 02 Protestors failed to break the statue.
 = ProCapitalPaper
     * Damn those crazy bastards trying to destroy this country. 
     -> DONE
-    * Why don't they just abolish that mackerel party already. 
+    * Why don't they just abolish that fucking party already. 
     -> DONE
     * Maybe I should join the copper forces to help keep the peace. 
     -> DONE
@@ -142,7 +142,7 @@ Day04: Scenario 02 Protestors failed to break the statue.
 = NeutralPaper
         * Man these newspapers are so boring, there's nothing really in it.
     -> DONE
-    * The newspapers nowadays are mackerels. They are nothing of scenic photos, there's no news.
+    * The newspapers nowadays are shit. They are nothing of scenic photos, there's no news.
     -> DONE
     * Maybe they should hire me to take those photos, the one in the recent newspaper sucks.
     -> DONE
@@ -240,8 +240,64 @@ Day04: Scenario 02 Protestors failed to break the statue.
     * Got another one, that will give me a raise next month. 
     -> DONE
 
+=== PicisStreet_PoliceYellAtWorkers01
+
+    * MOVE! MOVE!.
+    -> DONE
+    * Yeah, Sure. The hawkers will still be open later.
+    -> DONE
+    * You better be careful with that sofa. It costs more than both of your lives combined.
+    -> DONE
+    * Common!, hurry up!. It's dark already.
+    -> DONE
+=== PicisStreet_PoliceYellAtWorkers02
+
+    * Over Here! Over Here!.
+    -> DONE
+    * Hey Mickie!, want to grab some food after we're done with this.
+    -> DONE
+    * You heard the man, Move! Move!.
+    -> DONE
+=== PicisStreet_WorkerCarryingSofa01
+    * Shit Nicky, my legs are giving out.
+    -> DONE
+    * God, we've been carrying shit from dusk. I'm so tired.
+    -> DONE
+    * All of this work and I can't even pay for food, fuck!.
+    -> DONE
+=== PicisStreet_WorkerCarryingSofa02
+    * Hang in there you idiot, if this sofa touches the ground, we've both going to the mine.
+    -> DONE
+    * I know, me too, but we need to finish this.
+    -> DONE
+    * Stop whining, let's just get this over with.
+    -> DONE
 -> DONE 
 
+=== PicisStreet_Hawker01
+    * Pig blood her', Pig blood her'.
+    -> DONE
+    * Fresh pig blood for dinner!
+    -> DONE
+    * Some extra pig's livers on the side too!
+    -> DONE
+-> DONE 
+=== PicisStreet_Hawker02
+    * Freshly boiled potatoes here!.
+    -> DONE
+    * It goes well with the pig blood!.
+    -> DONE
+    * Boiled potatoes, Boiled potatoes here!.
+    -> DONE
+-> DONE 
+=== PicisStreet_Beggar
+    * Please sir, just a few coins.
+    -> DONE
+    * Just a few coins to save a life, sir.
+    -> DONE
+    * Someone help me please!.
+    -> DONE
+-> DONE 
 === PicisStreet_CopHoldingCaptive
 
     * Just throw him in jail.
@@ -267,9 +323,9 @@ Day04: Scenario 02 Protestors failed to break the statue.
 === PicisStreet_ProtestorBurning
     * Again and again and again. They kept mackreling takin' from me.
     -> DONE
-    * Those coppers and their mackrele batons.
+    * Those coppers and their fucking batons.
     -> DONE
-    * Mackrele!!!.
+    * Fuck!!!.
     -> DONE
 -> DONE
 
@@ -279,3 +335,31 @@ Day04: Scenario 02 Protestors failed to break the statue.
     * I'm gonna have some good food tonight.
     -> DONE
 -> DONE
+    === MarestromPark_Thief
+    * Nice, nice, nice, this purse will cover me and my daughter for the next 3 months.
+    -> DONE
+    * Sorry lady, you should share a bit of your wealth with all of us.
+    -> DONE
+    * See you later, aligator!.
+    -> DONE
+=== MarestromPark_Women
+    * No please, take something else. That's the only thing my late husband left me.
+    -> DONE
+    * Please, comeback, I'll give you anything. Just not that purse!.
+    -> DONE
+    * COME BACKKKKK!.
+    -> DONE
+=== MarestromPark_CopChasing
+    * Shit, I'm on thin ice with Chief Kodin. If this piece of shit get away, I'll lose my job.
+    -> DONE
+    * STOPPPP! THIEF!!! SOMEBODY SLOW HIM DOWN!!.
+    -> DONE
+    * STOPPPPPP!!.
+    -> DONE
+=== MarestromPark_Hooker
+    * So fucking noisy tonight.
+    -> DONE
+    * What you lookin' at hun'? Want to go somewhere where you can take real pictures ?.
+    -> DONE
+    * I won't come for free and I do charge extra for photos.Also, No face reveal though.
+    -> DONE

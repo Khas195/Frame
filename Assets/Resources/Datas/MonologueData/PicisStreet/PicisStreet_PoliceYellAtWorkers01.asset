@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12bc60d9ea326e44bf51a62e125aefa, type: 3}
+  m_Name: PicisStreet_PoliceYellAtWorkers01
+  m_EditorClassIdentifier: 
+  stitchesInStory:
+  - PicisStreet_PoliceYellAtWorkers01
+  monologueLines:
+  - line: MOVE! MOVE!.
+    showTime: 4
+    piority: 0
+    conditions: []
+  - line: Yeah, Sure. The hawkers will still be open later.
+    showTime: 8
+    piority: 0
+    conditions: []
+  - line: You better be careful with that sofa. It costs more than both of your lives
+      combined.
+    showTime: 9
+    piority: 0
+    conditions: []
+  - line: Common!, hurry up!. It's dark already.
+    showTime: 5
+    piority: 0
+    conditions: []

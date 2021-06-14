@@ -295,7 +295,7 @@ SpriteRenderer:
   m_SortingLayerID: -968240595
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e68955201bb73b947aa84fb7484457ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f6972b5c21cbba438432840c73f243a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 580247733070267181}
   - component: {fileID: 2090403131}
   m_Layer: 0
-  m_Name: Day_01_Female_01_Robbery
+  m_Name: Citizen_Special_escort
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,22 +4,33 @@ using System.Collections.Generic;
 using UnityEngine;
 public class LoadState : GameState
 {
-    public override Enum GetEnum()
-    {
-        return GameStateEnum.LoadState;
-    }
+	[SerializeField]
+	List<GameInstance> gameMap = new List<GameInstance>();
+	public override Enum GetEnum()
+	{
+		return GameStateEnum.LoadState;
+	}
 
-    public override void OnStateEnter()
-    {
-        SceneLoadingManager.GetInstance().LoadLoadingScene();
-    }
+	public override void OnStateEnter()
+	{
+		var targetInstance = SceneLoadingManager.GetInstance().GetCurrentLoadInstance();
+		var currentInstance = SceneLoadingManager.GetInstance().GetCurrentInstance();
+		if (gameMap.Contains(targetInstance) && gameMap.Contains(currentInstance) && targetInstance != currentInstance)
+		{
+			SceneLoadingManager.GetInstance().LoadLoadingScene(true);
+		}
+		else
+		{
+			SceneLoadingManager.GetInstance().LoadLoadingScene(false);
+		}
+	}
 
-    public override void OnStateExit()
-    {
-        SceneLoadingManager.GetInstance().FinishedLoadingProtocol();
-    }
+	public override void OnStateExit()
+	{
+		SceneLoadingManager.GetInstance().FinishedLoadingProtocol();
+	}
 
-    public override void UpdateState()
-    {
-    }
+	public override void UpdateState()
+	{
+	}
 }

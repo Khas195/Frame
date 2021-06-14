@@ -155,6 +155,9 @@ MonoBehaviour:
   allTransitionsPossible: 1
   possibleTransitions: []
   master: {fileID: 0}
+  gameMap:
+  - {fileID: 11400000, guid: 00818778f21ed3948bb5a826a6c0bfae, type: 2}
+  - {fileID: 11400000, guid: 55c01a7c66b607f448cdb31fe1506fb4, type: 2}
 --- !u!4 &509191706
 Transform:
   m_ObjectHideFlags: 0
@@ -588,6 +591,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: a32f579b9b300bf4abc91f43e0bed27d, type: 2}
+  mapScenes:
+  - BuildACity-PicisStreetScene
+  - BuildACity-ParkScene
   loadAndWait: 1
 --- !u!4 &1980767143
 Transform:

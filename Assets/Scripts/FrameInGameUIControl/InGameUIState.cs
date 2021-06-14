@@ -6,23 +6,24 @@ using UnityEngine;
 
 public abstract class InGameUIState : State
 {
-    public enum InGameUIStateEnum
-    {
-        NewsPanelState,
-        NormalState,
-        PhotoInventoryState,
-        CapturingState,
-        PhotoMode,
-        PublishedPaperPanel,
-        MapState,
-        DiaryPanelState
-    }
-    [SerializeField]
-    [ReadOnly]
-    protected InGameUIControl controller;
-    protected void Awake()
-    {
-        controller = InGameUIControl.GetInstance();
-    }
-    public abstract void UpdateState();
+	public enum InGameUIStateEnum
+	{
+		NewsPanelState,
+		NormalState,
+		PhotoInventoryState,
+		CapturingState,
+		PhotoMode,
+		PublishedPaperPanel,
+		MapState,
+		DiaryPanelState,
+		OptionState
+	}
+	[SerializeField]
+	[ReadOnly]
+	protected InGameUIControl controller;
+	protected void Awake()
+	{
+		controller = InGameUIControl.GetInstance();
+	}
+	public abstract void UpdateState();
 }

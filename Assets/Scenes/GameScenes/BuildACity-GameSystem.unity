@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03591ec862eeaf46b28ff79efb9c65a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenarioName: 
+  scenarioName: StatueBreaking_Default
   inkleStitch: PaperboysLine.Scenario01_StatueBreaking
 --- !u!114 &1145927137
 MonoBehaviour:
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03591ec862eeaf46b28ff79efb9c65a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenarioName: 
+  scenarioName: StatueBreaking_Broken
   inkleStitch: PaperboysLine.Scenario01_StatueBroken
 --- !u!114 &1412432660
 MonoBehaviour:
@@ -476,6 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783961815}
   - component: {fileID: 1783961816}
+  - component: {fileID: 1783961817}
   m_Layer: 0
   m_Name: Branch03
   m_TagString: Untagged
@@ -516,6 +517,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ebab8b4eb66a2df44b4db76481555859, type: 2}
   - {fileID: 11400000, guid: 22f2b120ad3f4b7408b59360e66d6f5b, type: 2}
   isScenarioActive: 0
+--- !u!114 &1783961817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783961814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03591ec862eeaf46b28ff79efb9c65a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenarioName: StatueBreaking_Mixed
+  inkleStitch: PaperboysLine.Scenario01_StatueMixed
 --- !u!1 &1966581710
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03591ec862eeaf46b28ff79efb9c65a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenarioName: 
+  scenarioName: StatueBreaking_StillThere
   inkleStitch: PaperboysLine.Scenario01_StatueStillThere
 --- !u!114 &1966581713
 MonoBehaviour:

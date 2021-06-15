@@ -26,18 +26,19 @@ public class TaxiMapControl : MonoBehaviour, IObserver
 	[SerializeField]
 	GameObject parkBrokenButton = null;
 	[SerializeField]
-	List<ScenarioBranchCondition> conditionsToChangeMap = new List<ScenarioBranchCondition>();
-	[SerializeField]
 	Button picisStreetButton = null;
 	[SerializeField]
 	Button parkButton = null;
 	[SerializeField]
 	Button parkBrokenButtonUI = null;
+	[SerializeField]
+	List<string> brokenScenarioNames;
+
 	private void Start()
 	{
 		HideMap();
 		PostOffice.Subscribes(this, GameEvent.MapChangedEvent.MAP_CHANGED_EVENT);
-		PostOffice.Subscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+		PostOffice.Subscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
 		playerIcon.transform.position = picisLocation.position;
 		mapNormal.gameObject.SetActive(true);
 		mapBroken.gameObject.SetActive(false);
@@ -47,7 +48,7 @@ public class TaxiMapControl : MonoBehaviour, IObserver
 	private void OnDestroy()
 	{
 		PostOffice.Unsubscribes(this, GameEvent.MapChangedEvent.MAP_CHANGED_EVENT);
-		PostOffice.Unsubscribes(this, GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT);
+		PostOffice.Unsubscribes(this, GameEvent.DaySystemEvent.DAY_CHANGED_EVENT);
 
 	}
 	public void ShowMap()
@@ -98,18 +99,18 @@ public class TaxiMapControl : MonoBehaviour, IObserver
 				playerIcon.transform.position = parkLocation.position;
 			}
 		}
-		if (eventName.Equals(GameEvent.NewspaperEvent.NEWSPAPER_PUBLISHED_EVENT))
+		if (eventName.Equals(GameEvent.DaySystemEvent.DAY_CHANGED_EVENT))
 		{
 			bool condition = true;
-
-			conditionsToChangeMap.ForLoop<ScenarioBranchCondition>((ScenarioBranchCondition curCondition) =>
+			var currentScenario = ScenarioManager.GetInstance().GetActiveScenario();
+			if (brokenScenarioNames.Contains(currentScenario.GetScenarioName()))
 			{
-				LogHelper.Log("Map Control - Checking branching conditions:" + curCondition.name + "- " + curCondition.IsSatisfied());
-				if (curCondition.IsSatisfied() == false)
-				{
-					condition = false;
-				}
-			});
+				condition = true;
+			}
+			else
+			{
+				condition = false;
+			}
 
 			if (condition == true)
 			{

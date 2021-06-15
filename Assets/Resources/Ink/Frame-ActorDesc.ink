@@ -84,6 +84,12 @@
 === PicisStreet_Beggar
     * We beg when there are no other option but it is true that we're deprived of option?. I used to be like him, until Daughie showed me a new option. 
     -> DONE
+=== PicisStreet_Saxaphone
+    * Music during the time of hardship can keep us going, give us hope... But man, he needs to learn some more notes.
+    -> DONE
+=== PicisStreet_Paperboys
+    * They all work for Daughie', a coin per day. That is how I used to start to. Standing on the street, trying to sell these papers to someone who cares. 
+    -> DONE
 === MarestromPark_ProtestorsWithBoard
     * This is where every revolution and war starts. People marching on the street calling for changes and not receiving them.
 -> DONE

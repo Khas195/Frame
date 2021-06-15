@@ -14027,12 +14027,12 @@ MonoBehaviour:
   mapBroken: {fileID: 1181770504}
   parkButtonNormal: {fileID: 668669205}
   parkBrokenButton: {fileID: 458869803}
-  conditionsToChangeMap:
-  - {fileID: 11400000, guid: 18b2c00aed092894f8402dc61718613c, type: 2}
-  - {fileID: 11400000, guid: 9a7b5f178102e7c4c87c2b0f0156775a, type: 2}
   picisStreetButton: {fileID: 100107412}
   parkButton: {fileID: 668669207}
   parkBrokenButtonUI: {fileID: 458869806}
+  brokenScenarioNames:
+  - StatueBreaking_Broken
+  - StatueBreaking_Mixed
 --- !u!1 &1731956886
 GameObject:
   m_ObjectHideFlags: 0

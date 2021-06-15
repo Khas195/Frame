@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 7d3d9adabe313420ba0d5b3230b555ef
+guid: ea2d6774bec78664b881035b0cc79e1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2899025153149498917
-    second: Loading_taxi_sheet_lamp
+      213: -3412149820837992096
+    second: Citizen_Dog_Walker_0
   - first:
-      213: -3581676308368428876
-    second: Loading_taxi_sheet_light
+      213: 6296303818298804107
+    second: Citizen_Dog_Walker_1
   - first:
-      213: 3676652925172004130
-    second: Loading_taxi_sheet_taxi
+      213: -3656747269235578847
+    second: Citizen_Dog_Walker_2
   - first:
-      213: -5882478220478380902
-    second: Loading_taxi_sheet_bridge
+      213: 6945458921151768607
+    second: Citizen_Dog_Walker_3
   - first:
-      213: 1362415572688813787
-    second: Loading_taxi_sheet_wheel
+      213: 7688618020007094978
+    second: Citizen_Dog_Walker_4
+  - first:
+      213: -7672566480683776745
+    second: Citizen_Dog_Walker_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -83,7 +86,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,106 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Loading_taxi_sheet_lamp
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 220
-        width: 108
-        height: 252
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd90a9f9bf794c7d0800000000000000
-      internalID: -2899025153149498917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loading_taxi_sheet_light
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 290
-        width: 183
-        height: 182
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b07443cf545b4ec0800000000000000
-      internalID: -3581676308368428876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loading_taxi_sheet_taxi
-      rect:
-        serializedVersion: 2
-        x: 310
-        y: 374
-        width: 357
-        height: 98
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 225374f0b58160330800000000000000
-      internalID: 3676652925172004130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Loading_taxi_sheet_bridge
+      name: Citizen_Dog_Walker_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1549
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a940a65a93d3d5ea0800000000000000
-      internalID: -5882478220478380902
+      spriteID: 069e988f0db95a0d0800000000000000
+      internalID: -3412149820837992096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Loading_taxi_sheet_wheel
+      name: Citizen_Dog_Walker_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 146
-        width: 43
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdeb396beb548e210800000000000000
-      internalID: 1362415572688813787
+      spriteID: b87c2a7a6f6f06750800000000000000
+      internalID: 6296303818298804107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Citizen_Dog_Walker_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12865df9bbf904dc0800000000000000
+      internalID: -3656747269235578847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Citizen_Dog_Walker_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18a155171a336060800000000000000
+      internalID: 6945458921151768607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Citizen_Dog_Walker_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2caa0386a5573ba60800000000000000
+      internalID: 7688618020007094978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Citizen_Dog_Walker_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7154643df61958590800000000000000
+      internalID: -7672566480683776745
       vertices: []
       indices: 
       edges: []

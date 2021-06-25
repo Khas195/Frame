@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 6bda1e489343648f9a9ee633a67f147e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -831963475268556608
+    second: brokenStatue_0
+  - first:
+      213: 2725971899062798203
+    second: brokenStatue_flagpole
+  - first:
+      213: 6429796169290470093
+    second: brokenStatue_printing_worker_tall01
+  - first:
+      213: -3541570030291876833
+    second: brokenStatue_printing_worker_short
+  - first:
+      213: -9123870193492087670
+    second: brokenStatue_paint_big
+  - first:
+      213: -8668213908558151269
+    second: brokenStatue_paint_small
+  - first:
+      213: -4677946614563257212
+    second: brokenStatue_bucket
+  - first:
+      213: -2994066265284751961
+    second: brokenStatue_printing_worker_tall02
+  - first:
+      213: -2947113764829158842
+    second: brokenStatue_printing_worker_tall03
+  - first:
+      213: -2530031843634232941
+    second: brokenStatue_printing_worker_tall04
+  - first:
+      213: 1480195394378031842
+    second: brokenStatue_printing_worker_tall05
+  - first:
+      213: 5944377606139514057
+    second: brokenStatue_printing_worker_tall06
+  - first:
+      213: 6903636917081777482
+    second: brokenStatue_printing__tall_brush
+  - first:
+      213: 6294868927322214340
+    second: brokenStatue_printing_short_brush
+  - first:
+      213: -2417743778212163168
+    second: brokenStatue_printing_worker_tall07
+  - first:
+      213: -1511077325950807398
+    second: brokenStatue_printing_worker_tall08
+  - first:
+      213: -3059702915332643022
+    second: brokenStatue_flag05
+  - first:
+      213: -2471287214822088194
+    second: brokenStatue_flag06
+  - first:
+      213: 8646024183597533173
+    second: brokenStatue_flag03
+  - first:
+      213: -6177853908479418549
+    second: brokenStatue_flag01
+  - first:
+      213: -903732772293704202
+    second: brokenStatue_flag02
+  - first:
+      213: 1447749794293176885
+    second: brokenStatue_flag06
+  - first:
+      213: -3292230886835409026
+    second: brokenStatue_flag03
+  - first:
+      213: -1948943099301871305
+    second: brokenStatue_flag08
+  - first:
+      213: -2500119425838469240
+    second: brokenStatue_flag05
+  - first:
+      213: -3083148817319387324
+    second: brokenStatue_flag06
+  - first:
+      213: -8703065951410870811
+    second: brokenStatue_flag03
+  - first:
+      213: -1029555235190426591
+    second: brokenStatue_flag01
+  - first:
+      213: -3543727756986359622
+    second: brokenStatue_flag02
+  - first:
+      213: -301831525798938459
+    second: brokenStatue_flag03
+  - first:
+      213: 474449053940363171
+    second: brokenStatue_flag02
+  - first:
+      213: 6201646004577477879
+    second: brokenStatue_flag05
+  - first:
+      213: 1957128497612411521
+    second: brokenStatue_flag06
+  - first:
+      213: -6830818273853624559
+    second: brokenStatue_flag03
+  - first:
+      213: 7048182347519363687
+    second: brokenStatue_flag08
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: brokenStatue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 312
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8a48e80a54474f0800000000000000
+      internalID: -831963475268556608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flagpole
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 313
+        width: 6
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77c557dff894d520800000000000000
+      internalID: 2725971899062798203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall01
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2d9b8ac893b3950800000000000000
+      internalID: 6429796169290470093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_short
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 395
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14884d42d0d9dec0800000000000000
+      internalID: -3541570030291876833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_paint_big
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 400
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.50286865, y: 1.0004911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c212c3660816180800000000000000
+      internalID: -9123870193492087670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_paint_small
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 399
+        width: 5
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b918a47506154b780800000000000000
+      internalID: -8668213908558151269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_bucket
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 388
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48447b0c658941fb0800000000000000
+      internalID: -4677946614563257212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall02
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adc8bf4890f276d0800000000000000
+      internalID: -2994066265284751961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall03
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642a1b635afb917d0800000000000000
+      internalID: -2947113764829158842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall04
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39141c1617583ecd0800000000000000
+      internalID: -2530031843634232941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall05
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e262186ed5ba8410800000000000000
+      internalID: 1480195394378031842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall06
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc8bb820fbae7250800000000000000
+      internalID: 5944377606139514057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing__tall_brush
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 407
+        width: 7
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45aee4f235aecf50800000000000000
+      internalID: 6903636917081777482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_short_brush
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 411
+        width: 5
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf4fa010fddb5750800000000000000
+      internalID: 6294868927322214340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall07
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d0cde7d2727ed0800000000000000
+      internalID: -2417743778212163168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_printing_worker_tall08
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 390
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a921e869d23970be0800000000000000
+      internalID: -1511077325950807398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back01
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237ee55d860c985d0800000000000000
+      internalID: -3059702915332643022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back02
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1a09e1f5934bdd0800000000000000
+      internalID: -2471287214822088194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back03
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f784c6bf29dcf770800000000000000
+      internalID: 8646024183597533173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back05
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f53d61a9ad34aa0800000000000000
+      internalID: -6177853908479418549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back06
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f50e8fe4db4573f0800000000000000
+      internalID: -903732772293704202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back07
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a5d7474c0771410800000000000000
+      internalID: 1447749794293176885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back08
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f2b9f8375af42d0800000000000000
+      internalID: -3292230886835409026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_back04
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 381
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731c9aeb396f3f4e0800000000000000
+      internalID: -1948943099301871305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_right
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 381
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f28ded0aacd4dd0800000000000000
+      internalID: -2500119425838469240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_mid
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 381
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f13026c747635d0800000000000000
+      internalID: -3083148817319387324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_police_salute_left
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 381
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5ab55c0af783780800000000000000
+      internalID: -8703065951410870811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag01
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124b4d9e7f846b1f0800000000000000
+      internalID: -1029555235190426591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag02
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0e228616622dec0800000000000000
+      internalID: -3543727756986359622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag03
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a87db293ddafcbf0800000000000000
+      internalID: -301831525798938459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag04
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afa22c96e4959600800000000000000
+      internalID: 474449053940363171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag05
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4af85fe2ca01650800000000000000
+      internalID: 6201646004577477879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag06
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1825bffcffd192b10800000000000000
+      internalID: 1957128497612411521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag07
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f25bd98fe0431a0800000000000000
+      internalID: -6830818273853624559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: brokenStatue_flag08
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 316
+        width: 68
+        height: 61
+      alignment: 9
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a0210908c20d160800000000000000
+      internalID: 7048182347519363687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

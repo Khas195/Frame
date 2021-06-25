@@ -1,0 +1,1236 @@
+fileFormatVersion: 2
+guid: 77405be0e65f34bfcac1155a85b5f532
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7504989452531081621
+    second: StatueHonoured_0
+  - first:
+      213: 3598515905934482254
+    second: StatueHonoured_flagpole
+  - first:
+      213: -552851077302194152
+    second: StatueHonoured_flag01
+  - first:
+      213: 4421187479311333574
+    second: StatueHonoured_flag02
+  - first:
+      213: 3252138729907426851
+    second: StatueHonoured_flag04
+  - first:
+      213: 1940152977425298429
+    second: StatueHonoured_flag05
+  - first:
+      213: -7143413510353385795
+    second: StatueHonoured_flag06
+  - first:
+      213: 3376747360276761015
+    second: StatueHonoured_flag07
+  - first:
+      213: -3591993362497994178
+    second: StatueHonoured_flag08
+  - first:
+      213: -5804280348044568315
+    second: StatueHonoured_flag03
+  - first:
+      213: -4747729199644519997
+    second: StatueHonoured_police_look_left01
+  - first:
+      213: -1559908961225194919
+    second: StatueHonoured_police_look_mid01
+  - first:
+      213: 4908098841394629298
+    second: StatueHonoured_police_look_right01
+  - first:
+      213: -4749067475745127878
+    second: StatueHonoured_police_look_mid02
+  - first:
+      213: -5821916787376932664
+    second: StatueHonoured_police_look_left02
+  - first:
+      213: -5931233627027379700
+    second: StatueHonoured_police_look_right02
+  - first:
+      213: 1624983251827576287
+    second: StatueHonoured_king_car
+  - first:
+      213: 2657610951350881510
+    second: StatueHonoured_king_car_wheel
+  - first:
+      213: -1824646845482713072
+    second: StatueHonoured_car_flat01
+  - first:
+      213: -3462902348196290215
+    second: StatueHonoured_car_flat02
+  - first:
+      213: -7385894550892803050
+    second: StatueHonoured_car_flat03
+  - first:
+      213: -4725884885221446601
+    second: StatueHonoured_car_flat04
+  - first:
+      213: 2250918530867048439
+    second: StatueHonoured_king drive
+  - first:
+      213: 8758166936959200912
+    second: StatueHonoured_king_incar
+  - first:
+      213: 2335375996167545592
+    second: StatueHonoured_king_hand03
+  - first:
+      213: -2017815898441697815
+    second: StatueHonoured_king_stand
+  - first:
+      213: 7605315717637834081
+    second: StatueHonoured_king_get_off
+  - first:
+      213: -3846001025741063452
+    second: StatueHonoured_people01
+  - first:
+      213: -8874937622501732419
+    second: StatueHonoured_people02
+  - first:
+      213: -5675587902830265207
+    second: StatueHonoured_people03
+  - first:
+      213: -2538198276717286316
+    second: StatueHonoured_people04
+  - first:
+      213: 9156094012386066972
+    second: StatueHonoured_people05
+  - first:
+      213: -5056371189790076123
+    second: StatueHonoured_people0
+  - first:
+      213: 3134609815494167036
+    second: StatueHonoured_people07
+  - first:
+      213: 3430782802092209763
+    second: StatueHonoured_people08
+  - first:
+      213: -4698996135058461869
+    second: StatueHonoured_people09
+  - first:
+      213: 3473921118771667930
+    second: StatueHonoured_people10
+  - first:
+      213: 8317834835723042676
+    second: StatueHonoured_people11
+  - first:
+      213: 1886193722152833545
+    second: StatueHonoured_people12
+  - first:
+      213: 1039578098593949925
+    second: StatueHonoured_king_car_light
+  - first:
+      213: 3367674140049603850
+    second: StatueHonoured_stage02
+  - first:
+      213: 8159388320812306364
+    second: StatueHonoured_stage01
+  - first:
+      213: -4655210842067779427
+    second: StatueHonoured_king_hand02
+  - first:
+      213: 1928656150177445125
+    second: StatueHonoured_king_hand01
+  - first:
+      213: 4432281000997559772
+    second: StatueHonoured_police_car
+  - first:
+      213: -2230040450532880769
+    second: StatueHonoured_police_car_wheel
+  - first:
+      213: -6026418253876503123
+    second: StatueHonoured_police_car_light
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StatueHonoured_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 620
+        height: 313
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ed4d62bdbe8d790800000000000000
+      internalID: -7504989452531081621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flagpole
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 313
+        width: 6
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b51d3962f70f130800000000000000
+      internalID: 3598515905934482254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag01
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810f5b3dfd0e358f0800000000000000
+      internalID: -552851077302194152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag02
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8b1c586963b5d30800000000000000
+      internalID: 4421187479311333574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag04
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3261c6cb1fae12d20800000000000000
+      internalID: 3252138729907426851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag05
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3f9558adeccea10800000000000000
+      internalID: 1940152977425298429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag06
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db609af724f7ddc90800000000000000
+      internalID: -7143413510353385795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag07
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9c88955dd9cde20800000000000000
+      internalID: 3376747360276761015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag08
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e320fb8611da62ec0800000000000000
+      internalID: -3591993362497994178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_flag03
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 316
+        width: 68
+        height: 61
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509d50e96cd037fa0800000000000000
+      internalID: -5804280348044568315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_look_left01
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 314
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1507d827dac1eb0800000000000000
+      internalID: -4747729199644519997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_look_mid01
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 314
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952493480171a5ae0800000000000000
+      internalID: -1559908961225194919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_look_right01
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 314
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba45db54e11d1440800000000000000
+      internalID: 4908098841394629298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_look_mid02
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 314
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32c9ddda4ce71eb0800000000000000
+      internalID: -4749067475745127878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_look_left02
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 314
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8b3881785643fa0800000000000000
+      internalID: -5821916787376932664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_look_right02
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 314
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a6e25f07600bda0800000000000000
+      internalID: -5931233627027379700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_car
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 387
+        width: 105
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd442378a91d8610800000000000000
+      internalID: 1624983251827576287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_car_wheel
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 386
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec0572641bb1e420800000000000000
+      internalID: 2657610951350881510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_car_flat01
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 401
+        width: 5
+        height: 7
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01047768c5d8da6e0800000000000000
+      internalID: -1824646845482713072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_car_flat02
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 401
+        width: 5
+        height: 7
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951e4eb59ac41ffc0800000000000000
+      internalID: -3462902348196290215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_car_flat03
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 401
+        width: 5
+        height: 7
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c8a81c908008990800000000000000
+      internalID: -7385894550892803050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_car_flat04
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 401
+        width: 5
+        height: 7
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cecf65cb84a6eb0800000000000000
+      internalID: -4725884885221446601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king drive
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 246
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffacaa5a7edc3f10800000000000000
+      internalID: 2250918530867048439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_incar
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 245
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e26092d624b8970800000000000000
+      internalID: 8758166936959200912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_hand03
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 273
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f26a8c581ce86020800000000000000
+      internalID: 2335375996167545592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_stand
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 272
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e53f3791274ff3e0800000000000000
+      internalID: -2017815898441697815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_get_off
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 272
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1658f7ab9528b8960800000000000000
+      internalID: 7605315717637834081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people01
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 428
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea7aeea17240aac0800000000000000
+      internalID: -3846001025741063452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people02
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 427
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfc807f043e5d480800000000000000
+      internalID: -8874937622501732419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people03
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 427
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c3c487fd24c31b0800000000000000
+      internalID: -5675587902830265207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people04
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 427
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ce1c28d1286ccd0800000000000000
+      internalID: -2538198276717286316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people05
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 427
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c124a524efaf01f70800000000000000
+      internalID: 9156094012386066972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 427
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5231b04513924d9b0800000000000000
+      internalID: -5056371189790076123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people07
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 427
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf98bf1f40f508b20800000000000000
+      internalID: 3134609815494167036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people08
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 427
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366b93c08c69c9f20800000000000000
+      internalID: 3430782802092209763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people09
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 427
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b28e859efc9ceb0800000000000000
+      internalID: -4698996135058461869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people10
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 426
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3ec161ad8d53030800000000000000
+      internalID: 3473921118771667930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 426
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f34ab96b2ee6370800000000000000
+      internalID: 8317834835723042676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_people12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 426
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902dd72623b1d2a10800000000000000
+      internalID: 1886193722152833545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_car_light
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 421
+        width: 139
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8e7f2d5c25d6e00800000000000000
+      internalID: 1039578098593949925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_stage02
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 22
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dfce4a9c16cbe20800000000000000
+      internalID: 3367674140049603850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_stage01
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1
+        width: 102
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf0d7e8278fb3170800000000000000
+      internalID: 8159388320812306364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_hand02
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 273
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90c00c476e556fb0800000000000000
+      internalID: -4655210842067779427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_king_hand01
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 273
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505f235dc86f3ca10800000000000000
+      internalID: 1928656150177445125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_car
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 382
+        width: 79
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd1c215610a28d30800000000000000
+      internalID: 4432281000997559772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_car_wheel
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 382
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e4c37860e4d01e0800000000000000
+      internalID: -2230040450532880769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StatueHonoured_police_car_light
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 420
+        width: 107
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadd2c5078cdd5ca0800000000000000
+      internalID: -6026418253876503123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

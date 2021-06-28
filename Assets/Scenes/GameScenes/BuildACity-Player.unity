@@ -7405,14 +7405,14 @@ MonoBehaviour:
   photoImage: {fileID: 1648980292}
   PhotoFrame: {fileID: 969236034}
   influenceText: {fileID: 373232776}
-  hoverScale: 0.6
-  normalScale: 0.5
+  hoverScale: 0.8
+  normalScale: 0.7
   scaleCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.6
+      value: 0.8
       inSlope: -0.14577655
       outSlope: -0.14577655
       tangentMode: 0
@@ -7421,7 +7421,7 @@ MonoBehaviour:
       outWeight: 0.052904565
     - serializedVersion: 3
       time: 0.3
-      value: 0.5
+      value: 0.7
       inSlope: -0.30924946
       outSlope: -0.30924946
       tangentMode: 0

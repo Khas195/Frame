@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-
 [CreateAssetMenu(fileName = "ScenarioConditionsData", menuName = "Data/ScenarioConditions/InfluenceCondition", order = 1)]
 public class InfluenceCondition : ScenarioBranchCondition
 {

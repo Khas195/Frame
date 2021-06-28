@@ -406,8 +406,8 @@ MonoBehaviour:
   scenarioName: StatueBreaking_Default
   branches:
   - {fileID: 1783961816}
-  - {fileID: 1966581713}
   - {fileID: 1412432660}
+  - {fileID: 1966581713}
   conditionsToEnterThisScenario:
   - {fileID: 11400000, guid: 1007fe6c1e3b4b9428714922617234fc, type: 2}
   isScenarioActive: 0
@@ -473,7 +473,7 @@ MonoBehaviour:
   branches: []
   conditionsToEnterThisScenario:
   - {fileID: 11400000, guid: 18b2c00aed092894f8402dc61718613c, type: 2}
-  - {fileID: 11400000, guid: 9a7b5f178102e7c4c87c2b0f0156775a, type: 2}
+  - {fileID: 11400000, guid: 2ffbd7a863f30f841a424205bddf94c9, type: 2}
   isScenarioActive: 0
 --- !u!1 &1783961814
 GameObject:
@@ -523,8 +523,7 @@ MonoBehaviour:
   branches: []
   conditionsToEnterThisScenario:
   - {fileID: 11400000, guid: 18b2c00aed092894f8402dc61718613c, type: 2}
-  - {fileID: 11400000, guid: ebab8b4eb66a2df44b4db76481555859, type: 2}
-  - {fileID: 11400000, guid: 22f2b120ad3f4b7408b59360e66d6f5b, type: 2}
+  - {fileID: 11400000, guid: 03390a9108fea0f41b6868ac126ed4b0, type: 2}
   isScenarioActive: 0
 --- !u!114 &1783961817
 MonoBehaviour:
@@ -602,7 +601,7 @@ MonoBehaviour:
   branches: []
   conditionsToEnterThisScenario:
   - {fileID: 11400000, guid: 18b2c00aed092894f8402dc61718613c, type: 2}
-  - {fileID: 11400000, guid: 7d54215f68785be47aa4e2d421540c90, type: 2}
+  - {fileID: 11400000, guid: 750da40430a2fff49a0dac4244980ba3, type: 2}
   isScenarioActive: 0
 --- !u!1 &2051083827
 GameObject:

@@ -13,19 +13,53 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 	[Expandable]
 	DaySystemData dayData;
 	[SerializeField]
+	[Expandable]
+	PublicSwayData swayData;
+	[SerializeField]
 	PublishedPapersData publishedPaperData;
-
+	[SerializeField]
+	DayCheckCondition dayConditionForEnding = null;
+	[SerializeField]
+	string warEndScenario = "";
+	[SerializeField]
+	GameInstance endingWar = null;
+	[SerializeField]
+	string redEndScenario = "";
+	[SerializeField]
+	GameInstance endingRed = null;
+	[SerializeField]
+	string blueEndScenario = "";
+	[SerializeField]
+	GameInstance endingBlue = null;
+	[SerializeField]
+	GameInstance ending = null;
 
 	protected override void Awake()
 	{
 		PostOffice.Subscribes(this, GameEvent.InGameUiStateEvent.ON_IN_GAME_UIS_STATE_CHANGED);
 		dayData.ResetDay();
+		Scenario.OnScenarioEnter.AddListener(OnNewScenarioEnter);
 	}
 	private void OnDestroy()
 	{
 		PostOffice.Unsubscribes(this, GameEvent.InGameUiStateEvent.ON_IN_GAME_UIS_STATE_CHANGED);
 	}
+	public void OnNewScenarioEnter(Scenario newScenario)
+	{
+		if (newScenario.GetScenarioName() == warEndScenario)
+		{
+			ending = endingRed;
+		}
+		else if (newScenario.GetScenarioName() == blueEndScenario)
+		{
+			ending = endingBlue;
+		}
+		else if (newScenario.GetScenarioName() == redEndScenario)
+		{
+			ending = endingRed;
+		}
 
+	}
 	public int GetCurrentDay()
 	{
 		return dayData.currentDay;
@@ -36,7 +70,14 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 		OnDayChangedEvent.Invoke();
 		SetCurrentDay(dayData.currentDay + 1);
 		InGameUIControl.GetInstance().RequestState(InGameUIState.InGameUIStateEnum.NormalState);
-		GameMaster.GetInstance().RequestInstance(SceneLoadingManager.GetInstance().GetCurrentInstance(), true);
+		if (dayConditionForEnding.IsSatisfied())
+		{
+			GameMaster.GetInstance().RequestInstance(this.ending, true);
+		}
+		else
+		{
+			GameMaster.GetInstance().RequestInstance(SceneLoadingManager.GetInstance().GetCurrentInstance(), true);
+		}
 	}
 
 	private bool HasPublishedEnoughPaper()

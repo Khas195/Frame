@@ -332,7 +332,16 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   dayData: {fileID: 11400000, guid: 635edd2c161050147817c320b0278800, type: 2}
+  swayData: {fileID: 11400000, guid: 06701f038dcda88419efd538407f903f, type: 2}
   publishedPaperData: {fileID: 11400000, guid: b296e5099a2b0f541b275be6fe8efed2, type: 2}
+  dayConditionForEnding: {fileID: 11400000, guid: b35b58f55cf1a9945b55f91dc6e0fbd9, type: 2}
+  warEndScenario: StatueBreaking_Mixed
+  endingWar: {fileID: 11400000, guid: f0337e46becb2ba47ae2926147d1dc50, type: 2}
+  redEndScenario: StatueBreaking_Broken
+  endingRed: {fileID: 11400000, guid: 3d95847ad2b6a124b9cafc67b15d32ab, type: 2}
+  blueEndScenario: StatueBreaking_StillThere
+  endingBlue: {fileID: 11400000, guid: 0ff2648e67e26ec479cdd3fc2af6539a, type: 2}
+  ending: {fileID: 0}
 --- !u!1 &1145927134
 GameObject:
   m_ObjectHideFlags: 0

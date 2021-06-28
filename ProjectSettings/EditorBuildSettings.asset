@@ -41,4 +41,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UIScenes/LoadScene_taxi.unity
     guid: 8faf1893d78a34d1da012d48e6c0558d
+  - enabled: 1
+    path: Assets/Scenes/UIScenes/Ending/EndingStatueBroken.unity
+    guid: f6362080b29bb48ef9553caf1986190c
+  - enabled: 1
+    path: Assets/Scenes/UIScenes/Ending/EndingStatueHonoured.unity
+    guid: 022e7c87fb68a4760909e11f0920ced3
+  - enabled: 1
+    path: Assets/Scenes/UIScenes/Ending/EndingWar.unity
+    guid: 28ca3dcf7546d4903800e867e45d1bd5
   m_configObjects: {}

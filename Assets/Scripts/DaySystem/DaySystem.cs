@@ -48,7 +48,7 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 	{
 		if (newScenario.GetScenarioName() == warEndScenario)
 		{
-			ending = endingRed;
+			ending = endingWar;
 		}
 		else if (newScenario.GetScenarioName() == blueEndScenario)
 		{

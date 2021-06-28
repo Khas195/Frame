@@ -405,9 +405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenarioName: StatueBreaking_Default
   branches:
-  - {fileID: 1412432660}
-  - {fileID: 1966581713}
   - {fileID: 1783961816}
+  - {fileID: 1966581713}
+  - {fileID: 1412432660}
   conditionsToEnterThisScenario:
   - {fileID: 11400000, guid: 1007fe6c1e3b4b9428714922617234fc, type: 2}
   isScenarioActive: 0

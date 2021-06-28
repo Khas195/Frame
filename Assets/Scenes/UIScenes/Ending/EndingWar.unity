@@ -4062,7 +4062,7 @@ MonoBehaviour:
   fireBurning: {fileID: 2083385319}
   swing: {fileID: 2118055893}
   punchHit: {fileID: 965100172}
-  mainMenuInstance: {fileID: 0}
+  mainMenuInstance: {fileID: 11400000, guid: f0337e46becb2ba47ae2926147d1dc50, type: 2}
 --- !u!1 &3444089170340446072
 GameObject:
   m_ObjectHideFlags: 0

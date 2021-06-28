@@ -113,7 +113,7 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
 	}
 	public void StopConversing()
 	{
-		Debug.Log("Conversation- Player stops conversing");
+		LogHelper.Log("Conversation- Player stops conversing");
 		if (choicesControl.IsFadeOut() == false)
 		{
 			choicesControl.FadeOut();
@@ -123,7 +123,7 @@ public class PlayerConversationHandler : MonoBehaviour, IParticipant
 
 	public void StartConvsering()
 	{
-		Debug.Log("Conversation- Player starts conversing");
+		LogHelper.Log("Conversation- Player starts conversing");
 		if (choicesControl.IsFadeOut() == true)
 		{
 			choicesControl.FadeIn();

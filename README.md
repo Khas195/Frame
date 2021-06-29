@@ -2,7 +2,7 @@
 
 Plunge into a country amid turmoil as the  journalist, Jack. The country has been ravaged by a bloody civil war to topple the old monarchy. As peace was achieved, another war is looming as the vacuum of power left by the old King is contested by new factions and foreign powers.
 
-[Design Journal](https://miro.com/app/board/o9J_lIXrFgs=/)
+Click to see our [Design Journal](https://miro.com/app/board/o9J_lIXrFgs=/)
 
 [Playable version is uploaded in itch.io](https://khas195.itch.io/frame).
 Please feel free to play and leave some comments.

@@ -64,13 +64,6 @@ public class DaySystem : SingletonMonobehavior<DaySystem>, IObserver
 	{
 		return dayData.currentDay;
 	}
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.L))
-		{
-			NextDay();
-		}
-	}
 	[Button]
 	public void NextDay()
 	{
